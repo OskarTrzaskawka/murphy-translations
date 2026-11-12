@@ -1,0 +1,67 @@
+# Crowdin configuration for github.com/OskarTrzaskawka/murphy-translations
+# EnglishUS.json is the source. Crowdin writes every translation back under the file names the bot uses.
+files:
+  - source: /EnglishUS.json
+    translation: /%locale%.json
+    languages_mapping:
+      locale:
+        af-ZA: Afrikaans
+        sq-AL: Albanian
+        ar-SA: Arabic
+        eu-ES: Basque
+        bn-BD: Bengali
+        bg-BG: Bulgarian
+        my-MM: Burmese
+        ca-ES: Catalan
+        zh-CN: ChineseCN
+        zh-TW: ChineseTW
+        hr-HR: Croatian
+        cs-CZ: Czech
+        da-DK: Danish
+        nl-NL: Dutch
+        en-GB: EnglishGB
+        eo-UY: Esperanto
+        et-EE: Estonian
+        fil-PH: Filipino
+        fi-FI: Finnish
+        fr-FR: French
+        gl-ES: Galician
+        de-DE: German
+        el-GR: Greek
+        he-IL: Hebrew
+        hi-IN: Hindi
+        hu-HU: Hungarian
+        is-IS: Icelandic
+        id-ID: Indonesian
+        ga-IE: Irish
+        it-IT: Italian
+        ja-JP: Japanese
+        ko-KR: Korean
+        ky-KG: Kyrgyz
+        lv-LV: Latvian
+        lt-LT: Lithuanian
+        ms-MY: Malay
+        no-NO: Norwegian
+        fa-IR: Persian
+        pl-PL: Polish
+        pt-BR: PortugueseBR
+        pt-PT: PortuguesePT
+        ro-RO: Romanian
+        ru-RU: Russian
+        sr-SP: Serbian
+        sk-SK: Slovak
+        sl-SI: Slovenian
+        es-ES: SpanishES
+        es-419: SpanishLATAM
+        sw-KE: Swahili
+        sv-SE: Swedish
+        th-TH: Thai
+        tr-TR: Turkish
+        uk-UA: Ukrainian
+        ur-PK: Urdu
+        vi-VN: Vietnamese
+    # Changed English texts keep their old translations, marked as needing review.
+    update_option: update_as_unapproved
+    # Only translations you (or your proofreaders) approved are sent back to GitHub.
+    skip_untranslated_strings: false
+    export_only_approved: true
