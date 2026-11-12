@@ -590,6 +590,7 @@
         "command": "Der Befehl, zu dem Sie Informationen erhalten möchten"
       },
       "placeholder_category": "Wählen Sie eine Kategorie aus",
+      "command_not_found": "Ich konnte `{command}` in der Befehlsanleitung nicht finden. Probieren Sie `/help` aus, um die verfügbaren Befehle zu durchsuchen.",
       "no_commands": "Keine Befehle in dieser Kategorie.",
       "category": {
         "4fun": "Spaß",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` öffnet diese Anleitung. Erwähnen Sie Murphy mit einem Befehlsnamen, um dessen Details anzuzeigen, oder verwenden Sie die unten gezeigten Schrägstrichbefehle.",
       "choose_category": "Wählen Sie unten eine Kategorie aus.",
       "more_subcommands": "und {count} weitere Unterbefehle.",
-      "command_not_found": "Ich konnte `{command}` in der Befehlsanleitung nicht finden. Probieren Sie `/help` aus, um die verfügbaren Befehle zu durchsuchen.",
       "category_hint": "{count} Befehle. Wähle unten einen für Details.",
       "category_count": "{roots} Befehle · {count} Optionen",
       "about": {
