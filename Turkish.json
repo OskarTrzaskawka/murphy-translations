@@ -590,6 +590,7 @@
         "command": "Hakkında bilgi almak istediğiniz komut"
       },
       "placeholder_category": "Bir kategori seçin",
+      "command_not_found": "Komut kılavuzunda `{command}` öğesini bulamadım. Mevcut komutlara göz atmak için `/help` komutunu deneyin.",
       "no_commands": "Bu kategoride komut yok.",
       "category": {
         "4fun": "Eğlence",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` bu kılavuzu açar. Ayrıntılarını görmek için Murphy komutunu bir komut adı ile belirtin veya aşağıda gösterilen eğik çizgi komutlarını kullanın.",
       "choose_category": "Aşağıdan bir kategori seçin.",
       "more_subcommands": "ve {count} daha fazla alt komut(lar).",
-      "command_not_found": "Komut kılavuzunda `{command}` öğesini bulamadım. Mevcut komutlara göz atmak için `/help` komutunu deneyin.",
       "category_hint": "{count} komut. Ayrıntılar için aşağıdan birini seç.",
       "category_count": "{roots} komut · {count} seçenek",
       "about": {
