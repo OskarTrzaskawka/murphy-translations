@@ -22,7 +22,7 @@
     "no_permission": "You do not have permission to use this command.",
     "no_required_permissions": "You do not have the required permissions to execute this command.",
     "no_bot_permissions": "I do not have the required permissions to execute this command.",
-    "must_be_in_voice": "You must be in a voice channel to use this command.",
+    "must_be_in_voice": "Join a voice channel before using music commands.",
     "nothing_playing": "There is nothing playing right now.",
     "need_dj_role": "You need the DJ role to use this command.",
     "command_error": "An error occurred while executing this command.",
@@ -37,7 +37,7 @@
     "error_occurred": "An error occurred while processing this request.",
     "access_vote_title": "Vote required",
     "access_premium_title": "Premium required",
-    "access_required": "This command requires **{requirement}** access.",
+    "access_required": "This command requires **{requirement}** access or an active Premium plan.",
     "access_vote_button": "Vote on Top.gg",
     "access_premium_button": "Upgrade Premium",
     "tagline": "Your server. More possibilities"
@@ -209,7 +209,7 @@
       "experimental_source_required": "This source is in the Supporter early-access rollout. Choose another source or activate Murphy Supporter."
     },
     "about": {
-      "description": "Shows information about the bot",
+      "description": "View Murphy bot details, available music nodes and runtime status.",
       "modern_description": "Music, playlists and shared controls for your Discord server.",
       "made_by": "Made by:",
       "servers": "Servers:",
@@ -233,7 +233,7 @@
       }
     },
     "support": {
-      "description": "Shows ways to support Murphy development.",
+      "description": "Find official ways to support Murphy and follow project updates.",
       "title": "Support Murphy",
       "subtitle": "**Every contribution helps keep Murphy available to more communities.**",
       "body": "Murphy runs on real infrastructure and needs around **$30 every month** just for the main machine. There are also domain, tooling, development and team costs.",
@@ -249,7 +249,7 @@
       }
     },
     "vote": {
-      "description": "Check your recent Top.gg vote and find Murphy on Top.gg.",
+      "description": "Check your latest Top.gg vote and open the Murphy voting page.",
       "title": "Support Murphy with a vote",
       "prompt": "A recent Top.gg vote unlocks your monthly Wrapped until the vote expires. Voting does not grant currency or Premium.",
       "confirmed_title": "Thanks for supporting Murphy",
@@ -259,11 +259,11 @@
       "next_vote_estimate": "Without a stored vote receipt, the next vote time is an estimate: <t:{availableAt}:R> (<t:{availableAt}:f>)."
     },
     "changelog": {
-      "description": "Shows the latest Murphy changes.",
+      "description": "Browse recent Murphy releases and product updates.",
       "title": "Murphy changelog"
     },
     "suggest": {
-      "description": "Send a feature suggestion to the Murphy team.",
+      "description": "Share a product idea with the Murphy team.",
       "options": {
         "text": "Your suggestion for the bot."
       },
@@ -272,7 +272,7 @@
       "log_title": "New suggestion"
     },
     "bugreport": {
-      "description": "Report a bug to the Murphy team.",
+      "description": "Send the Murphy team a reproducible bug report.",
       "options": {
         "text": "Describe what broke and how to reproduce it."
       },
@@ -288,7 +288,7 @@
       "button": "Open Support"
     },
     "privacy": {
-      "description": "Manage privacy, analytics and personal data exports.",
+      "description": "Review privacy controls, analytics preferences and personal data exports.",
       "title": "Privacy controls",
       "options": {
         "status": "Show your current privacy settings",
@@ -332,7 +332,7 @@
       }
     },
     "insights": {
-      "description": "Show actionable server activity, music, retention and moderation insights.",
+      "description": "Review server activity, music usage, member retention and moderation trends.",
       "title": "Server insights",
       "options": {
         "overview": "Show the server value overview",
@@ -359,7 +359,7 @@
       "export_ready": "Your {days}-day server analytics export is attached."
     },
     "schedule": {
-      "description": "Schedule messages, events, polls, giveaways and music sessions.",
+      "description": "Plan server messages, events, polls, giveaways and music sessions.",
       "title": "Server schedule",
       "options": {
         "message": "Schedule a channel message",
@@ -506,14 +506,14 @@
       "select_channel": "Select Announcement Channel"
     },
     "autoplay": {
-      "description": "Toggles autoplay",
+      "description": "Turn automatic track selection on or off.",
       "messages": {
         "enabled": "Autoplay enabled.",
         "disabled": "Autoplay disabled."
       }
     },
     "clearqueue": {
-      "description": "Clears the queue",
+      "description": "Remove every upcoming track from the queue.",
       "messages": {
         "cleared": "The queue has been cleared."
       }
@@ -572,14 +572,14 @@
       "subcommands": "Subcommands"
     },
     "fairplay": {
-      "description": "Set the bot to play music fairly",
+      "description": "Let queued tracks from different members take turns playing.",
       "messages": {
         "disabled": "FairPlay disabled. Tracks play in queue order.",
         "enabled": "FairPlay enabled. Tracks from different people take turns."
       }
     },
     "grab": {
-      "description": "Grabs the current playing song on your DM",
+      "description": "Send a link and details for the current track to your direct messages.",
       "content": "**Duration:** {length}\n**Requested by:** <@{requester}>\n**Link:** [Click here]({uri})",
       "check_dm": "Track sent to your direct messages.",
       "dm_failed": "I couldn't send you a DM. Please make sure allow direct messages is turned on."
@@ -590,6 +590,7 @@
         "command": "The command you want to get info on"
       },
       "placeholder_category": "Select a category",
+      "command_not_found": "I could not find `{command}` in the command guide. Try `/help` to browse available commands.",
       "no_commands": "No commands in this category.",
       "category": {
         "4fun": "Fun",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` opens this guide. Mention Murphy with a command name to see its details, or use the slash commands shown below.",
       "choose_category": "Choose a category below.",
       "more_subcommands": "and {count} more subcommand(s).",
-      "command_not_found": "I could not find `{command}` in the command guide. Try `/help` to browse available commands.",
       "category_hint": "{count} commands. Pick one below for details.",
       "category_count": "{roots} commands · {count} options",
       "about": {
@@ -753,7 +753,7 @@
       }
     },
     "join": {
-      "description": "Joins the voice channel",
+      "description": "Connect Murphy to your current voice channel.",
       "already_connected": "I'm already connected to <#{channelId}>.",
       "no_voice_channel": "Join a voice channel first.",
       "joined": "Connected to <#{channelId}>."
@@ -772,7 +772,7 @@
       }
     },
     "leave": {
-      "description": "Leaves the voice channel",
+      "description": "Disconnect Murphy from its current voice channel.",
       "left": "Disconnected from <#{channelId}>.",
       "not_in_channel": "I'm not in a voice channel."
     },
@@ -805,7 +805,7 @@
       }
     },
     "lyrics": {
-      "description": "Gets the lyrics of the track",
+      "description": "Find lyrics for the current track or a song you specify.",
       "lyrics_for_track": "### Lyrics for: [{trackTitle}]({trackUrl})",
       "no_lyrics_on_page": "No lyrics found on this page.",
       "searching": "Searching for **{trackTitle}** lyrics...",
@@ -852,7 +852,7 @@
       "failed_summary": "Failed moves: `{count}`"
     },
     "nowplaying": {
-      "description": "Shows the currently playing track.",
+      "description": "View the current track, playback progress and queue status.",
       "title": "Now Playing",
       "live": "LIVE",
       "duration": "Duration:",
@@ -860,7 +860,7 @@
       "queue": "Queue:"
     },
     "pause": {
-      "description": "Pauses the current song",
+      "description": "Pause the track currently playing in this server.",
       "successfully_paused": "Playback paused."
     },
     "ping": {
@@ -874,7 +874,7 @@
       }
     },
     "play": {
-      "description": "Plays a song from YouTube, Spotify or http",
+      "description": "Play a track, playlist or supported audio stream from a link or search.",
       "options": {
         "song": "The song you want to play",
         "source": "The source you want to use (YouTube, Spotify, SoundCloud etc.)"
@@ -884,13 +884,13 @@
         "spotify_generated_playlist_title": "Spotify playlist unavailable",
         "spotify_generated_playlist": "This Spotify-generated playlist cannot be loaded. Try a normal public playlist, album, or track instead."
       },
-      "playlist_sent": "Playlist queued",
-      "track_queued": "Added to queue",
+      "playlist_sent": "Playlist added to queue",
+      "track_queued": "Queued for playback",
       "playlist_queued_detail": "{count} tracks added to the queue.",
       "total_duration": "Total duration"
     },
     "playlocal": {
-      "description": "Plays an your local audio files.",
+      "description": "Play an audio file attached to your command.",
       "options": {
         "file": "The audio file you want to play."
       },
@@ -902,7 +902,7 @@
       "added_to_queue": "Added [**{title}**]({url}) to the queue"
     },
     "playnext": {
-      "description": "Add the song to play next in queue",
+      "description": "Add a track to the queue immediately after the current one.",
       "options": {
         "song": "The song you want to play",
         "source": "The source you want to use (YouTube, Spotify, SoundCloud etc.)"
@@ -911,7 +911,7 @@
       "added_playlist_to_play_next": "Playlist moved to the front of the queue"
     },
     "queue": {
-      "description": "Shows the current queue",
+      "description": "Browse upcoming tracks and their playback order.",
       "live": "LIVE",
       "title": "Queue",
       "empty": "The queue is empty.",
@@ -920,44 +920,44 @@
       "total_duration": "Total duration:"
     },
     "radio": {
-      "description": "Plays a radio station.",
+      "description": "Find a station, browse by country or open recommended stations.",
       "options": {
-        "query": "The radio station you want to play.",
-        "play": "Play",
-        "list": "List available radio stations",
-        "favorites": "Show recommended radio stations."
+        "query": "Station name to search for.",
+        "play": "Start playback",
+        "list": "Browse available stations by country.",
+        "favorites": "Show recommended stations."
       },
-      "radio_station": "Radio Station",
+      "radio_station": "Radio station",
       "fields": {
         "country": "Country",
-        "tags": "Tags"
+        "tags": "Style"
       },
       "menu": {
-        "country_selection": "### Radio Radio Browser\nSelect a country to browse stations:",
-        "station_selection": "### 📻 {country}\nSelect a station to play:"
+        "country_selection": "### Radio browser\nChoose a country to browse available stations:",
+        "station_selection": "### Stations in {country}\nChoose a station to play:"
       },
       "placeholders": {
-        "select_country": "Select a country",
-        "select_station": "Select a station from {country}"
+        "select_country": "Choose a country",
+        "select_station": "Choose a station from {country}"
       },
       "errors": {
-        "search_error": "Error searching for radio stations.",
-        "no_stream_url": "Found station but no valid stream URL.",
-        "provide_station": "Please provide a station name.",
-        "fetch_countries": "Failed to fetch countries.",
-        "fetch_stations": "Failed to fetch stations for **{country}**.",
-        "no_stations_country": "No stations found for **{country}**.",
-        "load_station": "Failed to load station details.",
-        "generic": "An error occurred.",
-        "fetch_lists": "An error occurred while fetching lists.",
-        "no_stations_query": "No radio stations found for: **{query}**",
-        "api_unavailable": "Radio API is currently unavailable. Please try again later.",
-        "stream_unstable": "The radio stream is temporarily unstable. Playback stopped after two automatic reconnect attempts. Try the station again in a moment."
+        "search_error": "Station search failed. Try again in a moment.",
+        "no_stream_url": "This station does not have a playable stream.",
+        "provide_station": "Enter a station name to search.",
+        "fetch_countries": "Could not load the country list. Try again in a moment.",
+        "fetch_stations": "Could not load stations in **{country}**.",
+        "no_stations_country": "No stations are available in **{country}**.",
+        "load_station": "Could not load this station. Choose another one.",
+        "generic": "The radio request could not be completed. Try again.",
+        "fetch_lists": "Could not load the station browser. Try again in a moment.",
+        "no_stations_query": "No playable stations matched **{query}**.",
+        "api_unavailable": "The station directory is temporarily unavailable. Try again shortly.",
+        "stream_unstable": "This station stream became unstable, so playback stopped after two reconnect attempts. Try again shortly or choose another station."
       },
-      "favorites_title": "Recommended radio"
+      "favorites_title": "Recommended stations"
     },
     "remove": {
-      "description": "Removes a song from the queue",
+      "description": "Remove a selected upcoming track from the queue.",
       "options": {
         "song": "The song number you want to remove"
       },
@@ -970,7 +970,7 @@
       }
     },
     "removesong": {
-      "description": "Removes a song from the playlist",
+      "description": "Remove a track from one of your saved playlists.",
       "options": {
         "playlist": "The playlist you want to remove from",
         "song": "The song you want to remove"
@@ -985,7 +985,7 @@
       }
     },
     "replay": {
-      "description": "Replays the current track",
+      "description": "Restart the track currently playing.",
       "errors": {
         "not_seekable": "This track cannot restart from the beginning."
       },
@@ -994,7 +994,7 @@
       }
     },
     "resume": {
-      "description": "Resumes the current song",
+      "description": "Resume playback in this server.",
       "errors": {
         "not_paused": "The player is not paused."
       },
@@ -1003,7 +1003,7 @@
       }
     },
     "search": {
-      "description": "Search for a song",
+      "description": "Search supported catalogs and choose a track to play.",
       "options": {
         "song": "The song you are looking for"
       },
@@ -1025,7 +1025,7 @@
       }
     },
     "seek": {
-      "description": "Seek to a moment in the current track",
+      "description": "Jump to a timestamp in the current seekable track.",
       "options": {
         "duration": "Track position, for example 1m 30s"
       },
@@ -1039,7 +1039,7 @@
       }
     },
     "setup": {
-      "description": "Sets up the bot",
+      "description": "Configure Murphy features for this server.",
       "errors": {
         "channel_exists": "The song request channel already exists.",
         "channel_not_exists": "The song request channel doesn't exist."
@@ -1101,7 +1101,7 @@
       }
     },
     "shuffle": {
-      "description": "Shuffles the queue",
+      "description": "Randomize the order of upcoming tracks.",
       "messages": {
         "shuffled": "Shuffled the queue."
       },
@@ -1110,13 +1110,13 @@
       }
     },
     "skip": {
-      "description": "Skips the current song",
+      "description": "Skip the track currently playing in this server.",
       "messages": {
         "skipped": "Skipped [{title}]({uri})."
       }
     },
     "skipto": {
-      "description": "Skips to a specific song in the queue",
+      "description": "Jump to a numbered track in the queue.",
       "options": {
         "number": "The number of the song you want to skip to"
       },
@@ -1146,13 +1146,13 @@
       }
     },
     "stop": {
-      "description": "Stops the music and clears the queue",
+      "description": "Stop playback and remove all tracks from the queue.",
       "messages": {
         "stopped": "Playback stopped. The queue is empty."
       }
     },
     "volume": {
-      "description": "Sets the volume of the player",
+      "description": "Set playback volume for this server.",
       "options": {
         "number": "The volume you want to set"
       },
@@ -1176,17 +1176,17 @@
       }
     },
     "music": {
-      "description": "Music control center for playing, searching and saving tracks."
+      "description": "Play music, search for tracks and manage your saved listening library."
     },
     "audio": {
-      "description": "Audio controls for pause, resume, seek, volume, loop and autoplay.",
+      "description": "Adjust playback, volume, looping, autoplay and available audio effects.",
       "guild_premium_required": "Server-wide audio enhancements require Guild Basic or a higher guild plan.",
       "normalization_saved": "Adaptive normalization is **{state}**.",
       "crossfade_saved": "Fade transition set to **{seconds} seconds**. This performs fade-out/fade-in; true decoder overlap requires a Lavalink crossfade plugin.",
       "crossfade_disabled": "Fade transition disabled."
     },
     "queue_group": {
-      "description": "Queue controls for list, skip, move, remove and shuffle."
+      "description": "Review the queue and skip, move, remove or shuffle tracks."
     },
     "globalban": {
       "description": "Manage global user and server bans for the bot.",
@@ -2155,7 +2155,7 @@
       "premium": "Premium roll with advantage: second roll {second}, best {best}."
     },
     "poll": {
-      "description": "Create a quick poll.",
+      "description": "Create and manage native Discord polls.",
       "options": {
         "create": "Create a native Discord poll",
         "close": "Close one of this server's tracked polls",
@@ -2556,12 +2556,12 @@
       "language": "Language",
       "dj": "DJ role",
       "setup": "Setup channel",
-      "hint": "All configuration commands now live under /settings: general, music, automod, community and ai.",
+      "hint": "All configuration commands now live under /settings: general, music, automod and community.",
       "options": {
         "overview": "Show the server settings overview."
       },
       "groups": {
-        "general": "Language, prefix and announcements.",
+        "general": "Language and announcements.",
         "music": "Music, DJ and setup channel settings.",
         "automod": "Automod filters and Discord rules.",
         "community": "Autorole, selfrole, tickets and giveaways."
@@ -2712,7 +2712,7 @@
       "description": "Run creator feeds, engagement systems, server templates and growth automation",
       "options": {
         "overview": "Show Growth Suite usage and plan limits",
-        "feed-add": "Add an RSS, Atom or official YouTube creator feed",
+        "feed-add": "Add an RSS, YouTube, Twitch or Kick creator feed",
         "feed-list": "List configured creator feeds",
         "feed-remove": "Remove a creator feed",
         "role-temporary": "Give a member a role that expires automatically",
@@ -2795,27 +2795,27 @@
       "template_items": {
         "community-starter": {
           "name": "Community Starter",
-          "description": "Balanced automod, welcome, suggestions and community defaults."
+          "description": "Balanced moderation and announcements for a new community."
         },
         "creator-launch": {
           "name": "Creator Launch Kit",
-          "description": "Creator feeds, publication reminders, announcements and launch analytics."
+          "description": "Creator announcements and alerts for new releases."
         },
         "gaming-community": {
           "name": "Gaming Community",
-          "description": "Stricter anti-spam, events, temporary voice defaults and role-ready settings."
+          "description": "Stricter spam protection and temporary voice rooms."
         },
         "support-desk": {
           "name": "Support Server",
-          "description": "Ticket-oriented defaults with clean moderation and support workflows."
+          "description": "Tickets and balanced moderation for a support server."
         },
         "music-venue": {
           "name": "Music Venue",
-          "description": "Always-on friendly music defaults, AutoDJ and controlled server playback."
+          "description": "Autoplay and AutoDJ with a twelve-hour repeat window."
         },
         "advanced-moderation": {
           "name": "Advanced Moderation",
-          "description": "Strict protection, raid detection and moderator accountability alerts."
+          "description": "Strict moderation, raid protection and alerts for unusual moderator activity."
         }
       },
       "concierge_exists": "This server already has an active Concierge request",
@@ -2951,13 +2951,13 @@
       }
     },
     "premium": {
-      "description": "Open premium management",
+      "description": "Check Premium status, remaining time and available plans",
       "title": "Murphy Premium",
       "options": {
         "status": "Show your Premium status and remaining subscription time",
         "plans": "Compare every available Murphy Premium plan",
         "benefits": "Show the capabilities included with your current plan",
-        "usage": "Show your current Premium limits and AI credit usage",
+        "usage": "Show your current Premium limits and allowances",
         "trial": "Start the one-time seven-day server trial after setup"
       },
       "supporter_badge": "Murphy Supporter badge active",
@@ -2966,10 +2966,10 @@
         "started": "Your seven-day Server Pro trial is active. Use Premium status to see the exact expiration time. Existing subscriptions and previous trials are never replaced.",
         "compare_plans": "Keep Guild Basic",
         "lifecycle": {
-          "day2_title": "Your Premium trial is delivering value",
+          "day2_title": "Your Premium trial is active",
           "day2_body": "Try scheduled backups and one server automation today. These are two of the most useful Guild Basic workflows.",
           "day5_title": "Two days remain in your Premium trial",
-          "day5_body": "Review server insights and the restored player experience before deciding whether Guild Basic saves your team time.",
+          "day5_body": "Review server insights and restored playback before deciding whether to keep Guild Basic.",
           "ending_title": "Your Premium trial ends tomorrow",
           "ending_body": "Guild Basic keeps scheduled backups, 24/7 playback, higher limits and weekly server reports active.",
           "expired_title": "Your Premium trial has ended",
@@ -2989,18 +2989,18 @@
       },
       "inactive": {
         "title": "Premium is not active",
-        "description": "Choose a plan below to unlock higher limits, advanced music tools and priority features."
+        "description": "Choose a plan below to unlock higher limits and advanced Premium tools."
       },
       "plans": {
         "title": "Available subscriptions",
-        "personal": "Personal Premium, 25 playlists, 25 daily AI requests and 90-day analytics.",
-        "guild_basic": "Premium for 1 server with 24/7 music, filters and 5 community tools.",
-        "guild_plus": "Premium for 3 servers with 365-day analytics and 25 community tools.",
-        "supporter": "Discord-exclusive support plan for 5 servers with the highest limits.",
+        "personal": "Personal Premium with cloud queues, larger libraries and 90-day personal analytics.",
+        "guild_basic": "Premium for 1 server with 24/7 music, weekly backups and higher community limits.",
+        "guild_plus": "Premium for 3 servers with exports, comparisons, daily backups and advanced automation.",
+        "supporter": "Discord-exclusive support plan for 5 servers with badges, beta access and the highest limits.",
         "lifetime_title": "One-time permanent purchases",
         "personal_lifetime": "Permanent Personal Premium for one Discord account with no renewal.",
         "guild_lifetime": "Permanent Guild Basic activation for one claimable Discord server.",
-        "vat": "Prices are monthly and may have VAT added by the payment platform."
+        "vat": "Subscription prices are monthly. Listed one-time prices never renew. Discord may add local taxes."
       },
       "usage": {
         "title": "Plan usage and limits",
@@ -3633,7 +3633,7 @@
       "commands": "Open the command catalogue",
       "hash": "Calculate a text hash",
       "timediff": "Compare the creation times of two Discord IDs",
-      "randomhex": "Generate a random colour",
+      "randomhex": "Generate a random color",
       "serverbanner": "View the server banner",
       "memberbanner": "View a member's server banner"
     },
@@ -3822,7 +3822,7 @@
       "shared": "**Both listen to** {artists}",
       "no_shared": "No shared artists yet.",
       "shared_track": "**Your song** {title} · {author}",
-      "blend_hint": "Join a voice channel together and use /music blend for one queue with both your favourites."
+      "blend_hint": "Join a voice channel together and use /music blend for one queue with both your favorites."
     },
     "vibe": {
       "description": "Show someone's music personality on this server",
@@ -3989,12 +3989,12 @@
   "player": {
     "errors": {
       "no_player": "There is no active music player on this server.",
-      "no_channel": "You need to be in a voice channel to use this command.",
+      "no_channel": "Join a voice channel before using this command.",
       "queue_empty": "The queue is empty.",
       "no_previous": "There are no previous songs in the queue.",
       "no_song": "There are no songs in the queue.",
       "already_paused": "The song is already paused.",
-      "not_in_same_voice": "You need to be in the same voice channel as the bot to use this command.",
+      "not_in_same_voice": "Join the voice channel where Murphy is playing.",
       "not_paused": "The player is not paused.",
       "user_not_in_voice_channel": "You need to be in a voice channel to use this command.",
       "not_in_voice": "You need to be connected to a voice channel.",
@@ -4005,7 +4005,7 @@
       "source_unavailable": "This music source is currently unavailable or disabled on this server.",
       "no_results": "No playable results were found. Try another link or search phrase.",
       "search_failed": "There was an error while loading this track. Try another link or source.",
-      "no_voice": "Join a voice channel first, then try again.",
+      "no_voice": "Join the same voice channel as Murphy, then try again.",
       "different_voice": "You need to be in the same voice channel as the bot to use this.",
       "missing_bot_permissions": "I am missing voice/channel permissions. Check Connect, Speak, View Channel and Send Messages.",
       "missing_user_permissions": "You do not have the required permissions to use this.",
@@ -4034,7 +4034,7 @@
       "now_playing": "Now Playing",
       "nothing_playing": "Nothing is playing right now.",
       "added_to_queue": "Queued **{title}** for playback.",
-      "added_playlist_to_queue": "Added [{length}] songs from the playlist to the queue.",
+      "added_playlist_to_queue": "Added **{length} tracks** from the playlist to the queue.",
       "duration": "Duration:",
       "author": "Author:",
       "requester": "Requested by:",
@@ -4075,7 +4075,7 @@
       "no_music_playing": "Nothing is playing right now."
     },
     "setupButton": {
-      "no_voice_channel_button": "You are not connected to a voice channel to use this button.",
+      "no_voice_channel_button": "Join a voice channel to use the player controls.",
       "different_voice_channel_button": "Join <#{channel}> to use the player controls.",
       "now_playing": "Now Playing",
       "live": "LIVE",
@@ -4998,7 +4998,7 @@
       "buy-seeds": "Buy seeds",
       "plant": "Plant",
       "water": "Water",
-      "fertilize": "Fertilise",
+      "fertilize": "Fertilize",
       "harvest": "Harvest",
       "harvest-all": "Harvest all",
       "sell": "Sell",
@@ -5006,7 +5006,7 @@
       "expand": "Expand",
       "upgrade": "Upgrade",
       "compost": "Compost",
-      "buy-fertilizer": "Buy fertiliser",
+      "buy-fertilizer": "Buy fertilizer",
       "rename": "Rename",
       "select": "Select",
       "reset-plot": "Clear a plot",
@@ -5101,7 +5101,7 @@
     "mines": "Find the safe cells",
     "nim": "Take the last stone",
     "higher-lower": "Guess higher or lower",
-    "mastermind": "Crack the colour code",
+    "mastermind": "Crack the color code",
     "anagram": "Arrange the letters into a word",
     "math": "Solve arithmetic questions",
     "fractions": "Choose the larger fraction",
