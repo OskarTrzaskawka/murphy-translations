@@ -590,6 +590,7 @@
         "command": "Skipunin sem þú vilt fá upplýsingar um"
       },
       "placeholder_category": "Veldu flokk",
+      "command_not_found": "Ég fann ekki `{command}` í skipanahandbókinni. Prófaðu `/help` til að skoða tiltækar skipanir.",
       "no_commands": "Engar skipanir í þessum flokki.",
       "category": {
         "4fun": "Gaman",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` opnar þessa handbók. Nefndu Murphy með skipanafni til að sjá upplýsingar um það, eða notaðu skástrikunarskipanirnar sem sýndar eru hér að neðan.",
       "choose_category": "Veldu flokk hér að neðan.",
       "more_subcommands": "og {count} fleiri undirskipanir.",
-      "command_not_found": "Ég fann ekki `{command}` í skipanahandbókinni. Prófaðu `/help` til að skoða tiltækar skipanir.",
       "category_hint": "{count} skipanir. Veldu eina hér fyrir neðan til að sjá nánar.",
       "category_count": "{roots} skipanir · {count} valkostir",
       "about": {
