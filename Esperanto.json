@@ -590,6 +590,7 @@
         "command": "La komando vi volas akiri informojn pri"
       },
       "placeholder_category": "Elektu kategorion",
+      "command_not_found": "Mi ne povis trovi `{command}` en la komanda gvidilo. Provu `/help` por foliumi disponeblajn komandojn.",
       "no_commands": "Neniu ordono en ĉi tiu kategorio.",
       "category": {
         "4fun": "Amuzo",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` malfermas ĉi tiun gvidilon. Menciu Murphy kun komandnomo por vidi ĝiajn detalojn, aŭ uzu la oblikvo-komandojn montritajn sube.",
       "choose_category": "Elektu kategorion malsupre.",
       "more_subcommands": "kaj{count}Pli da subkomando (j).",
-      "command_not_found": "Mi ne povis trovi `{command}` en la komanda gvidilo. Provu `/help` por foliumi disponeblajn komandojn.",
       "category_hint": "{count} komandoj. Elektu unu sube por detaloj.",
       "category_count": "{roots} komandoj · {count} opcioj",
       "about": {
