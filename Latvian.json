@@ -590,6 +590,7 @@
         "command": "Komanda, par kuru vēlaties iegūt informāciju"
       },
       "placeholder_category": "Izvēlieties kategoriju",
+      "command_not_found": "Es nevarēju atrast `{command}` komandu rokasgrāmatā. Izmēģiniet `/help`, lai pārlūkotu pieejamās komandas.",
       "no_commands": "Šajā kategorijā nav komandu.",
       "category": {
         "4fun": "Jautri",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` atver šo rokasgrāmatu. Piemini Murphy ar komandas nosaukumu, lai skatītu tās informāciju, vai izmantojiet tālāk norādītās slīpsvītras komandas.",
       "choose_category": "Izvēlieties kategoriju zemāk.",
       "more_subcommands": "un vēl {count} apakškomandu(-as).",
-      "command_not_found": "Es nevarēju atrast `{command}` komandu rokasgrāmatā. Izmēģiniet `/help`, lai pārlūkotu pieejamās komandas.",
       "category_hint": "{count} komandas. Izvēlies vienu zemāk, lai redzētu sīkāk.",
       "category_count": "komandas: {roots} · opcijas: {count}",
       "about": {

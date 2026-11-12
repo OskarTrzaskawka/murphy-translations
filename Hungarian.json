@@ -590,6 +590,7 @@
         "command": "A parancs, amelyről információt szeretne kapni"
       },
       "placeholder_category": "Válasszon egy kategóriát",
+      "command_not_found": "Nem találtam `{command}` a parancs útmutatóban. Próbálja ki az `/help`-et az elérhető parancsok böngészéséhez.",
       "no_commands": "Ebben a kategóriában nincsenek parancsok.",
       "category": {
         "4fun": "Szórakozás",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` nyitja meg ezt az útmutatót. A részletek megtekintéséhez említse meg az Murphy parancsot egy parancsnévvel, vagy használja az alább látható perjel parancsokat.",
       "choose_category": "Válasszon egy kategóriát lent.",
       "more_subcommands": "és {count} további alparancs(ok).",
-      "command_not_found": "Nem találtam `{command}` a parancs útmutatóban. Próbálja ki az `/help`-et az elérhető parancsok böngészéséhez.",
       "category_hint": "{count} parancs. Válassz egyet lent a részletekhez.",
       "category_count": "{roots} parancs · {count} lehetőség",
       "about": {

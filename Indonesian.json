@@ -590,6 +590,7 @@
         "command": "Perintah yang ingin Anda dapatkan infonya"
       },
       "placeholder_category": "Pilih kategori",
+      "command_not_found": "Perintah `{command}` tidak ditemukan. Gunakan `/help` untuk melihat daftar perintah.",
       "no_commands": "Tidak ada perintah dalam kategori ini.",
       "category": {
         "4fun": "Seru",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` membuka panduan ini. Sebutkan Murphy dengan nama perintah untuk melihat detailnya, atau gunakan perintah garis miring di bawah ini.",
       "choose_category": "Pilih kategori di bawah ini.",
       "more_subcommands": "dan {count} sub-perintah lainnya.",
-      "command_not_found": "Perintah `{command}` tidak ditemukan. Gunakan `/help` untuk melihat daftar perintah.",
       "category_hint": "{count} perintah. Pilih salah satu di bawah untuk detail.",
       "category_count": "{roots} perintah · {count} opsi",
       "about": {

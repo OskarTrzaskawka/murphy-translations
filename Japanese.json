@@ -590,6 +590,7 @@
         "command": "情報を取得したいコマンド"
       },
       "placeholder_category": "カテゴリを選択してください",
+      "command_not_found": "コマンドガイドに `{command}` が見つかりませんでした。 `/help` を試して、使用可能なコマンドを参照してください。",
       "no_commands": "このカテゴリにはコマンドがありません。",
       "category": {
         "4fun": "楽しい",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` でこのガイドが開きます。コマンド名とともに Murphy を指定して詳細を確認するか、以下に示すスラッシュ コマンドを使用します。",
       "choose_category": "以下のカテゴリを選択してください。",
       "more_subcommands": "および {count} のその他のサブコマンド。",
-      "command_not_found": "コマンドガイドに `{command}` が見つかりませんでした。 `/help` を試して、使用可能なコマンドを参照してください。",
       "category_hint": "{count}個のコマンド。詳細は下から選んでね。",
       "category_count": "{roots}個のコマンド · {count}個のオプション",
       "about": {

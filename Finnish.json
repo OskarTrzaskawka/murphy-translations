@@ -590,6 +590,7 @@
         "command": "Komento, josta haluat saada tietoa"
       },
       "placeholder_category": "Valitse luokka",
+      "command_not_found": "En löytänyt `{command}` komentooppaasta. Kokeile `/help`:ää selataksesi käytettävissä olevia komentoja.",
       "no_commands": "Ei komentoja tässä luokassa.",
       "category": {
         "4fun": "Hauskaa",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` avaa tämän oppaan. Mainitse Murphy komennon nimellä nähdäksesi sen tiedot tai käytä alla olevia vinoviivakomentoja.",
       "choose_category": "Valitse alta kategoria.",
       "more_subcommands": "ja {count} muuta alakomentoa.",
-      "command_not_found": "En löytänyt `{command}` komentooppaasta. Kokeile `/help`:ää selataksesi käytettävissä olevia komentoja.",
       "category_hint": "{count} komentoa. Valitse alta yksi nähdäksesi tiedot.",
       "category_count": "{roots} komentoa · {count} vaihtoehtoa",
       "about": {

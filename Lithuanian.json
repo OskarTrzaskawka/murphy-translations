@@ -590,6 +590,7 @@
         "command": "Komanda, apie kurią norite gauti informacijos"
       },
       "placeholder_category": "Pasirinkite kategoriją",
+      "command_not_found": "Komandų vadove nepavyko rasti `{command}`. Išbandykite `/help`, kad naršytumėte galimas komandas.",
       "no_commands": "Šioje kategorijoje nėra komandų.",
       "category": {
         "4fun": "Linksma",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` atidaro šį vadovą. Paminėkite Murphy su komandos pavadinimu, kad pamatytumėte išsamią jos informaciją, arba naudokite toliau pateiktas pasvirusias komandas.",
       "choose_category": "Toliau pasirinkite kategoriją.",
       "more_subcommands": "ir dar {count} subkomandą (-as).",
-      "command_not_found": "Komandų vadove nepavyko rasti `{command}`. Išbandykite `/help`, kad naršytumėte galimas komandas.",
       "category_hint": "Komandų: {count}. Pasirink vieną žemiau, kad pamatytum detales.",
       "category_count": "komandos: {roots} · parinktys: {count}",
       "about": {

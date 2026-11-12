@@ -590,6 +590,7 @@
         "command": "An t-ordú mian leat eolas a fháil ar"
       },
       "placeholder_category": "Roghnaigh catagóir",
+      "command_not_found": "Níorbh fhéidir liom `{command}` a aimsiú sa treoir ordaithe. Bain triail as `/help` chun na horduithe atá ar fáil a bhrabhsáil.",
       "no_commands": "Aon orduithe sa chatagóir seo.",
       "category": {
         "4fun": "Spraoi agus spraoi",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` osclaíonn an treoir seo. Luaigh Murphy le hainm ordaithe chun a shonraí a fheiceáil, nó bain úsáid as na horduithe slais a thaispeántar thíos.",
       "choose_category": "Roghnaigh catagóir thíos.",
       "more_subcommands": "agus{count}níos mó subcommand(s).",
-      "command_not_found": "Níorbh fhéidir liom `{command}` a aimsiú sa treoir ordaithe. Bain triail as `/help` chun na horduithe atá ar fáil a bhrabhsáil.",
       "category_hint": "{count} ordú. Roghnaigh ceann thíos le haghaidh sonraí.",
       "category_count": "{roots} ordú · {count} rogha",
       "about": {

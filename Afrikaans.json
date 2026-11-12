@@ -590,6 +590,7 @@
         "command": "Die opdrag waaroor jy inligting wil kry"
       },
       "placeholder_category": "Kies 'n kategorie",
+      "command_not_found": "Ek kon nie `{command}` in die opdraggids vind nie. Probeer `/help` om deur beskikbare opdragte te blaai.",
       "no_commands": "Geen opdragte in hierdie kategorie nie.",
       "category": {
         "4fun": "Pret",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` maak hierdie gids oop. Noem Murphy met 'n opdragnaam om sy besonderhede te sien, of gebruik die skuinsstreepopdragte wat hieronder getoon word.",
       "choose_category": "Kies 'n kategorie hieronder.",
       "more_subcommands": "en {count} meer subopdrag(te).",
-      "command_not_found": "Ek kon nie `{command}` in die opdraggids vind nie. Probeer `/help` om deur beskikbare opdragte te blaai.",
       "category_hint": "{count} opdragte. Kies een hieronder vir besonderhede.",
       "category_count": "{roots} opdragte · {count} opsies",
       "about": {

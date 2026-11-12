@@ -590,6 +590,7 @@
         "command": "您想要获取信息的命令"
       },
       "placeholder_category": "选择一个类别",
+      "command_not_found": "我在命令指南中找不到 `{command}`。尝试 `/help` 浏览可用命令。",
       "no_commands": "此类别中没有命令。",
       "category": {
         "4fun": "乐趣",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` 打开本指南。使用命令名称提及 Murphy 以查看其详细信息，或使用如下所示的斜杠命令。",
       "choose_category": "选择下面的类别。",
       "more_subcommands": "和 {count} 更多子命令。",
-      "command_not_found": "我在命令指南中找不到 `{command}`。尝试 `/help` 浏览可用命令。",
       "category_hint": "共 {count} 个命令。在下方选择一个查看详情。",
       "category_count": "{roots} 个命令 · {count} 个选项",
       "about": {

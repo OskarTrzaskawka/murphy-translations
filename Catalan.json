@@ -590,6 +590,7 @@
         "command": "L' ordre en la que voleu obtenir informació"
       },
       "placeholder_category": "Seleccioneu una categoria",
+      "command_not_found": "No he pogut trobar `{command}` a la guia d'ordres. Proveu `/help` per explorar les ordres disponibles.",
       "no_commands": "No hi ha ordres en aquesta categoria.",
       "category": {
         "4fun": "Diversió",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` obre aquesta guia. Esmenteu Murphy amb un nom d'ordre per veure'n els detalls o utilitzeu les ordres de barra inclinada que es mostren a continuació.",
       "choose_category": "Escolliu una categoria a sota.",
       "more_subcommands": "i{count}Més subordre(s).",
-      "command_not_found": "No he pogut trobar `{command}` a la guia d'ordres. Proveu `/help` per explorar les ordres disponibles.",
       "category_hint": "{count} ordres. Tria'n una a sota per veure'n els detalls.",
       "category_count": "{roots} ordres · {count} opcions",
       "about": {

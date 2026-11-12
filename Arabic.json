@@ -590,6 +590,7 @@
         "command": "الأمر الذي تريد الحصول على معلومات عنه"
       },
       "placeholder_category": "حدد فئة",
+      "command_not_found": "لم أتمكن من العثور على `{command}` في دليل الأوامر. حاول `/help` لتصفح الأوامر المتاحة.",
       "no_commands": "لا توجد أوامر في هذه الفئة.",
       "category": {
         "4fun": "هزار",
@@ -620,7 +621,6 @@
       "home_description": "يفتح `@Murphy commands` هذا الدليل. اذكر Murphy باسم الأمر لمعرفة تفاصيله، أو استخدم أوامر الشرطة المائلة الموضحة أدناه.",
       "choose_category": "اختر فئة أدناه.",
       "more_subcommands": "و{count} المزيد من الأوامر الفرعية.",
-      "command_not_found": "لم أتمكن من العثور على `{command}` في دليل الأوامر. حاول `/help` لتصفح الأوامر المتاحة.",
       "category_hint": "{count} أمر. اختر واحدًا بالأسفل لعرض التفاصيل.",
       "category_count": "{roots} أوامر · {count} خيارات",
       "about": {

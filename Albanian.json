@@ -590,6 +590,7 @@
         "command": "Komanda që dëshironi të merrni informacione mbi"
       },
       "placeholder_category": "Zgjidh një kategori",
+      "command_not_found": "Nuk mund të gjeja `{command}` në udhëzuesin e komandës. Provoni `/help` për të shfletuar komandat e disponueshme.",
       "no_commands": "Asnjë urdhër në këtë kategori.",
       "category": {
         "4fun": "Argëtim",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` hap këtë udhëzues. Përmendni Murphy me një emër komande për të parë detajet e tij, ose përdorni komandat e pjerrëta të treguara më poshtë.",
       "choose_category": "Zgjidh një kategori më poshtë.",
       "more_subcommands": "dhe{count}Më shumë komanda.",
-      "command_not_found": "Nuk mund të gjeja `{command}` në udhëzuesin e komandës. Provoni `/help` për të shfletuar komandat e disponueshme.",
       "category_hint": "{count} komanda. Zgjidh një më poshtë për detaje.",
       "category_count": "{roots} komanda · {count} opsione",
       "about": {

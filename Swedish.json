@@ -590,6 +590,7 @@
         "command": "Kommandot du vill få information om"
       },
       "placeholder_category": "Välj en kategori",
+      "command_not_found": "Jag kunde inte hitta `{command}` i kommandoguiden. Försök med `/help` för att bläddra bland tillgängliga kommandon.",
       "no_commands": "Inga kommandon i denna kategori.",
       "category": {
         "4fun": "Gyckel",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` öppnar den här guiden. Nämn Murphy med ett kommandonamn för att se dess detaljer, eller använd snedstreckkommandona som visas nedan.",
       "choose_category": "Välj en kategori nedan.",
       "more_subcommands": "och {count} fler underkommandon.",
-      "command_not_found": "Jag kunde inte hitta `{command}` i kommandoguiden. Försök med `/help` för att bläddra bland tillgängliga kommandon.",
       "category_hint": "{count} kommandon. Välj ett nedan för detaljer.",
       "category_count": "{roots} kommandon · {count} alternativ",
       "about": {

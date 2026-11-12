@@ -590,6 +590,7 @@
         "command": "O comando que queres obter información sobre"
       },
       "placeholder_category": "Seleccione unha categoría",
+      "command_not_found": "Non puiden atopar `{command}` na guía de comandos. Proba `/help` para buscar comandos dispoñibles.",
       "no_commands": "Non hai comandos nesta categoría.",
       "category": {
         "4fun": "divertido",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` abre esta guía. Menciona Murphy cun nome de comando para ver os seus detalles ou usa os comandos de barra inclinada que se mostran a continuación.",
       "choose_category": "Seleccione unha categoría inferior.",
       "more_subcommands": "e{count}Máis subcomandante (s).",
-      "command_not_found": "Non puiden atopar `{command}` na guía de comandos. Proba `/help` para buscar comandos dispoñibles.",
       "category_hint": "{count} ordes. Escolle unha embaixo para ver os detalles.",
       "category_count": "{roots} ordes · {count} opcións",
       "about": {

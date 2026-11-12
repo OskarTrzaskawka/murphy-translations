@@ -590,6 +590,7 @@
         "command": "Comanda despre care doriți să obțineți informații"
       },
       "placeholder_category": "Selectați o categorie",
+      "command_not_found": "Nu am putut găsi `{command}` în ghidul de comandă. Încercați `/help` pentru a căuta comenzile disponibile.",
       "no_commands": "Nu există comenzi în această categorie.",
       "category": {
         "4fun": "Distracţie",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` deschide acest ghid. Menționați Murphy cu un nume de comandă pentru a vedea detaliile acesteia sau utilizați comenzile slash prezentate mai jos.",
       "choose_category": "Alegeți o categorie de mai jos.",
       "more_subcommands": "și încă {count} subcomandă(e).",
-      "command_not_found": "Nu am putut găsi `{command}` în ghidul de comandă. Încercați `/help` pentru a căuta comenzile disponibile.",
       "category_hint": "{count} comenzi. Alege una mai jos pentru detalii.",
       "category_count": "{roots} comenzi · {count} opțiuni",
       "about": {

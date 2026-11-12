@@ -590,6 +590,7 @@
         "command": "Informazioa jaso nahi duzun komandoa"
       },
       "placeholder_category": "Hautatu kategoria bat",
+      "command_not_found": "Ezin izan dut `{command}` aurkitu komandoen gidan. Saiatu `/help` erabilgarri dauden komandoak arakatzeko.",
       "no_commands": "Kategoria honetan ez dago komandorik.",
       "category": {
         "4fun": "Dibertigarria",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands`-k gida hau irekitzen du. Aipatu Murphy komando-izen batekin haren xehetasunak ikusteko, edo erabili behean agertzen diren barra-komandoak.",
       "choose_category": "Aukeratu kategoria bat behean.",
       "more_subcommands": "eta{count}Azpikomando gehiago.",
-      "command_not_found": "Ezin izan dut `{command}` aurkitu komandoen gidan. Saiatu `/help` erabilgarri dauden komandoak arakatzeko.",
       "category_hint": "{count} komando. Aukeratu bat behean xehetasunetarako.",
       "category_count": "{roots} komando · {count} aukera",
       "about": {

@@ -590,6 +590,7 @@
         "command": "De opdracht waarover u informatie wilt krijgen"
       },
       "placeholder_category": "Selecteer een categorie",
+      "command_not_found": "Ik kon `{command}` niet vinden in de opdrachtgids. Probeer `/help` om door de beschikbare opdrachten te bladeren.",
       "no_commands": "Geen opdrachten in deze categorie.",
       "category": {
         "4fun": "Plezier",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` opent deze handleiding. Vermeld Murphy met een commandonaam om de details ervan te zien, of gebruik de onderstaande slash-commando's.",
       "choose_category": "Kies hieronder een categorie.",
       "more_subcommands": "en {count} meer subcommando(s).",
-      "command_not_found": "Ik kon `{command}` niet vinden in de opdrachtgids. Probeer `/help` om door de beschikbare opdrachten te bladeren.",
       "category_hint": "{count} commando's. Kies er hieronder een voor details.",
       "category_count": "{roots} commando's · {count} opties",
       "about": {

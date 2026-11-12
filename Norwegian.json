@@ -590,6 +590,7 @@
         "command": "Kommandoen du ønsker å få informasjon om"
       },
       "placeholder_category": "Velg en kategori",
+      "command_not_found": "Jeg kunne ikke finne `{command}` i kommandoveiledningen. Prøv `/help` for å bla gjennom tilgjengelige kommandoer.",
       "no_commands": "Ingen kommandoer i denne kategorien.",
       "category": {
         "4fun": "Moro",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` åpner denne veiledningen. Nevn Murphy med et kommandonavn for å se detaljene, eller bruk skråstrekkommandoene vist nedenfor.",
       "choose_category": "Velg en kategori nedenfor.",
       "more_subcommands": "og {count} flere underkommandoer.",
-      "command_not_found": "Jeg kunne ikke finne `{command}` i kommandoveiledningen. Prøv `/help` for å bla gjennom tilgjengelige kommandoer.",
       "category_hint": "{count} kommandoer. Velg én nedenfor for detaljer.",
       "category_count": "{roots} kommandoer · {count} valg",
       "about": {

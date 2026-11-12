@@ -590,6 +590,7 @@
         "command": "Käsk, mille kohta soovite teavet saada"
       },
       "placeholder_category": "Valige kategooria",
+      "command_not_found": "Ma ei leidnud käsujuhendist `{command}`. Saadaolevate käskude sirvimiseks proovige `/help`.",
       "no_commands": "Selles kategoorias pole käske.",
       "category": {
         "4fun": "Lõbus",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` avab selle juhendi. Nimetage Murphy käsunimega, et näha selle üksikasju, või kasutage allpool näidatud kaldkriipsu käske.",
       "choose_category": "Valige altpoolt kategooria.",
       "more_subcommands": "ja {count} veel alamkäsku(sid).",
-      "command_not_found": "Ma ei leidnud käsujuhendist `{command}`. Saadaolevate käskude sirvimiseks proovige `/help`.",
       "category_hint": "{count} käsku. Vali allpool üks, et näha üksikasju.",
       "category_count": "käsud: {roots} · valikud: {count}",
       "about": {
