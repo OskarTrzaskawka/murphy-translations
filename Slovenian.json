@@ -590,6 +590,7 @@
         "command": "Ukaz, na katerem želite dobiti informacije"
       },
       "placeholder_category": "Izberite kategorijo",
+      "command_not_found": "Nisem našel `{command}` v vodniku za ukaze. Poskusite `/help` za brskanje po razpoložljivih ukazih.",
       "no_commands": "V tej kategoriji ni ukazov.",
       "category": {
         "4fun": "Zabava",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` odpre ta vodnik. Omenite Murphy z imenom ukaza, da si ogledate njegove podrobnosti, ali uporabite spodaj prikazane ukaze s poševnico.",
       "choose_category": "Izberite kategorijo spodaj.",
       "more_subcommands": "in {count} več podpoveljnikov.",
-      "command_not_found": "Nisem našel `{command}` v vodniku za ukaze. Poskusite `/help` za brskanje po razpoložljivih ukazih.",
       "category_hint": "{count} ukazov. Spodaj izberi enega za podrobnosti.",
       "category_count": "{roots} ukazov · {count} možnosti",
       "about": {
