@@ -590,6 +590,7 @@
         "command": "הפקודה שאתה רוצה לקבל מידע עליה"
       },
       "placeholder_category": "בחר קטגוריה",
+      "command_not_found": "לא הצלחתי למצוא את `{command}` במדריך הפקודות. נסה את `/help` כדי לעיין בפקודות הזמינות.",
       "no_commands": "אין פקודות בקטגוריה זו.",
       "category": {
         "4fun": "כיף",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` פותח את המדריך הזה. ציין את Murphy עם שם פקודה כדי לראות את הפרטים שלו, או השתמש בפקודות הלוכסניות המוצגות למטה.",
       "choose_category": "בחר קטגוריה למטה.",
       "more_subcommands": "ועוד {count} פקודות משנה נוספות.",
-      "command_not_found": "לא הצלחתי למצוא את `{command}` במדריך הפקודות. נסה את `/help` כדי לעיין בפקודות הזמינות.",
       "category_hint": "{count} פקודות. בחרו אחת למטה לפרטים.",
       "category_count": "{roots} פקודות · {count} אפשרויות",
       "about": {
