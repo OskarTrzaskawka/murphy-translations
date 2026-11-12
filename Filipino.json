@@ -590,6 +590,7 @@
         "command": "Ang utos kung saan mo gustong makakuha ng impormasyon"
       },
       "placeholder_category": "Pumili ng kategorya",
+      "command_not_found": "Hindi ko mahanap ang `{command}` sa command guide. Subukan ang `/help` upang mag-browse ng mga available na command.",
       "no_commands": "Walang mga utos sa kategoryang ito.",
       "category": {
         "4fun": "Masaya",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` ang gabay na ito. Banggitin ang Murphy na may pangalan ng command upang makita ang mga detalye nito, o gamitin ang mga slash command na ipinapakita sa ibaba.",
       "choose_category": "Pumili ng kategorya sa ibaba.",
       "more_subcommands": "at {count} pang (mga) subcommand.",
-      "command_not_found": "Hindi ko mahanap ang `{command}` sa command guide. Subukan ang `/help` upang mag-browse ng mga available na command.",
       "category_hint": "{count} na command. Pumili ng isa sa ibaba para sa detalye.",
       "category_count": "{roots} na command · {count} na opsyon",
       "about": {
