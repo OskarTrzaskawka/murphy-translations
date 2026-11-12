@@ -13,6 +13,9 @@ files:
         sq-AL: Albanian
         am-ET: Amharic
         ar-SA: Arabic
+        ar-BH: ArabicBahrain
+        ar-EG: ArabicEgypt
+        ar-YE: ArabicYemen
         an-ES: Aragonese
         hy-AM: Armenian
         frp-IT: Arpitan
@@ -20,6 +23,7 @@ files:
         ast-ES: Asturian
         tay-TW: Atayal
         av-DA: Avaric
+        ae-IR: Avestan
         ay-BO: Aymara
         az-AZ: Azerbaijani
         ban-ID: Balinese
@@ -29,6 +33,7 @@ files:
         eu-ES: Basque
         be-BY: Belarusian
         bn-BD: Bengali
+        bn-IN: BengaliIndia
         ber-DZ: Berber
         bh-IN: Bihari
         bfo-BF: Birifor
@@ -45,6 +50,8 @@ files:
         ny-MW: Chichewa
         zh-CN: ChineseCN
         zh-HK: ChineseHK
+        zh-SG: ChineseSimplifiedSingapore
+        zh-MO: ChineseTraditionalMacau
         zh-TW: ChineseTW
         cv-CU: Chuvash
         kw-GB: Cornish
@@ -56,8 +63,34 @@ files:
         fa-AF: Dari
         dv-MV: Dhivehi
         nl-NL: Dutch
+        nl-BE: DutchBelgium
+        nl-SR: DutchSuriname
         dz-BT: Dzongkha
+        en-AR: EnglishArabia
+        en-AU: EnglishAustralia
+        en-BZ: EnglishBelize
+        en-CA: EnglishCanada
+        en-CB: EnglishCaribbean
+        en-CN: EnglishChina
+        en-DK: EnglishDenmark
         en-GB: EnglishGB
+        en-HK: EnglishHongKong
+        en-IN: EnglishIndia
+        en-ID: EnglishIndonesia
+        en-IE: EnglishIreland
+        en-JM: EnglishJamaica
+        en-JA: EnglishJapan
+        en-MY: EnglishMalaysia
+        en-NZ: EnglishNewZealand
+        en-NO: EnglishNorway
+        en-PH: EnglishPhilippines
+        en-PT: EnglishPirate
+        en-PR: EnglishPuertoRico
+        en-SG: EnglishSingapore
+        en-ZA: EnglishSouthAfrica
+        en-SE: EnglishSweden
+        en-UD: EnglishUpsideDown
+        en-ZW: EnglishZimbabwe
         eo-UY: Esperanto
         et-EE: Estonian
         ee-GH: Ewe
@@ -68,7 +101,11 @@ files:
         vls-BE: Flemish
         fra-DE: Franconian
         fr-FR: French
+        fr-BE: FrenchBelgium
         fr-CA: FrenchCA
+        fr-LU: FrenchLuxembourg
+        fr-QC: FrenchQuebec
+        fr-CH: FrenchSwitzerland
         fy-NL: Frisian
         fur-IT: Friulian
         ff-ZA: Fula
@@ -76,7 +113,14 @@ files:
         gl-ES: Galician
         ka-GE: Georgian
         de-DE: German
+        de-AT: GermanAustria
+        de-BE: GermanBelgium
+        de-LI: GermanLiechtenstein
+        de-LU: GermanLuxembourg
+        de-CH: GermanSwitzerland
+        got-DE: Gothic
         el-GR: Greek
+        el-CY: GreekCyprus
         kl-GL: Greenlandic
         gn-PY: Guarani
         gu-IN: Gujarati
@@ -98,17 +142,20 @@ files:
         iu-NU: Inuktitut
         ga-IE: Irish
         it-IT: Italian
+        it-CH: ItalianSwitzerland
         ja-JP: Japanese
         jv-ID: Javanese
         kab-KAB: Kabyle
         kn-IN: Kannada
         pam-PH: Kapampangan
         ks-IN: Kashmiri
+        ks-PK: KashmiriPakistan
         csb-PL: Kashubian
         kk-KZ: Kazakh
         km-KH: Khmer
         quc-GT: Kiche
         rw-RW: Kinyarwanda
+        tlh-AA: Klingon
         kv-KO: Komi
         kg-CG: Kongo
         kok-IN: Konkani
@@ -126,6 +173,7 @@ files:
         ln-CD: Lingala
         lt-LT: Lithuanian
         jbo-EN: Lojban
+        lol-US: LOLCAT
         dsb-DE: LowerSorbian
         nds-DE: LowGerman
         lg-UG: Luganda
@@ -136,6 +184,7 @@ files:
         mg-MG: Malagasy
         ms-MY: Malay
         ml-IN: Malayalam
+        ms-BN: MalayBrunei
         mt-MT: Maltese
         gv-IM: Manx
         mi-NZ: Maori
@@ -150,16 +199,19 @@ files:
         na-NR: Nauru
         ng-NA: Ndonga
         ne-NP: Nepali
+        ne-IN: NepaliIndia
         pcm-NG: NigerianPidgin
         se-NO: NorthernSami
         ns-ZA: NorthernSotho
         no-NO: Norwegian
+        nb-NO: NorwegianBokmal
         nn-NO: NorwegianNynorsk
         oc-FR: Occitan
         or-IN: Odia
         oj-CA: Ojibwe
         om-ET: Oromo
         os-SE: Ossetian
+        pi-IN: Pali
         pap-PAP: Papiamento
         ps-AF: Pashto
         fa-IR: Persian
@@ -169,10 +221,14 @@ files:
         pa-IN: Punjabi
         pa-PK: PunjabiShahmukhi
         qu-PE: Quechua
+        qya-AA: Quenya
         ro-RO: Romanian
         rm-CH: Romansh
         rn-BI: Rundi
         ru-RU: Russian
+        ru-BY: RussianBelarus
+        ru-MD: RussianMoldova
+        ru-UA: RussianUkraine
         ry-UA: Rusyn
         sah-SAH: Sakha
         sg-CF: Sango
@@ -196,16 +252,39 @@ files:
         nr-ZA: SouthernNdebele
         sma-NO: SouthernSami
         st-ZA: SouthernSotho
+        es-AR: SpanishArgentina
+        es-BO: SpanishBolivia
+        es-CL: SpanishChile
+        es-CO: SpanishColombia
+        es-CR: SpanishCostaRica
+        es-DO: SpanishDominicanRepublic
+        es-EC: SpanishEcuador
+        es-SV: SpanishElSalvador
         es-ES: SpanishES
+        es-GT: SpanishGuatemala
+        es-HN: SpanishHonduras
         es-419: SpanishLATAM
+        es-MX: SpanishMexico
+        es-EM: SpanishModern
+        es-NI: SpanishNicaragua
+        es-PA: SpanishPanama
+        es-PY: SpanishParaguay
+        es-PE: SpanishPeru
+        es-PR: SpanishPuertoRico
+        es-US: SpanishUnitedStates
+        es-UY: SpanishUruguay
+        es-VE: SpanishVenezuela
         su-ID: Sundanese
         sw-KE: Swahili
+        sw-TZ: SwahiliTanzania
         ss-ZA: Swati
         sv-SE: Swedish
+        sv-FI: SwedishFinland
         syc-SY: Syriac
         tl-PH: Tagalog
         ty-PF: Tahitian
         tg-TJ: Tajik
+        tzl-TZL: Talossan
         ta-IN: Tamil
         tt-RU: Tatar
         te-IN: Telugu
@@ -216,11 +295,13 @@ files:
         ts-ZA: Tsonga
         tn-ZA: Tswana
         tr-TR: Turkish
+        tr-CY: TurkishCyprus
         tk-TM: Turkmen
         tw-TW: Twi
         uk-UA: Ukrainian
         hsb-DE: UpperSorbian
         ur-PK: Urdu
+        ur-IN: UrduIndia
         ug-CN: Uyghur
         uz-UZ: Uzbek
         val-ES: Valencian
@@ -238,6 +319,5 @@ files:
     # Changed English texts keep their old translations, marked as needing review.
     update_option: update_as_unapproved
     # Only translations you (or your proofreaders) approved are sent back to GitHub.
-    # Untranslated texts are left out of the file (the bot falls back to English), never filled with English.
     skip_untranslated_strings: true
     export_only_approved: true
