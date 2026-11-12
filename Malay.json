@@ -590,6 +590,7 @@
         "command": "Perintah yang anda ingin dapatkan maklumat"
       },
       "placeholder_category": "Pilih kategori",
+      "command_not_found": "Saya tidak dapat mencari `{command}` dalam panduan arahan. Cuba `/help` untuk menyemak imbas arahan yang tersedia.\nStatus",
       "no_commands": "Tiada arahan dalam kategori ini.",
       "category": {
         "4fun": "Seronok",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` membuka panduan ini. Sebutkan Murphy dengan nama arahan untuk melihat butirannya, atau gunakan arahan slash yang ditunjukkan di bawah.",
       "choose_category": "Pilih kategori di bawah.",
       "more_subcommands": "dan {count} lagi subperintah.",
-      "command_not_found": "Saya tidak dapat mencari `{command}` dalam panduan arahan. Cuba `/help` untuk menyemak imbas arahan yang tersedia.\nStatus",
       "category_hint": "{count} arahan. Pilih satu di bawah untuk butiran.",
       "category_count": "{roots} arahan · {count} pilihan",
       "about": {
