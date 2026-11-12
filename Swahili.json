@@ -590,6 +590,7 @@
         "command": "Amri ambayo unataka kupata habari juu ya"
       },
       "placeholder_category": "Chagua kategoria",
+      "command_not_found": "Sikuweza kupata `{command}` katika mwongozo wa amri. Jaribu `/help` kuvinjari amri zinazopatikana.",
       "no_commands": "Hakuna amri katika jamii hii.",
       "category": {
         "4fun": "Furaha ya furaha",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` hufungua mwongozo huu. Taja Murphy kwa jina la amri ili kuona maelezo yake, au tumia amri za kufyeka zilizoonyeshwa hapa chini.",
       "choose_category": "Chagua kategoria hapa chini.",
       "more_subcommands": "Aidha, na{count}zaidi ya sh.",
-      "command_not_found": "Sikuweza kupata `{command}` katika mwongozo wa amri. Jaribu `/help` kuvinjari amri zinazopatikana.",
       "category_hint": "Amri {count}. Chagua moja hapa chini kuona maelezo.",
       "category_count": "Amri {roots} · chaguo {count}",
       "about": {
