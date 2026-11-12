@@ -1,0 +1,5675 @@
+{
+  "pro_ui": {
+    "help_intro": "選擇分類並開啟指令，查看可用選項。",
+    "dashboard": "控制面板"
+  },
+  "pro_access": {
+    "expired": "此伺服器的訂閱已到期或未啟用。請續訂以使用 Murphy。",
+    "missing": "此伺服器沒有有效的 Premium 方案。請為伺服器指派方案後再使用 Murphy。",
+    "unavailable": "目前無法驗證訂閱，請稍後再試。",
+    "guild_required": "Murphy 可在已指派有效 Premium 方案的伺服器上使用。請在你的伺服器中使用此指令。",
+    "manage": "管理訂閱"
+  },
+  "common": {
+    "something_went_wrong": "出了問題！",
+    "not_for_you": "X 不適合你！",
+    "slash_only": "此指令只能用作斜杠命令。",
+    "unknown": "未知",
+    "error": "錯誤",
+    "cooldown_title": "冷卻",
+    "cooldown_wait": "請再等待 **{seconds}** 秒，然後再重新使用 `/{command}`。",
+    "next_available": "下一個可用：",
+    "no_permission": "您無權使用此命令。",
+    "no_required_permissions": "您沒有執行此命令所需的權限。",
+    "no_bot_permissions": "我沒有執行此命令所需的權限。",
+    "must_be_in_voice": "您必須處於語音通道中才能使用此命令。",
+    "nothing_playing": "現在沒有什麼在玩。",
+    "need_dj_role": "您需要 DJ 角色才能使用此命令。",
+    "command_error": "執行此命令時發生錯誤。",
+    "command_timeout": "該命令花費了太長時間，因此被停止。請再試一次。",
+    "ticket_not_configured": "票務系統未配置。",
+    "invalid_ticket_category": "票證類別配置無效。",
+    "verification_config_not_found": "未找到驗證配置。",
+    "verification_role_not_found": "驗證成功，但未找到角色。聯絡管理員。",
+    "welcome_message": "**Murphy 已準備就緒。 **\n\n使用 `/play` 開始聆聽會話，瀏覽 `/help`，或輸入 `{prefix} commands` 開啟本指南。在提及後添加命令名稱以查看其作用。\n\n在伺服器儀表板中設定播放器，或如果您需要協助，請造訪 [Murphy 支援伺服器]({support})。",
+    "enabled": "已啟用",
+    "disabled": "已停用",
+    "error_occurred": "處理此請求時發生錯誤。",
+    "access_vote_title": "需要投票",
+    "access_premium_title": "需要保費",
+    "access_required": "此命令需要 **{requirement}** 存取權限。",
+    "access_vote_button": "投票 Top.gg",
+    "access_premium_button": "升級高級版",
+    "tagline": "您的伺服器。更多的可能性"
+  },
+  "command_options": {
+    "create": "建立一個新項目",
+    "list": "列出配置項",
+    "toggle": "啟用或停用項目",
+    "run": "立即運行所選項目",
+    "restore": "還原已儲存的版本",
+    "schedule": "配置自動計劃",
+    "responses": "查看收集到的回复",
+    "export": "匯出可用數據",
+    "remind": "配置事件提醒",
+    "attendees": "顯示活動參加者",
+    "setup": "配置此功能",
+    "limit": "設定房間用戶限制",
+    "rename": "重新命名所選項目",
+    "transfer": "轉讓所有權",
+    "preview": "預覽配置的輸出",
+    "test": "發送安全測試",
+    "template": "建立或更新可重複使用的模板",
+    "send": "發送準備好的內容",
+    "activity": "顯示活動統計數據",
+    "members": "顯示會員統計數據",
+    "voice": "顯示語音統計數據",
+    "music": "顯示音樂統計數據",
+    "suspicious": "尋找可疑的行政行為",
+    "edit": "編輯現有項目",
+    "evidence": "將證據附加到調解案例中",
+    "modnote-add": "新增私人版主備註",
+    "modnote-list": "列出私人版主註釋",
+    "appeal-submit": "提交案件上訴",
+    "appeal-review": "審查已提交的上訴",
+    "enable": "啟用此功能",
+    "disable": "停用此功能",
+    "status": "顯示目前狀態",
+    "quarantine": "隔離可疑成員",
+    "diagnose": "診斷配置和權限",
+    "bots": "審核機器人帳戶",
+    "inactive": "審核不活躍會員",
+    "roles": "審核未使用的角色",
+    "add": "新增項目",
+    "remove": "刪除所選項目",
+    "timezone": "設定您的 IANA 時區",
+    "privacy": "更改隱私設定",
+    "show": "顯示所要求的訊息",
+    "delete": "刪除所選項目",
+    "import": "從文件匯入數據",
+    "save": "儲存當前數據",
+    "load": "載入已儲存的數據",
+    "invite": "建立會議邀請",
+    "join": "加入現有會話",
+    "normalization": "啟用或停用音訊標準化",
+    "crossfade": "設定過渡淡入淡出持續時間",
+    "like": "喜歡現在的曲目",
+    "dislike": "不喜歡當前曲目",
+    "set": "設定新值",
+    "similar": "尋找相似曲目",
+    "id": "唯一的物品ID",
+    "name": "顯示名稱",
+    "trigger": "選擇何時運行此操作",
+    "channel": "選擇一個 Discord 頻道",
+    "message": "留言內容",
+    "enabled": "選擇是否啟用",
+    "confirm": "輸入所需的確認短語",
+    "title": "標題",
+    "description": "說明",
+    "starts_at": "開始日期和時間",
+    "duration": "動作持續時間",
+    "code": "邀請碼或驗證碼",
+    "user": "選擇一個 Discord 用戶",
+    "role": "選擇一個 Discord 角色",
+    "reason": "採取此行動的原因",
+    "days": "天數",
+    "hours": "小時數",
+    "minutes": "分鐘數",
+    "seconds": "秒數",
+    "song": "歌曲名稱、藝術家或 URL",
+    "language": "選擇輸出語言",
+    "text": "文字內容",
+    "url": "有效的 HTTPS 網址",
+    "expression": "數學表達",
+    "date": "日期、時間或 Unix 時間戳",
+    "zone": "IANA 時區，例如 Europe/Warsaw",
+    "file": "選擇一個文件",
+    "mode": "選擇操作模式",
+    "note": "可選備註",
+    "decision": "批准或拒絕此請求",
+    "version": "儲存的版本標識符",
+    "starts": "活動開始前的時間",
+    "capacity": "最多參加人數",
+    "question": "表格中顯示的問題",
+    "results": "顯示或匯出收集的結果",
+    "creator": "現任臨時房主",
+    "category": "選擇一個 Discord 類別",
+    "amount": "要應用的數值",
+    "content": "留言或回覆內容",
+    "case": "審核案件編號",
+    "reference": "證據參考或 URL",
+    "response": "對上訴的回應",
+    "time": "時間或持續時間",
+    "tag": "標籤名稱"
+  },
+  "cmd": {
+    "247": {
+      "description": "將機器人設定為留在語音頻道中",
+      "errors": {
+        "not_in_voice": "您需要處於語音頻道才能使用此命令。",
+        "generic": "嘗試執行此命令時發生錯誤。"
+      },
+      "messages": {
+        "disabled": "`OK` | 24/7 模式已 `DISABLED`",
+        "enabled": "`OK` | 24/7 模式已是 `ENABLED`。 \n **即使語音通道中沒有人，機器人也不會離開語音通道。 **"
+      }
+    },
+    "premium_features": {
+      "description": "配置計劃特定的個人、伺服器和支持者功能",
+      "title": "進階功能控制",
+      "options": {
+        "status": "顯示活動計劃特定的功能設置",
+        "audio-sync": "跨伺服器同步個人來源、音量和過濾器",
+        "smart-radio": "配置個人智慧廣播種子和阻止的藝術家",
+        "wrapped": "顯示您的個人每月收聽情況",
+        "reports": "安排每週或每月伺服器報告",
+        "music-rules": "阻止曲目、藝人、文字或音樂來源",
+        "autodj": "配置進階 AutoDJ 規則",
+        "alerts": "配置 raid、審核和設定警報",
+        "dj-profile": "建立基於角色的 DJ 命令設定文件",
+        "share-playlist": "與此伺服器共享個人播放列表",
+        "supporter": "配置支持者清單、主題和實驗",
+        "vote": "為下一個 Murphy 功能投票"
+      },
+      "fields": {
+        "filters": "逗號分隔的同步濾波器預設",
+        "seeds": "用作種子的以逗號分隔的藝術家、曲目或流派",
+        "blocked_artists": "從智慧廣播中排除的以逗號分隔的藝術家",
+        "frequency": "報告發送頻率",
+        "kind": "要阻止的音樂內容類型",
+        "values": "逗號分隔值；空值會清除列表",
+        "avoid_hours": "AutoDJ 可能會重複播放曲目之前的幾個小時",
+        "raids": "突襲保護觸發時發出警報",
+        "moderation": "關於異常版主活動的警報",
+        "configuration": "有關危險或不完整配置的警報",
+        "commands": "此 DJ 設定檔允許使用逗號分隔的命令",
+        "public": "在選擇加入的公共支持者清單中顯示我",
+        "theme": "獨家支持者儀表板主題標識符",
+        "experiment": "該伺服器的實驗性功能標識符",
+        "feature": "路線圖功能正在接受您的投票"
+      },
+      "messages": {
+        "upgrade_required": "此設定不包含在有效計劃中。使用 /premium 來比較計劃。",
+        "admin_required": "伺服器範圍的進階設定需要管理伺服器權限。",
+        "status_result": "計劃：**{plan}**\n個人音訊同步：**{audio}**\n自動報告：**{report}**",
+        "audio_saved": "音訊同步是 **{state}**。預設數量：**{volume}%**，來源：**{source}**。",
+        "radio_saved": "智慧收音機保存了 **{seeds}** 種子並 **{blocked}** 阻止了藝術家。",
+        "wrapped_result": "本月：**{tracks} 曲目**，**{minutes} 分鐘**。頂尖藝術家：**{artist}**。",
+        "reports_saved": "自動伺服器報告現在為 **{frequency}**。",
+        "rules_saved": "已儲存 **{count}** 封鎖了 {kind} 條目。",
+        "autodj_saved": "進階 AutoDJ 規則已儲存。",
+        "alerts_saved": "高級操作警報已儲存。",
+        "dj_saved": "{role} 的 DJ 設定檔已儲存。",
+        "playlist_shared": "播放清單 **{name}** 現已與此伺服器共用。",
+        "playlist_missing": "未找到名為 **{name}** 的個人播放清單。",
+        "supporter_saved": "支持者可見性、主題和每伺服器實驗設定均已儲存。",
+        "vote_saved": "您對 **{feature}** 的支持者投票已記錄。"
+      },
+      "music_blocked": "此請求被伺服器的 Guild Plus 音樂規則 ({reason}) 阻止。",
+      "experimental_source_required": "此來源位於支持者早期訪問推出中。選擇其他來源或啟動 Murphy Supporter。"
+    },
+    "about": {
+      "description": "查看 Murphy 機器人詳情、可用音樂節點與運作狀態。",
+      "modern_description": "現代 Discord 音樂機器人專注於快速播放、乾淨的控制、經濟的系統和可靠的 Lavalink 會話。",
+      "made_by": "製作者：",
+      "servers": "伺服器:",
+      "commands": "命令：",
+      "buttons": {
+        "overview": "概覽",
+        "team": "團隊",
+        "invite": "新增機器人",
+        "support": "支援伺服器",
+        "website": "官網"
+      },
+      "title": "關於 Murphy",
+      "projects": {
+        "title": "Murphy 團隊的更多作品",
+        "video": "影片平台",
+        "video_text": "觀看與分享影片",
+        "lavalink": "Lavalink 託管",
+        "lavalink_text": "為音樂機器人提供託管音訊節點",
+        "listing": "機器人與伺服器列表",
+        "listing_text": "推廣你的 Discord 機器人或伺服器"
+      }
+    },
+    "support": {
+      "description": "展示支援 Murphy 開發的方法。",
+      "title": "支持 Murphy",
+      "subtitle": "**每一份支持都能讓 Murphy 服務更多社群。**",
+      "body": "Murphy 在真實的基礎架構上運行，每月大約需要 **$30** 僅用於主機。還有領域、工具、開發和團隊成本。",
+      "premium_title": "Murphy",
+      "premium_body": "購買訂閱支援該項目並解鎖 **Murphy** 的高級服務。",
+      "transparency_title": "錢去哪了",
+      "transparency_body": "**100% 的支援資金返回機器人：** 託管、機器、網域、開發、維護和專案工具。資金不會用於與 Murphy 無關的任何事情。",
+      "buttons": {
+        "neo": "Murphy",
+        "patreon": "Patreon",
+        "kofi": "Ko-fi",
+        "invite": "新增機器人"
+      }
+    },
+    "vote": {
+      "description": "投票支持 Murphy · Top.gg",
+      "title": "投票支持 Murphy",
+      "prompt": "近期的Top.gg投票可解鎖每月Wrapped，直到投票有效期結束。投票不會贈送貨幣或Premium。",
+      "confirmed_title": "感謝你支持 Murphy",
+      "confirmed": "你的投票已於 <t:{votedAt}:R> 記錄。投票仍有效，因此可以使用 `/wrapped`。",
+      "next_vote": "你可以在 <t:{availableAt}:R>（<t:{availableAt}:f>）再次投票。",
+      "confirmed_untracked": "Top.gg 已確認最近的一次投票自 <t:{verifiedAt}:R> 起仍然有效。",
+      "next_vote_estimate": "由於沒有保存的投票憑證，下次可投票時間為估算值：<t:{availableAt}:R>（<t:{availableAt}:f>）。"
+    },
+    "changelog": {
+      "description": "顯示最新的 Murphy 變更。",
+      "title": "Murphy 變更日誌"
+    },
+    "suggest": {
+      "description": "向 Murphy 團隊發送功能建議。",
+      "options": {
+        "text": "您對機器人的建議。"
+      },
+      "sent_title": "建議已發送",
+      "sent": "謝謝。您的建議已發送至團隊隊列。",
+      "log_title": "新建議"
+    },
+    "bugreport": {
+      "description": "向 Murphy 團隊報告錯誤。",
+      "options": {
+        "text": "描述什麼損壞了以及如何重現它。"
+      },
+      "sent_title": "錯誤報告已發送",
+      "sent": "謝謝。您的錯誤報告已傳送至團隊佇列。",
+      "log_title": "新的錯誤報告"
+    },
+    "partner": {
+      "description": "顯示合作夥伴資訊。",
+      "title": "合作夥伴",
+      "body": "想要與 Murphy 或 Nexora Labs 合作嗎？加入支援伺服器並使用您的伺服器/project詳細資料開啟一個票證。",
+      "requirements": "適合：活躍的社群、音樂伺服器、創作者專案、託管合作夥伴以及真正幫助 Discord 社群的工具。",
+      "button": "開放支援"
+    },
+    "privacy": {
+      "description": "查看目前的隱私設定 · 匯出你的 Murphy 個人資料",
+      "title": "隱私設定",
+      "options": {
+        "status": "查看目前的隱私設定",
+        "export": "匯出你的 Murphy 個人資料",
+        "delete": "永久刪除可刪除的Murphy個人資料",
+        "confirm": "準確輸入DELETE以確認永久刪除",
+        "opt_out": "管理選用的使用情況分析",
+        "enabled": "關閉此帳號的選用使用情況分析",
+        "manage": "開啟 Murphy 隱私與帳號設定"
+      },
+      "export_ready": "已附上你的Murphy個人資料匯出檔案。",
+      "opted_out": "已關閉此帳號的選用使用情況分析。",
+      "opted_in": "已開啟此帳號的選用使用情況分析。",
+      "status": "選用產品分析：**{state}**。產品分析不會儲存訊息內容。",
+      "enabled": "已啟用",
+      "disabled": "已停用",
+      "delete_confirm": "已取消刪除。請準確輸入 `DELETE`，以永久刪除符合刪除條件的個人資料。",
+      "deleted": "已刪除個人資料（{count} 筆記錄）。付款、管理及防濫用記錄會在法律或營運要求的情況下保留。",
+      "button": "隱私權政策",
+      "body": "使用此指令管理選用分析。如需瞭解儲存的資料、保留期限及你的權利，請查看隱私權政策。"
+    },
+    "connections": {
+      "title": "已連線的服務",
+      "description": "連線權杖會加密儲存在 Murphy 伺服器上，絕不會在 Discord 中顯示。",
+      "manage": "管理連線",
+      "help": "連線說明",
+      "provider_title": "連線：{provider}",
+      "reconnect_hint": "使用連線管理來連接、測試或重新連接此服務。",
+      "unknown": "未知的連線服務供應商。",
+      "options": {
+        "status": "查看所有支援連線的狀態",
+        "spotify": "檢查或重新連接 Spotify",
+        "youtube": "檢查或重新連接 YouTube",
+        "lastfm": "檢查或重新連接 Last.fm",
+        "listenbrainz": "檢查或重新連接 ListenBrainz"
+      },
+      "states": {
+        "connected": "已連線",
+        "reconnect": "重新連線",
+        "disconnected": "未連線"
+      }
+    },
+    "insights": {
+      "description": "伺服器統計: 播放的歌曲, 加入的成員, 管理處置紀錄",
+      "title": "伺服器統計",
+      "options": {
+        "overview": "伺服器統計",
+        "music": "播放的歌曲 / 不重複點歌人數",
+        "retention": "加入的成員 / 離開的成員 / 淨成長",
+        "moderation": "管理處置紀錄",
+        "recommendations": "三項實用建議",
+        "export": "將每日統計匯出為 CSV"
+      },
+      "period": "統計期間",
+      "voice_hours": "語音頻道時數",
+      "commands": "使用的指令",
+      "plays": "播放的歌曲",
+      "listeners": "不重複點歌人數",
+      "moderation_actions": "管理處置紀錄",
+      "joins": "加入的成員",
+      "leaves": "離開的成員",
+      "net_growth": "淨成長",
+      "recommend_retention": "離開的成員數接近新加入的成員數。請檢查入門引導、歡迎流程及驗證步驟是否過於繁瑣。",
+      "recommend_retention_ok": "所選期間的成員留存情況良好。",
+      "recommend_music": "建立伺服器播放清單或安排 Music Venue 活動，以增加共同參與的機會。",
+      "recommend_music_ok": "音樂使用活躍。向 Smart Radio 提供回饋，有助於改善未來的推薦。",
+      "export_premium": "七天概覽免費提供。Guild Plus 可解鎖更長的歷史記錄及 CSV 匯出。",
+      "export_ready": "已附上 {days} 天的伺服器統計匯出檔案。"
+    },
+    "schedule": {
+      "description": "規劃伺服器訊息、活動、民意調查、抽獎和音樂活動。",
+      "title": "伺服器時間表",
+      "options": {
+        "message": "安排頻道訊息",
+        "event": "創造預定的社區活動",
+        "poll": "安排本機 Discord 民意調查",
+        "giveaway": "安排抽獎",
+        "playlist": "在語音頻道中安排音樂",
+        "list": "列出待處理、暫停和失敗的操作",
+        "pause": "暫停計畫的操作",
+        "resume": "恢復暫停或失敗的操作",
+        "cancel": "取消計劃的操作"
+      },
+      "fields": {
+        "channel": "目標文字頻道",
+        "content": "留言內容",
+        "when": "未來 ISO 日期或相對持續時間，例如 2h",
+        "title": "活動標題",
+        "description": "可選事件描述",
+        "question": "投票問題",
+        "poll_options": "答案以 | 分隔性格",
+        "hours": "民意調查持續時間（以小時為單位）",
+        "prize": "抽獎獎品",
+        "duration": "抽獎時間如1d",
+        "winners": "得獎者人數",
+        "voice": "目標語音頻道",
+        "query": "播放清單、URL 或音樂搜索",
+        "id": "預定操作 ID"
+      },
+      "empty": "沒有待處理、暫停或失敗的計畫操作。",
+      "invalid_id": "輸入有效的計畫作業 ID。",
+      "invalid_time": "輸入未來的 ISO 日期或相對持續時間，例如 30m、2h 或 1d。",
+      "invalid_duration": "抽獎時間必須至少為一分鐘。",
+      "poll_min": "民意調查需要至少兩個答案，並且用 | 分隔。",
+      "updated": "計畫操作 `{id}` 現在是 **{status}**。",
+      "not_found": "未找到該操作或無法變更其目前狀態。",
+      "created": "為 <t:{timestamp}:F> 安排了 `{type}` 操作 `{id}`。",
+      "event_created": "事件 `{id}` 是為 <t:{timestamp}:F> 建立的。"
+    },
+    "mod_inbox": {
+      "description": "查看尚未處理的檢舉和待審核的管理申訴。",
+      "title": "伺服器審核收件匣",
+      "reports": "開啟報告",
+      "appeals": "待決上訴",
+      "empty": "伺服器審核收件匣清晰。"
+    },
+    "terms": {
+      "description": "顯示 Murphy 術語連結。",
+      "title": "服務條款",
+      "body": "在公共或社群伺服器上使用 Murphy 之前請閱讀條款。",
+      "button": "開放條款"
+    },
+    "addsong": {
+      "description": "將歌曲新增至播放清單",
+      "options": {
+        "playlist": "您要新增的播放列表",
+        "song": "您要新增的歌曲"
+      },
+      "messages": {
+        "no_playlist": "請提供播放列表",
+        "no_song": "請提供歌曲",
+        "playlist_not_found": "該播放清單不存在",
+        "no_songs_found": "沒有找到歌曲",
+        "added": "將 {count} 歌曲加入 {playlist}",
+        "track_limit_reached": "您的計劃允許在一個播放清單中最多 {limit} 首曲目。"
+      }
+    },
+    "announce": {
+      "description": "將全域機器人公告傳送到允許公告的伺服器。",
+      "modal": {
+        "title": "建立公告",
+        "title_label": "標題",
+        "title_placeholder": "公告標題",
+        "description_label": "說明",
+        "description_placeholder": "公告說明",
+        "color_label": "顏色（十六進位）",
+        "thumbnail_label": "縮圖 URL",
+        "image_label": "大圖 URL"
+      },
+      "defaults": {
+        "title": "公告",
+        "description": "未提供說明。"
+      },
+      "status": {
+        "preview": "公告預覽",
+        "broadcasting": "廣播...",
+        "stopping": "停止廣播...",
+        "cancelled": "公告已取消",
+        "complete": "公告完成"
+      },
+      "results": {
+        "title": "結果",
+        "total": "伺服器總數",
+        "sent": "已傳送",
+        "failed": "失敗",
+        "skipped": "已跳過",
+        "content": "內容",
+        "announcement_title": "標題",
+        "color": "顏色",
+        "photos": "影像",
+        "buttons": "按鈕"
+      },
+      "progress": {
+        "starting": "將公告寄至",
+        "ready": "準備好廣播到",
+        "servers": "伺服器",
+        "across": "跨越",
+        "shards": "碎片",
+        "progress": "進步",
+        "speed": "速度",
+        "elapsed": "已過去",
+        "eta": "預計到達時間"
+      },
+      "buttons": {
+        "cancel": "取消",
+        "start": "開始公告",
+        "add_link": "新增連結按鈕"
+      },
+      "button_modal": {
+        "title": "新增按鈕",
+        "label": "標籤",
+        "url": "URL"
+      },
+      "errors": {
+        "already_acknowledged": "此交互作用已被確認。",
+        "max_buttons": "最多允許四個連結按鈕。",
+        "invalid_button": "輸入有效標籤和 HTTPS URL。",
+        "timed_out": "公告編輯器逾時。再運行 /announce。"
+      }
+    },
+    "announcements": {
+      "description": "公告說明",
+      "messages": {
+        "interaction_error": "這不適合你。"
+      },
+      "title": "公告配置",
+      "subtitle": "配置機器人如何向此伺服器發送全域公告。",
+      "status": "地位：",
+      "channel": "通路：",
+      "system_channel": "系統頻道（預設）",
+      "footer": "Murphy/公告系統",
+      "enable": "使能夠",
+      "disable": "停用",
+      "reset_channel": "重設頻道",
+      "select_channel": "選擇公告管道"
+    },
+    "autoplay": {
+      "description": "切換自動播放",
+      "messages": {
+        "enabled": "`OK` |自動播放已 `ENABLED`。",
+        "disabled": "`OK` |自動播放已 `DISABLED`。"
+      }
+    },
+    "clearqueue": {
+      "description": "清除佇列",
+      "messages": {
+        "cleared": "隊列已被清除。"
+      }
+    },
+    "create": {
+      "description": "建立播放清單",
+      "options": {
+        "name": "播放清單的名稱"
+      },
+      "messages": {
+        "name_too_long": "播放清單名稱的長度只能是 50 個字元。",
+        "playlist_exists": "具有該名稱的播放清單已存在。請使用不同的名稱。",
+        "playlist_created": "播放清單 **{name}** 已建立。",
+        "name_empty": "您必須提供播放清單名稱。",
+        "playlist_limit_reached": "您的方案最多允許 {limit} 個播放清單。"
+      }
+    },
+    "createinvite": {
+      "guild_not_found": "找不到公會",
+      "no_suitable_channel": "沒有找到合適的管道",
+      "description": "為伺服器建立邀請連結。",
+      "created": "`{server}` 的邀請連結：{url}"
+    },
+    "delete": {
+      "description": "刪除播放清單",
+      "options": {
+        "playlist": "您要刪除的播放列表"
+      },
+      "messages": {
+        "playlist_not_found": "該播放清單不存在。",
+        "playlist_deleted": "已刪除播放清單 **{playlistName}**。"
+      }
+    },
+    "dj": {
+      "description": "管理 DJ 模式和相關角色",
+      "errors": {
+        "provide_role": "請提供一個角色。",
+        "no_roles": "DJ角色是空的。",
+        "invalid_subcommand": "請提供有效的子命令。"
+      },
+      "messages": {
+        "role_exists": "DJ 角色 <@&{roleId}> 已新增。",
+        "role_added": "新增了 DJ 角色 <@&{roleId}>。",
+        "role_not_found": "未新增 DJ 角色 <@&{roleId}>。",
+        "role_removed": "DJ 角色 <@&{roleId}> 已刪除。",
+        "all_roles_cleared": "所有 DJ 角色均已刪除。",
+        "toggle": "DJ 模式已切換至 {status}。"
+      },
+      "options": {
+        "add": "您要新增的 DJ 角色",
+        "remove": "您要刪除的 DJ 角色",
+        "clear": "清除所有 DJ 角色",
+        "toggle": "切換 DJ 角色",
+        "role": "DJ 角色"
+      },
+      "subcommands": "子命令"
+    },
+    "fairplay": {
+      "description": "設定機器人公平地播放音樂",
+      "messages": {
+        "disabled": "`OK` |公平競賽模式已是 `DISABLED`。",
+        "enabled": "`OK` |公平競賽模式已是 `ENABLED`。"
+      }
+    },
+    "grab": {
+      "description": "在 DM 上取得目前正在播放的歌曲",
+      "content": "**持續時間：** {length}\n**請求者：** <@{requester}>\n**連結：** [點擊此處]({uri})",
+      "check_dm": "請檢查您的DM。",
+      "dm_failed": "我無法寄給您 DM。請確保允許直接訊息已開啟。"
+    },
+    "help": {
+      "description": "顯示幫助選單。",
+      "options": {
+        "command": "您想要獲取資訊的命令"
+      },
+      "placeholder_category": "選擇一個類別",
+      "no_commands": "此類別中沒有命令。",
+      "category": {
+        "4fun": "樂趣",
+        "config": "配置",
+        "dev": "開發商",
+        "filters": "過濾器",
+        "info": "資訊",
+        "moderation": "適度",
+        "music": "音樂",
+        "playlist": "播放清單",
+        "utility": "公用事業",
+        "economy": "經濟",
+        "automod": "自動模組",
+        "main": "主選單"
+      },
+      "labels": {
+        "category": "類別：",
+        "cooldown": "冷卻：",
+        "usage": "用法：",
+        "examples": "範例",
+        "music_commands": "音樂命令：",
+        "visible_commands": "可見命令群組：",
+        "servers": "伺服器:",
+        "commands": "命令",
+        "subcommands": "子命令"
+      },
+      "home_title": "Murphy 說明",
+      "home_description": "`@Murphy commands` 開啟本指南。使用命令名稱提及 Murphy 以查看其詳細信息，或使用如下所示的斜杠命令。",
+      "choose_category": "選擇下面的類別。",
+      "more_subcommands": "和 {count} 更多子指令。",
+      "command_not_found": "我在指令指南中找不到 `{command}`。嘗試 `/help` 瀏覽可用指令。",
+      "category_hint": "共 {count} 個指令。在下方選一個查看詳情。",
+      "category_count": "{roots} 個指令 · {count} 個選項",
+      "about": {
+        "music": "播放、佇列、濾鏡、電台和收聽統計。",
+        "playlist": "儲存並分享你的播放清單。",
+        "config": "設定伺服器：歡迎、客服單、驗證等。",
+        "info": "機器人、伺服器和使用者資訊、狀態和 Premium。",
+        "moderation": "停權、警告、案件、突襲和清理。",
+        "utility": "免費遊戲、AFK、提醒、標籤和實用工具。",
+        "fun": "社交動作、戀愛、決鬥、遊戲和派對指令。",
+        "economy": "金幣、釣魚、農場、任務和季節活動。"
+      },
+      "section": {
+        "interactions": "互動",
+        "party": "派對",
+        "random": "隨機",
+        "questions": "問題",
+        "love": "戀愛",
+        "play": "玩耍",
+        "games": "遊戲",
+        "emotions": "情緒",
+        "gestures": "手勢",
+        "characters": "角色"
+      }
+    },
+    "info": {
+      "description": "顯示有​​關機器人、音樂節點和 VPS 的詳細資訊。",
+      "options": {
+        "bot": "顯示機器人、系統、Lavalink 和來源資訊"
+      },
+      "title": "Murphy 統計",
+      "footer": "音樂隨心所欲",
+      "bot": {
+        "title": "機器人統計",
+        "servers": "伺服器",
+        "users": "使用者",
+        "channels": "頻道",
+        "commands": "命令",
+        "players": "正在播放",
+        "shards": "分片",
+        "ping": "延遲",
+        "online": "上線時間",
+        "version": "版本"
+      },
+      "system": {
+        "title": "VPS 統計",
+        "os": "作業系統",
+        "hostname": "主機名稱",
+        "cpuUsed": "中央處理器使用率",
+        "memUsed": "使用記憶體",
+        "memTotal": "總記憶體",
+        "nodeVersion": "Node.js 版本",
+        "discordJsVersion": "Discord.js 版本",
+        "uptime": "正常運作時間"
+      },
+      "lavalink": {
+        "title": "節點統計",
+        "status": "地位",
+        "players": "玩家總數",
+        "playingPlayers": "玩遊戲的玩家",
+        "memoryUsed": "記憶體使用情況",
+        "systemLoad": "系統負載",
+        "lavalinkLoad": "Lavalink 負載"
+      },
+      "sources": {
+        "title": "來源"
+      }
+    },
+    "node": {
+      "description": "顯示詳細且隱私安全的 Lavalink 節點診斷。",
+      "title": "Lavalink 節點診斷",
+      "node": "節點",
+      "privacy": "網路位址和憑證永遠不會顯示。",
+      "empty": "未配置 Lavalink 節點。",
+      "yes": "是的",
+      "no": "不",
+      "connected": "已連接",
+      "not_connected": "未連接",
+      "available": "可用",
+      "unavailable": "不可用",
+      "updated": "已更新",
+      "disabled_note": "當該節點的設定模式停用播放時，不會聯絡該節點。",
+      "runtime_note": "運行時詳細資訊來自 Lavalink /v4/info 和活動的 WebSocket 會話。",
+      "states": {
+        "online": "在線",
+        "offline": "透過設定停用",
+        "permanent_degraded": "永久降級",
+        "disconnected": "已斷開連接"
+      },
+      "fields": {
+        "state": "狀態",
+        "configured": "設定模式",
+        "enabled": "符合播放條件",
+        "connection": "WebSocket",
+        "profile": "路由設定檔",
+        "ping": "平",
+        "uptime": "正常運作時間",
+        "players": "參加比賽的球員/總數",
+        "local_players": "此分片上的玩家",
+        "listeners": "在此分片上快取偵聽器",
+        "failures": "過去 15 分鐘內失敗",
+        "cpu_cores": "CPU核心",
+        "system_cpu": "系統CPU",
+        "lavalink_cpu": "Lavalink CPU",
+        "memory_used": "已使用的 RAM",
+        "memory_allocated": "已分配 RAM",
+        "memory_free": "記憶體可用",
+        "memory_reservable": "RAM 可保留",
+        "memory_pressure": "記憶體壓力",
+        "frames": "音訊幀已發送/無效/不足",
+        "sources": "來源管理器",
+        "filters": "音訊過濾器",
+        "plugins": "插件",
+        "version": "Lavalink 版本",
+        "jvm": "JVM",
+        "lavaplayer": "Lavaplayer",
+        "git": "Git 構建",
+        "build_time": "建置時間",
+        "resume": "Lavalink 會話恢復",
+        "transport": "運輸"
+      },
+      "buttons": {
+        "previous": "上一個節點",
+        "next": "下一個節點",
+        "refresh": "刷新",
+        "overview": "概述",
+        "performance": "性能",
+        "sources": "來源",
+        "runtime": "運行時"
+      }
+    },
+    "join": {
+      "description": "讓 Murphy 加入你目前的語音頻道。",
+      "already_connected": "我已經連接到 <#{channelId}>。",
+      "no_voice_channel": "您需要處於語音頻道才能使用此命令。",
+      "joined": "已成功加入<#{channelId}>。"
+    },
+    "language": {
+      "description": "設定機器人的語言",
+      "invalid_language": "請提供有效的語言。範例：`EnglishUS` 表示英語（美國）\n\n您可以在[此處](https://discord.com/developers/docs/reference#locales)找到支援的語言清單。\n\n**可用語言：**\n{languages}",
+      "already_set": "語言已設定為 `{language}`",
+      "not_set": "語言未設定。",
+      "set": "`OK` |語言已設定為 `{language}`",
+      "reset": "`OK` |語言已重設為預設語言。",
+      "options": {
+        "set": "設定機器人的語言",
+        "language": "您要設定的語言",
+        "reset": "將語言更改回預設語言"
+      }
+    },
+    "leave": {
+      "description": "讓 Murphy 離開目前的語音頻道。",
+      "left": "成功離開<#{channelId}>。",
+      "not_in_channel": "我不在語音頻道。"
+    },
+    "list": {
+      "description": "檢索使用者的所有播放列表",
+      "options": {
+        "user": "您要檢索其播放清單的用戶"
+      },
+      "messages": {
+        "no_playlists": "該用戶沒有播放清單。",
+        "your": "你的",
+        "playlists_title": "{username} 的播放列表",
+        "error": "檢索播放清單時發生錯誤。",
+        "invalid_username": "我找不到那個用戶。",
+        "invalid_userid": "我無法解析使用者 ID。",
+        "track": "追蹤",
+        "tracks": "曲目"
+      }
+    },
+    "load": {
+      "description": "載入播放列表",
+      "options": {
+        "playlist": "您要載入的播放列表"
+      },
+      "messages": {
+        "playlist_not_exist": "該播放清單不存在。",
+        "playlist_empty": "該播放清單是空的。",
+        "playlist_loaded": "已載入 `{name}` 和 `{count}` 首歌曲。",
+        "no_lavalink_nodes": "沒有可用的 Lavalink 節點來載入播放清單。"
+      }
+    },
+    "lyrics": {
+      "description": "取得曲目的歌詞",
+      "lyrics_for_track": "### 歌詞：[{trackTitle}]({trackUrl})",
+      "no_lyrics_on_page": "本頁未找到歌詞。",
+      "searching": "**{trackTitle}** 歌詞...",
+      "page_indicator": "頁{current}/{total}",
+      "no_lyrics_available": "沒有可用的歌詞",
+      "button_subscribe": "訂閱現場歌詞",
+      "button_unsubscribe": "📌 Live 歌詞",
+      "subscribed": "您已訂閱即時歌詞更新！",
+      "unsubscribed": "您已取消訂閱即時歌詞更新。",
+      "errors": {
+        "no_results": "未找到目前曲目的歌詞。",
+        "lyrics_error": "獲取歌詞時發生錯誤。"
+      },
+      "options": {
+        "song": {
+          "description": "您想要取得歌詞的歌曲。"
+        }
+      }
+    },
+    "movenode": {
+      "description": "將玩家移至不同的 Lavalink 節點",
+      "options": {
+        "node": "移動玩家的節點 ID"
+      },
+      "no_player": "該伺服器中沒有活動的音樂播放器。",
+      "no_available_nodes": "沒有可移動到的可用節點。",
+      "available_nodes_title": "可用節點",
+      "current_node": "當前節點",
+      "available_nodes": "可用節點",
+      "usage_hint": "使用：movenode <nodeId>",
+      "node_not_found": "找不到節點 `{node}`。",
+      "node_not_connected": "節點 `{node}` 未連線。",
+      "same_node": "玩家已經位於節點 `{node}` 上。",
+      "moving": "將玩家從 `{from}` 移到 `{to}`...",
+      "error": "無法移動玩家：{error}",
+      "moving_all_players": "將所有玩家移至節點 `{node}`...",
+      "results_title": "移動節點結果",
+      "guild_move": "- `{guildId}` (`{from}` -> `{to}`)",
+      "guild_move_failed": "- `{guildId}`: {error}",
+      "no_players_moved": "沒有球員需要被轉移。",
+      "unknown_error": "未知錯誤",
+      "no_players": "沒有球員可以移動。",
+      "moved_summary": "移動的玩家：`{count}`",
+      "failed_summary": "失敗的動作：`{count}`"
+    },
+    "nowplaying": {
+      "description": "顯示目前播放的曲目。",
+      "title": "正在播放",
+      "live": "居住",
+      "duration": "期間：",
+      "requester": "請求者：",
+      "queue": "隊列："
+    },
+    "pause": {
+      "description": "暫停當前歌曲",
+      "successfully_paused": "成功暫停歌曲。"
+    },
+    "ping": {
+      "description": "顯示機器人的 ping。",
+      "fields": {
+        "bot_latency": "機器人延遲",
+        "api_latency": "API 延遲",
+        "database_latency": "資料庫延遲",
+        "site_latency": "站點延遲",
+        "ram-usage": "RAM 使用情況"
+      }
+    },
+    "play": {
+      "description": "播放 YouTube、Spotify 或 http 的歌曲",
+      "options": {
+        "song": "你想播放的歌曲",
+        "source": "您要使用的來源（YouTube、Spotify、SoundCloud 等）"
+      },
+      "errors": {
+        "search_error": "搜尋時出錯。",
+        "spotify_generated_playlist_title": "Spotify 播放清單不可用",
+        "spotify_generated_playlist": "無法載入此 Spotify 產生的播放清單。嘗試使用普通的公共播放清單、專輯或曲目。"
+      },
+      "playlist_sent": "播放清單已新增 OK",
+      "track_queued": "軌道排隊",
+      "playlist_queued_detail": "{count} 曲目已新增至佇列。",
+      "total_duration": "總持續時間"
+    },
+    "playlocal": {
+      "description": "播放本地音訊檔案。",
+      "options": {
+        "file": "您要播放的音訊檔案。"
+      },
+      "errors": {
+        "empty_query": "請附上要播放的音訊檔案。",
+        "invalid_format": "請使用音訊檔案（MP3、WAV、OGG、FLAC、AAC 或 M4A）。",
+        "no_results": "無法播放音訊檔案。它可能已損壞。"
+      },
+      "added_to_queue": "將 [**{title}**]({url}) 加入佇列中"
+    },
+    "playnext": {
+      "description": "新增佇列中接下來要播放的歌曲",
+      "options": {
+        "song": "你想播放的歌曲",
+        "source": "您要使用的來源（YouTube、Spotify、SoundCloud 等）"
+      },
+      "added_to_play_next": "新增了 [{title}]({uri}) 以在佇列中播放下一個。",
+      "added_playlist_to_play_next": "播放清單移至佇列前端"
+    },
+    "queue": {
+      "description": "顯示目前隊列",
+      "live": "居住",
+      "title": "佇列",
+      "empty": "隊列是空的。",
+      "now": "現在播放：",
+      "up_next": "接下來：",
+      "total_duration": "總持續時間："
+    },
+    "radio": {
+      "description": "播放廣播電台。",
+      "options": {
+        "query": "您要播放的廣播電台。",
+        "play": "玩",
+        "list": "列出可用的廣播電台",
+        "favorites": "顯示推薦的廣播電台。"
+      },
+      "radio_station": "廣播電台",
+      "fields": {
+        "country": "國家",
+        "tags": "標籤"
+      },
+      "menu": {
+        "country_selection": "### 廣播電台瀏覽器\n選擇一個國家瀏覽電台：",
+        "station_selection": "### 📻 {country}\n選擇要播放的電台："
+      },
+      "placeholders": {
+        "select_country": "選擇一個國家",
+        "select_station": "從 {country} 選擇一個電台"
+      },
+      "errors": {
+        "search_error": "搜尋廣播電台時發生錯誤。",
+        "no_stream_url": "找到電台，但沒有有效的串流 URL。",
+        "provide_station": "請提供站名。",
+        "fetch_countries": "無法取得國家/地區。",
+        "fetch_stations": "無法取得 **{country}** 的電台。",
+        "no_stations_country": "找不到 **{country}** 的電台。",
+        "load_station": "無法加載電台詳細資料。",
+        "generic": "無線電請求無法完成。再試一次。",
+        "fetch_lists": "取得清單時發生錯誤。",
+        "no_stations_query": "找不到以下廣播電台：**{query}**",
+        "api_unavailable": "無線電 API 目前不可用。請稍後重試。",
+        "stream_unstable": "無線電流暫時不穩定。兩次自動重新連線嘗試後播放停止。稍後再嘗試該電台。"
+      },
+      "favorites_title": "推薦電台"
+    },
+    "remove": {
+      "description": "從隊列中刪除歌曲",
+      "options": {
+        "song": "您要刪除的歌曲編號"
+      },
+      "errors": {
+        "no_songs": "隊列中沒有歌曲。",
+        "invalid_number": "請提供有效的歌曲編號。"
+      },
+      "messages": {
+        "removed": "從佇列中刪除了歌曲編號 {songNumber}。"
+      }
+    },
+    "removesong": {
+      "description": "從播放清單中刪除歌曲",
+      "options": {
+        "playlist": "您要從中刪除的播放列表",
+        "song": "您要刪除的歌曲"
+      },
+      "messages": {
+        "provide_playlist": "請提供播放清單。",
+        "provide_song": "請提供一首歌。",
+        "playlist_not_exist": "該播放清單不存在。",
+        "song_not_found": "未找到符合的歌曲。",
+        "song_removed": "從 {playlist} 中刪除了 {song}。",
+        "error_occurred": "刪除歌曲時發生錯誤。"
+      }
+    },
+    "replay": {
+      "description": "重播目前曲目",
+      "errors": {
+        "not_seekable": "無法重播該曲目，因為它不可找到。"
+      },
+      "messages": {
+        "replaying": "重播目前曲目。"
+      }
+    },
+    "resume": {
+      "description": "恢復當前歌曲",
+      "errors": {
+        "not_paused": "播放器沒有暫停。"
+      },
+      "messages": {
+        "resumed": "恢復播放器。"
+      }
+    },
+    "search": {
+      "description": "搜尋歌曲，從支援的音樂目錄中挑選要播放的曲目。",
+      "options": {
+        "song": "您正在尋找的歌曲"
+      },
+      "select": "從清單中選擇一首歌曲...",
+      "errors": {
+        "no_results": "沒有找到結果。",
+        "no_results_title": "沒有找到搜尋結果！",
+        "no_results_description": "我找不到任何符合您查詢的歌曲。嘗試更改關鍵字或提供連結。",
+        "invalid_selection_title": "選擇無效！",
+        "invalid_selection_description": "所選選項無效。請從清單中選擇歌曲編號。",
+        "vc_connect_fail_title": "語音頻道連線錯誤",
+        "vc_connect_fail_description": "我無法連接到您的語音頻道。確保我有適當的權限。"
+      },
+      "messages": {
+        "results_found": "找到 **{count}** 歌曲。",
+        "select_prompt": "選擇一個號碼將歌曲加入隊列。",
+        "page_info": "頁{currentPage}/{maxPages}",
+        "added_to_queue": "新增 **[{title}]({uri})** 到佇列！"
+      }
+    },
+    "seek": {
+      "description": "尋找歌曲中的某個時間",
+      "options": {
+        "duration": "軌道位置，例如 1m 30s"
+      },
+      "errors": {
+        "invalid_format": "輸入時間，例如 1m 30s 或 0s。",
+        "not_seekable": "該曲目不可搜尋。",
+        "beyond_duration": "無法搜尋超過 {length} 的歌曲持續時間。"
+      },
+      "messages": {
+        "seeked_to": "尋求 {duration}"
+      }
+    },
+    "setup": {
+      "description": "為此伺服器設定 Murphy 功能。",
+      "errors": {
+        "channel_exists": "歌曲請求頻道已存在。",
+        "channel_not_exists": "歌曲請求頻道不存在。"
+      },
+      "messages": {
+        "channel_created": "歌曲請求通道已在 <#{channelId}> 中建立。",
+        "channel_deleted": "歌曲請求頻道已被刪除。",
+        "channel_info": "歌曲請求通道是<#{channelId}>。"
+      },
+      "options": {
+        "create": "建立歌曲請求通道",
+        "delete": "刪除歌曲請求頻道",
+        "info": "顯示歌曲請求頻道",
+        "preset": "應用安全伺服器設定預設",
+        "preset_type": "音樂、社群、伺服器審核或完整預設",
+        "validate": "檢查機器人權限和設定運作狀況",
+        "audit": "預覽設定運作狀況而不更改配置",
+        "fix": "建立回滾備份後套用安全預設值",
+        "rollback": "還原最新設定安全備份"
+      },
+      "panel_title": "設定通道：",
+      "channel_topic": "Murphy 播放器。點選面板上的「新增歌曲」即可播放。",
+      "panel_hint": "點選 **新增歌曲**，再輸入歌名或貼上連結。",
+      "created_title": "音樂房間已就緒",
+      "created_body": "播放器已放在 <#{channelId}>。點選 **新增歌曲**，輸入歌名或貼上連結，Murphy 就會在你的語音頻道播放。",
+      "created_note": "該頻道已關閉發言，播放器會一直保持在最上方。",
+      "exists": "這個伺服器已經有音樂房間了：<#{channelId}>。如要新建，請先使用 `/setup delete`。",
+      "open_channel": "開啟頻道",
+      "play_now": "放點音樂",
+      "check": "檢查設定",
+      "dashboard": "控制面板",
+      "request_title": "新增歌曲",
+      "request_label": "歌名或連結",
+      "request_placeholder": "例如 Kavinsky Nightcall 或 Spotify 連結"
+    },
+    "color": {
+      "description": "轉換 HEX 和 RGB 顏色",
+      "options": {
+        "value": "十六進位或 RGB 顏色"
+      }
+    },
+    "snowflake": {
+      "description": "檢查 Discord ID 及其建立時間",
+      "options": {
+        "id": "Discord使用者、伺服器、頻道、身分組或訊息的ID"
+      }
+    },
+    "password": {
+      "description": "產生加密安全密碼",
+      "options": {
+        "length": "密碼長度為 12 到 64 個字符"
+      }
+    },
+    "text_tools": {
+      "description": "編碼或解碼 URL 和 Base64 文本",
+      "options": {
+        "action": "要套用的轉換",
+        "text": "要處理的文字"
+      }
+    },
+    "shuffle": {
+      "description": "打亂隊列",
+      "messages": {
+        "shuffled": "打亂了隊列。"
+      },
+      "errors": {
+        "fairplay": "FairPlay已啟用，因此無法打亂佇列順序。"
+      }
+    },
+    "skip": {
+      "description": "跳過當前歌曲",
+      "messages": {
+        "skipped": "跳過 [{title}]({uri})。"
+      }
+    },
+    "skipto": {
+      "description": "跳至隊列中的特定歌曲",
+      "options": {
+        "number": "您要跳到的歌曲編號"
+      },
+      "errors": {
+        "invalid_number": "請提供有效的號碼。"
+      },
+      "messages": {
+        "skipped_to": "跳至歌曲編號 {number}。"
+      },
+      "title": "插隊"
+    },
+    "steal": {
+      "description": "從其他用戶竊取播放清單並將其新增至您的播放清單",
+      "options": {
+        "playlist": "您想要竊取的播放列表",
+        "user": "您想要竊取播放清單的用戶"
+      },
+      "messages": {
+        "provide_playlist": "請提供播放清單名稱。",
+        "provide_user": "請提及一個使用者。",
+        "playlist_not_exist": "對於提到的用戶來說，該播放清單不存在。",
+        "playlist_stolen": "成功從 {user} 竊取播放清單 `{playlist}`。",
+        "error_occurred": "竊取播放清單時發生錯誤。",
+        "playlist_exists": "該播放清單確實存在於所提到的用戶中。",
+        "playlist_limit_reached": "您的方案最多允許 {limit} 個播放清單。",
+        "track_limit_reached": "此播放清單大於 {limit} 曲目的計畫限制。"
+      }
+    },
+    "stop": {
+      "description": "停止音樂並清理隊列",
+      "messages": {
+        "stopped": "停止音樂並清理隊列。"
+      }
+    },
+    "volume": {
+      "description": "設定播放器的音量",
+      "options": {
+        "number": "您要設定的音量"
+      },
+      "messages": {
+        "invalid_number": "請提供有效的號碼。",
+        "too_low": "音量不能低於0。",
+        "too_high": "音量不能高於200。您想損壞您的聽力或揚聲器嗎？嗯，我不認為這是個好主意。",
+        "set": "將音量設定為 {volume}"
+      }
+    },
+    "resolve": {
+      "messages": {
+        "provide_query": "請提供查詢或追蹤連結。",
+        "nodes_error": "解析 NODES 變數時出錯。",
+        "connection_error": "Lavalink 連線錯誤：{err}",
+        "lavalink_error": "Lavalink 回應錯誤：{status}",
+        "json_error": "轉換為 JSON 時出錯。",
+        "forbidden": "存取被拒絕。檢查節點密碼和授權設定。",
+        "response_title": "Lavalink 回應",
+        "response_attached": "回應太長，無法在此顯示。它作為文件附加。"
+      }
+    },
+    "music": {
+      "description": "用於播放、搜尋和保存曲目的音樂控制中心。"
+    },
+    "audio": {
+      "description": "用於暫停、恢復、搜尋、音量、循環和自動播放的音訊控制。",
+      "guild_premium_required": "伺服器範圍內的音訊增強需要 Guild Basic 或更高的 Guild 計劃。",
+      "normalization_saved": "自適應標準化是 **{state}**。",
+      "crossfade_saved": "淡入淡出過渡設定為 **{seconds} 秒 **。這會執行淡出/fade-in；真正的解碼器重疊需要 Lavalink 交叉淡入淡出插件。",
+      "crossfade_disabled": "淡入淡出過渡已停用。"
+    },
+    "queue_group": {
+      "description": "用於清單、跳過、移動、刪除和隨機播放的佇列控制項。"
+    },
+    "globalban": {
+      "description": "管理機器人的全域用戶和伺服器禁令。",
+      "options": {
+        "user": "用戶被全球禁止",
+        "duration": "持續時間，如 1d、7d 或燙髮",
+        "reason": "原因",
+        "guild_id": "要全域阻止的伺服器 ID",
+        "target_type": "目標類型",
+        "target_id": "目標ID"
+      },
+      "invalid_title": "無效的全球禁令行動",
+      "invalid": "使用新增使用者、新增伺服器、刪除或清單。",
+      "no_user": "提供有效的用戶。",
+      "no_guild": "提供有效的伺服器 ID。",
+      "no_reason": "沒有提供理由。",
+      "bad_duration": "持續時間無效。使用 1d、7d 或 perm 等值。",
+      "added_title": "添加全球禁令",
+      "removed_title": "全球禁令已解除",
+      "not_found_title": "未發現全球禁令",
+      "removed": "全球禁令條目已刪除。",
+      "not_found": "未找到符合的全域禁令條目。",
+      "list_title": "全球禁令清單",
+      "empty": "未發現全球禁令。",
+      "target": "目標",
+      "type": "類型",
+      "reason": "原因",
+      "expires": "過期",
+      "permanent": "永恆的",
+      "user_note": "當安裝程式可以驗證時，該使用者無法使用機器人命令或安裝機器人。",
+      "server_note": "該伺服器將被阻止使用機器人命令。",
+      "subcommands": {
+        "add_user": "全域禁止用戶。",
+        "add_server": "全域阻止伺服器使用機器人。",
+        "remove": "取消全球禁令。",
+        "list": "列出全球禁令。"
+      }
+    },
+    "loop": {
+      "description": "設定播放器的循環模式",
+      "options": {
+        "mode": "您要設定的循環模式"
+      },
+      "looping_song": "🔂 現在循環播放**當前曲目**。",
+      "looping_queue": "現在循環**整個佇列**。",
+      "looping_off": "循環：循環模式已被**停用**。",
+      "invalid_mode": "X 迴圈模式無效。使用：`off`、`song` 或 `queue`。"
+    },
+    "like": {
+      "description": "將當前曲目儲存到您的收藏夾播放列表",
+      "saved": "已加入喜歡的歌曲。",
+      "playlist_hint": "透過 /favorites 玩您喜歡的遊戲。",
+      "button": "喜歡",
+      "removed": "已從喜歡的歌曲中移除。"
+    },
+    "history": {
+      "description": "顯示此伺服器上最近播放的曲目",
+      "title": "最近的曲目",
+      "empty": "自上次重新啟動以來未播放任何曲目。",
+      "options": {
+        "list": "顯示伺服器歷史記錄",
+        "play": "播放歷史曲目",
+        "clear": "清除伺服器歷史記錄",
+        "index": "歷史項目編號"
+      },
+      "cleared": "歷史已清除。",
+      "invalid_index": "此歷史記錄項不存在。",
+      "not_found": "無法載入此歷史記錄項目。",
+      "loaded": "從歷史記錄中載入 **{title}**。"
+    },
+    "voteskip": {
+      "description": "投票跳過當前曲目",
+      "voted": "已新增投票",
+      "skipped": "投票通過 - 跳過曲目",
+      "needed": "收集的選票"
+    },
+    "djpanel": {
+      "description": "顯示音樂配置面板",
+      "title": "音樂設定",
+      "subtitle": "Murphy 控制總覽",
+      "dj_mode": "DJ 模式：",
+      "dj_roles": "DJ 角色：",
+      "setup": "設定通道：",
+      "configured": "配置好的",
+      "not_configured": "未配置",
+      "button": "使用斜槓指令"
+    },
+    "favorites": {
+      "description": "管理您保存的最喜歡的曲目。",
+      "title": "收藏夾",
+      "empty": "您還沒有最喜歡的曲目。播放曲目時使用 `/like`。",
+      "total": "總收藏數：`{count}`",
+      "play_hint": "/favorites play",
+      "invalid_index": "選擇一個有效的收藏號碼。",
+      "removed": "刪除了最喜歡的 `#{index}`。",
+      "loaded": "已將 `{count}` 最喜歡的曲目載入到佇列中。",
+      "options": {
+        "list": "顯示您的最愛。",
+        "play": "播放所有喜愛的內容。",
+        "remove": "刪除最喜歡的曲目。",
+        "index": "要刪除的最喜歡的號碼。"
+      }
+    },
+    "move": {
+      "description": "將排隊的曲目移動到另一個位置。",
+      "title": "軌道已移動",
+      "empty": "隊列是空的。",
+      "invalid": "選擇 `1` 和 `{size}` 之間的位置。",
+      "moved": "將 **{title}** 從 `#{from}` 移至 `#{to}`。",
+      "options": {
+        "from": "目前隊列位置。",
+        "to": "新的隊列位置。"
+      }
+    },
+    "shardstats": {
+      "description": "顯示分片伺服器數量和總公會統計資料。",
+      "title": "分片統計",
+      "shard_line": "分片 {shard}：{count} 伺服器",
+      "total_line": "總計：{count} 伺服器",
+      "total_sharded_line": "總計：{count} 伺服器（{shards} 分片）",
+      "fetch_failed": "無法取得分片統計資料。請稍後重試。"
+    },
+    "avatar": {
+      "description": "顯示使用者頭像。",
+      "title": "阿凡達",
+      "user": "使用者",
+      "link": "關聯",
+      "options": {
+        "user": "您想查看其頭像的用戶"
+      }
+    },
+    "server-icon": {
+      "description": "顯示此伺服器圖示。",
+      "title": "伺服器圖示",
+      "server": "伺服器",
+      "link": "關聯",
+      "none": "該伺服器沒有圖示。"
+    },
+    "coinflip": {
+      "description": "拋一枚硬幣。",
+      "title": "硬幣翻轉",
+      "heads": "硬幣落在**正面**上。",
+      "tails": "硬幣落在**反面**上。",
+      "toss": "Murphy 擲出硬幣…",
+      "spin": "正在旋轉…",
+      "fall": "正在落下…",
+      "edge": "硬幣立起來了！",
+      "edge_note": "五百分之一。快截圖。",
+      "won": "猜對了！",
+      "lost": "猜錯了。",
+      "streak": "同一面連續 {count}×",
+      "premium": "Premium 統計：出現這個連勝的機率是 {percent}%。",
+      "options": {
+        "call": "猜猜看：正面還是反面"
+      }
+    },
+    "choose": {
+      "description": "從清單中選擇一個選項。",
+      "title": "選擇",
+      "result": "選擇：",
+      "need_options": "至少給出兩個用 `|` 分隔的選項。",
+      "options": {
+        "options": "以|分隔的選項，例如：pizza |壽司 |拉麵"
+      },
+      "thinking": "正在從 {count} 個選項中挑選…",
+      "from": "從 {count} 個選項中選出。",
+      "podium": "頒獎台"
+    },
+    "balance": {
+      "description": "顯示您的經濟平衡。",
+      "options": {
+        "user": "您要查看其餘額的用戶"
+      },
+      "title": "平衡",
+      "user": "用戶：",
+      "wallet": "錢包：",
+      "bank": "銀行：",
+      "xp": "經驗值：",
+      "total": "全部的：",
+      "gems": "寶石："
+    },
+    "daily": {
+      "description": "領取每日經濟獎勵。",
+      "title": "每日獎勵",
+      "cooldown_title": "每日已領取",
+      "claimed": "每日獎勵領取。",
+      "reward": "報酬：",
+      "xp": "經驗值：",
+      "streak": "條紋：",
+      "cooldown": "您已經領取了每日獎勵。",
+      "remaining": "適用於：",
+      "milestone": "連續領取加成"
+    },
+    "work": {
+      "description": "可以短暫地獲得金幣和經驗值。",
+      "title": "工作完成",
+      "cooldown_title": "工作冷卻時間",
+      "earned": "獲得：",
+      "xp": "經驗值：",
+      "cooldown": "再次工作前你需要休息一下。",
+      "remaining": "適用於：",
+      "jobs": {
+        "studio": "您在深夜會議前幫助調整了錄音室。",
+        "stage": "你準備好了舞台並讓演出繼續進行。",
+        "mix": "你清理了混亂的混音並使其聽起來清晰。",
+        "support": "您處理了繁忙音樂伺服器的支援票證。",
+        "playlist": "您策劃了一個人們實際重播的播放清單。"
+      }
+    },
+    "fish": {
+      "description": "一個完整的漁業經濟，包括魚竿、魚餌、板條箱、突變和全球增強。",
+      "title": "釣魚結果",
+      "cooldown_title": "釣魚冷卻時間",
+      "sold_for": "售價：",
+      "xp": "釣魚經驗值：",
+      "cooldown": "釣點需要一點時間來恢復。",
+      "remaining": "適用於：",
+      "fish": {
+        "common": "常見魚",
+        "rare": "珍稀魚類",
+        "epic": "史詩魷魚",
+        "legendary": "傳說中的鯨魚"
+      },
+      "no_bait_title": "沒有誘餌",
+      "no_bait": "您沒有選擇誘餌。使用 `/fish buy` 購買誘餌或使用 `/fish bait` 選擇另一個誘餌。",
+      "weight": "重量：",
+      "length": "長度：",
+      "quality": "品質:",
+      "crate_found": "寶箱：",
+      "leviathan": "遠古利維坦事件觸發。這種捕獲幾乎是不可能的。",
+      "used_bait": "用過的魚餌",
+      "shop_title": "釣魚店",
+      "shop_hint": "選擇下面的商店類別，然後使用 `/fish buy item:<id>` 購買魚餌、釣竿或全域增益。",
+      "buy_title": "購買完成",
+      "buy_failed_title": "購買失敗",
+      "item": "物品：",
+      "amount": "數量：",
+      "bait_title": "選定的誘餌",
+      "bait_failed_title": "誘餌失敗",
+      "bait_selected": "您選擇的誘餌已更新。",
+      "upgrade_title": "桿升級",
+      "upgrade_done_title": "升級完成",
+      "upgrade_choose": "選擇您要升級的釣具。",
+      "upgrade_failed_title": "升級失敗",
+      "rod_level": "桿升級：",
+      "cost": "成本：",
+      "backpack_title": "釣魚背包",
+      "backpack_baits": "餌",
+      "backpack_latest": "最新魚",
+      "inventory_title": "魚類庫存",
+      "inventory_empty": "您的魚庫存已空。使用 `/fish catch` 启动。",
+      "collection_title": "魚收藏",
+      "collection_progress": "收藏：",
+      "mutations_title": "發現突變：",
+      "stats_title": "釣魚統計",
+      "level": "釣魚等級：",
+      "fishing_xp": "釣魚經驗值：",
+      "rod": "桿：",
+      "total_caught": "捕獲總數：",
+      "total_value": "總價值：",
+      "crates": {
+        "silver": "銀箱",
+        "gold": "金箱",
+        "diamond": "鑽石箱"
+      },
+      "divine_caught": "神捕：",
+      "leaderboard_title": "釣魚排行榜",
+      "leaderboard_empty": "還沒有釣魚資料。",
+      "boosts_title": "全球漁業成長",
+      "no_boosts": "全球捕撈活動尚未啟動。",
+      "active_boost": "主動提升：",
+      "boost_by": "經過",
+      "boost_starts": "開始：",
+      "boost_expires": "到期時間：",
+      "rods_title": "釣竿",
+      "subcommands": {
+        "quests": "顯示釣魚任務。",
+        "prestige": "提升您的釣魚進度。",
+        "aquarium": "索取水族館被動收入。",
+        "pets": "管理釣魚寵物。",
+        "catch": "抓到一條魚。",
+        "shop": "開漁店。",
+        "buy": "購買魚餌、釣竿或全球強化物。",
+        "bait": "選擇未來捕獲的魚餌。",
+        "upgrade": "升級你目前的魚竿。",
+        "backpack": "顯示背包中的魚餌、裝備和最新的魚。",
+        "inventory": "展示你最新的魚。",
+        "collection": "顯示您的魚收集進度。",
+        "stats": "顯示您的釣魚統計資料。",
+        "leaderboard": "顯示釣魚排行榜。",
+        "boosts": "顯示正面的全球推動力。",
+        "rods": "顯示桿進展。",
+        "repair": "修理您的主動釣竿",
+        "season": "顯示目前的捕魚季節。",
+        "market": "展示漁市和最有價值的魚。",
+        "sell": "賣掉所有養的魚。",
+        "trophies": "展示獎盃和最佳捕獲量。"
+      },
+      "options": {
+        "pet_action": "寵物動作",
+        "pet": "釣魚寵物",
+        "category": "店鋪類別",
+        "item": "要購買的商品 ID",
+        "amount": "購買金額",
+        "bait": "可供選擇的誘餌 ID",
+        "quest_action": "任務行動。"
+      },
+      "categories": {
+        "bait": "餌",
+        "rods": "棒",
+        "boosts": "提升"
+      },
+      "buy_failed": {
+        "missing": "該項目不存在。",
+        "funds": "您沒有足夠的金幣或寶石。",
+        "db": "購買商品時資料庫出錯。"
+      },
+      "bait_failed": {
+        "missing": "這個誘餌不存在。",
+        "empty": "您不擁有此誘餌。"
+      },
+      "upgrade_failed": {
+        "max": "你的魔杖已經+15了。",
+        "funds": "您沒有足夠的金幣來進行此次升級。",
+        "db": "升級桿時資料庫出錯。"
+      },
+      "rarities": {
+        "common": "常見的",
+        "uncommon": "罕見",
+        "rare": "稀有的",
+        "epic": "史詩",
+        "legendary": "傳奇",
+        "mythical": "神話",
+        "divine": "神聖的"
+      },
+      "mutations": {
+        "golden": "金的",
+        "albino": "白化病",
+        "crystal": "水晶",
+        "shadow": "陰影",
+        "infernal": "地獄",
+        "celestial": "天界"
+      },
+      "baits": {
+        "worm": "蟲餌",
+        "premium": "高級魚餌",
+        "lucky": "幸運誘餌",
+        "golden": "金餌",
+        "diamond": "鑽石餌",
+        "nightcrawler": "夜行者誘餌",
+        "crystal_lure": "水晶魚餌",
+        "divine": "神聖誘餌",
+        "storm_lure": "風暴誘餌",
+        "moon_lure": "月亮誘餌",
+        "abyss_lure": "深淵誘餌",
+        "royal_lure": "皇室誘惑",
+        "leviathan_lure": "利維坦誘餌"
+      },
+      "rods": {
+        "wooden": "木棒",
+        "stone": "石棒",
+        "iron": "鐵棒",
+        "steel": "鋼棒",
+        "golden": "金棒",
+        "diamond": "鑽石棒",
+        "emerald": "翡翠棒",
+        "obsidian": "黑曜石棒",
+        "mythic": "神話魔杖",
+        "aurora": "極光棒",
+        "celestial": "天體棒",
+        "abyssal": "深淵魔杖",
+        "prismatic": "棱柱棒",
+        "leviathan": "利維坦棒"
+      },
+      "boosters": {
+        "global_fishing_xp": "全球釣魚經驗值助推器",
+        "global_fishing_xp_short": "5m 全球釣魚經驗值增強器",
+        "global_fishing_xp_week": "每周全球釣魚經驗值助推器",
+        "global_fishing_coins": "全球釣魚幣助推器",
+        "global_fishing_coins_day": "每日全球釣魚幣助推器",
+        "global_fishing_luck": "全球釣魚運氣助推器",
+        "global_fishing_luck_year": "年度全球釣魚運助推器",
+        "global_fishing_crates": "全球寶箱提升",
+        "global_fishing_stability": "促進全球穩定"
+      },
+      "boost_kinds": {
+        "fishing_xp": "釣魚經驗值",
+        "fishing_coins": "釣魚幣",
+        "fishing_luck": "釣魚運氣",
+        "fishing_crates": "板條箱機會",
+        "fishing_stability": "釣魚穩定性"
+      },
+      "gear": {
+        "target": "目標：",
+        "level": "等級：",
+        "rod": "桿",
+        "line": "線",
+        "hook": "鉤",
+        "all": "全部修復"
+      },
+      "season": "季節：",
+      "seasons": {
+        "spring_rivers": "春天的河流",
+        "deep_sea_week": "深海週",
+        "storm_tide": "風暴潮",
+        "royal_festival": "皇家節日"
+      },
+      "species": {
+        "roach": "蟑螂",
+        "bleak": "蒼涼",
+        "gudgeon": "古金",
+        "minnow": "桃花魚",
+        "bream": "魴",
+        "rudd": "陸克文",
+        "perch": "棲息",
+        "crucian_carp": "鯽魚",
+        "tench": "丁雀",
+        "carp": "鯉魚",
+        "grass_carp": "草魚",
+        "silver_carp": "鰱魚",
+        "barbel": "巴爾貝爾",
+        "chub": "鰱魚",
+        "ide": "井出",
+        "dace": "鯪魚",
+        "grayling": "河鱒",
+        "brown_trout": "褐鱒",
+        "rainbow_trout": "虹鱒",
+        "brook_trout": "布魯克鱒魚",
+        "pike": "派克",
+        "zander": "梭鱸",
+        "wels_catfish": "韋爾斯鯰魚",
+        "eel": "鰻魚",
+        "burbot": "江鱈",
+        "asp": "天門冬胺酸",
+        "salmon": "鮭魚",
+        "atlantic_cod": "大西洋鱈魚",
+        "haddock": "黑線鱈",
+        "pollock": "狹鱈",
+        "hake": "無須鱈",
+        "mackerel": "鯖魚",
+        "herring": "鯡魚",
+        "sardine": "沙丁魚",
+        "anchovy": "鳳尾魚",
+        "sea_bass": "鱸魚",
+        "european_flounder": "歐洲比目魚",
+        "halibut": "大比目魚",
+        "turbot": "大菱鮃",
+        "sole": "唯一",
+        "red_snapper": "紅鯛魚",
+        "grouper": "石斑魚",
+        "mahi_mahi": "鯕鰍",
+        "barracuda": "梭魚",
+        "tuna": "鮪魚",
+        "yellowfin_tuna": "黃鰭鮪魚",
+        "bluefin_tuna": "藍鰭鮪魚",
+        "swordfish": "旗魚",
+        "marlin": "馬林魚",
+        "sailfish": "旗魚",
+        "sturgeon": "鱘",
+        "beluga_sturgeon": "白鱘",
+        "arapaima": "巨骨舌魚",
+        "alligator_gar": "鱷魚雀鱔",
+        "peacock_bass": "孔雀鱸",
+        "piranha": "食人魚",
+        "oscar": "奧斯卡",
+        "angelfish": "神仙魚",
+        "discus": "鐵餅",
+        "clownfish": "小丑魚",
+        "lionfish": "獅子魚",
+        "moray_eel": "海鰻",
+        "electric_eel": "電鰻",
+        "pufferfish": "河豚魚",
+        "triggerfish": "砲彈魚",
+        "parrotfish": "鸚嘴魚",
+        "wrasse": "瀨魚",
+        "bluegill": "翻車魚",
+        "largemouth_bass": "大口黑鱸",
+        "smallmouth_bass": "小口黑鱸",
+        "striped_bass": "鱸魚",
+        "whitefish": "白魚",
+        "lake_trout": "鱒魚湖",
+        "char": "查爾",
+        "king_salmon": "帝王鮭",
+        "coho_salmon": "銀鮭魚",
+        "sockeye_salmon": "紅鮭魚",
+        "pink_salmon": "粉紅鮭魚",
+        "tilapia": "羅非魚",
+        "milkfish": "遮目魚",
+        "catla": "卡特拉",
+        "rohu": "野鯪",
+        "mrigal": "鱔魚",
+        "giant_snakehead": "巨型黑魚",
+        "snakehead": "黑魚",
+        "asian_seabass": "亞洲鱸魚",
+        "giant_trevally": "巨型鰺魚",
+        "trevally": "鰺魚",
+        "bonefish": "北梭魚",
+        "tarpon": "海鰱",
+        "permit": "允許",
+        "red_drum": "紅鼓",
+        "black_drum": "駭鼓",
+        "snook": "斯努克",
+        "wahoo": "瓦胡",
+        "amberjack": "鰤魚",
+        "cobia": "軍曹魚",
+        "monkfish": "安康魚",
+        "oarfish": "皇帶魚",
+        "coelacanth": "腔棘魚",
+        "sunfish": "翻車魚",
+        "manta_ray": "蝠鱝",
+        "stingray": "黃貂魚",
+        "hammerhead_shark": "雙髻鯊",
+        "tiger_shark": "虎鯊",
+        "great_white_shark": "大白鯊",
+        "whale_shark": "鯨鯊",
+        "ancient_leviathan": "遠古利維坦"
+      },
+      "quests_title": "釣魚任務",
+      "quest_collection": "擴大收藏",
+      "quest_rare": "捕捉稀有獎杯",
+      "prestige_title": "釣魚聲望",
+      "prestige_failed_title": "聲望不可用",
+      "prestige_success": "威望完成。釣魚等級重置，永久聲望增加。",
+      "prestige_failed": {
+        "level": "您需要釣魚等級 100 才能獲得聲望。",
+        "db": "聲望時資料庫錯誤。"
+      },
+      "aquarium_title": "水族館收入",
+      "aquarium_failed_title": "水族館還沒準備好",
+      "aquarium_claimed": "水族館聲稱被動收入。",
+      "aquarium_failed": {
+        "cooldown": "您的水族館仍在產生收入。",
+        "empty": "捕捉傳說中的、神話中的或神聖的魚來為水族館帶來收入。",
+        "db": "申報水族館收入時出現資料庫錯誤。"
+      },
+      "pets_title": "釣魚寵物",
+      "pet_buy_title": "購買寵物",
+      "pet_select_title": "已選擇寵物",
+      "pet_failed_title": "寵物行動失敗",
+      "pet_selected": "您的活躍釣魚寵物已更改。",
+      "pet": "寵物：",
+      "pet_failed": {
+        "missing": "該寵物不存在。",
+        "funds": "您沒有足夠的貨幣來購買這隻寵物。",
+        "empty": "您不擁有這隻寵物。",
+        "db": "處理該寵物時出現資料庫錯誤。"
+      },
+      "pet_actions": {
+        "list": "列出寵物",
+        "buy": "購買寵物",
+        "select": "選擇寵物"
+      },
+      "pets": {
+        "otter": "獺",
+        "penguin": "企鵝",
+        "seal": "海豹",
+        "dolphin": "海豚",
+        "golden_koi": "黃金錦鯉",
+        "sea_turtle": "海龜",
+        "sea_dragon": "海龍",
+        "crab": "螃蟹",
+        "axolotl": "蠑螈",
+        "orca": "虎鯨",
+        "angler_spirit": "釣魚者精神",
+        "reef_fox": "礁狐",
+        "storm_ray": "風暴雷",
+        "moon_jelly": "月亮果凍",
+        "abyss_whale": "深淵鯨",
+        "prismatic_drake": "棱光幼龍"
+      },
+      "variants": {
+        "river": "河",
+        "lake": "湖",
+        "deep_sea": "深海",
+        "storm": "風暴",
+        "moonlit": "月光下",
+        "ancient": "古老的",
+        "abyssal": "深淵",
+        "aurora": "極光",
+        "prismatic": "棱柱形",
+        "royal": "皇家"
+      },
+      "crates_found": "發現板條箱：",
+      "durability": "耐用性",
+      "rod_durability": "桿耐用度",
+      "line_durability": "線路耐用度",
+      "hook_durability": "掛鉤耐用度",
+      "rod_damage": "桿損壞",
+      "rod_broken_title": "斷桿",
+      "rod_broken": "你的桿子壞了。再次钓鱼之前使用 `/fish repair` 。",
+      "repair_title": "修復桿",
+      "repair_done_title": "修復完成",
+      "repair_choose": "選擇您要修理的釣具。",
+      "repair_failed_title": "修復失敗",
+      "repair_success": "您的活動桿已完全修復。",
+      "repair_failed": {
+        "full": "你的魚竿已經完全修好了。",
+        "funds": "您沒有足夠的硬幣來修理這根桿子。",
+        "db": "修復桿時出現資料庫錯誤。"
+      },
+      "failure": {
+        "escaped_title": "魚逃走了",
+        "escaped": "你還來不及把魚餌拉上來，魚就吞下了魚餌並逃脫了。",
+        "line_break_title": "線路斷了",
+        "line_break": "魚奮力掙扎，魚線斷了，漁獲全沒了。"
+      },
+      "season_title": "釣魚季節",
+      "season_boosted": "稀有度提升：",
+      "season_variants": "增強型變異：",
+      "season_reduced": "稀有度降低：",
+      "season_multiplier": "賽季乘數：",
+      "market_title": "魚市",
+      "market_hint": "以基本價值計算最有價值的魚。質量、重量、突變、誘餌和增益可以極大地改變支付。",
+      "sell_title": "魚賣了",
+      "sell_failed_title": "出售失敗",
+      "trophies_title": "釣魚獎盃",
+      "best_catch": "最佳漁獲",
+      "no_trophies": "還沒有獎杯。釣到你的第一條魚。"
+    },
+    "give": {
+      "description": "將您錢包中的硬幣交給其他使用者。",
+      "options": {
+        "user": "收到幣的用戶",
+        "amount": "給予的硬幣數量"
+      },
+      "title": "轉移完成",
+      "failed_title": "轉帳失敗",
+      "invalid_title": "無效轉帳",
+      "invalid": "選擇一個使用者和大於 0 的金額。",
+      "to": "到：",
+      "amount": "數量：",
+      "self": "您不能向自己發送硬幣。",
+      "funds": "您的錢包裡沒有足夠的硬幣。",
+      "failed": "轉移無法完成。"
+    },
+    "leaderboard": {
+      "description": "顯示最富有的經濟體用戶。",
+      "title": "經濟排行榜",
+      "page": "全球排行榜頁面`{current}/{total}` - `{count}`個人資料依皮夾+銀行排名。",
+      "wallet": "錢包",
+      "bank": "銀行",
+      "empty": "還沒有經濟概況。使用 `/daily`、`/work` 或 `/fish` 啟動。"
+    },
+    "xp": {
+      "description": "顯示使用者的 XP 等級和等級。",
+      "title": "XP等級",
+      "user": "使用者",
+      "level": "等級",
+      "total": "總經驗值",
+      "next_level": "XP 更上一層樓",
+      "progress": "進步",
+      "global_rank": "全球排名",
+      "options": {
+        "user": "使用者檢查"
+      }
+    },
+    "xptop": {
+      "description": "顯示伺服器 XP 排行榜。",
+      "title": "伺服器 XP 排行榜",
+      "subtitle": "{guild} - {count} 排名 XP 設定檔",
+      "summary": "`{count}` 成員在此伺服器上按 XP 排名。",
+      "guild_only": "XP top只能在伺服器上使用。"
+    },
+    "xpglobal": {
+      "description": "顯示全球 XP 排行榜。",
+      "title": "全球 XP 排行榜",
+      "subtitle": "{count} 在 Murphy 中對 XP 設定檔進行排名",
+      "summary": "`{count}` 個人資料依 XP 進行全球排名。"
+    },
+    "weekly": {
+      "description": "領取每週經濟獎勵",
+      "title": "每週獎勵",
+      "cooldown_title": "每週獎勵冷卻時間",
+      "claimed": "您的每週獎勵已領取。",
+      "reward": "硬幣",
+      "xp": "XP",
+      "gems": "寶石",
+      "streak": "每週連續",
+      "cooldown": "您已經領取了每週獎勵。",
+      "remaining": "可用於"
+    },
+    "monthly": {
+      "description": "領取您的每月經濟獎勵",
+      "title": "每月獎勵",
+      "cooldown_title": "每月獎勵冷卻時間",
+      "claimed": "您的每月獎勵已領取。",
+      "reward": "硬幣",
+      "xp": "XP",
+      "gems": "寶石",
+      "claims": "每月索賠",
+      "cooldown": "您已經領取了每月的獎勵。",
+      "remaining": "可用於"
+    },
+    "profile": {
+      "description": "顯示詳細的經濟概況",
+      "options": {
+        "user": "待檢查的用戶"
+      },
+      "title": "經濟概況",
+      "user": "使用者",
+      "wallet": "錢包",
+      "bank": "銀行",
+      "gems": "寶石",
+      "xp": "XP",
+      "daily_streak": "每日連勝",
+      "fishing": "釣魚",
+      "fishing_value": "等級 `{level}` |聲望 `{prestige}` |擷取 `{caught}`",
+      "account_age": "帳戶已建立",
+      "now_listening": "現在聽",
+      "last_listened": "上次收聽",
+      "no_listening_history": "還沒收聽歷史紀錄",
+      "supporter_badge": "官方 Murphy 支持者"
+    },
+    "spotify": {
+      "description": "瀏覽您連結的 Spotify 庫。",
+      "playlists": "列出您連接的 Spotify 播放清單。"
+    },
+    "youtube": {
+      "description": "瀏覽您連結的 YouTube 庫。",
+      "playlists": "列出您連接的 YouTube 播放清單。"
+    },
+    "external_playlists": {
+      "title": "播放清單",
+      "play_button": "玩",
+      "not_connected": "使用此命令之前，請在 Murphy 網站上連接 {source}。",
+      "error": "無法載入 {source} 播放清單。",
+      "hint": "使用編號按鈕對此播放清單進行排隊。",
+      "track": "追蹤",
+      "tracks": "曲目",
+      "owner_only": "只有命令作者才能使用這些按鈕。",
+      "queued": "排隊的播放清單：{count} 曲目。",
+      "play_error": "無法播放播放清單。檢查來源並重試。"
+    },
+    "deposit": {
+      "description": "將硬幣存入您的銀行",
+      "options": {
+        "amount": "存款金額或全部"
+      },
+      "title": "存款完成",
+      "failed_title": "存款失敗",
+      "amount": "已存入",
+      "wallet": "錢包",
+      "bank": "銀行",
+      "invalid": "提供有效金額或 `all`。",
+      "funds": "您的錢包裡沒有足夠的硬幣。",
+      "empty": "你的錢包空了。"
+    },
+    "withdraw": {
+      "description": "從您的銀行提取硬幣",
+      "options": {
+        "amount": "提取金額或全部"
+      },
+      "title": "提款完成",
+      "failed_title": "提現失敗",
+      "amount": "撤回",
+      "wallet": "錢包",
+      "bank": "銀行",
+      "invalid": "提供有效金額或 `all`。",
+      "funds": "您的銀行裡沒有足夠的硬幣。",
+      "empty": "你的銀行已經空了。"
+    },
+    "crime": {
+      "description": "為硬幣冒犯罪的風險。您可能會贏錢，也可能會輸錢。",
+      "title_success": "犯罪得逞",
+      "title_fail": "犯罪失敗",
+      "cooldown_title": "犯罪冷卻時間",
+      "earned": "獲得：",
+      "lost": "丟失的：",
+      "xp": "經驗值：",
+      "wallet": "錢包：",
+      "cooldown": "在嘗試另一次犯罪之前，你需要保持低調。",
+      "remaining": "適用於：",
+      "success": {
+        "market": "您溜進了擁擠的市場，賺到了 **{amount}** 硬幣。",
+        "courier": "您攔截了一名可疑的信使並發現了 **{amount}** 硬幣。",
+        "wallet": "您偷了一個無人看管的錢包並獲得了 **{amount}** 硬幣。",
+        "auction": "您翻轉了一張偽造的拍賣票 **{amount}** 硬幣。",
+        "server": "您以 **{amount}** 幣的價格出售了可疑的伺服器情報。"
+      },
+      "fail": {
+        "police": "你試圖搶劫一名警察。壞主意。您遺失了 **{amount}** 硬幣。",
+        "camera": "攝影機拍下了一切，罰款會花費您 **{amount}** 硬幣。",
+        "guard": "一名警衛攔住了你並拿走了 **{amount}** 硬幣作為補償。",
+        "fake": "你的買家用假錢付款。你失去了 **{amount}** 修復混亂的硬幣。",
+        "trap": "您走進了一個設定並丟失了 **{amount}** 硬幣。"
+      }
+    },
+    "rob": {
+      "description": "試圖搶劫其他用戶的錢包。",
+      "options": {
+        "user": "用戶要搶劫"
+      },
+      "title_success": "搶劫成功",
+      "title_fail": "搶劫失敗",
+      "invalid_title": "目標無效",
+      "empty_title": "沒什麼好偷的",
+      "cooldown_title": "搶冷時間",
+      "invalid": "選擇另一個非機器人用戶。",
+      "empty": "該用戶沒有可用的錢包硬幣來竊取。",
+      "cooldown": "你需要等待才能再次搶劫。",
+      "remaining": "適用於：",
+      "stolen": "被竊：",
+      "penalty": "懲罰：",
+      "wallet": "錢包：",
+      "success": {
+        "pocket": "您從 {target} 的口袋裡搶走了硬幣並偷走了 **{amount}**。",
+        "market": "您在市場附近分散了 {target} 的注意力，並偷走了 **{amount}**。",
+        "backpack": "你打開了 {target} 的背包並帶著 **{amount}** 逃走了。"
+      },
+      "fail": {
+        "police": "您試圖搶劫 {target}，但保全抓住了您。您支付了 **{amount}**。",
+        "counter": "{target} 立即註意到您並強迫您支付 **{amount}**。",
+        "witness": "一名目擊者舉報了您，因此您支付了 **{amount}** 罰款。"
+      }
+    },
+    "moderation": {
+      "user": "使用者",
+      "reason": "原因",
+      "no_reason": "沒有提供理由。",
+      "description": "用於保持伺服器乾淨的審核工具。"
+    },
+    "ban": {
+      "description": "禁止該成員存取此伺服器",
+      "title": "會員被禁止",
+      "failed_title": "禁令失敗",
+      "no_user": "提供要禁止的有效使用者。",
+      "not_bannable": "我無法禁止該用戶。檢查角色層次結構和權限。",
+      "options": {
+        "user": "禁止的用戶",
+        "reason": "禁令原因",
+        "delete_days": "要刪除的郵件天數"
+      }
+    },
+    "kick": {
+      "description": "從該伺服器踢出一名成員",
+      "title": "會員被踢",
+      "failed_title": "踢球失敗",
+      "no_user": "提供有效的用戶來踢。",
+      "not_found": "該用戶不在伺服器上。",
+      "not_kickable": "我無法踢掉這個用戶。檢查角色層次結構和權限。",
+      "options": {
+        "user": "用戶踢",
+        "reason": "被踢的原因"
+      }
+    },
+    "timeout": {
+      "description": "使成員超時",
+      "title": "會員超時",
+      "failed_title": "超時失敗",
+      "invalid": "提供 1s 和 28d 之間的有效使用者和持續時間。",
+      "not_moderatable": "我無法使該用戶超時。檢查角色層次結構和權限。",
+      "duration": "期間",
+      "options": {
+        "user": "使用者逾時",
+        "duration": "持續時間，例如 10m、2h、7d",
+        "reason": "超時原因"
+      }
+    },
+    "unban": {
+      "description": "透過用戶 ID 刪除伺服器禁令。",
+      "title": "使用者被解除封鎖",
+      "failed_title": "解禁失敗",
+      "invalid_id": "提供有效的 Discord 使用者 ID。",
+      "not_banned": "我無法取消此禁令。使用者可能不會被禁止。",
+      "options": {
+        "user_id": "要解封的 Discord 使用者 ID",
+        "reason": "解禁原因"
+      }
+    },
+    "softban": {
+      "description": "禁止並立即取消禁止用戶以清理最近的訊息。",
+      "title": "用戶軟禁止",
+      "failed_title": "軟禁失敗",
+      "no_user": "提供有效的用戶。",
+      "not_bannable": "我無法軟禁止該用戶。檢查角色層次結構和權限。",
+      "options": {
+        "user": "用戶到softban",
+        "reason": "軟禁令的原因",
+        "delete_days": "刪除多少天的訊息"
+      }
+    },
+    "warn": {
+      "description": "警告會員",
+      "title": "添加警告",
+      "failed_title": "警告失敗",
+      "invalid": "提供有效的使用者和原因。",
+      "options": {
+        "user": "用戶警告",
+        "reason": "警告原因"
+      }
+    },
+    "warnings": {
+      "description": "顯示使用者警告",
+      "title": "警告",
+      "no_user": "提供有效的用戶。",
+      "empty": "該用戶在此伺服器上沒有警告。",
+      "options": {
+        "user": "使用者檢查"
+      }
+    },
+    "purge": {
+      "description": "刪除該頻道最近的訊息",
+      "title": "訊息已刪除",
+      "failed_title": "清除失敗",
+      "invalid": "金額必須介於 1 到 100 之間。",
+      "deleted": "已刪除",
+      "options": {
+        "amount": "要刪除的訊息數"
+      }
+    },
+    "reminder": {
+      "description": "設定臨時提醒。",
+      "options": {
+        "time": "時間，例如30m、2h、1d",
+        "text": "提醒文字"
+      },
+      "title": "提醒設定",
+      "failed_title": "提醒失敗",
+      "invalid": "使用 10 秒到 30 天的持續時間。",
+      "when": "什麼時候：",
+      "text": "文字:",
+      "due_title": "提醒"
+    },
+    "8ball": {
+      "description": "問一下神奇的8球。",
+      "options": {
+        "question": "問題"
+      },
+      "title": "8球",
+      "question": "問題：",
+      "answer": "答：",
+      "answers": {
+        "1": "絕對是的。",
+        "2": "很有可能。",
+        "3": "看起來不錯。",
+        "4": "稍後再問。",
+        "5": "還不確定。",
+        "6": "訊號很亂。",
+        "7": "可能不會。",
+        "8": "不。",
+        "9": "絕對不是。",
+        "10": "僅當您承諾時。",
+        "11": "最好等一下。",
+        "12": "幾率高得出奇。"
+      },
+      "shake_1": "Murphy 搖晃魔法球…",
+      "shake_2": "球變得朦朧…",
+      "shake_3": "答案浮現了…",
+      "certainty": "確定度：",
+      "mood_yes": "星星同意。",
+      "mood_no": "星星說不。",
+      "mood_maybe": "未來很模糊。",
+      "premium": "Premium 第二意見：{answer}"
+    },
+    "roll": {
+      "description": "擲骰子。",
+      "options": {
+        "sides": "邊數"
+      },
+      "title": "卷",
+      "sides": "雙方：",
+      "result": "結果：",
+      "rolling": "正在擲 d{sides}…",
+      "critical": "暴擊！最大值。",
+      "fumble": "大失敗。哎唷。",
+      "premium": "Premium 優勢擲骰：第二次 {second}，最佳 {best}。"
+    },
+    "poll": {
+      "description": "建立並管理 Discord 原生投票。",
+      "options": {
+        "create": "建立本機 Discord 民意調查",
+        "close": "關閉該伺服器的追蹤投票之一",
+        "results": "顯示目前投票結果",
+        "export": "將投票結果匯出為 CSV",
+        "question": "投票問題",
+        "answers": "兩到十個答案用 | 分隔性格",
+        "message_id": "投票的 Discord 訊息 ID",
+        "duration": "投票持續時間（以小時為單位）（最長 7 天）",
+        "multiple": "讓每個成員選擇多個答案"
+      },
+      "title": "輪詢",
+      "invalid_answers": "提供 2-10 個答案，以 `|` 分隔；每個答案最多可包含 55 個字元。",
+      "created": "使用 {count} 答案建立的本機 Discord 民意調查共 {hours} 小時。",
+      "open": "公開投票",
+      "not_found": "找不到該追蹤的民調或其訊息不可用。",
+      "owner_only": "只有投票創建者或具有「管理訊息」權限的主持人才能將其關閉。",
+      "closed": "投票已結束，最終結果現已可見。",
+      "total_votes": "記錄的選擇總數：**{total}**。",
+      "exported": "已匯出 {count} 民意調查答案。"
+    },
+    "ship": {
+      "description": "看看兩個人有多合拍。",
+      "options": {
+        "user1": "第一個用戶",
+        "user2": "第二個用戶"
+      },
+      "title": "Ship",
+      "high": "強強對決。",
+      "medium": "有潛力。",
+      "low": "這個需要工作。",
+      "playful": "僅供娛樂。",
+      "tier_0": "💔 有緣無分。",
+      "tier_1": "🥶 有點冷淡。",
+      "tier_2": "🙂 有潛力的朋友。",
+      "tier_3": "💕 有戲！",
+      "tier_4": "💞 靈魂伴侶！",
+      "self": "自愛：100%。本該如此。💅",
+      "stat_chemistry": "化學反應",
+      "stat_trust": "信任",
+      "stat_humor": "幽默",
+      "stat_talk": "聊天",
+      "advice_0": "建議：當朋友吧。或者陌生人。",
+      "advice_1": "建議：從迷因開始，別從情書開始。",
+      "advice_2": "建議：拉進語音看看會怎樣。",
+      "advice_3": "建議：今天就出手。",
+      "advice_4": "建議：直接結婚吧。`/social love propose`",
+      "premium_1": "Premium 預測：{years} 年後結婚，{pets} 隻寵物。",
+      "premium_2": "Premium 預測：{kids} 個孩子和一個共用的 Spotify 帳號。",
+      "premium_3": "Premium 預測：{years} 個月後因為披薩配料第一次吵架。",
+      "premium_4": "Premium 預測：一棟有 {pets} 隻貓和超大沙發的房子。"
+    },
+    "quote": {
+      "description": "顯示簡短的報價。",
+      "title": "引用",
+      "items": {
+        "0": "小步驟仍然推動整個伺服器向前發展。",
+        "1": "好音樂、好人、好時機。",
+        "2": "營造您想加入的氛圍。",
+        "3": "如果感覺很混亂，請說出下一個小動作。",
+        "4": "雖然隊伍很長，但氛圍還是乾淨的。",
+        "5": "冷靜的機器人是強大的機器人。",
+        "6": "建構人們實際使用的東西。",
+        "7": "一個好的面板可以省一千個解釋。",
+        "8": "速度很重要，但清晰度使其保持活力。",
+        "9": "先讓它有用，其次才是美觀。",
+        "10": "一致性是一個特點。",
+        "11": "最好的更新是用戶第一時間感受到的更新。",
+        "12": "音樂隨心所欲。"
+      }
+    },
+    "wyr": {
+      "description": "提出一個你願意的問題。",
+      "title": "你會寧願",
+      "items": {
+        "0": "您願意永遠擁有完美的播放清單還是不再排隊等待？",
+        "1": "您願意說每種語言還是掌握每種樂器？",
+        "2": "您願意贏得每場比賽還是總是知道正確答案？",
+        "3": "您願意擁有一台巨大的伺服器還是十個緊密的社群？",
+        "4": "您願意僅使用按鈕還是命令來控制音樂？",
+        "5": "您願意一周獲得雙倍金幣還是雙倍幸運？",
+        "6": "您願意主持聊天還是管理活動？",
+        "7": "您想要稀有徽章還是稀有寵物？",
+        "8": "您願意贏得決鬥還是獲得贈品？",
+        "9": "您願意了解每一個指令還是擁有一個完美的面板？",
+        "10": "您想要無限跳過還是無限音量控制？",
+        "11": "您願意釣到神話般的漁獲還是找到一個巨大的板條箱？",
+        "12": "您願意翻譯每個訊息或每首歌曲的標題嗎？",
+        "13": "你寧願總是遲到 10 分鐘，還是早到 20 分鐘？",
+        "14": "你寧願弄丟手機還是錢包？",
+        "15": "你寧願一年沒有音樂還是沒有遊戲？",
+        "16": "你寧願出名還是有錢？",
+        "17": "你寧願會讀心術還是會隱形？",
+        "18": "你寧願沒有網路還是沒有披薩？",
+        "19": "你寧願對戰一隻馬那麼大的鴨子，還是 100 匹鴨子那麼大的馬？",
+        "20": "你寧願背下所有歌還是所有電影？"
+      }
+    },
+    "truth": {
+      "description": "提出一個真理問題。",
+      "title": "真相",
+      "items": {
+        "0": "哪首歌最能描述你現在的心情？",
+        "1": "您還記得哪一台伺服器記憶體？",
+        "2": "今年想學什麼技能？",
+        "3": "最近你重播次數最多的歌曲是哪一首？",
+        "4": "您暗中喜歡的機器人功能是什麼？",
+        "5": "您要改進的伺服器規則是什麼？",
+        "6": "本週你最有趣的 Discord 時刻是什麼？",
+        "7": "您假裝不喜歡哪種音樂類型？",
+        "8": "你會先磨練什麼經濟命令？",
+        "9": "是什麼讓伺服器感覺活躍？",
+        "10": "您對目前隊列的誠實評價是多少？",
+        "11": "您願意支付溢價的一項功能是什麼？",
+        "12": "該伺服器上最好的暱稱是什麼？",
+        "13": "你手機上最後搜尋的是什麼？",
+        "14": "這個伺服器裡你會把密碼交給誰？",
+        "15": "你最尷尬的綽號是什麼？",
+        "16": "哪首歌你永遠不會承認喜歡？",
+        "17": "你的初戀是誰？",
+        "18": "你最久多久沒睡覺？",
+        "19": "你記得最奇怪的夢是什麼？",
+        "20": "你在假裝懂的是什麼？"
+      }
+    },
+    "dare": {
+      "description": "獲得敢於提示。",
+      "title": "敢",
+      "items": {
+        "0": "發送您最後喜歡的歌曲。",
+        "1": "讚揚下一個在這裡寫這篇文章的人。",
+        "2": "將您的狀態變更為歌詞 10 分鐘。",
+        "3": "使用您以前從未嘗試過的命令。",
+        "4": "稱讚最後發言的人。",
+        "5": "製作一個包含兩首歌曲的迷你播放清單。",
+        "6": "更改您的暱稱 10 分鐘。",
+        "7": "用一個真實的問題開始民調。",
+        "8": "現在就嘗試釣到一隻魚。",
+        "9": "推薦一首隱藏的寶石歌曲。",
+        "10": "寫一句一行伺服器口號。",
+        "11": "讓聊天選擇您下一個播放清單的心情。",
+        "12": "說一件關於隊列的好事。",
+        "13": "傳送相簿裡的第 5 張照片（如果安全的話）。",
+        "14": "接下來 5 則訊息只用表情符號。",
+        "15": "進語音唱一句任意歌曲。",
+        "16": "對下一個發言的人說一句撩人情話。`/social love flirt`",
+        "17": "為這個伺服器寫一首俳句。",
+        "18": "設定一小時的搞笑狀態。",
+        "19": "幫語音裡的每個人打 1 到 10 分。",
+        "20": "讓別人幫你選一天的頭像。"
+      }
+    },
+    "meme": {
+      "description": "獲取一個模因。",
+      "title": "迷因",
+      "failed": "現在無法獲取模因。"
+    },
+    "automod": {
+      "description": "為此伺服器配置 Discord AutoMod 規則。",
+      "options": {
+        "panel": "顯示目前 AutoMod 設定。",
+        "words": "管理被阻止的單字。",
+        "mode": "要執行的操作。",
+        "word_list": "用逗號或換行符號分隔的單字。",
+        "spam": "啟用或停用垃圾郵件防護。",
+        "raid": "啟用或停用提及垃圾郵件防護。",
+        "rules": "同步 Discord AutoMod 規則。",
+        "enabled": "啟用該模組。",
+        "threshold": "垃圾郵件閾值。",
+        "mentions": "提到限制。",
+        "links": "配置鏈路過濾白名單。",
+        "domains": "允許的域以逗號分隔。",
+        "link_roles": "允許發布連結的角色提及或 ID。",
+        "blocked_domains": "應始終阻止的域。",
+        "ignored_channels": "連結過濾器忽略頻道提及或 ID。",
+        "ignored_roles": "連結過濾器忽略角色提及或 ID。",
+        "preset": "套用準備好的自動模式預設。",
+        "preset_level": "防護等級。",
+        "test_mode": "儲存設定而不發布 Discord 規則。",
+        "test": "測試範例訊息而不採取任何操作。",
+        "test_message": "要評估的訊息內容。",
+        "test_content": "無需應用伺服器審核操作即可檢查的訊息文本"
+      },
+      "title": "自動模組面板",
+      "word_filter": "詞過濾器",
+      "words": "被屏蔽的詞",
+      "spam": "反垃圾郵件",
+      "raid": "防突襲",
+      "hint": "使用 `/automod words`、`/automod spam`、`/automod raid` 和 `/automod rules` 來校準保護。",
+      "synced": "Discord AutoMod 規則已同步。",
+      "saved": "AutoMod 設定已儲存。",
+      "words_required": "至少為該操作提供一個詞。",
+      "words_saved": "已儲存單字過濾器。目前被封鎖的單字：`{count}`。",
+      "links": "連結過濾器",
+      "domains": "允許的域",
+      "link_roles": "允許的連結角色",
+      "links_saved": "連結過濾器已儲存。域：`{domains}`，角色：`{roles}`。",
+      "link_blocked_title": "連結被阻止",
+      "link_blocked": "{user}，該伺服器中的連結被阻止。",
+      "blocked_domains": "被封鎖的域名",
+      "ignored": "忽略頻道/roles",
+      "preset_saved": "Automod 預設 {preset} 已儲存。",
+      "test_title": "Automod測試結果",
+      "risk_score": "風險評分",
+      "test_result": "決定",
+      "test_reasons": "匹配訊號"
+    },
+    "ticket": {
+      "description": "配置和管理支援票證。",
+      "options": {
+        "setup": "配置工單類別和麵板通道。",
+        "category": "將建立新票證的類別。",
+        "panel_channel": "應張貼票務面板的頻道。",
+        "transcript_channel": "門票成績單頻道。",
+        "support_role": "建立票證時對角色進行 ping 操作。",
+        "panel": "發送票證面板。",
+        "close": "關閉目前工單。",
+        "settings": "自訂票證訊息和行為。",
+        "log_channel": "工單日誌的頻道。",
+        "max_open": "每個用戶的最大開放票證。",
+        "title": "面板和票證標題。",
+        "description": "面板說明。",
+        "open_message": "新工單內顯示的訊息。",
+        "button_label": "開啟按鈕標籤。",
+        "banner": "面板橫幅 URL。",
+        "close_mode": "親密行為。",
+        "manage": "管理目前的工單工作流程。",
+        "priority": "票優先。",
+        "assignee": "分配票務的工作人員。",
+        "tags": "以逗號分隔的票證標籤。"
+      },
+      "saved": "票證配置已儲存。",
+      "not_configured": "票證尚未配置。",
+      "panel_sent": "票證面板已發送。",
+      "open_button": "公開票",
+      "panel_title": "支援票",
+      "panel_body": "點擊下面的按鈕以建立私人支援票證。",
+      "not_ticket": "此頻道不是追蹤票。",
+      "closed": "票已關閉。",
+      "closed_moved": "票證已關閉並移至已關閉類別。",
+      "settings_saved": "票證設定已更新。",
+      "max_open_reached": "您的開放門票數量已達到最大數量。",
+      "log_opened": "票已開",
+      "manage_empty": "提供要更新的優先順序、受讓人或標籤。",
+      "managed": "工單工作流程設定已更新。",
+      "create_failed": "I couldn't create the ticket channel. Ask an admin to give Murphy the Manage Channels and Manage Roles permissions in the ticket category."
+    },
+    "giveaway": {
+      "description": "建立和管理贈品。",
+      "options": {
+        "start": "開始贈品。",
+        "end": "結束贈品。",
+        "reroll": "重新滾動贈品得獎者。",
+        "list": "列出活躍的贈品。",
+        "prize": "贈品獎品。",
+        "duration": "持續時間，例如10m、2h、1d。",
+        "winners": "獲獎者人數。",
+        "channel": "應發布贈品的頻道。",
+        "message_id": "贈品訊息 ID。",
+        "required_role": "需要進入的角色。",
+        "bonus_role": "授予一項附加條目的角色。",
+        "min_account_days": "Discord 帳戶的最小年齡（以天為單位）。",
+        "starts_at": "ISO 格式的選用方案開始日期。"
+      },
+      "invalid_duration": "持續時間無效。使用 `10m`、`2h` 或 `1d` 等值。",
+      "join_button": "加入",
+      "list_button": "參加者",
+      "title": "送",
+      "scheduled_title": "預定抽獎",
+      "prize": "獎",
+      "winners": "得獎者",
+      "ends": "結束",
+      "host": "主持人",
+      "started": "贈品活動開始了。訊息 ID：`{id}`。",
+      "reroll_title": "贈品重滾",
+      "end_title": "贈品結束",
+      "no_winners": "沒有有效的獲獎者。",
+      "active_title": "活動贈品",
+      "no_active": "該伺服器上沒有活動贈品。",
+      "messages": {
+        "not_found": "未找到贈品。",
+        "ended_btn": "本次贈品活動已結束。",
+        "leave": "你留下了贈品。",
+        "join": "您加入了贈品活動。",
+        "no_participants_list": "尚未有參與者參加此贈品活動。",
+        "not_started": "本次贈品活動尚未開始。",
+        "role_required": "您沒有所需的角色。",
+        "account_too_new": "您的 Discord 帳戶對於此贈品來說太新了。"
+      },
+      "required_role": "所需角色",
+      "min_account_age": "帳戶最低年齡（天）",
+      "starts": "開始",
+      "invalid_start": "提供有效的當前或未來開始日期。"
+    },
+    "autorole": {
+      "description": "配置使用者加入時自動指派的角色。",
+      "options": {
+        "set": "設定自動角色。",
+        "disable": "停用自動角色。",
+        "status": "顯示自動角色狀態。",
+        "role": "指派給新成員的角色。"
+      },
+      "title": "自動角色",
+      "state": "狀態",
+      "role": "角色",
+      "saved": "已儲存自動角色：{role}。",
+      "disabled": "自動角色已停用。"
+    },
+    "selfrole": {
+      "description": "使用按鈕建立可設定的自我角色面板。",
+      "options": {
+        "setup": "建立或更新自我角色面板。",
+        "panel": "再次發送自我角色面板。",
+        "list": "列出自我角色面板。",
+        "delete": "刪除自我角色面板配置。",
+        "id": "短菜單 ID。",
+        "channel": "應發送面板的通道。",
+        "roles": "角色提及或 ID，最多 20 個。",
+        "emojis": "表情符號清單以逗號分隔，最多 20 個。",
+        "title": "面板標題。",
+        "description": "面板說明。",
+        "banner": "面板橫幅 URL。"
+      },
+      "default_title": "選擇你的角色",
+      "default_description": "使用下面的按鈕新增或刪除角色。",
+      "invalid": "提供有效的 ID 和至少一個角色。",
+      "saved": "自我角色面板已儲存並發送。",
+      "panel_sent": "自我角色面板已發送。",
+      "missing": "該自我角色面板不存在。",
+      "channel_missing": "未找到已配置的自我角色通道。",
+      "title": "自我角色面板",
+      "empty": "未配置自我角色面板。",
+      "deleted": "自我角色面板已刪除。",
+      "added": "新增了 {role}。",
+      "removed": "刪除了 {role}。",
+      "permission_error": "我無法更新該角色。檢查我的角色位置和管理角色權限。"
+    },
+    "fun": {
+      "description": "有趣的命令分組以保持 Discord 命令計數較低。"
+    },
+    "utility": {
+      "description": "實用工具分組以保持 Discord 指令計數較低。"
+    },
+    "playlist": {
+      "description": "在一個乾淨的命令組中管理您的播放清單。"
+    },
+    "economy": {
+      "description": "經濟命令歸為一個乾淨的命令。"
+    },
+    "lock": {
+      "description": "鎖定目前頻道。",
+      "title": "頻道鎖定",
+      "done": "該頻道現已對普通會員鎖定。"
+    },
+    "unlock": {
+      "description": "解鎖當前頻道。",
+      "title": "頻道已解鎖",
+      "done": "該頻道現已解鎖。"
+    },
+    "slowmode": {
+      "description": "在目前頻道中設定慢速模式。",
+      "title": "慢速模式已更新",
+      "done": "慢速模式已設定為 **{seconds}s**。",
+      "options": {
+        "seconds": "慢速模式持續時間（以秒為單位），0 停用它"
+      }
+    },
+    "nick": {
+      "description": "更改或重置會員暱稱。",
+      "title": "暱稱已更新",
+      "failed_title": "暱稱更新失敗",
+      "not_manageable": "我無法管理該會員暱稱。檢查角色層次結構和權限。",
+      "nickname": "暱稱",
+      "reset": "重置",
+      "options": {
+        "user": "會員要更新",
+        "nickname": "新暱稱，留空重置"
+      }
+    },
+    "cooldowns": {
+      "description": "顯示你的經濟冷卻時間。",
+      "title": "經濟冷卻時間",
+      "ready": "`ready`",
+      "items": {
+        "daily": "日常的",
+        "weekly": "每週",
+        "monthly": "每月",
+        "work": "工作",
+        "crime": "犯罪",
+        "rob": "搶",
+        "fish": "魚",
+        "busk": "街頭表演"
+      }
+    },
+    "settings": {
+      "description": "顯示主伺服器設定面板。",
+      "title": "伺服器設定",
+      "language": "語言",
+      "dj": "DJ角色",
+      "setup": "設定頻道",
+      "hint": "所有設定指令現在都位於 /settings 下：general、music、automod、community 和 ai。",
+      "options": {
+        "overview": "顯示伺服器設定概述。"
+      },
+      "groups": {
+        "general": "語言、前綴和公告。",
+        "music": "音樂、DJ 和設定頻道設定。",
+        "automod": "Automod 過濾器和 Discord 規則。",
+        "community": "Autorole、selfrole、門票和贈品。"
+      }
+    },
+    "status": {
+      "description": "為管理員顯示機器人、分片、節點和玩家的健康狀況。",
+      "title": "機器人狀態"
+    },
+    "cases": {
+      "description": "顯示最近的審核案例。",
+      "title": "審核案例",
+      "empty": "未發現審核案例。",
+      "options": {
+        "user": "使用者過濾案例的依據"
+      }
+    },
+    "warnings_clear": {
+      "description": "清除成員的所有警告。",
+      "title": "警告已清除",
+      "removed": "刪除了警告",
+      "options": {
+        "user": "應清除警告的用戶"
+      }
+    },
+    "role_add": {
+      "description": "為成員新增角色。",
+      "title": "添加角色",
+      "options": {
+        "user": "目標會員",
+        "role": "要新增的角色"
+      }
+    },
+    "role_remove": {
+      "description": "從成員中刪除角色。",
+      "title": "角色已刪除",
+      "options": {
+        "user": "目標會員",
+        "role": "要刪除的角色"
+      }
+    },
+    "economy_shop": {
+      "description": "顯示經濟品商店。",
+      "title": "經濟店",
+      "item": "物品",
+      "amount": "數量",
+      "cost": "成本",
+      "items": {
+        "lucky_crate": "幸運箱",
+        "work_snack": "工作零食",
+        "rob_shield": "羅布·希爾德"
+      },
+      "item_descriptions": {
+        "lucky_crate": "打開它可以獲得隨機硬幣獎勵。",
+        "work_snack": "一種小型消耗品，可快速獲得金幣獎勵。",
+        "rob_shield": "針對未來經濟特徵的被動防護項目。"
+      }
+    },
+    "buy": {
+      "description": "購買經濟商店物品。",
+      "title": "購買的商品",
+      "invalid": "該商店商品不存在。",
+      "no_funds": "您的錢包裡沒有足夠的硬幣。",
+      "options": {
+        "item": "要購買的商品 ID",
+        "amount": "購買金額"
+      }
+    },
+    "inventory": {
+      "description": "顯示您的經濟庫存。",
+      "title": "經濟庫存",
+      "empty": "你的庫存是空的。"
+    },
+    "use": {
+      "description": "使用經濟庫存物品。",
+      "title": "使用的物品",
+      "invalid": "該項目不存在。",
+      "none": "您不擁有該物品。",
+      "reward": "報酬",
+      "passive": "此被動項目被儲存以供將來的保護系統使用。",
+      "options": {
+        "item": "要使用的項目 ID"
+      }
+    },
+    "report": {
+      "description": "向 Murphy 團隊發送報告。"
+    },
+    "wrapped": {
+      "description": "顯示此伺服器音樂包裝摘要。"
+    },
+    "automation": {
+      "description": "建立和管理伺服器自動化",
+      "options": {
+        "conditions": "此自動化的可選 Guild Plus JSON 條件"
+      }
+    },
+    "backup": {
+      "description": "建立、還原和安排伺服器配置備份"
+    },
+    "event_manager": {
+      "description": "建立事件和管理提醒",
+      "options": {
+        "create": "建立一個新項目",
+        "remind": "配置事件提醒",
+        "attendees": "顯示活動參加者",
+        "page": "頁"
+      }
+    },
+    "forms_manager": {
+      "description": "建立表格並審核回复"
+    },
+    "tempvoice": {
+      "description": "配置和管理臨時語音室"
+    },
+    "welcome_manager": {
+      "description": "配置和測試歡迎訊息"
+    },
+    "server_stats": {
+      "description": "顯示伺服器活動、成員、語音和音樂統計數據",
+      "options": {
+        "activity": "顯示訊息和命令活動統計訊息",
+        "members": "顯示會員加入和離開統計訊息",
+        "voice": "顯示語音活動統計訊息",
+        "music": "顯示音樂收聽統計數據",
+        "compare": "比較目前和先前的報告期間",
+        "export": "匯出可用伺服器統計資訊"
+      }
+    },
+    "audit_manager": {
+      "description": "尋找可疑的管理活動"
+    },
+    "case_manager": {
+      "description": "編輯案例、附加證據並審查上訴"
+    },
+    "cleanup_manager": {
+      "description": "審核機器人、不活躍成員和未使用的角色"
+    },
+    "lockdown": {
+      "description": "啟用或停用緊急伺服器鎖定"
+    },
+    "permissions_diagnose": {
+      "description": "診斷缺少 Murphy 權限"
+    },
+    "raid_manager": {
+      "description": "檢查突襲防護並隔離可疑成員"
+    },
+    "growth": {
+      "description": "運行創作者提要、參與系統、伺服器範本和成長自動化",
+      "options": {
+        "overview": "顯示增長套件的使用和計劃限制",
+        "feed-add": "新增 RSS、YouTube、Twitch 或 Kick 創建者 Feed",
+        "feed-list": "列出配置的建立者來源",
+        "feed-remove": "刪除創作者 Feed",
+        "role-temporary": "提供成員自動過期的角色",
+        "health-schedule": "安排自動伺服器運作狀況檢查",
+        "autopilot": "設定每週社群 Autopilot 報告",
+        "digest": "預覽目前每週社群摘要",
+        "mod-insights": "檢視版主活動與逆轉",
+        "venue-schedule": "安排 Music Venue 會話",
+        "creator-launch": "安排創作者發布活動",
+        "templates": "瀏覽即用型伺服器模板",
+        "template-apply": "應用程式伺服器模板",
+        "concierge": "請求專業 Murphy 伺服器設置"
+      },
+      "fields": {
+        "kind": "進給來源型",
+        "url": "官方 URL、RSS URL 或 YouTube 頻道 ID",
+        "channel": "目標文字頻道",
+        "role": "要通知或指派的選用角色",
+        "filters": "可選的逗號分隔關鍵字",
+        "interval": "刷新間隔（以分鐘為單位）",
+        "id": "設定標識符",
+        "user": "接收角色的成員",
+        "minutes": "角色到期前的分鐘數",
+        "frequency": "重複頻率",
+        "state": "啟用或停用該系統",
+        "days": "天數",
+        "text_channel": "場地玩家的文字頻道",
+        "voice_channel": "用於播放的語音或舞台通道",
+        "query": "電台 URL、播放清單或搜尋查詢",
+        "starts": "ISO 日期、Unix 時間戳或可讀日期",
+        "title": "活動或發布標題",
+        "package": "禮賓套餐",
+        "goals": "描述伺服器和期望的結果"
+      },
+      "overview_title": "成長套件",
+      "overview_plan": "目前計劃：**{plan}**",
+      "overview_feeds": "創作者摘要：**{count}/{limit}**",
+      "overview_autopilot": "社群自動駕駛儀：**{state}**",
+      "admin_required": "需要管理伺服器權限",
+      "upgrade_required": "此工作流程需要更高的 Murphy 計劃",
+      "limit_reached": "達到目前計劃限制",
+      "limit_detail": "您的 {plan} 計畫允許此模組使用 {limit} 專案。",
+      "invalid_feed": "無法接受摘要 URL",
+      "feed_added": "新增了創作者提要",
+      "feed_list": "創作者提要",
+      "feed_new_item": "新創作者出版品",
+      "feed_failures": "失敗： {count}",
+      "label_id": "ID",
+      "removed": "配置已刪除",
+      "not_found": "找不到配置",
+      "temporary_role_saved": "已安排臨時角色",
+      "health_saved": "健康掃描計畫已更新",
+      "health_report": "預定的伺服器運作狀況報告",
+      "health_permissions": "缺少關鍵權限：**{count}**",
+      "health_nodes": "連結的音樂節點：**{count}**",
+      "health_ok": "未偵測到嚴重配置問題。",
+      "autopilot_saved": "社區自動駕駛儀已更新",
+      "digest_title": "每週社區摘要",
+      "digest_members": "成員： **+{joins} / -{leaves}**",
+      "digest_voice": "語音活動：**{hours} 小時**",
+      "digest_commands": "使用的指令：**{count}**",
+      "mod_title": "伺服器審核責任",
+      "mod_total": "**{count}** 記錄了過去 **{days} 天的操作**",
+      "mod_row": "{moderator} · **{total}** 行動 · {bans} 禁制令 · {revoked} 撤銷",
+      "mod_preview": "免費預覽僅限 7 天。 Guild Plus 解鎖 365 天分析與匯出。",
+      "venue_saved": "Music Venue 會話已安排",
+      "creator_saved": "創作者啟動活動已安排",
+      "creator_schedule": "{date} · {count} 預定訊息",
+      "creator_reminder": "{title} 一小時內發射",
+      "creator_reminder_body": "做好準備並啟用發布通知。",
+      "creator_launch": "{title} 正在直播",
+      "creator_launch_body": "此版本現已發布。加入對話並分享您的反應。",
+      "creator_followup": "{title} 怎麼樣？",
+      "creator_followup_body": "分享回饋並幫助創作者規劃下一個版本。",
+      "invalid_date": "輸入未來日期或時間戳",
+      "invalid_url": "輸入有效的公共 HTTP 或 HTTPS URL",
+      "templates_title": "伺服器範本庫",
+      "template_applied": "已套用模板",
+      "template_review": "在發布配置之前檢查通道、角色和模組設定。",
+      "template_items": {
+        "community-starter": {
+          "name": "社群啟動器",
+          "description": "平衡了新社群的伺服器審核和公告。"
+        },
+        "creator-launch": {
+          "name": "創作者啟動套件",
+          "description": "新版本的創建者公告與提醒。"
+        },
+        "gaming-community": {
+          "name": "遊戲社區",
+          "description": "更嚴格的垃圾郵件防護和臨時語音室。"
+        },
+        "support-desk": {
+          "name": "支援伺服器",
+          "description": "支援伺服器的票證和平衡伺服器審核。"
+        },
+        "music-venue": {
+          "name": "音樂伺服器",
+          "description": "自動播放和 AutoDJ 具有 12 小時的重複視窗。"
+        },
+        "advanced-moderation": {
+          "name": "高階伺服器審核",
+          "description": "嚴格的伺服器審核、突襲保護以及針對異常審核活動的警報。"
+        }
+      },
+      "concierge_exists": "該伺服器已有一個有效的禮賓請求",
+      "concierge_created": "禮賓請求已建立",
+      "concierge_next": "Murphy 團隊將在要求任何付款之前與您聯繫。",
+      "empty": "尚未配置任何內容。"
+    },
+    "role_manager": {
+      "description": "批量安全管理角色"
+    },
+    "listening_goal": {
+      "description": "設定並追蹤每週收聽目標"
+    },
+    "feedback": {
+      "description": "分享使用Murphy後的產品回饋。",
+      "options": {
+        "rating": "為您的 Murphy 體驗進行評分（從 1 到 5）",
+        "category": "選擇您正在查看的 Murphy 部分",
+        "comment": "告訴我們哪些有效或哪些需要改進"
+      },
+      "prompt_title": "Murphy 在您的伺服器上運作情況如何？",
+      "prompt_body": "您已成功使用音樂和多個指令。當您有時間時，請發送 `/feedback` — 私人表單僅在實際使用後才會出現，並且絕不會發送未經請求的 DM。",
+      "sent_title": "收到回饋",
+      "sent_body": "感謝您對 {{rating}}/5 的評分。您的回饋將有助於確定下一步改進的優先順序。"
+    },
+    "radio_feedback": {
+      "description": "教 Smart Radio 您的伺服器喜歡什麼",
+      "title": "智慧電台回饋",
+      "liked": "為該伺服器未來的智慧無線電佇列按讚 **{title}**。",
+      "disliked": "不喜歡此伺服器未來智慧無線電佇列的 **{title}**。"
+    },
+    "recommend_similar": {
+      "description": "尋找與歌曲或當前曲目類似的曲目"
+    },
+    "scrobble_status": {
+      "description": "顯示您的外部監聽連線狀態"
+    },
+    "music_session": {
+      "description": "邀請其他人複製並繼續現場音樂會話"
+    },
+    "source_health": {
+      "description": "顯示即時 Lavalink 節點和來源健康狀況"
+    },
+    "bookmark_manager": {
+      "description": "保存有用的連結和 Discord 訊息",
+      "options": {
+        "add": "儲存 URL 或 Discord 訊息鏈接",
+        "list": "列出您的書籤",
+        "remove": "刪除書籤"
+      },
+      "upsell": "在您的個人 Murphy 雲端庫中儲存更多書籤。"
+    },
+    "calculator": {
+      "description": "計算安全的數學表達式"
+    },
+    "reminders_manager": {
+      "description": "建立持久提醒並管理您的時區",
+      "options": {
+        "create": "建立持久提醒",
+        "list": "列出您的待處理提醒",
+        "cancel": "取消提醒",
+        "timezone": "設定您的 IANA 時區"
+      },
+      "upsell": "在機器人重新啟動時保持更持久的提醒處於活動狀態。"
+    },
+    "tag_manager": {
+      "description": "建立和使用可重複使用的伺服器回應"
+    },
+    "timestamp": {
+      "description": "在每種顯示樣式中建立 Discord 時間戳"
+    },
+    "serverinfo": {
+      "description": "顯示詳細的伺服器信息",
+      "lines": {
+        "id": "**ID：** `{id}`",
+        "owner": "**擁有者：** {owner}",
+        "members": "**成員：** `{members}` （{humans} 快取的人類）",
+        "channels_roles": "**頻道/角色：** `{channels}` / `{roles}`",
+        "boosts": "**提升：** `{boosts}` · 層 `{tier}`",
+        "created": "**建立：** {date}"
+      },
+      "labels": {
+        "text": "文字",
+        "voice": "語音",
+        "categories": "分類",
+        "emojis": "表情符號",
+        "verification": "驗證"
+      }
+    },
+    "userinfo": {
+      "description": "顯示詳細的用戶和會員資訊",
+      "options": {
+        "user": "使用者檢查"
+      },
+      "unavailable": "不可用",
+      "yes": "是的",
+      "no": "不",
+      "lines": {
+        "user": "**使用者：** {user} · `{id}`",
+        "created": "**建立帳戶：** {date}",
+        "joined": "**加入伺服器：** {date}",
+        "roles": "**角色：** `{count}`",
+        "bot": "**機器人：** `{value}`"
+      }
+    },
+    "roleinfo": {
+      "description": "顯示角色詳細資訊和權限",
+      "options": {
+        "role": "要檢查的角色"
+      },
+      "none": "沒有任何",
+      "lines": {
+        "id": "**ID：** `{id}`",
+        "members": "**成員：** `{count}`",
+        "position_color": "**位置：** `{position}` · **顏色：** `{color}`",
+        "mentionable_managed": "**可提及/託管：** `{mentionable}` / `{managed}`",
+        "permissions": "**權限（{count}）：** {permissions}{more}",
+        "created": "**建立：** {date}"
+      }
+    },
+    "channelinfo": {
+      "description": "顯示頻道詳細資料和權限狀態",
+      "options": {
+        "channel": "考察管道"
+      },
+      "lines": {
+        "id": "**ID：** `{id}`",
+        "type": "**類型：** `{type}`",
+        "category": "**類別：** {category}",
+        "position": "**位置：** `{position}`",
+        "access": "**Murphy存取：**查看`{view}`，發送`{send}`，連接`{connect}`",
+        "created": "**建立：** {date}"
+      }
+    },
+    "premium": {
+      "description": "開放保費管理",
+      "title": "Murphy Premium",
+      "options": {
+        "status": "顯示您的 Premium 狀態和剩餘訂閱時間",
+        "plans": "比較每個可用的 Murphy Premium 計劃",
+        "benefits": "顯示您目前計劃中包含的功能",
+        "usage": "顯示您目前的保費限額和 AI 積分使用情況",
+        "trial": "設定後開始一次性 7 天伺服器試用"
+      },
+      "supporter_badge": "Murphy 支持者徽章已激活",
+      "trial": {
+        "title": "伺服器高級試用版",
+        "started": "您的 7 天 Server Pro 試用版已啟用。使用進階狀態查看確切的到期時間。現有訂閱和以前的試用版永遠不會被替換。",
+        "compare_plans": "保留 Guild Basic",
+        "lifecycle": {
+          "day2_title": "您的高級試用版已激活",
+          "day2_body": "立即嘗試規劃備份和一台伺服器自動化。這是兩個最有用的 Guild Basic 工作流程。",
+          "day5_title": "高級試用期還剩兩天",
+          "day5_body": "在決定是否保留 Guild Basic 之前，請先查看伺服器見解並恢復播放。",
+          "ending_title": "您的進階試用明天結束",
+          "ending_body": "Guild Basic 保持計畫備份、24/7 播放、更高限制和每週伺服器報告處於活動狀態。",
+          "expired_title": "您的進階試用已結束",
+          "expired_body": "您的資料仍然安全，免費功能仍然有效。每當您想要恢復 Guild Basic 功能時進行升級。"
+        }
+      },
+      "status": {
+        "title": "您的進階狀態",
+        "account": "個人訪問",
+        "server": "這個伺服器",
+        "free": "自由的",
+        "owner": "專案擁有者存取權限處於活動狀態，沒有到期日。",
+        "slots": "伺服器插槽 {used}/{max}",
+        "no_expiry": "有效且無有效期限",
+        "expired": "已到期",
+        "remaining": "剩下 {days} 天，直到 {date}"
+      },
+      "inactive": {
+        "title": "高級版未激活",
+        "description": "選擇下面的計劃來解鎖更高的限制、高級音樂工具和優先功能。"
+      },
+      "plans": {
+        "title": "可用訂閱",
+        "personal": "個人高級版、25 個播放清單、25 個每日 AI 請求和 90 天分析。",
+        "guild_basic": "進階版適用於 1 台伺服器，提供 24/7 音樂、過濾器和 5 個社群工具。",
+        "guild_plus": "進階版，適用於 3 台伺服器，提供 365 天分析和 25 個社群工具。",
+        "supporter": "Discord 獨家支援計劃，支援最多 5 台伺服器。",
+        "lifetime_title": "一次性永久購買",
+        "personal_lifetime": "一個 Discord 帳戶的永久個人溢價，無需續訂。",
+        "guild_lifetime": "一台可聲明的 Discord 伺服器的永久公會基本上啟動。",
+        "vat": "訂閱價格按月計算。一次性價格不會續訂。Discord 可能會加收當地稅費。"
+      },
+      "usage": {
+        "title": "計劃使用和限制",
+        "plan": "有效的計劃",
+        "playlists": "播放清單和每個播放清單的曲目",
+        "tools": "書籤、提醒和儲存的佇列"
+      },
+      "benefits": {
+        "title": "{plan} 中的功能",
+        "free": "基本播放、7 天分析和免費每月限制",
+        "adFree": "符合條件的無廣告 Murphy 網站區域",
+        "historyExport": "匯出個人收聽歷史",
+        "smartRadioAdvanced": "高級智慧無線電建議",
+        "cloudQueue": "保存和還原個人雲端佇列",
+        "scheduledBackups": "安排自動伺服器備份",
+        "weeklyReports": "接收自動每週伺服器報告",
+        "sharedPlaylists": "使用共享伺服器播放列表",
+        "analyticsExport": "匯出分析並比較每月活動",
+        "advancedAutomation": "建構多條件自動化",
+        "customBranding": "自訂伺服器導向的 Murphy 品牌",
+        "betaFeatures": "在其他計劃之前訪問測試版功能",
+        "supporterBadge": "顯示 Murphy 支持者徽章",
+        "experimentalSources": "儘早訪問實驗音樂資源",
+        "alwaysOnPlayback": "保持音樂活躍並在重新啟動後恢復播放器",
+        "moderationHistoryExport": "匯出擴展審核案例歷史記錄",
+        "scheduledHealthScans": "安排伺服器運作狀況和配置檢查",
+        "creatorFeeds": "發布創建者和內容來源更新",
+        "communityAutopilot": "接收自動社區健康建議和摘要",
+        "modAccountability": "檢測異常的審核活動並保留問責報告",
+        "musicVenue": "運行預定電台、DJ 輪班和高級請求政策",
+        "premiumTemplates": "應用高級伺服器設定和自動化模板"
+      },
+      "buttons": {
+        "subscribe": "訂閱 Discord",
+        "compare": "比較計劃",
+        "manage": "管理",
+        "support": "支持我們"
+      }
+    },
+    "server-taste": {
+      "description": "顯示該伺服器的音樂品味概況"
+    },
+    "mood": {
+      "description": "創建基於情緒的音樂預設",
+      "options": {
+        "preset": "聆聽心情預設"
+      },
+      "open_player": "開啟播放器",
+      "player_hint": "開啟網路播放器以將此預設新增至佇列並存取所有控制項。",
+      "presets": {
+        "global-pop-night": "適合深夜聆聽的流行和饒舌音樂。",
+        "gaming": "適合一起玩遊戲的充滿活力的音樂。",
+        "party": "適合繁忙語音頻道的熟悉、歡快的曲目。",
+        "chill": "更安靜的音樂，適合輕鬆聆聽。"
+      }
+    },
+    "radio-smart": {
+      "description": "從當前伺服器氛圍建立智慧無線電隊列",
+      "server_only": "智慧無線電僅在伺服器中可用。",
+      "open": "打開智慧型收音機",
+      "title": "智慧型收音機",
+      "vibe": "**偵測到的氛圍：** {mood}",
+      "advanced_active": "高級智慧無線電透過個人種子、藝術家區塊、回饋學習和擴展推薦集來活躍。",
+      "free_preview": "免費智慧型收音機顯示 4 個建議。個人解鎖8個推薦，更強的個人化和歷史匯出。",
+      "dashboard_hint": "開啟儀表板以啟動產生的無線電隊列。"
+    },
+    "recover": {
+      "description": "恢復上次中斷的進階 24/7 玩家會話。",
+      "title": "球員恢復",
+      "messages": {
+        "restored": "恢復開始了。 Murphy 正在重新連線並還原上次儲存的佇列。",
+        "cancelled": "恢復已取消。"
+      },
+      "errors": {
+        "not_eligible": "恢復需要伺服器進階版並啟用 24/7 模式。",
+        "already_active": "該伺服器中已有活躍玩家或佇列。",
+        "no_snapshot": "未發現最近中斷的玩家會話。"
+      },
+      "preview_title": "恢復預覽",
+      "preview_hint": "確認恢復最後一個進階 24/7 播放器快照。",
+      "buttons": {
+        "restore": "恢復"
+      },
+      "fields": {
+        "track": "追蹤",
+        "author": "作者",
+        "position": "位置",
+        "queue": "佇列",
+        "snapshot_age": "快照"
+      }
+    },
+    "sources": {
+      "description": "顯示可用的音樂來源和存取要求。",
+      "title": "音樂來源",
+      "subtitle": "此伺服器和您的帳戶的來源存取權限。",
+      "status": {
+        "available": "可用的",
+        "premium": "優質的",
+        "vote": "投票",
+        "disabled": "殘障人士",
+        "restricted": "受限制的"
+      }
+    },
+    "diagnose": {
+      "description": "檢查語音、權限、玩家和 Lavalink 健康狀況。",
+      "title": "音樂診斷",
+      "healthy": "未偵測到阻塞音樂問題。",
+      "attention": "一項或多項檢查需要注意。",
+      "region": "語音區",
+      "node": "Lavalink 節點",
+      "latency": "節點延遲",
+      "options": {
+        "music": "檢查完整的音樂連線路徑。"
+      },
+      "checks": {
+        "voice": "您的語音頻道",
+        "connect_permission": "連線權限",
+        "speak_permission": "發言許可",
+        "lavalink": "Lavalink 可用性",
+        "player": "公會玩家",
+        "same_channel": "玩家語音頻道",
+        "recent_errors": "最近的 Lavalink 錯誤"
+      },
+      "details": {
+        "not_in_voice": "首先加入語音頻道",
+        "granted": "的確",
+        "missing": "遺失的",
+        "disconnected": "斷開連接",
+        "active": "積極的",
+        "no_player": "沒有活躍玩家",
+        "not_applicable": "不適用",
+        "none": "沒有任何",
+        "automatic": "自動的"
+      }
+    },
+    "onboarding": {
+      "description": "開啟安全伺服器設定精靈。",
+      "title": "伺服器設定嚮導",
+      "intro": "選擇一個預設。在儲存任何內容之前，您將看到每個變更的設定。",
+      "safe_note": "頻道 ID、角色、語言和現有票證配置永遠不會被覆蓋。",
+      "placeholder": "選擇伺服器預設",
+      "preview_title": "配置預覽",
+      "confirm_note": "僅在檢查上述每個值後才能套用。",
+      "apply": "應用預設",
+      "cancel": "取消",
+      "cancelled": "沒有更改任何設定。",
+      "wrong_owner": "此設定面板屬於另一位管理員。",
+      "applied_title": "設定完成",
+      "applied": "預設已自動套用。您可以在儀表板或 /settings 中細化每個模組。",
+      "presets": {
+        "community": {
+          "name": "社群",
+          "description": "平衡節制、經濟、公告和翻譯。"
+        },
+        "music": {
+          "name": "音樂",
+          "description": "音樂控制、自動播放、公告和翻譯。"
+        },
+        "gaming": {
+          "name": "賭博",
+          "description": "經濟、反垃圾郵件、賭博和社區功能。"
+        },
+        "support": {
+          "name": "支援",
+          "description": "反垃圾郵件、連結保護、公告和翻譯。"
+        },
+        "minimal": {
+          "name": "最小",
+          "description": "停用可選系統並僅保留核心機器人。"
+        }
+      }
+    },
+    "community": {
+      "description": "社群簡介、聲譽、建議、活動、表格和備份。",
+      "not_found": "找不到所要求的項目。",
+      "options": {
+        "profile": "顯示完整的社區概況。",
+        "user": "選擇一個用戶。",
+        "reputation": "為會員提供每日聲望。",
+        "reason": "可選原因。",
+        "favorite_track": "將目前播放的曲目設定為您最喜歡的曲目。",
+        "suggest": "建立伺服器建議。",
+        "suggestions": "列出最近的伺服器建議。",
+        "suggestion_status": "更新建議狀態。",
+        "title": "標題。",
+        "content": "詳細內容。",
+        "id": "數字項目 ID。",
+        "status": "新的狀態。",
+        "comment": "可選的工作人員評論。",
+        "event_create": "創建社區活動。",
+        "event_description": "事件描述。",
+        "starts": "開始日期、ISO 日期或 Discord 時間戳。",
+        "capacity": "最大參與人數，0 表示無限制。",
+        "events": "列出即將發生的事件。",
+        "event_join": "參加即將舉行的活動。",
+        "forms": "列出可用的表格。",
+        "form_panel": "在此頻道中發佈表單面板。",
+        "form_id": "表單 ID。",
+        "backup": "建立伺服器配置備份。",
+        "backup_name": "可選的備份名稱。"
+      },
+      "profile": {
+        "title": "{user} 的個人資料",
+        "reputation": "名聲",
+        "badges": "徽章",
+        "achievements": "成就",
+        "level": "等級",
+        "balance": "錢包",
+        "votes": "Top.gg 票數",
+        "favorite_track": "最喜歡的曲目",
+        "favorite_saved": "當前曲目現在顯示為您的最愛。",
+        "activity": "伺服器活動",
+        "messages": "留言",
+        "voice": "語音時間",
+        "events": "參加活動",
+        "no_data": "還沒有數據。"
+      },
+      "reputation": {
+        "title": "名聲",
+        "given": "聲譽已授予 {user}。",
+        "self": "你不能為自己帶來聲譽。",
+        "cooldown": "每台伺服器每天只能給予一次聲望。"
+      },
+      "suggestions": {
+        "title": "伺服器建議",
+        "empty": "尚未創建任何建議。",
+        "status": "地位",
+        "by": "推薦人",
+        "updated_title": "建議已更新",
+        "updated": "建議#{id} 現在是{status}。",
+        "closed": "該建議不再接受投票。",
+        "changelog_title": "已接受伺服器建議"
+      },
+      "events": {
+        "title": "社區活動",
+        "empty": "沒有即將舉行的活動。",
+        "invalid_date": "提供有效的未來日期。",
+        "starts": "開始",
+        "participants": "參加者",
+        "join_button": "參加活動",
+        "joined": "您參加了活動。",
+        "waitlisted": "活動已滿。您已被加入候補名單。",
+        "missing": "此活動不可用。",
+        "waitlisted_already": "您已經在候補名單上。",
+        "started_title": "活動開始",
+        "reminder_title": "即將舉行的活動提醒"
+      },
+      "forms": {
+        "title": "社區形式",
+        "fields": "領域",
+        "empty": "沒有可用的表格。",
+        "panel_description": "打開表格並私下提交您的答案。",
+        "open_button": "開啟表格",
+        "panel_sent": "表單面板已發布。",
+        "submit_failed": "無法提交表格。",
+        "submitted_by": "提交者",
+        "submitted": "您的表單已成功提交。"
+      },
+      "backup": {
+        "title": "配置備份",
+        "created": "備份版本 {version} 已建立。"
+      }
+    },
+    "room": {
+      "description": "管理您的臨時語音室。",
+      "title": "臨時語音室",
+      "no_voice": "首先加入你的臨時語音室。",
+      "not_temporary": "這不是 Murphy 的臨時語音室。",
+      "not_owner": "只有房間所有者或伺服器管理員才能執行此操作。",
+      "owner": "擁有者",
+      "locked": "鎖定",
+      "hidden": "隱",
+      "limit": "使用者限制",
+      "locked_done": "房間現在已上鎖。",
+      "unlocked_done": "房間現在已解鎖。",
+      "hidden_done": "該房間現在已隱藏。",
+      "shown_done": "現在可以看到房間了。",
+      "renamed": "房間名稱已更新。",
+      "limit_done": "房間用戶限制已更新。",
+      "invalid_user": "選擇另一個非機器人用戶。",
+      "user_not_here": "該用戶必須在您的房間內。",
+      "transferred": "房間所有權已轉讓。",
+      "allowed": "用戶現在可以加入房間。",
+      "blocked": "用戶被阻止進入房間。",
+      "kicked": "使用者已與房間斷開連線。",
+      "region_done": "語音區域現在是**{region}**。",
+      "bitrate_done": "房間比特率現在為 **{kbps} kbps**。",
+      "stats_done": "伺服器房間： **{rooms}** · 您的房間： **{owned}** · 這裡的成員： **{members}**",
+      "cleanup_done": "刪除了 **{count}** 過時的臨時房間記錄。",
+      "options": {
+        "info": "顯示房間所有權和存取狀態。",
+        "lock": "阻止新用戶加入。",
+        "unlock": "允許用戶再次加入。",
+        "hide": "將房間隱藏起來，不讓所有人看到。",
+        "show": "讓房間再次可見。",
+        "rename": "更改房間名稱。",
+        "name": "新房間名稱。",
+        "limit": "設定房間用戶限制。",
+        "amount": "用戶限制，0表示無限制。",
+        "transfer": "轉讓房間所有權。",
+        "allow": "允許用戶查看並加入。",
+        "block": "阻止並斷開用戶連線。",
+        "user": "選擇一個用戶。",
+        "permit": "允許使用者查看並加入房間。",
+        "reject": "封鎖並中斷使用者與房間的連線。",
+        "kick": "中斷使用者連線而不阻止他們。",
+        "region": "設定房間語音區域或將其重設為自動。",
+        "region_value": "Discord 語音區域；留空為自動。",
+        "bitrate": "設定房間音訊位元率。",
+        "kbps": "位元速率（以千位元每秒為單位）。",
+        "stats": "顯示臨時房間統計資料。",
+        "cleanup": "刪除陳舊的臨時房間記錄。"
+      }
+    },
+    "voice": {
+      "description": "控制你的臨時語音室"
+    },
+    "party": {
+      "description": "建立與管理共用 Murphy 監聽方",
+      "title": "Murphy 派對",
+      "options": {
+        "create": "從目前隊列中創建一個兩小時的聚會",
+        "join": "使用邀請碼加入隊伍",
+        "host": "將政黨所有權轉讓給另一位成員",
+        "end": "結束您舉辦的聚會",
+        "schedule": "在接下來的 30 天內安排聚會",
+        "vote": "為聚會中的曲目投票",
+        "recap": "顯示政黨參與與投票結果"
+      },
+      "fields": {
+        "code": "八字聚會邀請碼",
+        "user": "新派對主持人",
+        "starts": "ISO 格式或 Unix 時間戳記的未來開始日期",
+        "track": "聚會清單中的曲目編號"
+      },
+      "created": "工作階段 `{code}`：**{count} 首歌曲**。分享代碼，一起聆聽。",
+      "joined": "加入隊伍 `{code}` 並排隊 **{count} 曲目 **。",
+      "owner_only": "只有目前的派對主持人可以執行此操作。",
+      "ended": "聚會已結束，邀請碼不再有效。",
+      "host_changed": "當事人所有權已轉移至 {user}。",
+      "invalid_date": "輸入未來 30 天內的日期。",
+      "scheduled": "聚會 `{code}` 預定於 <t:{timestamp}:F> 舉行，曲目為 **{count} 曲目 **。",
+      "starts_later": "該方開始 <t:{timestamp}:R>。",
+      "invalid_track": "該曲目不在本次聚會中。從曲目清單中選擇一個號碼。",
+      "voted": "您對曲目 **{track}** 的投票已儲存。",
+      "recap_title": "聚會總結",
+      "recap_top": "頂尖曲目：**{title}**·{author}",
+      "recap_no_votes": "尚未有曲目收到投票。"
+    },
+    "tasks": {
+      "description": "建立、指派和完成輕量級團隊任務",
+      "title": "團隊任務",
+      "options": {
+        "create": "為伺服器團隊建立任務",
+        "assign": "將未完成的任務指派給成員",
+        "list": "列出開啟的伺服器任務",
+        "complete": "將指派的任務標記為完成",
+        "due": "顯示 7 天內到期的任務"
+      },
+      "fields": {
+        "id": "任務編號",
+        "title": "短任務標題",
+        "assignee": "任務負責人",
+        "due": "可選的未來日期和時間",
+        "description": "可選任務詳細信息"
+      },
+      "invalid_due": "輸入有效的未來日期和時間。",
+      "created": "任務 `#{id}` 已建立。",
+      "assigned": "任務 `#{id}` 已指派給 {user}。",
+      "completed": "任務 `#{id}` 已完成。",
+      "not_found": "找不到該開啟的任務或您無法完成它。",
+      "empty": "沒有符合的開放任務。"
+    },
+    "incident": {
+      "description": "協調緊急鎖定、時間表和安全回滾",
+      "title": "事件模式",
+      "options": {
+        "start": "建立安全備份並鎖定文字頻道",
+        "status": "顯示目前事件狀態",
+        "timeline": "顯示最近的事件操作",
+        "rollback": "從事件快照恢復頻道權限"
+      },
+      "fields": {
+        "reason": "啟動事件模式的原因"
+      },
+      "status_line": "狀態：**{status}**\n開始於： {actor}\n開始於: {time}",
+      "empty": "尚未記錄任何事件行動。",
+      "result": "事件操作 **{action}** 已完成：**{changed}** 頻道已更改，**{failed}** 失敗。"
+    },
+    "calendar": {
+      "description": "管理伺服器事件、時區、可用性和 ICS 匯出",
+      "title": "伺服器日曆",
+      "options": {
+        "birthday": "將您的生日保存為月日",
+        "timezone": "儲存您的 IANA 時區",
+        "availability": "儲存簡短的可用性說明",
+        "event": "建立具有自動提醒的伺服器事件",
+        "ics": "將即將發生的事件匯出為 ICS 日曆",
+        "sync": "建立一個準備導入日曆應用程式的 ICS 文件"
+      },
+      "fields": {
+        "date": "MM-DD 格式的生日",
+        "timezone": "IANA 時區，如 Europe/Warsaw",
+        "availability": "當您有空時",
+        "title": "活動標題",
+        "starts": "未來的 ISO 日期和時間",
+        "description": "可選事件詳細信息"
+      },
+      "invalid_birthday": "使用 MM-DD 格式，例如 `08-21`。",
+      "invalid_timezone": "輸入有效的 IANA 時區，例如 `Europe/Warsaw`。",
+      "saved": "您的日曆首選項已儲存。",
+      "event_created": "事件 `#{id}` 是為 <t:{timestamp}:F> 所建立的。",
+      "ics_ready": "匯出 **{count}** 即將發生的事件。",
+      "sync_ready": "在 Google 日曆、Apple 日曆或 Outlook 中匯入或訂閱此刷新的 ICS 檔案。它包含 **{count}** 即將發生的事件。"
+    },
+    "forum": {
+      "description": "解決、標記、存檔和總結 Discord 論壇主題",
+      "title": "論壇工具",
+      "options": {
+        "solve": "將目前論壇主題標記為已解決並將其存檔",
+        "tag": "將現有論壇標籤套用至目前執行緒",
+        "archive": "存檔目前論壇主題",
+        "digest": "列出目前論壇中的活動主題",
+        "faq": "在論壇中發布可重複使用的常見問題解答帖子"
+      },
+      "fields": {
+        "tag": "現有論壇標籤的確切名稱",
+        "forum": "發佈常見問題的論壇頻道",
+        "title": "常見問題問題或標題",
+        "answer": "已核准的常見問題解答"
+      },
+      "not_forum": "在論壇頻道或其執行緒之一中執行此命令。",
+      "thread_required": "在論壇執行緒內執行此操作。",
+      "empty": "該論壇沒有活躍話題。",
+      "tag_missing": "此標籤在父論壇中不存在。",
+      "tagged": "應用了 **{tag}** 標籤。",
+      "solved": "該線程被標記為已解決並已存檔。",
+      "archived": "該執行緒已存檔。",
+      "faq_created": "常見問題已在 {thread} 中發布。"
+    },
+    "invites": {
+      "description": "追蹤邀請、保留、獎勵和可疑加入",
+      "title": "邀請追蹤",
+      "options": {
+        "me": "顯示您的邀請統計資料",
+        "user": "顯示其他成員的邀請統計資料",
+        "leaderboard": "顯示伺服器邀請排行榜",
+        "history": "顯示邀請者最近的成員",
+        "rewards": "顯示配置的邀請里程碑獎勵",
+        "fraud": "檢視可疑或低品質的邀請活動",
+        "settings": "配置邀請追蹤與里程碑角色"
+      },
+      "fields": {
+        "user": "應出示邀請函的會員",
+        "enabled": "啟用盡力邀請追蹤",
+        "reward_role": "達到里程碑後被授予的角色",
+        "threshold": "該角色所需的保留成員數量"
+      },
+      "settings_saved": "追蹤已更新。獎勵：**{threshold}** 保留邀請後的 {role}。",
+      "empty": "尚未記錄任何歸屬邀請。",
+      "no_risk": "在最近的記錄中沒有發現可疑的邀請活動。",
+      "rewards_status": "目前里程碑：**{threshold}** 保留邀請後的 {role}。",
+      "left": "左",
+      "active": "積極的",
+      "user_stats": "{user} 有 **{active} 活躍 **、**{left} 剩餘 ** 及 **{total} 總計 ** 歸屬邀請。",
+      "best_effort": "盡力邀請歸因：Discord 可能不會透露虛榮連結、過期邀請或同時加入的唯一代碼。"
+    },
+    "boosters": {
+      "description": "追蹤伺服器提升進度並獎勵支持者",
+      "title": "伺服器助推器",
+      "options": {
+        "status": "顯示目前的提升等級和進度",
+        "milestones": "顯示 Discord 提升等級里程碑",
+        "rewards": "配置自動助推器獎勵角色",
+        "thanks": "設定自動助推器感謝訊息"
+      },
+      "fields": {
+        "role": "獎勵角色，或省略它以禁用獎勵",
+        "channel": "感謝頻道，或省略它以停用訊息",
+        "message": "支援 {user}、{server} 和 {boosts}"
+      },
+      "status_line": "此伺服器具有 **{boosts} 增強 **，目前處於 **{tier}** 層。",
+      "next_tier": "**{remaining}** 需要更多的提升才能達到 {target} 提升里程碑。",
+      "max_tier": "伺服器已達到最高標準提升里程碑。",
+      "milestone_two": "**2 提升 - 第 1 層：** 更好的音訊、更多表情符號插槽和伺服器背景。",
+      "milestone_seven": "**7 提升 - 第 2 層：** 更高的音訊品質、更大的上傳量和更多的自訂功能。",
+      "milestone_fourteen": "**14 增強 — 第 3 層：** 最高音訊品質、最大上傳量和完整的增強功能集。",
+      "reward_saved": "新的助推器將自動收到 {role}。",
+      "reward_disabled": "自動助推器獎勵角色被禁用。",
+      "thanks_saved": "{channel} 中將自動感謝新的提升。",
+      "thanks_disabled": "自动助推器感谢消息已被禁用。"
+    },
+    "applications": {
+      "description": "创建、发布和审查结构化服务器应用程序",
+      "title": "應用",
+      "options": {
+        "create": "建立申請表並查看目的地",
+        "publish": "在此頻道發佈應用程式面板",
+        "apply": "私下開啟應用程式",
+        "review": "列出待處理的申請",
+        "approve": "批准申请并可选择授予其角色",
+        "reject": "拒絕申請",
+        "stats": "顯示應用程式管道統計資訊",
+        "export": "將申請記錄匯出為 JSON"
+      },
+      "fields": {
+        "form_id": "獨特的申請表 ID",
+        "name": "應用程式名稱",
+        "question": "第一個申請問題",
+        "results": "私人頻道接收申請",
+        "approval_role": "核准後授予可選角色",
+        "submission": "申請提交編號",
+        "note": "發送給申請人的可選審稿人註釋"
+      },
+      "default_description": "完成以下申請。您的答案僅與配置的審核團隊共用。",
+      "created": "申請表 `{id}` 已建立。使用 `/applications publish` 發布它。",
+      "published": "申請面板已在此頻道發布。",
+      "apply_button": "應用程式設定",
+      "not_found": "未找到请求的应用程序或待提交的内容。",
+      "empty": "沒有符合的申請提交。",
+      "reviewed": "应用程序 `#{id}` 现在是 **{status}**。",
+      "accepted": "您在 **{server}** 的申請已被接受。審稿者備註：{note}",
+      "rejected": "您在 **{server}** 的申請被拒絕。審稿者備註：{note}",
+      "exported": "已匯出 {count} 申請記錄。"
+    },
+    "verification_command": {
+      "description": "配置验证、测试面板并保护新成员",
+      "title": "驗證",
+      "options": {
+        "setup": "設定驗證通道和驗證角色",
+        "status": "顯示目前驗證配置",
+        "test": "驗證並刷新驗證面板",
+        "disable": "停用驗證並刪除其面板",
+        "quarantine": "設定或清除驗證前指派的角色"
+      },
+      "fields": {
+        "channel": "驗證面板發布管道",
+        "role": "驗證成功後授予角色",
+        "quarantine_role": "指派可選角色，直到驗證成功"
+      },
+      "role_too_high": "將已驗證的角色移至 Murphy 機器人角色下方，然後再試一次。",
+      "configured": "驗證在 {channel} 中處於活動狀態；成功的會員將獲得 {role}。",
+      "disabled": "驗證已停用，活動面板被刪除。",
+      "quarantine_set": "新會員在驗證前將收到 {role}。",
+      "quarantine_cleared": "預先驗證隔離角色已清除。",
+      "test_ok": "配置有效且驗證面板是最新的。",
+      "status_line": "狀態：**{status}**\n頻道：{channel}\n已驗證角色：{role}",
+      "not_found": "選擇現有頻道和角色，然後再試一次。"
+    },
+    "server_migration": {
+      "description": "備份、比較與安全遷移 Murphy 伺服器配置",
+      "title": "伺服器設定遷移",
+      "options": {
+        "clone": "建立便攜式設定快照",
+        "diff": "預覽另一台伺服器的更改",
+        "migrate": "將設定安全地複製到另一台伺服器",
+        "rollback": "從備份版本還原此伺服器"
+      },
+      "fields": {
+        "target": "目標伺服器 ID，其中還有管理伺服器",
+        "version": "要還原的備份版本",
+        "confirm_migrate": "鍵入 MIGRATE 以確認跨伺服器複製",
+        "confirm_restore": "鍵入 RESTORE 以確認回滾"
+      },
+      "cloned": "已建立便攜式備份 **v{version}**。校驗和：`{checksum}…`",
+      "premium_required": "跨伺服器比較和遷移需要Guild Plus。便攜式備份和本地回滾仍然可用。",
+      "same_server": "選擇不同的目標伺服器。",
+      "target_denied": "Murphy 無法驗證它是否安裝在那裡以及您在目標上是否有管理伺服器。",
+      "diff": "遷移將更改 **{count}** 設定部分：",
+      "no_diff": "目標已與來源設定相符。",
+      "confirm": "遷移已取消。在確認欄位中精確輸入 `MIGRATE`。",
+      "migrated": "設定已安全地遷移到伺服器 `{target}`（{count} 變更了部分）。首先建立目標回滾備份。校驗和：`{checksum}…`",
+      "rolled_back": "此伺服器已從備份 **v{version}** 還原。"
+    },
+    "source": {
+      "description": "選擇您的預設音樂搜尋平台。",
+      "platform": "預設搜尋平台",
+      "invalid": "從清單中選擇一個平台。",
+      "saved": "儲存的預設來源：{source}。可用性仍然取決於節點和您的計劃。"
+    },
+    "filter": {
+      "description": "套用音效或恢復正常播放。",
+      "invalid": "從清單中選擇一個濾鏡。",
+      "requested": "已要求變更濾鏡：{preset}。新預設會取代先前的濾鏡。",
+      "options": {
+        "bass": "增強低音。",
+        "treblebass": "增強高音和低音。",
+        "nightcore": "提高播放速度和音調。",
+        "vaporwave": "降低播放速度和音調。",
+        "pop": "套用流行音樂等化器。",
+        "soft": "套用柔和的低通濾波器。",
+        "karaoke": "減弱人聲，效果因曲目而異。",
+        "reset": "移除所有音訊濾鏡。",
+        "treble": "增強高頻音。"
+      }
+    },
+    "game2048": {
+      "description": "玩 2048",
+      "score": "得分",
+      "over": "遊戲結束"
+    },
+    "social": {
+      "kiss": "親吻",
+      "hug": "擁抱",
+      "cuddle": "依偎",
+      "pat": "摸頭",
+      "slap": "開玩笑地搧巴掌",
+      "highfive": "擊掌",
+      "wave": "揮手",
+      "kill": "虛構擊倒",
+      "nuke": "摧毀這個伺服器",
+      "unchanged": "伺服器沒有任何變化。",
+      "clap": "鼓掌",
+      "dance": "跳舞",
+      "blush": "臉紅",
+      "poke": "輕戳",
+      "tickle": "搔癢",
+      "spank": "拍屁股",
+      "boop": "戳鼻子",
+      "nuzzle": "蹭蹭",
+      "pinch": "捏一下",
+      "snowball": "雪球",
+      "pillow": "枕頭大戰",
+      "tackle": "撲倒",
+      "squish": "捏臉"
+    },
+    "tools": {
+      "banner": "使用者橫幅",
+      "charinfo": "Unicode 字元詳情",
+      "commands": "開啟指令目錄",
+      "hash": "計算文字雜湊值",
+      "timediff": "比較兩個 Discord ID 的建立時間",
+      "randomhex": "產生隨機顏色",
+      "serverbanner": "查看伺服器橫幅",
+      "memberbanner": "查看成員的伺服器橫幅"
+    },
+    "membercount": {
+      "title": "成員數量",
+      "people": "使用者",
+      "bots": "機器人"
+    },
+    "firstmessage": {
+      "title": "第一則訊息",
+      "empty": "找不到訊息。"
+    },
+    "start": {
+      "description": "從音樂、獎勵和伺服器設定開始。",
+      "title": "開始使用 Murphy"
+    },
+    "collect": {
+      "description": "領取目前可用的每日、每週和每月獎勵。",
+      "title": "你的獎勵"
+    },
+    "deploy": {
+      "description": "向 Discord 發布斜線指令。",
+      "dm_notice": "檢查您的私訊。",
+      "title": "發布指令",
+      "choose_scope": "選擇發布斜槓指令的位置。",
+      "global_button": "全球發布",
+      "guild_button": "發佈到伺服器",
+      "dm_error": "無法傳送直接訊息。啟用私訊並重試。\n全球",
+      "scope_global": "全球",
+      "scope_guild": "到伺服器 `{id}`",
+      "loading": "發布指令 {scope}…",
+      "success_title": "指令已發布",
+      "success_guild": "指令已發佈到伺服器 `{id}`。",
+      "success_global": "指令已在全球發布。 Discord 可能需要長達一小時的時間來更新它們。",
+      "failed_title": "發布失敗",
+      "rejected": "Discord 拒絕更新或要求逾時。"
+    },
+    "restart": {
+      "description": "重新啟動機器人。",
+      "button": "確認重啟",
+      "confirm": "### 重新啟動機器人\n重啟**{name}**？",
+      "running": "正在重新啟動機器人...",
+      "failed": "無法重新啟動機器人。",
+      "cancelled": "重新啟動已取消。"
+    },
+    "shutdown": {
+      "description": "關閉機器人。",
+      "button": "確認關機",
+      "confirm": "### 關閉機器人\n關閉**{name}**？",
+      "running": "正在關閉機器人...",
+      "failed": "無法關閉機器人。",
+      "cancelled": "關閉已取消。"
+    },
+    "destroyinvites": {
+      "description": "Delete 機器人在伺服器上建立的邀請連結。",
+      "deleted": "已刪除機器人建立的 {count} 邀請連結。",
+      "failed": "無法 delete 邀請連結。"
+    },
+    "guildlist": {
+      "description": "列出使用機器人的伺服器。",
+      "title": "伺服器列表",
+      "row": "- **{name}** (`{id}`) — 成員：`{humans}` · 機器人：`{bots}`",
+      "total": "**總計：** `{count}`",
+      "empty": "未找到伺服器。",
+      "shown": "-# 顯示 {shown}/{total} 伺服器。"
+    },
+    "changelog_send": {
+      "description": "將變更日誌版本發佈到頻道。",
+      "usage": "使用 `changelog-send <channel> <version>`。",
+      "sent": "在 <#{channel}> 中將 **v{version}** 作為四個單獨的面板發布。",
+      "failed": "無法發布變更日誌。"
+    },
+    "blend": {
+      "description": "把語音頻道裡每個人的音樂口味混成一個佇列",
+      "title": "混合歌單",
+      "mixed_from": "混合自",
+      "queued": "佇列中有 {count} 首歌，輪流來自每個人的最愛。",
+      "empty": "這個頻道裡還沒有人有收聽紀錄。先播放幾首歌吧。",
+      "from_dashboard": "由 {user} 從控制面板啟動。"
+    },
+    "time_machine": {
+      "description": "播放這個伺服器一週、一個月或一年前聽過的歌",
+      "options": {
+        "period": "回到多久以前"
+      },
+      "title": "時光機",
+      "queued": "回到 {date}：佇列中有 {count} 首歌。",
+      "empty": "這個伺服器在 {date} 前後沒有收聽紀錄。"
+    },
+    "sleep": {
+      "description": "過一段時間後停止音樂，最後一分鐘逐漸降低音量",
+      "options": {
+        "minutes": "多少分鐘後停止（0 為取消）"
+      },
+      "title": "睡眠計時",
+      "set": "音樂將逐漸變小並在 {time} 停止。",
+      "cancelled": "已取消睡眠計時。",
+      "none": "沒有可以取消的計時。",
+      "invalid": "請輸入 0 到 480 分鐘。"
+    },
+    "quiz": {
+      "description": "猜歌：用本伺服器的收聽紀錄做的音樂問答",
+      "options": {
+        "rounds": "回合數（3 到 10）"
+      },
+      "title": "音樂問答",
+      "round": "第 {round} 輪，共 {total} 輪。正在播放的是哪首歌？",
+      "hint": "{seconds} 秒內第一個答對的人得分。每人一次機會。",
+      "correct": "{user} 答對了：**{title}** · {author}",
+      "nobody": "沒有人答對。答案是 **{title}** · {author}",
+      "wrong": "不是這首。",
+      "one_guess": "你在這一輪已經猜過了。",
+      "results": "最終得分",
+      "points": "{count} 分",
+      "no_scores": "這次沒有人得分。試試你們熟悉的歌。",
+      "not_enough": "問答需要本伺服器至少播放過 {count} 首不同的歌。",
+      "busy": "請先停止音樂。問答需要使用播放器。"
+    },
+    "busk": {
+      "description": "在街頭表演賺取硬幣。語音頻道裡有人一起聽時，收入更多。",
+      "title": "街頭表演",
+      "cooldown_title": "你的嗓子需要休息",
+      "cooldown": "你剛表演完，過一會兒再來吧。",
+      "spots": {
+        "station": "你在火車站門口彈唱了翻唱歌曲。",
+        "park": "你在公園裡架起了吉他。",
+        "bridge": "你在夕陽下的老橋上表演。",
+        "market": "你在市集攤位之間表演。",
+        "subway": "你在捷運站表演，回音幫了大忙。"
+      },
+      "live": "Murphy 正在播放 **{title}**，有 {count} 人停下來聽。收入 ×{multiplier}。",
+      "solo_hint": "在 Murphy 於你的語音頻道播放時表演：和你一起聽的人都會成為你的觀眾。"
+    },
+    "tip": {
+      "description": "給點播目前歌曲的人小費",
+      "options": {
+        "amount": "要給多少硬幣"
+      },
+      "title": "小費已送出",
+      "failed_title": "未送出小費",
+      "nothing": "目前沒有播放任何歌曲，沒有可以給小費的人。",
+      "no_dj": "這首歌沒有點播人，沒有可以給小費的人。",
+      "self": "這首歌是你自己點的。",
+      "sent": "你為 **{track}** 給了 {user} **{amount}** 枚硬幣的小費。"
+    },
+    "music_ban": {
+      "description": "禁止成員控制音樂",
+      "options": {
+        "action": "新增、移除或列出音樂禁令",
+        "user": "要禁止的成員"
+      },
+      "title": "音樂禁令",
+      "empty": "目前沒有人被禁止控制音樂。",
+      "invalid_target": "不能禁止你自己、機器人或伺服器管理員。",
+      "already": "{user} 已經被禁止控制音樂。",
+      "added": "{user} 無法再控制本伺服器的音樂。",
+      "not_banned": "{user} 沒有被禁止控制音樂。",
+      "removed": "{user} 可以重新控制音樂了。",
+      "blocked": "管理員已在本伺服器關閉你的音樂控制權限。"
+    },
+    "voicekick": {
+      "description": "將成員中斷語音頻道連線",
+      "options": {
+        "user": "要中斷連線的成員"
+      },
+      "title": "踢出語音",
+      "not_in_voice": "該成員不在語音頻道中。",
+      "not_allowed": "我無法中斷該成員的連線。請檢查身分組順序以及我的「移動成員」權限。",
+      "done": "已將 {user} 從 {channel} 中斷連線。"
+    },
+    "duet": {
+      "description": "看看兩個人的音樂品味有多合拍",
+      "options": {
+        "user": "第一個人",
+        "user2": "第二個人（預設是你）"
+      },
+      "title": "音樂契合度",
+      "not_enough": "{user} 在本伺服器聽的音樂還不夠多。",
+      "verdict": {
+        "0": "完全不同的世界，正適合互相推薦。",
+        "1": "有些共同點，還有很多可以發掘。",
+        "2": "挺合拍，可以分享同一副耳機。",
+        "3": "品味非常接近，一起開個 blend 吧。",
+        "4": "音樂雙胞胎。"
+      },
+      "shared": "**你們都在聽** {artists}",
+      "no_shared": "還沒有共同喜歡的歌手。",
+      "shared_track": "**你們的歌** {title} · {author}",
+      "blend_hint": "一起進入語音頻道並使用 /music blend，把兩人的最愛放進同一個佇列。"
+    },
+    "vibe": {
+      "description": "查看某人在本伺服器的音樂個性",
+      "options": {
+        "user": "查看誰的氛圍（預設是你）"
+      },
+      "title": "{user} 的氛圍",
+      "style": {
+        "explorer": "探索者 · 很少重複同一位歌手",
+        "loyal": "忠實粉絲 · 總是回到同樣的歌手",
+        "balanced": "均衡聽眾 · 最愛與新發現交織"
+      },
+      "top_artists": "**常聽歌手** {artists}",
+      "anthem": "**代表曲** {title} · {author}（{plays} 次）",
+      "time": {
+        "night": "夜貓子：午夜到早上 6 點聽得最多（UTC）。",
+        "morning": "早起鳥：早上聽得最多（UTC）。",
+        "afternoon": "午後聽眾：中午到下午 6 點聽得最多（UTC）。",
+        "evening": "晚間聽眾：下午 6 點後聽得最多（UTC）。"
+      },
+      "plays": "根據本伺服器的 {plays} 次播放。"
+    },
+    "freegames": {
+      "title": "免費遊戲",
+      "description": "商店永久免費贈送的遊戲，發布到你的頻道",
+      "server_only": "免費遊戲通知依伺服器設定。請在伺服器中使用。",
+      "disabled": "免費遊戲通知已關閉。用 `/freegames setup` 重新開啟。",
+      "test_sent": "測試已送出。請查看頻道。",
+      "test_no_channel": "先用 `/freegames setup` 選擇頻道。",
+      "test_no_offer": "現在沒有免費遊戲。稍後再試。",
+      "test_failed": "我無法在那裡發文。請確認我能查看頻道、傳送訊息、附加檔案和嵌入連結。",
+      "now_title": "現在免費永久領取",
+      "now_lead": "僅限商店促銷：領取後永久留在收藏庫。沒有序號贈送或抽獎。",
+      "none": "現在沒有免費遊戲。商店通常在週四上新。",
+      "kind_game": "遊戲",
+      "kind_dlc": "DLC",
+      "free": "免費",
+      "ends": "{time} 結束",
+      "starts": "{time} 免費",
+      "keep": "永久免費",
+      "next_title": "即將推出",
+      "all": "所有免費遊戲",
+      "dashboard": "在控制台中設定",
+      "footer": "Murphy Free Games · themurphybot.com",
+      "pick_channel": "選擇一個我可以發文的文字或公告頻道。",
+      "setup_done": "完成！新的免費遊戲會出現在 {channel}。",
+      "setup_role": "每個新遊戲我都會提及 {role}。",
+      "setup_next": "在控制台中選擇商店、平台等。只會發布從現在起變成免費的遊戲，頻道不會被洗版。",
+      "premium_hint": "Premium 增加主機和手機、DLC、每日彙整、Epic 預告，以及每款遊戲下的討論串。",
+      "premium_on": "Premium：可使用主機、手機、DLC、每日彙整和預告。",
+      "not_configured": "免費遊戲通知尚未設定。從 `/freegames setup` 開始。",
+      "on": "開",
+      "off": "關",
+      "paused": "已暫停：我失去了頻道權限。修正權限後請重新儲存設定。",
+      "platforms": "平台",
+      "kinds": "類型",
+      "delivery": "推送方式",
+      "delivery_instant": "遊戲一免費就推送",
+      "delivery_daily": "每天 {hour} 彙整一次",
+      "new_title": "新免費遊戲",
+      "upcoming_title": "即將免費",
+      "test_note": "來自控制台的測試訊息",
+      "claim": "免費領取",
+      "view": "在商店查看",
+      "digest_title": "{count} 款新免費遊戲",
+      "digest_lead": "今天商店永久免費贈送的遊戲彙整。",
+      "kind_deal": "折扣",
+      "kind_release": "新遊戲",
+      "kind_release_dlc": "新 DLC",
+      "free_to_play": "免費遊玩",
+      "deal_title": "大折扣",
+      "release_title": "今日發售",
+      "details": "詳情和評價",
+      "push_sent": "已發布 {count} 款免費遊戲。已發布過的已略過。",
+      "push_nothing": "符合你設定的免費遊戲都已在頻道中。",
+      "push_cooldown": "你剛剛用過了。一分鐘後再試。"
+    },
+    "nuke": {
+      "title": "NUKE 協定",
+      "title_done": "伺服器已摧毀",
+      "this_server": "這個伺服器",
+      "target": "目標",
+      "operator": "操作員",
+      "auth_code": "授權碼",
+      "session": "工作階段",
+      "stats": "{channels} 個頻道 · {roles} 個身分組 · {members} 名成員",
+      "countdown": "**{seconds}** 秒後引爆…",
+      "no_abort": "發射已確認。無法再中止。",
+      "step_connect": "正在連線到伺服器 API",
+      "step_bypass": "正在繞過管理員權限",
+      "step_backup": "正在匯出成員名單",
+      "step_webhooks": "正在劫持 Webhook",
+      "step_channels": "正在刪除頻道",
+      "step_roles": "正在刪除身分組",
+      "step_members": "正在停權成員",
+      "step_audit": "正在清除稽核紀錄",
+      "log_connect": "handshake OK · 工作階段 {session} · {node} · 23 ms",
+      "log_bypass": "已注入權限覆寫 · ADMINISTRATOR = true",
+      "log_backup": "已匯出 {members} 名成員 → dump.bin",
+      "log_webhooks": "已劫持 Webhook：{count}",
+      "log_channels": "DELETE /channels · 已刪除 {count}",
+      "log_roles": "DELETE /roles · 已刪除 {count}",
+      "log_members": "PUT /bans · 已停權 {count}",
+      "log_audit": "稽核紀錄已清除 · 痕跡已刪除",
+      "done_title": "行動完成",
+      "done_summary": "刪除了 **{channels}** 個頻道和 **{roles}** 個身分組，停權了 **{members}** 名成員。",
+      "done_time": "行動耗時：{seconds} 秒",
+      "done_trace": "沒有留下任何痕跡。",
+      "title_premium": "NUKE 協定 · 戰術核彈頭",
+      "arming": "正在武裝彈頭。發射鑰匙已轉動。",
+      "step_automod": "正在關閉 AutoMod",
+      "step_invites": "正在撤銷邀請",
+      "step_emojis": "正在刪除表情符號",
+      "step_icon": "正在替換伺服器圖示",
+      "step_warhead": "正在發射第二枚彈頭",
+      "log_token": "權杖已接受 · scope=bot applications.commands",
+      "log_automod": "AutoMod 規則：找到 4 條 · 關閉 4 條",
+      "log_invites": "DELETE /invites · 已撤銷 {count}",
+      "log_emojis": "DELETE /emojis · 已刪除 {count}",
+      "log_ratelimit": "429 Too Many Requests · 1.2 秒後重試",
+      "log_failover": "閘道重設 · 已透過備援節點重新連線",
+      "log_icon": "PATCH /guild · icon=skull.png",
+      "log_warhead": "第二枚彈頭已發射 · 命中確認",
+      "alert_automod": "AutoMod 試圖阻止行動",
+      "alert_ratelimit": "觸發 Discord 速率限制 · 正在重試",
+      "alert_failover": "連線中斷 · 正在切換到備援節點",
+      "done_extra": "另外刪除了 {emojis} 個表情符號，撤銷了 {invites} 個邀請，劫持了 {webhooks} 個 Webhook。",
+      "done_premium": "戰術核彈頭：隕石坑在太空中都看得到。"
+    },
+    "fun_level": {
+      "0": "簡單",
+      "1": "中等",
+      "2": "刺激",
+      "premium": "Premium 獎勵：{item}",
+      "next": "下一個"
+    }
+  },
+  "premium": {
+    "upsell": {
+      "title": "使用 Murphy Premium 解鎖更多",
+      "usage": "目前使用情況：{used}/{limit}",
+      "current": "目前計劃：**{plan}**",
+      "unlock": "**{plan}** 已解鎖：{benefit}",
+      "compare": "比較計劃"
+    }
+  },
+  "buttons": {
+    "invite": "邀請 Murphy",
+    "support": "支援伺服器",
+    "first": "第一的",
+    "previous": "以前的",
+    "next": "下一個",
+    "last": "最後的",
+    "resume": "恢復",
+    "stop": "停止",
+    "skip": "跳過",
+    "loop": "環形",
+    "vote": "投票給我吧！",
+    "errors": {
+      "not_author": "您不能使用此按鈕。"
+    },
+    "cancel": "取消"
+  },
+  "player": {
+    "errors": {
+      "no_player": "該伺服器上沒有活動的音樂播放器。",
+      "no_channel": "您需要處於語音頻道才能使用此命令。",
+      "queue_empty": "隊列是空的。",
+      "no_previous": "隊列中沒有之前的歌曲。",
+      "no_song": "隊列中沒有歌曲。",
+      "already_paused": "歌曲已經暫停了。",
+      "not_in_same_voice": "請加入 Murphy 正在播放的語音頻道。",
+      "not_paused": "播放器沒有暫停。",
+      "user_not_in_voice_channel": "您需要處於語音頻道才能使用此命令。",
+      "not_in_voice": "您需要連接到語音通道。",
+      "music_error_title": "音樂錯誤",
+      "spotify_generated_playlist": "無法載入此 Spotify 產生的播放清單。嘗試使用普通的公共播放清單、專輯或曲目。",
+      "lavalink_timeout": "音樂節點響應時間過長。稍後再試一次。",
+      "lavalink_unavailable": "音樂節點目前不可用。稍後再試一次。",
+      "source_unavailable": "該音樂來源目前在此伺服器上不可用或已停用。",
+      "no_results": "未找到可播放的結果。嘗試另一個連結或搜尋短語。",
+      "search_failed": "載入該曲目時出錯。嘗試其他連結或來源。",
+      "no_voice": "請加入 Murphy 所在的語音頻道後再試一次。",
+      "different_voice": "您需要與機器人處於相同語音通道才能使用此功能。",
+      "missing_bot_permissions": "我缺少 voice/channel 權限。檢查「連線」、「講話」、「檢視頻道」和「傳送訊息」。",
+      "missing_user_permissions": "您沒有使用此功能所需的權限。",
+      "dj_required": "您需要 DJ 存取權才能使用此音樂控制項。",
+      "premium_required": "此音樂功能需要進階存取權限。",
+      "vote_required": "此音樂功能需要最近的 Top.gg 投票或進階存取權限。"
+    },
+    "trackStart": {
+      "now_playing": "正在播放",
+      "requested_by": "由 {user} 請求",
+      "duration": "期間",
+      "author": "作者",
+      "not_connected_to_voice_channel": "您未連接到 <#{channel}> 來使用這些按鈕。",
+      "need_dj_role": "您需要具有 DJ 角色才能使用此命令。",
+      "previous_by": "上一篇作者：{user}",
+      "no_previous_song": "沒有以前的歌曲。",
+      "paused_by": "由 {user} 暫停",
+      "resumed_by": "由 {user} 恢復",
+      "skipped_by": "被 {user} 跳過",
+      "no_more_songs_in_queue": "隊列中沒有更多歌曲了。",
+      "looping_by": "透過 {user} 循環",
+      "looping_queue_by": "透過 {user} 循環佇列",
+      "looping_off_by": "透過 {user} 循環關閉"
+    },
+    "setupStart": {
+      "now_playing": "正在播放",
+      "nothing_playing": "現在沒有播放任何內容。",
+      "added_to_queue": "將 **{title}** 排隊等待播放。",
+      "added_playlist_to_queue": "將播放清單中的 [{length}] 歌曲加入佇列。",
+      "duration": "期間：",
+      "author": "作者：",
+      "requester": "請求者：",
+      "up_next": "下一個",
+      "more": "更多的"
+    },
+    "fields": {
+      "duration": "期間"
+    },
+    "requested_by": "請求者",
+    "trackRecovery": {
+      "sourceUnavailable": "該電台或軌道停止回應。重新連接並重試，或選擇其他來源。",
+      "matchesUnavailable": "嘗試可用的配對後無法播放該曲目。嘗試其他版本或來源。",
+      "loadFailures": "連續三首曲目無法載入，所以我停了下來，而不是跳過整個佇列。音樂來源現在可能被封鎖了。稍後再試或換一個來源。"
+    }
+  },
+  "event": {
+    "global_ban": {
+      "title": "全球訪問被阻止",
+      "blocked": "此 {target} 不能使用 Murphy。\n\n**原因：** {reason}",
+      "user": "使用者",
+      "server": "伺服器",
+      "expires": "過期"
+    },
+    "interaction": {
+      "no_permission": "我沒有 {permissions} 權限。",
+      "no_user_permission": "您沒有足夠的權限來使用此命令。",
+      "no_voice_channel": "您必須連接到語音通道才能使用此 `{command}` 命令。",
+      "different_voice_channel": "您未連接到 {channel} 來使用此 `{command}` 命令。",
+      "no_music_playing": "現在沒有播放任何內容。",
+      "cooldown": "請再等待 {time} 秒，然後再重新使用 `{command}` 指令。",
+      "vote_title": "需要投票",
+      "vote_button": "投票 Top.gg",
+      "vote_message": "此命令是為透過 Top.gg 投票支持 Murphy 的用戶保留的。投票，然後再試一次。"
+    },
+    "message": {
+      "no_user_permission": "您沒有足夠的權限來使用此命令。",
+      "no_music_playing": "現在沒有播放任何內容。"
+    },
+    "setupButton": {
+      "no_voice_channel_button": "您尚未連接到語音通道才能使用此按鈕。",
+      "different_voice_channel_button": "加入 <#{channel}> 以使用播放器控制。",
+      "now_playing": "正在播放",
+      "live": "居住",
+      "no_dj_permission": "您需要具有 DJ 角色才能使用此按鈕。",
+      "volume_set": "音量設定為 {vol}%",
+      "volume_footer": "數量：{vol}%",
+      "paused": "已暫停",
+      "resumed": "恢復",
+      "pause_resume": "{name} 音樂。",
+      "pause_resume_footer": "{name} 由 {displayName} 提供",
+      "no_music_to_skip": "沒有音樂可以跳過。",
+      "skipped": "跳過了音樂。",
+      "stopped": "停止了音樂。",
+      "stopped_footer": "由 {displayName} 停止",
+      "nothing_playing": "現在沒有播放任何內容。",
+      "loop_set": "循環設定為 {loop}。",
+      "loop_footer": "循環由 {displayName} 設定為 {loop}",
+      "shuffled": "打亂了隊列。",
+      "no_previous_track": "沒有以前的曲目。",
+      "playing_previous": "播放上一首曲目。",
+      "previous_footer": "透過 {displayName} 播放上一首曲目",
+      "rewinded": "倒帶音樂。",
+      "rewind_footer": "由 {displayName} 倒帶",
+      "forward_limit": "您轉發的音樂不能超過歌曲的長度。",
+      "forwarded": "轉發了音樂。",
+      "forward_footer": "由 {displayName} 轉發",
+      "no_music_playing": "該伺服器中沒有播放音樂。",
+      "buttons": {
+        "loop": "環形",
+        "previous": "以前的",
+        "pause": "暫停",
+        "resume": "恢復",
+        "skip": "跳過",
+        "shuffle": "隨機播放",
+        "forward": "+10秒",
+        "rewind": "-10秒",
+        "volume_down": "卷 -",
+        "volume_up": "卷+",
+        "stop": "停止",
+        "add": "新增歌曲",
+        "queue": "佇列",
+        "activity": "一起聽"
+      },
+      "queue_title": "接下來 · {count}",
+      "queue_empty": "佇列中沒有等待的歌曲。",
+      "activity_unavailable": "這裡無法開啟活動。請加入語音頻道後再試一次。"
+    }
+  },
+  "runtime": {
+    "setup": {
+      "preset_applied": "**{preset}** 設定預設已啟動。您可以微調儀表板中的每個設定。",
+      "validation_title": "設定運轉狀況檢查",
+      "player_channel": "歌曲請求播放器頻道已配置",
+      "safe_fix_applied": "在測試模式下套用了安全伺服器審核預設值。回滾備份：**v{version}**。",
+      "rollback_missing": "沒有可用的設定安全備份。",
+      "rollback_complete": "設定回滾恢復備份 **v{version}**。",
+      "rollback_failed": "無法完成安裝回溯。",
+      "perm": {
+        "view_channel": "檢視頻道",
+        "send_messages": "傳送訊息",
+        "embed_links": "嵌入連結",
+        "connect": "連線",
+        "speak": "說話",
+        "manage_channels": "管理頻道",
+        "manage_roles": "管理身分組"
+      }
+    },
+    "color": {
+      "title": "顏色檢驗員",
+      "invalid": "輸入有效的十六進位值或三個 RGB 數字。"
+    },
+    "snowflake": {
+      "title": "Discord ID 檢查員",
+      "invalid": "請輸入有效的17至20位數字Discord ID。"
+    },
+    "password": {
+      "title": "安全密碼",
+      "notice": "此回覆是私人的。將密碼儲存在受信任的密碼管理器中。"
+    },
+    "text_tools": {
+      "title": "文字工具",
+      "invalid": "無法使用此格式對提供的文字進行解碼。"
+    },
+    "common": {
+      "manage_server_required": "需要管理伺服器權限。",
+      "manage_messages_required": "需要管理訊息權限。",
+      "moderate_members_required": "需中等會員許可。",
+      "enabled": "已啟用",
+      "disabled": "已停用",
+      "active": "積極的",
+      "inactive": "不活躍的",
+      "open_dashboard": "打開儀表板",
+      "none": "沒有任何"
+    },
+    "automation": {
+      "title": "自動化",
+      "limit": "您的 {plan} 計畫包含 {limit} 主動自動化。升級以增加此限制。",
+      "conditions_premium": "多條件自動化需要 Guild Plus。您仍然可以無條件地建立基本自動化。",
+      "conditions_invalid": "條件必須是 JSON 數組，最多包含五個安全字段/operator/value 條目。",
+      "created": "建立自動化 `{id}` ({used}/{limit})。",
+      "row": "`{id}` — **{name}** — {state} — {count} 運行",
+      "empty": "沒有配置自動化。",
+      "toggled": "自動化 `{id}` 現在是 {state}。",
+      "not_found": "未找到自動化。",
+      "completed": "自動化 `{id}` 已完成（{count} 操作）。",
+      "failed": "自動化失敗。"
+    },
+    "backup": {
+      "title": "備份",
+      "created": "已建立備份 **v{version}**。校驗和：`{checksum}…`",
+      "confirm": "恢復已取消。在確認欄位中準確輸入 `RESTORE`。",
+      "restored": "備份 **v{version}** 已還原。已建立復原前安全快照。",
+      "restore_failed": "找不到備份或恢復失敗。",
+      "schedule_premium": "計劃備份需要 Guild Basic 或更進階的 Guild 計劃。手動備份仍然可用。",
+      "interval_min": "Guild Basic 包括每週備份； Guild Plus 解鎖每日備份。目前計劃的最小間隔：**{days} 天**。",
+      "scheduled": "自動備份間隔：**{days} 天**。下次運行：<t:{timestamp}:R>。",
+      "row": "**v{version}** {name} — {source} — <t:{timestamp}:R>",
+      "empty": "沒有可用的備份。",
+      "diff": "備援 **v{version}** 將會變更： {keys}",
+      "diff_empty": "備份 **v{version}** 與目前公會設定相符。"
+    },
+    "events": {
+      "title": "活動",
+      "invalid_date": "輸入有效的未來日期，最好是帶有時區的 ISO 8601。",
+      "created": "為 <t:{timestamp}:F> 建立事件 **#{id}**。",
+      "invalid_offsets": "提供一個或多個正分鐘偏移量。",
+      "reminders": "活動 #{id} 提醒：開始前 {minutes} 分鐘。",
+      "not_found": "未找到活動。",
+      "attendees": "**與會者 ({count})**",
+      "waitlist": "**候補名單 ({count})**"
+    },
+    "forms": {
+      "title": "表格",
+      "limit": "您的 {plan} 計畫包含 {limit} 活動表格。升級以增加此限制。",
+      "created": "建立表格 `{id}` ({used}/{limit})。使用 `/community form-panel` 發布它。",
+      "row": "**#{id}** `{form}` — {user} — {status}",
+      "empty": "未找到任何回應。",
+      "exported": "匯出 `{id}` 的 {count} 回應。"
+    },
+    "temp_voice": {
+      "title": "臨時語音",
+      "manage_required": "設定需要管理伺服器權限。",
+      "enabled": "啟用臨時房間。加入 {channel} 建立房間。"
+    },
+    "welcome": {
+      "title": "歡迎留言",
+      "enabled": "在 {channel} 中啟用歡迎訊息。",
+      "not_configured": "歡迎訊息尚未配置。",
+      "channel_unavailable": "配置的歡迎頻道不可用。",
+      "test_sent": "測試發送至 {channel}。"
+    },
+    "bookmarks": {
+      "title": "書籤",
+      "invalid_url": "輸入有效的 HTTPS URL。",
+      "https_only": "僅 HTTPS URL 可以加書籤。",
+      "saved": "書籤 `{id}` 已儲存。",
+      "removed": "書籤 `{id}` 已刪除。",
+      "not_found": "未找到書籤。",
+      "empty": "您沒有書籤。"
+    },
+    "reminders": {
+      "title": "提醒事項",
+      "invalid_timezone": "未知 IANA 時區。範例：`Europe/Warsaw`。",
+      "timezone_saved": "時區保存為 **{zone}**。",
+      "invalid_duration": "持續時間必須介於 10 秒到 365 天之間。",
+      "scheduled": "提醒 `{id}` 安排在 <t:{timestamp}:F>。它在機器人重新啟動後仍然存在。",
+      "cancelled": "提醒 `{id}` 已取消。",
+      "not_found": "未找到待處理提醒。",
+      "empty": "您沒有待處理的提醒。"
+    },
+    "tags": {
+      "title": "伺服器標籤",
+      "empty": "沒有創建標籤。",
+      "created": "已建立標籤 `{name}`。",
+      "exists": "該標籤已經存在。",
+      "not_found": "未找到標籤。",
+      "edit_forbidden": "只有標籤擁有者或管理員才能對其進行編輯。",
+      "updated": "標籤 `{name}` 已更新。"
+    },
+    "music_session": {
+      "title": "音樂課",
+      "start_first": "在創建會話邀請之前開始播放。",
+      "invite": "會話代碼：**`{code}`**\n30 分鐘後到期。內含曲目：{count}。僅與您信任的人分享。",
+      "join_voice": "首先加入語音頻道。",
+      "invalid": "會話代碼無效或已過期。",
+      "decode_failed": "無法在此 Lavalink 節點上解碼會話軌道。",
+      "joined": "已加入會話 `{code}`。已載入曲目：**{count}**。"
+    },
+    "stats": {
+      "export_upsell": "您的 {plan} 計畫顯示 {days} 天。 Guild Plus 可解鎖 CSV 匯出和 365 天報告。",
+      "exported": "匯出 {count} 天的分析資料。",
+      "compare_upsell": "每月比較需要 Guild Plus。每個計劃都保留基本統計資料。",
+      "new": "新的",
+      "compare_title": "伺服器統計 — 每月比較",
+      "messages": "**訊息：** {count} ({delta})",
+      "commands": "**指令：** {count} ({delta})",
+      "voice_hours": "**語音時間：** {count} ({delta})",
+      "member_growth": "**會員成長：** {count}",
+      "current_members": "**目前成員：** {count}",
+      "joined": "**加入：** {count}",
+      "left": "**左：** {count}",
+      "net_growth": "**淨成長：** {count}",
+      "voice_time": "**語音時間：** {count} 小時",
+      "period": "**期限：** {days} 天",
+      "recorded_days": "**記錄天數：** {count}",
+      "music_dashboard": "**音樂儀表板：** https://themurphybot.com/dashboard/{guildId}/stats",
+      "window": "**分析視窗：** {days} 天",
+      "music_hint": "伺服器儀表板中提供了追蹤、來源和監聽報告。",
+      "messages_plain": "**訊息：** {count}",
+      "commands_plain": "**指令：** {count}",
+      "moderation": "**審核操作：** {count}",
+      "events": "**建立/註冊活動：** {created} / {signups}",
+      "window_recorded": "**分析視窗：** {days} 天（記錄天數：{count}）",
+      "title": "伺服器統計 — {area}"
+    },
+    "audit": {
+      "title": "可疑活動審核",
+      "permission": "需要查看審核日誌權限。",
+      "empty": "抽樣審計日誌中未發現集中的高風險活動。"
+    },
+    "cleanup": {
+      "title": "安全清理審核",
+      "bots": "找到機器人帳號：**{count}**。該命令僅用於審核；在刪除任何機器人之前檢查整合。",
+      "inactive": "發現 **{count}** 低訊號不活動候選者（90 多天前加入，離線，未提升）。 Discord 不會公開可靠的最後活動時間戳，因此不會刪除任何成員。",
+      "roles": "找到 **{count}** 空的可移動角色：{roles}。僅審計；沒有角色被刪除。"
+    },
+    "lockdown": {
+      "title": "緊急封鎖",
+      "already_active": "鎖定已經啟動。",
+      "not_active": "鎖定未啟動。",
+      "result": "鎖定 {state}。更新了 **{changed}** 頻道；失敗：**{failed}**。"
+    },
+    "permissions": {
+      "title": "權限診斷",
+      "missing": "在這種情況下遺失：{permissions}\n重新授權完整伺服器套件：{invite}",
+      "ok": "所有建議的完整伺服器套件權限均在此頻道中提供。"
+    },
+    "raid": {
+      "title": "突襲防護",
+      "antiraid": "**防襲擊：** {state}",
+      "lockdown": "**緊急鎖定：** {state}",
+      "verification": "**驗證：** {state}",
+      "members": "**成員：** {count}",
+      "member_unavailable": "會員不可用或無法由 Murphy 主持。",
+      "quarantined": "{user} 隔離 **{hours}h**。案例 **#{caseId}** 已建立。"
+    },
+    "role": {
+      "title": "大量角色",
+      "permission": "需要管理角色權限。",
+      "confirm": "操作已取消。準確輸入 `CONFIRM` 以繼續。",
+      "uneditable": "該角色由整合管理或位於 Murphy 角色之上。",
+      "added": "新增了 {role}。成員變更：**{changed}**；失敗：**{failed}**。",
+      "removed": "刪除了 {role}。成員變更：**{changed}**；失敗：**{failed}**。",
+      "hierarchy": "您只能更改最高角色以下的角色。每個人的角色都無法更改。",
+      "busy": "批次角色操作已在此伺服器上執行。等待它完成。",
+      "limit": "此操作與 {count} 成員相符。限額為{limit}；角色沒有改變。選擇一個較小的組別。",
+      "progress": "正在更新角色：已處理 {total} 成員中的 {completed}。",
+      "jobs": {
+        "empty": "沒有成員需要此變更。",
+        "confirm": "確認更改",
+        "cancel": "取消",
+        "previewAdd": "將 {role} 加入 {count} 成員？",
+        "previewRemove": "從 {count} 成員中刪除 {role}？",
+        "expired": "確認已過期。沒有任何更改被排隊。",
+        "cancelled": "操作已取消。",
+        "refresh": "刷新狀態",
+        "progress": "已完成： **{completed}** · 等待： **{pending}**\n失敗：**{failed}** · 取消：**{cancelled}**"
+      }
+    },
+    "case": {
+      "title": "審核案例",
+      "appeal_submitted": "針對 **#{id}** 案件的上訴已提交。",
+      "appeal_conflict": "案件未找到或已有待上訴。",
+      "exported": "匯出 {count} 案例。",
+      "note_created": "以案例 **#{id}** 建立私人審核註解。",
+      "notes_empty": "未找到審核註釋。",
+      "updated": "案例 **#{id}** 已更新。",
+      "not_found": "未找到案例。",
+      "evidence_added": "證據已新增至案例 **#{id}**。",
+      "evidence_failed": "未找到案例、證據已存在或已達到 10 項限制。",
+      "appeal_reviewed": "對案件 **#{id}** {decision} 提出上訴。",
+      "pending_not_found": "未發現待上訴。"
+    },
+    "saved_queue": {
+      "title": "已儲存的佇列",
+      "limit": "已達到保存的佇列限制 ({limit})。刪除佇列或比較高階計劃。",
+      "no_tracks": "目前隊列沒有可儲存的可解碼曲目。",
+      "saved": "將 **{count}** 曲目儲存為 `{name}`。",
+      "file_size": "佇列檔案必須為 2 MB 或更小。",
+      "invalid_file": "Murphy 佇列檔案無效。",
+      "no_encoded_tracks": "該文件不包含有效的編碼 Lavalink 曲目。",
+      "imported": "導入 **{count}** 曲目為 `{name}`。",
+      "not_found": "未找到已儲存的佇列。",
+      "exported": "已匯出 `{name}`。",
+      "join_voice": "首先加入語音頻道。",
+      "decode_failed": "Lavalink 無法再對已儲存的軌道有效負載進行解碼。",
+      "loaded": "已從 `{name}` 載入 **{count}** 曲目。"
+    },
+    "profile": {
+      "privacy": "您的 Murphy 個人資料現在是 **{state}**。",
+      "private": "私人的",
+      "public": "民眾",
+      "export_ready": "您的 Murphy 資料匯出已準備就緒。",
+      "delete_confirm": "刪除已取消。準確輸入 `DELETE MY DATA`。",
+      "deleted": "個人資料已刪除（{count} 記錄）。根據需要保留付款、審核和防濫用記錄。",
+      "is_private": "此 Murphy 個人資料是私人的。"
+    },
+    "server_taste": {
+      "guild_only": "伺服器音樂設定檔僅在 Discord 伺服器中可用。",
+      "not_enough_data": "數據不足",
+      "title": "伺服器音樂設定文件",
+      "tracks": "**分析曲目：** `{count}`",
+      "mood": "**最常見的情緒：** {mood}",
+      "artist": "**最受歡迎藝術家：** {artist}",
+      "hint": "打開圖表、包裝、推薦和伺服器音樂統計資訊的儀表板。"
+    },
+    "listening_goal": {
+      "title": "每週聽力目標",
+      "saved": "每週收聽目標設定為 **{minutes} 分鐘**。",
+      "status": "**{minutes} / {goal} 分鐘** ({percent}%)\n`{bar}`\n過去 7 天內錄製的曲目：{tracks}。"
+    },
+    "recommend": {
+      "title": "類似推薦",
+      "query_required": "首先提供一首歌曲或開始播放。",
+      "empty": "從目前健康的來源中沒有發現類似的痕跡。"
+    },
+    "history": {
+      "exported": "匯出 {count} 最近的曲目。",
+      "export_requires_premium": "歷史記錄匯出需要個人進階版或伺服器進階版計畫。您 7 天的歷史記錄仍然可用。"
+    },
+    "mood": {
+      "unknown": "未知的情緒預設。"
+    },
+    "calculator": {
+      "title": "計算機",
+      "invalid": "無效表達式：{error}",
+      "result": "**結果：** `{result}`"
+    },
+    "timestamp": {
+      "title": "Discord 時間戳",
+      "invalid": "日期無效。使用 ISO 8601，例如 `2026-12-24T18:00:00+01:00`。"
+    },
+    "scrobble": {
+      "title": "拼字狀態",
+      "listenbrainz": "**ListenBrainz：** {state}",
+      "lastfm": "**Last.fm：** {state}",
+      "connected_as": "連接為 {name}",
+      "user": "使用者",
+      "not_connected": "未連接",
+      "available": "透過 Murphy 設定檔整合可用",
+      "not_configured": "未配置",
+      "manage": "在 https://themurphybot.com/profile 管理集成"
+    },
+    "source_health": {
+      "title": "活源健康",
+      "online": "在線的",
+      "offline": "離線",
+      "row": "**{node}** — {state} — ping `{ping} ms` — 播放 `{playing}/{players}`\n來源：{sources}\n最近失敗：`{failures}`",
+      "empty": "沒有註冊 Lavalink 節點。"
+    },
+    "wrapped": {
+      "guild_only": "伺服器包裹僅在伺服器中可用。",
+      "share_card": "共享卡",
+      "tier": "**等級：** {tier}",
+      "tracks": "**曲目：** `{count}`",
+      "listen_time": "**收聽時間：** `{duration}`",
+      "artists": "**藝術家：** `{count}`",
+      "top_mood": "**最高心情：** {mood}",
+      "top_artist": "**頂尖藝術家：** {artist}",
+      "top_track": "**熱門曲目：** {author} - {title}",
+      "badges": "**徽章：** {badges}"
+    },
+    "report": {
+      "staff_title": "Discord 檢舉",
+      "sent_title": "報告已發送",
+      "category": "**類別：** {category}",
+      "priority": "**優先權：** {priority}",
+      "user": "**使用者：** {user}",
+      "server": "**伺服器：** {server}",
+      "attachment": "**附件：** {url}",
+      "received": "謝謝。 Murphy 團隊收到了您的報告。",
+      "id": "**報告 ID：** `{id}`",
+      "owner_required": "只有機器人擁有者才能執行此操作。",
+      "invalid_action": "報告操作無效。",
+      "not_found": "未找到報告。",
+      "updated": "報告 `{id}` 已更新：**{status}**。",
+      "status_reviewing": "審核中",
+      "status_fixed": "已修復",
+      "status_rejected": "被拒絕"
+    },
+    "helpdesk": {
+      "report_problem": "報告問題",
+      "title": "Murphy 支持",
+      "helper_title": "Murphy 伺服器工具",
+      "links": "使用下面的連結開啟儀表板、報告問題或聯絡 Murphy 支援。",
+      "server_details": "對於伺服器特定的問題，請包含伺服器 ID 和簡短說明。",
+      "manage": "從 Murphy 儀表板管理音樂、模組、權限和社群工具。",
+      "private_credentials": "管理員可以在不共用私有憑證的情況下設定伺服器。"
+    }
+  },
+  "workflows": {
+    "blueprint": {
+      "description": "瀏覽、預覽、安裝、共用或分叉安全伺服器藍圖。",
+      "title": "社區藍圖",
+      "options": {
+        "browse": "瀏覽內建伺服器藍圖",
+        "preview": "安裝前預覽每個設置",
+        "install": "準確確認後安裝藍圖",
+        "share": "為目前組態建立共用程式碼",
+        "fork": "以新名稱複製共享藍圖"
+      },
+      "fields": {
+        "reference": "內建藍圖 ID 或共用程式碼",
+        "confirm": "鍵入 APPLY 以安裝此藍圖",
+        "name": "共享或分叉藍圖的名稱",
+        "code": "共享藍圖代碼"
+      },
+      "presets": {
+        "music_lounge": {
+          "name": "音樂休息室",
+          "description": "分享音樂控制、公告和翻譯就緒聊天。"
+        },
+        "gaming_community": {
+          "name": "遊戲社區",
+          "description": "遊戲群組的反垃圾郵件、經濟和臨時語音預設。"
+        },
+        "creator_server": {
+          "name": "創作者伺服器",
+          "description": "創作者的公告、安全性和發布警報預設設定。"
+        },
+        "support_server": {
+          "name": "支援伺服器",
+          "description": "支援社群的票證、反垃圾郵件和翻譯預設值。"
+        },
+        "study_community": {
+          "name": "學習社區",
+          "description": "專注於聊天安全和翻譯，不受經濟幹擾。"
+        },
+        "radio_247": {
+          "name": "電台 24/7",
+          "description": "高級 AutoDJ 與重複保護，打造始終在線的音樂室。"
+        },
+        "event_server": {
+          "name": "事件伺服器",
+          "description": "公告、平衡事件的安全性和參與預設值。"
+        }
+      },
+      "not_found": "找不到該藍圖或共用程式碼。",
+      "premium_required": "此藍圖需要一個包含進階範本的計劃。",
+      "safe_preview": "僅預覽：沒有更改頻道、角色或伺服器設定。",
+      "shared_description": "共享 Murphy 藍圖 `{code}`。",
+      "shared": "與代碼 `{code}` 共用 **{name}**。",
+      "forked": "用新碼 `{code}` 分叉 **{name}**。",
+      "confirm_required": "在確認欄位中精確輸入 `APPLY`。",
+      "installed": "安裝了 **{name}** 並應用了 {count} 安全 Murphy 設定。",
+      "rollback_note": "首先建立安全備份；使用備份還原來回滾。"
+    },
+    "migration": {
+      "description": "檢查、預覽、應用或回滾安全 Murphy 伺服器遷移。",
+      "title": "伺服器設定遷移",
+      "options": {
+        "inspect": "檢查目標伺服器上不同的設定組",
+        "preview": "預覽確切的配置鍵而不更改目標",
+        "apply": "備份目標並套用遷移",
+        "rollback": "恢復遷移前所建立的備份\n您所管理的伺服器的"
+      },
+      "fields": {
+        "target": "Discord ID",
+        "confirm_apply": "鍵入 MIGRATE 以套用遷移",
+        "version": "要還原的備份版本",
+        "confirm_rollback": "鍵入 ROLLBACK 以還原此備份"
+      },
+      "groups": {
+        "automod": "Automod",
+        "tickets": "門票",
+        "music": "音樂",
+        "language": "語言",
+        "community": "社群"
+      },
+      "premium_required": "伺服器遷移需要 Guild Plus 或更高的計畫。",
+      "same_server": "選擇不同的目標伺服器。",
+      "target_denied": "您必須擁有目標伺服器上的「管理伺服器」權限。",
+      "inspect_result": "目標 `{target}` 的 {count} 配置鍵有所不同。",
+      "preview_result": "遷移將更改 {count} 配置鍵。",
+      "preview_safe": "沒有任何改變。應用程式在寫入之前建立目標備份。",
+      "no_changes": "來源配置和目標配置已經相符。",
+      "confirm_apply": "在確認欄位中精確輸入 `MIGRATE`。",
+      "applied": "將 {count} 設定移轉到 `{target}`。校驗和：`{checksum}`。",
+      "rollback_available": "遷移前備份透過回滾仍然可用。",
+      "confirm_rollback": "在確認欄位中精確輸入 `ROLLBACK`。",
+      "rolled_back": "還原備份版本 {version}。",
+      "rollback_failed": "回溯失敗：{reason}"
+    },
+    "playlist": {
+      "title": "播放清單工作區",
+      "options": {
+        "collaborate": "授予、變更或刪除播放清單協同存取權限",
+        "share": "為播放清單建立私人共享代碼",
+        "fork": "將共用播放清單複製到您的媒體庫中",
+        "import": "匯入 JSON 或 M3U 播放清單文件",
+        "export": "將播放清單匯出為 JSON 或 M3U"
+      },
+      "fields": {
+        "playlist": "播放清單名稱",
+        "user": "接收協同存取權限的用戶",
+        "access": "檢視者、編輯者或刪除存取權限",
+        "code": "私人播放清單共享代碼",
+        "name": "匯入或分叉的播放清單的名稱",
+        "file": "Discord 託管的 JSON 或 M3U 檔案最多 1 MB",
+        "format": "匯出格式"
+      },
+      "access": {
+        "viewer": "觀眾",
+        "editor": "編輯",
+        "remove": "刪除存取權限"
+      },
+      "collaboration_saved": "將 {user} 更新為 **{access}** 存取權限。",
+      "playlist_owner_collaboration": "播放清單擁有者已擁有完全存取權限。",
+      "playlist_collaborator_limit": "此播放清單已有 25 位協作者。",
+      "editor_required": "您需要擁有者或編輯者存取權限才能變更此播放清單。",
+      "not_found": "找不到該播放清單或無法存取該播放清單。",
+      "shared": "使用私人代碼 `{code}` 共享播放清單。",
+      "share_not_found": "此共用代碼無效或不再公開。",
+      "forked": "將 **{name}** 與 {count} 軌道分叉。",
+      "name_exists": "具有該名稱的播放清單已存在。",
+      "import_rejected": "檔案無效、太大或不是由 Discord 託管。",
+      "imported": "將 {count} 曲目匯入 **{name}**。",
+      "exported": "從 **{name}** 匯出 {count} 曲目。"
+    },
+    "session": {
+      "options": {
+        "recap": "顯示便攜式音樂會話的回顧",
+        "history": "顯示您最近主持或參加的會議"
+      },
+      "empty": "您最近沒有任何手提音樂會話。",
+      "history_row": "`{code}` · **{kind}** · {status} · {tracks} 軌道 · <t:{timestamp}:R>",
+      "kinds": {
+        "session": "會議",
+        "party": "黨"
+      },
+      "statuses": {
+        "scheduled": "預定",
+        "active": "積極的",
+        "completed": "已完成",
+        "cancelled": "取消"
+      },
+      "recap_status": "狀態：**{status}**",
+      "recap_tracks": "曲目：**{count}**",
+      "recap_participants": "參與者：**{count}**",
+      "recap_votes": "投票：**{count}**"
+    },
+    "wrapped": {
+      "title": "{user} 的 Murphy 已包裹",
+      "options": {
+        "monthly": "顯示您的個人每月收聽回顧",
+        "yearly": "顯示您個人的年度聆聽回顧",
+        "share": "建立可以分享的回顧"
+      },
+      "fields": {
+        "period": "每月或每年回顧期"
+      },
+      "periods": {
+        "monthly": "每月",
+        "yearly": "每年"
+      },
+      "history_limited": "您的計劃顯示了請求的 {requested} 天中的 {days}。",
+      "open_profile": "開啟音樂設定文件"
+    }
+  },
+  "context_menu": {
+    "save_message": "儲存訊息",
+    "remind_hour": "1 小時後提醒我",
+    "report_message": "報告訊息",
+    "create_tag": "從訊息建立標籤",
+    "case_evidence": "新增為案件證據",
+    "view_profile": "檢視 Murphyfile",
+    "moderation_history": "伺服器審核歷史記錄",
+    "responses": {
+      "server_only": "此操作可在伺服器中使用。",
+      "profile_title": "{user} 的 Murphy 個人資料",
+      "profile_tracks": "**請求的曲目：** {count}",
+      "profile_level": "**等級：** {level} · **XP：** {xp}",
+      "profile_created": "**Discord 帳號:** {timestamp}",
+      "moderation_title": "伺服器審核歷史記錄",
+      "moderation_user_title": "伺服器審核歷史·{user}",
+      "moderation_empty": "找不到該使用者的伺服器審核案例。",
+      "saved_default_title": "已儲存 Discord 訊息",
+      "saved_from": "來自#{channel}",
+      "unknown_channel": "頻道",
+      "saved_title": "訊息已儲存",
+      "saved_body": "該訊息現在可以在您的 Murphy 書籤中找到。",
+      "reminder_title": "已建立提醒",
+      "reminder_body": "我將在一小時內提醒您此訊息。",
+      "reminder_delivery": "提醒：{url}",
+      "open_original": "開原文",
+      "report_title": "收到報告",
+      "report_reference": "參考：`{id}`",
+      "report_body": "Murphy 團隊現在可以查看報告的訊息。",
+      "tag_title": "建立標籤",
+      "tag_created": "標籤已建立",
+      "tag_usage": "使用 `/tag show name:{name}` 顯示它。",
+      "evidence_title": "案件證據",
+      "evidence_attached": "附於案例 `#{id}`。",
+      "evidence_missing": "未找到訊息作者的活動伺服器審核案例，或其證據清單已滿。",
+      "open_evidence": "公開證據",
+      "report_record_title": "Discord 訊息報告",
+      "report_no_text": "無文字內容的訊息"
+    }
+  },
+  "reports": {
+    "server": {
+      "title": "伺服器報告 — 最近 {days} 天",
+      "commands": "使用的指令：**{count}**",
+      "members": "成員： **+{joins} / -{leaves}**",
+      "voice": "語音活動：**{hours} 小時**",
+      "moderation": "審核操作：**{count}**"
+    }
+  },
+  "alerts": {
+    "premium": {
+      "title": "Murphy 操作警報",
+      "raid": "偵測到可能的攻擊：**{count} 在最後一刻加入**。",
+      "moderation": "異常的版主活動：{moderator} 在 10 分鐘內建立了 **{count} 個案例**。",
+      "configuration": "配置運作狀況檢查發現 **{count} 缺少關鍵機器人權限**。運行 `/diagnostics`。"
+    }
+  },
+  "ticket": {
+    "panel_title": "創建票證",
+    "button_label": "公開票",
+    "opened_title": "票已開",
+    "close_button": "關閉票證",
+    "created": "在 {channel} 中建立的票證",
+    "closed": "票證已由 {user} 關閉",
+    "description": "管理支援票系統"
+  },
+  "announcement": {
+    "footer_info": "Murphy / 您可以使用 `/announcements` 停用這些公告"
+  },
+  "verification": {
+    "button_label": "核實",
+    "click_verify": "點擊下面的按鈕進行驗證。",
+    "prompt": "輸入圖片中的驗證碼。",
+    "modal_label": "驗證碼",
+    "modal_title": "輸入驗證碼",
+    "failed": "驗證失敗，請重試。",
+    "success": "你已通過驗證。",
+    "already_verified": "你已在此通過驗證。",
+    "mode_label": "驗證方式",
+    "answer_label": "答案",
+    "admin_diagnose": "檢查驗證設定",
+    "admin_reset": "重設成員尚未完成的驗證碼",
+    "admin_link": "取得伺服器驗證連結"
+  },
+  "system": {
+    "maintenance": {
+      "title": "維護中",
+      "message": "Murphy 暫時無法使用，請稍後重試。"
+    }
+  },
+  "command_metadata": {
+    "config_automation": {
+      "001": "獨特規則 ID",
+      "002": "顯示名稱",
+      "003": "何時運行",
+      "004": "訊息目的地",
+      "005": "支援 {user} 和 {server}",
+      "006": "規則 ID",
+      "007": "新狀態",
+      "008": "規則 ID"
+    },
+    "config_backup": {
+      "001": "備份名稱",
+      "002": "備份版本",
+      "003": "鍵入 RESTORE 進行確認",
+      "004": "間隔天數",
+      "005": "要比較的備份版本"
+    },
+    "config_event": {
+      "001": "活動標題",
+      "002": "事件描述",
+      "003": "ISO 日期或 JavaScript 理解的日期",
+      "004": "0 表示無限制",
+      "005": "事件 ID",
+      "006": "逗號分隔的偏移量，例如1440,60,10",
+      "007": "事件 ID"
+    },
+    "config_forms": {
+      "001": "獨特的形式 ID",
+      "002": "表格名稱",
+      "003": "第一個問題",
+      "004": "結果頻道",
+      "005": "可選形式 ID",
+      "006": "表格 ID"
+    },
+    "config_tempvoice": {
+      "001": "語音頻道使用者加入創建房間",
+      "002": "已建立房間的類別",
+      "003": "房間模板，支援{user}",
+      "004": "0 表示無限制",
+      "005": "新頻道名稱",
+      "006": "房間裡有新主人"
+    },
+    "config_welcome": {
+      "001": "歡迎頻道",
+      "002": "支援 {user}、{username}、{server}、{count}"
+    },
+    "dev_changelogsend": {
+      "001": "應接收發佈公告的頻道",
+      "002": "已發布的語意版本，例如 3.6.1"
+    },
+    "dev_resolve": {
+      "001": "追蹤URL或查詢"
+    },
+    "economy_profile": {
+      "001": "顯示經濟與聆聽概況",
+      "002": "設定其他使用者是否可以查看您的個人資料",
+      "003": "對其他使用者隱藏您的個人資料",
+      "004": "將 Murphy 使用者資料匯出為 JSON",
+      "005": "Delete 您的個人 Murphy 數據",
+      "006": "輸入 DELETE 我的資料進行確認"
+    },
+    "info_report": {
+      "001": "報告類別",
+      "002": "簡短報告標題",
+      "003": "發生了什麼以及應該發生什麼",
+      "004": "選購影像、影片或貼上 URL"
+    },
+    "moderation_audit": {
+      "001": "檢查最近的高風險審核日誌操作"
+    },
+    "moderation_case": {
+      "001": "案例 ID",
+      "002": "新理由",
+      "003": "HTTPS URL 或證據參考",
+      "004": "目標用戶",
+      "005": "伺服器審核說明",
+      "006": "目標用戶",
+      "007": "解釋您的上訴",
+      "008": "決定",
+      "009": "主持人回复"
+    },
+    "moderation_cleanup": {
+      "001": "審核機器人帳戶",
+      "002": "根據 Discord 狀態和加入年齡估計非活動帳戶",
+      "003": "審核空的可移動角色"
+    },
+    "moderation_permissions": {
+      "001": "檢查伺服器和目前頻道權限"
+    },
+    "moderation_raid": {
+      "001": "顯示防突襲狀態",
+      "002": "將會員隔離長達 28 天",
+      "003": "會員接受隔離",
+      "004": "持續時間（以小時為單位）",
+      "005": "原因"
+    },
+    "moderation_role": {
+      "001": "新增或刪除的角色",
+      "002": "目標會員類型",
+      "003": "鍵入 CONFIRM 以執行批次操作"
+    },
+    "music_audio": {
+      "001": "啟用真正的 LavaDSPX 自適應歸一化",
+      "002": "啟用或停用標準化",
+      "003": "設定排隊軌道之間的淡入淡出過渡",
+      "004": "0 禁用；最長 10 秒"
+    },
+    "music_history": {
+      "001": "將聆聽歷史記錄匯出為 JSON"
+    },
+    "music_listeninggoal": {
+      "001": "設定您的每週目標",
+      "002": "每週收聽分鐘數",
+      "003": "顯示過去 7 天的進度"
+    },
+    "music_mood": {
+      "001": "心情預設"
+    },
+    "music_queuegroup": {
+      "001": "儲存目前佇列",
+      "002": "儲存的佇列名稱",
+      "003": "載入已儲存的佇列",
+      "004": "儲存的佇列名稱",
+      "005": "將已儲存的佇列匯出為 JSON",
+      "006": "儲存的佇列名稱",
+      "007": "匯入 Murphy 佇列 JSON 文件",
+      "008": "儲存的佇列名稱",
+      "009": "Murphy 佇列 JSON 文件"
+    },
+    "music_recommend": {
+      "001": "尋找相似曲目",
+      "002": "可選歌曲或藝術家"
+    },
+    "music_scrobble": {
+      "001": "顯示 ListenBrainz 和 Last.fm 可用性"
+    },
+    "music_session": {
+      "001": "建立 30 分鐘的會話邀請碼",
+      "002": "將受邀會話複製到此伺服器中",
+      "003": "八字元會話代碼"
+    },
+    "utility_bookmark": {
+      "001": "HTTPS 或 Discord 訊息 URL",
+      "002": "書籤標題",
+      "003": "可選備註",
+      "004": "書籤 ID"
+    },
+    "utility_calculator": {
+      "001": "使用數字、括號和 + - * / % ^ 的表達式"
+    },
+    "utility_reminders": {
+      "001": "例：30m、2h、7d",
+      "002": "提醒文字",
+      "003": "/reminders 清單中的提醒 ID",
+      "004": "範例：Europe/Warsaw 或 America/New_York"
+    },
+    "utility_tag": {
+      "001": "標籤名稱",
+      "002": "標籤回應",
+      "003": "新回應"
+    },
+    "utility_timestamp": {
+      "001": "ISO 日期、Unix 時間戳或當前時間為空"
+    },
+    "utility_utility": {
+      "001": "計算安全的數學表達式",
+      "002": "使用數字、括號和 + - * / % ^ 的表達式",
+      "003": "在每種顯示樣式中建立 Discord 時間戳",
+      "004": "ISO 日期、Unix 時間戳或暫時為空"
+    }
+  },
+  "pro_tools": {
+    "mine": "查看你新增的歌曲及其排隊位置。",
+    "cleanup": "移除已離開語音頻道的使用者新增的歌曲。",
+    "reverse": "反轉佇列中的歌曲順序。",
+    "dedupe": "移除佇列中的重複曲目。",
+    "find": "在目前佇列中搜尋曲名和藝人。"
+  },
+  "expansion": {
+    "transactions": "查看你最近的經濟交易紀錄。",
+    "fish_guide": "查看釣魚裝備和相關指令。",
+    "remove_user": "從佇列中移除某位成員點的歌曲。",
+    "mod_check": "檢查你可以對某位成員執行哪些管理操作。",
+    "dice": "使用 2d6+3 等格式擲骰，最多 20 個。",
+    "quest_hint": "每個目標僅獎勵一次。領取：/fish quests action:claim。",
+    "unsafe_role": "該身分組不適合用於驗證。",
+    "transaction_currency": "硬幣 / 寶石 / XP",
+    "transaction_limit": "查看你最近的經濟交易紀錄。 (1-100)",
+    "queue_saved": "查看自己儲存的佇列",
+    "queue_delete": "刪除自己儲存的一個佇列",
+    "remove_range": "依範圍移除等待播放的歌曲"
+  },
+  "community_tools": {
+    "convert": "換算計量單位",
+    "teams": "將逗號分隔的名字隨機分組",
+    "clock": "查看 IANA 時區的目前時間"
+  },
+  "tasks": {
+    "title": "任務",
+    "description": "管理個人任務和伺服器共用任務。",
+    "add": "新增任務",
+    "list": "查看任務",
+    "done": "完成任務",
+    "reopen": "重新開啟任務",
+    "remove": "刪除任務",
+    "text": "任務內容",
+    "scope": "清單可見範圍",
+    "personal": "個人",
+    "server": "伺服器",
+    "empty": "目前沒有任務。",
+    "limit": "此清單最多可容納 {limit} 個任務。請刪除任務以騰出空間。",
+    "not_found": "找不到任務，或任務已處於此狀態。",
+    "updated": "任務清單已更新。",
+    "id": "ID",
+    "edit": "編輯任務",
+    "clear_completed": "刪除已完成的任務"
+  },
+  "games": {
+    "description": "玩記憶配對遊戲，或邀請朋友對決。",
+    "memory": "每次翻開兩張卡，找出八對相同圖案。",
+    "duel": "選擇石頭、剪刀或布。雙方的選擇將同時揭曉。",
+    "invalid": "請選擇此伺服器中除自己以外的真人成員。",
+    "tictactoe": "與另一名成員玩井字棋。",
+    "connect4": "在對手之前將四枚棋子連成一線。",
+    "tictactoe_title": "井字棋",
+    "connect4_title": "連續四次"
+  },
+  "vault": {
+    "title": "儲蓄目標",
+    "create": "建立目標",
+    "rename": "重新命名目標",
+    "target": "變更目標金額",
+    "delete": "刪除空目標",
+    "export": "匯出目標",
+    "name": "目標名稱",
+    "empty": "目前沒有儲蓄目標。",
+    "updated": "儲蓄已更新。",
+    "failed": "請檢查 ID、金額和餘額。刪除前請取出全部金幣。",
+    "limit": "目標數量上限：{limit}。",
+    "deposit": "將錢包金幣存入目標",
+    "withdraw": "將目標金幣領回錢包"
+  },
+  "progress": {
+    "farm": "農場",
+    "workshop": "工坊",
+    "updated": "已儲存。",
+    "empty": "這裡目前沒有內容。",
+    "confirm": "確認",
+    "name": "名稱",
+    "actions": {
+      "status": "狀態",
+      "plots": "田地",
+      "seeds": "種子",
+      "market": "市場",
+      "inventory": "倉庫",
+      "collection": "收藏",
+      "records": "成就",
+      "history": "歷史",
+      "guide": "指南",
+      "buy-seeds": "購買種子",
+      "plant": "播種",
+      "water": "澆水",
+      "fertilize": "施肥",
+      "harvest": "收穫",
+      "harvest-all": "全部收穫",
+      "sell": "出售",
+      "sell-all": "全部出售",
+      "expand": "擴建",
+      "upgrade": "升級",
+      "compost": "堆肥",
+      "buy-fertilizer": "購買肥料",
+      "rename": "重新命名",
+      "select": "選擇",
+      "reset-plot": "清空田地",
+      "recipes": "配方列表",
+      "recipe": "配方",
+      "materials": "材料",
+      "blueprints": "藍圖",
+      "stations": "工作台",
+      "orders": "訂單",
+      "buy-material": "購買材料",
+      "craft": "製作零件",
+      "start": "開始生產",
+      "collect": "領取成品",
+      "cancel": "取消訂單",
+      "salvage": "回收產品",
+      "buy-blueprint": "購買藍圖"
+    },
+    "errors": {
+      "funds": "金幣不足。",
+      "resources": "資源不足或缺少藍圖。",
+      "ready": "目前沒有可領取的物品。",
+      "capacity": "已達到容量或升級上限。",
+      "invalid": "請檢查物品、數量和所選位置。",
+      "conflict": "其他操作更改了帳戶狀態，請重試。"
+    },
+    "disabled": "功能已關閉",
+    "enable": "伺服器管理者可在控制面板 → 伺服器模組中啟用此功能。"
+  },
+  "reactions": {
+    "title": "反應",
+    "groups": {
+      "emotions": "情緒",
+      "gestures": "動作",
+      "characters": "角色"
+    },
+    "actions": {
+      "sleep": "睡覺",
+      "confused": "困惑",
+      "smile": "微笑",
+      "wink": "眨眼",
+      "smug": "得意笑",
+      "think": "思考",
+      "teehee": "偷笑",
+      "shocked": "震驚",
+      "bleh": "吐舌頭",
+      "bored": "無聊",
+      "nya": "喵",
+      "yawn": "打哈欠",
+      "facepalm": "捂臉",
+      "happy": "開心",
+      "angry": "生氣",
+      "nod": "點頭",
+      "nope": "拒絕",
+      "cry": "哭泣",
+      "pout": "噘嘴",
+      "laugh": "大笑",
+      "lurk": "偷偷觀察",
+      "stare": "凝視",
+      "shrug": "聳肩",
+      "tableflip": "掀桌",
+      "peck": "輕吻",
+      "sip": "小酌",
+      "yeet": "玩笑拋出",
+      "feed": "餵食",
+      "wag": "搖尾巴",
+      "bite": "咬一口",
+      "nom": "吃零食",
+      "kick": "踢腿",
+      "carry": "抱起",
+      "kabedon": "動漫姿勢",
+      "baka": "犯傻",
+      "bonk": "輕敲",
+      "spin": "旋轉",
+      "shake": "搖晃",
+      "run": "奔跑",
+      "punch": "出拳",
+      "handshake": "握手",
+      "lappillow": "膝枕",
+      "blowkiss": "飛吻",
+      "handhold": "牽手",
+      "salute": "敬禮",
+      "thumbsup": "按讚",
+      "neko": "貓耳角色",
+      "waifu": "二次元女角色",
+      "husbando": "二次元男角色",
+      "kitsune": "狐耳角色"
+    }
+  },
+  "puzzles": {
+    "lights": "關閉所有燈",
+    "fifteen": "滑動方塊按順序排列",
+    "mines": "找出安全格子",
+    "nim": "拿走最後一顆石子",
+    "higher-lower": "猜下一個數字更大還是更小",
+    "mastermind": "破解顏色密碼",
+    "anagram": "用字母拼出詞語",
+    "math": "解答算術題",
+    "fractions": "選擇較大的分數",
+    "count": "數一數符號",
+    "odd-one-out": "找出不同的符號",
+    "sudoku": "解開4×4數獨",
+    "reversi": "佔領更多棋子",
+    "battleship": "找出隱藏的船隻",
+    "twentyone": "達到21但不要超過",
+    "binary": "將數字轉換為二進位",
+    "balance": "湊出目標重量"
+  },
+  "quests": {
+    "title": "任務",
+    "daily": "每日任務",
+    "weekly": "每週任務",
+    "claim": "領取獎勵",
+    "claim_all": "領取全部獎勵",
+    "reroll": "更換任務",
+    "slot": "任務編號",
+    "work": "工作",
+    "fish": "釣魚",
+    "bonus": "全部完成獎勵",
+    "completed": "已完成任務",
+    "rewards": "獲得的金幣",
+    "streak": "連續完成天數",
+    "best": "最長紀錄",
+    "reset": "UTC 00:00重設",
+    "rules": "開始遊玩前先開啟任務面板。只有之後的操作才計入進度；每日和每週任務分別計算。",
+    "reroll_rules": "每個UTC日可更換一個未完成的每日任務。新任務從零開始。已完成或已領獎的任務無法更換。",
+    "bonus_rules": "領取三個任務的獎勵即可獲得額外獎勵。連續UTC日完成每日任務可累計連續天數，前七天的額外獎勵會逐步增加。",
+    "history": "歷史",
+    "stats": "成就",
+    "guide": "指南",
+    "empty": "這裡目前沒有內容。",
+    "harvest": "收穫",
+    "craft": "製作零件",
+    "errors": {
+      "invalid": "請檢查物品、數量和所選位置。",
+      "nothing": "目前沒有可領取的獎勵。",
+      "rerolled": "每個UTC日可更換一個未完成的每日任務。新任務從零開始。已完成或已領獎的任務無法更換。",
+      "conflict": "其他操作更改了帳戶狀態，請重試。"
+    }
+  },
+  "halloween": {
+    "title": "萬聖節",
+    "explore": "探索",
+    "trade": "兌換糖果",
+    "season": "活動時間",
+    "redeem": "獎勵領取截止",
+    "amount": "兌換組數",
+    "candies": "糖果",
+    "visits": "造訪次數",
+    "today": "今天",
+    "next": "下次造訪",
+    "collection_bonus": "全套收集獎勵",
+    "rules": "每15分鐘可探索一次，每個UTC日最多8次。每次獲得1–3顆糖果和一件收藏品，可能重複。",
+    "rewards": "20顆糖果兌換300金幣。造訪目標：5次 → 150金幣，15次 → 350，30次 → 750。集齊8種符號可得1500金幣。",
+    "guide_rules": "使用 /events halloween claim 領取目標獎勵。請在截止前兌換並領獎。進度屬於你的帳號，所有伺服器共用，重新啟動後仍保留。",
+    "info": "狀態",
+    "collection": "收藏",
+    "claim": "領取獎勵",
+    "stats": "成就",
+    "guide": "指南",
+    "errors": {
+      "closed": "目前不在活動或領獎期間。",
+      "limit": "今天的8次造訪已用完。",
+      "cooldown": "冷卻",
+      "candies": "資源不足或缺少藍圖。",
+      "nothing": "目前沒有可領取的獎勵。",
+      "invalid": "請檢查物品、數量和所選位置。",
+      "conflict": "其他操作更改了帳戶狀態，請重試。"
+    }
+  },
+  "christmas": {
+    "title": "聖誕活動",
+    "advent": "降臨節日曆",
+    "advent_rules": "UTC時間12月1–24日可開啟當天的格子，錯過的日期無法補領。開滿24天可獲得永久傳奇王冠。",
+    "rules": "每15分鐘可探索一次，每個UTC日最多8次。每次獲得50金幣和一個收藏符號。10、40、100次造訪可領取目標獎勵；100次造訪並集齊8種符號可解鎖傳奇收藏品。",
+    "info": "狀態",
+    "explore": "探索",
+    "claim": "領取獎勵",
+    "stats": "成就",
+    "collection": "收藏",
+    "guide": "指南",
+    "errors": {
+      "closed": "目前不在活動或領獎期間。",
+      "already": "目前沒有可領取的獎勵。",
+      "cooldown": "冷卻",
+      "limit": "今天的8次造訪已用完。",
+      "nothing": "目前沒有可領取的獎勵。",
+      "capacity": "已達到容量或升級上限。",
+      "conflict": "其他操作更改了帳戶狀態，請重試。",
+      "invalid": "請檢查物品、數量和所選位置。"
+    }
+  },
+  "easter": {
+    "title": "復活節活動",
+    "basket": "每日籃子",
+    "daily_rules": "每個UTC日可領取一個籃子，獲得125金幣和一個收藏符號。在不同的7天領取可獲得永久傳奇收藏品「黎明之卵」。",
+    "rules": "每15分鐘可探索一次，每個UTC日最多8次。每次獲得40金幣和一個收藏符號。10、40、80次造訪可領取目標獎勵；80次造訪並集齊8種符號可解鎖傳奇收藏品。",
+    "info": "狀態",
+    "hunt": "探索",
+    "claim": "領取獎勵",
+    "stats": "成就",
+    "collection": "收藏",
+    "guide": "指南",
+    "errors": {
+      "closed": "目前不在活動或領獎期間。",
+      "already": "目前沒有可領取的獎勵。",
+      "cooldown": "冷卻",
+      "limit": "今天的8次造訪已用完。",
+      "nothing": "目前沒有可領取的獎勵。",
+      "capacity": "已達到容量或升級上限。",
+      "conflict": "其他操作更改了帳戶狀態，請重試。",
+      "invalid": "請檢查物品、數量和所選位置。"
+    }
+  },
+  "command_choices": {
+    "member_join": "會員加入",
+    "add": "添加",
+    "remove": "刪除",
+    "clear": "清除",
+    "balanced": "平衡",
+    "strict": "嚴格",
+    "daily": "每日",
+    "weekly": "每週",
+    "once": "一次",
+    "starter": "啟動器",
+    "growth": "成長",
+    "creator": "創作者",
+    "monthly": "每月",
+    "tracks": "曲目",
+    "artists": "藝術家",
+    "words": "字",
+    "sources": "來源",
+    "supporter_midnight": "支持者午夜",
+    "supporter_aurora": "支持者極光",
+    "supporter_neon": "支持者霓虹燈",
+    "music_discovery": "音樂發現",
+    "moderation_workflows": "伺服器審核工作流程",
+    "community_games": "社群遊戲",
+    "mobile_dashboard": "行動儀表板",
+    "delete": "Delete",
+    "lock": "鎖",
+    "low": "低",
+    "normal": "正常",
+    "high": "高",
+    "urgent": "緊急",
+    "music": "音樂",
+    "community": "社區",
+    "moderation": "伺服器審核",
+    "full": "完整",
+    "discord_abc123": "Discord · ABC123",
+    "discord_5_20": "Discord · 5 × 20",
+    "discord_abc123_5_20": "Discord · ABC123 / 5 × 20",
+    "muzes_xyz_abc123": "Murphy.xyz·ABC123",
+    "user": "用戶",
+    "server": "伺服器",
+    "view": "查看",
+    "claim": "領取獎勵",
+    "planned": "已計劃",
+    "accepted": "已接受",
+    "rejected": "被拒絕",
+    "completed": "已完成",
+    "dashboard": "儀表板",
+    "commands": "指令",
+    "other": "其他",
+    "bot": "機器人",
+    "website": "網站",
+    "payment": "付款",
+    "abuse": "濫用",
+    "humans": "人類",
+    "bots": "機器人",
+    "all": "全部",
+    "song": "歌曲",
+    "queue": "隊列",
+    "tremolo": "顫音",
+    "vibrato": "顫音",
+    "distortion": "失真",
+    "mono": "單聲道",
+    "low_pass": "低通",
+    "global_pop_night": "全球流行之夜",
+    "gaming_focus": "遊戲焦點",
+    "party_queue": "派對隊列",
+    "chill_reset": "冷凍復位",
+    "url_encode": "URL 編碼",
+    "url_decode": "URL 解碼",
+    "base64_encode": "Base64 編碼",
+    "base64_decode": "Base64 解碼",
+    "week_ago": "一週前",
+    "month_ago": "一個月前",
+    "year_ago": "一年前",
+    "list": "列表"
+  },
+  "social": {
+    "description": "撩人、玩耍、決鬥和結婚：25 個社交指令。",
+    "unknown": "我不認識這個指令。試試 `/social love flirt` 或 `/help`。",
+    "need_text": "給我一些文字。",
+    "need_user": "先選一個人。",
+    "server_only": "這只能在伺服器中使用。",
+    "timeout": "⌛ 沒有人及時回應。",
+    "not_target": "只有 {user} 能回應。",
+    "return_button": "回敬",
+    "self": "沒人在，所以 Murphy 出馬：給 {a} 來個{action}。🤖",
+    "bot": "{a} 對 Murphy 試了一下。Murphy 受寵若驚。✨",
+    "generic": "{a} → {b}：{action}",
+    "count": "💞 你送出 {count}× · 回敬 {back}×",
+    "milestone": "🏅 **里程碑：{count}！** 這對認真了。",
+    "premium": {
+      "1": "黃金版：Premium 伺服器獲得閃亮版本。",
+      "2": "Premium 連擊：Murphy 為你們撒彩帶。🎉",
+      "3": "VIP 反應：整個伺服器都注意到了。",
+      "4": "已加上 Premium 光芒。很適合你。"
+    },
+    "premium_top": "你最常對誰這麼做：{user}（{count}×）",
+    "solo": {
+      "clap": "{a} 開始慢慢鼓掌… 👏",
+      "dance": "{a} 霸佔了舞池！💃",
+      "blush": "{a} 臉紅得像番茄。😳",
+      "wave": "{a} 向大家揮手。👋"
+    },
+    "say": {
+      "kiss": {
+        "1": "{a} 親了 {b}。💋",
+        "2": "{a} 偷親了 {b} 一下！",
+        "3": "{a} 給了 {b} 一個難忘的吻。😘"
+      },
+      "hug": {
+        "1": "{a} 緊緊抱住 {b}。🤗",
+        "2": "{a} 給了 {b} 一個溫暖的大擁抱。",
+        "3": "{a} 跑過去抱住 {b}！"
+      },
+      "cuddle": {
+        "1": "{a} 依偎著 {b}。🥰",
+        "2": "{a} 和 {b} 變成了毯子捲餅。",
+        "3": "{a} 鑽進 {b} 懷裡。"
+      },
+      "pat": {
+        "1": "{a} 摸摸 {b} 的頭。🫳",
+        "2": "{a} 輕輕拍拍 {b} 的頭。",
+        "3": "做得好，{b}！{a} 摸摸你的頭。"
+      },
+      "slap": {
+        "1": "{a} 甩了 {b} 一巴掌！👋💥",
+        "2": "{a} 給了 {b} 一巴掌，明天還會痛。",
+        "3": "*啪！* {a} 剛剛甩了 {b} 一巴掌。"
+      },
+      "kill": {
+        "1": "{a} 幹掉了 {b}。💀",
+        "2": "{b} 被 {a} 淘汰了。",
+        "3": "{a} 擊敗了 {b}。5… 4… 3… 後重生",
+        "4": "{a} 把 {b} 送進了暗影界。☠️"
+      },
+      "poke": {
+        "1": "{a} 戳了戳 {b}。👉",
+        "2": "*戳戳* {a} 想引起 {b} 的注意。"
+      },
+      "tickle": {
+        "1": "{a} 搔 {b} 癢搔到喘不過氣！🤣",
+        "2": "{a} 找到了 {b} 的怕癢處。"
+      },
+      "highfive": {
+        "1": "{a} 和 {b} 擊掌！✋",
+        "2": "來！{a} 和 {b} 擊了個掌。"
+      },
+      "wave": {
+        "1": "{a} 向 {b} 揮手。👋",
+        "2": "{a} 跟 {b} 打招呼！"
+      },
+      "clap": {
+        "1": "{a} 為 {b} 鼓掌。👏",
+        "2": "{a} 為 {b} 起立鼓掌！"
+      },
+      "dance": {
+        "1": "{a} 把 {b} 拉進舞池！💃🕺",
+        "2": "{a} 和 {b} 像沒人在看一樣跳舞。"
+      },
+      "blush": {
+        "1": "{b} 讓 {a} 臉紅了。😳",
+        "2": "{b} 一進來 {a} 就臉紅。"
+      },
+      "spank": {
+        "1": "{a} 開玩笑地拍了 {b} 的屁股！🍑",
+        "2": "*啪！* {a} 剛剛打了 {b} 的屁股。",
+        "3": "{a} 偷偷走近，拍了一下 {b} 的屁股。😏"
+      },
+      "boop": {
+        "1": "{a} 戳了戳 {b} 的鼻子。👉👃",
+        "2": "*啵！* {b} 的鼻子被 {a} 戳了。"
+      },
+      "nuzzle": {
+        "1": "{a} 用鼻子蹭蹭 {b}。🥺",
+        "2": "{a} 用臉頰蹭 {b}。"
+      },
+      "pinch": {
+        "1": "{a} 捏了捏 {b} 的臉！🤏",
+        "2": "哎唷！{a} 捏了 {b}。"
+      },
+      "snowball": {
+        "1": "{a} 向 {b} 丟雪球。正中目標！❄️",
+        "2": "{a} 向 {b} 丟雪球……完全沒打中。☃️",
+        "3": "{a} 把 {b} 埋進了雪裡！"
+      },
+      "pillow": {
+        "1": "{a} 用枕頭砸 {b}！🛏️",
+        "2": "枕頭大戰！{a} 對 {b}。羽毛滿天飛。",
+        "3": "{a} 朝 {b} 揮枕頭……{b} 閃開了！"
+      },
+      "tackle": {
+        "1": "{a} 把 {b} 撲倒在地！🏈",
+        "2": "{a} 突然撲向 {b}。"
+      },
+      "squish": {
+        "1": "{a} 捏住 {b} 的臉頰。🥹",
+        "2": "{a} 像捏紓壓球一樣捏 {b}。"
+      }
+    },
+    "group": {
+      "love": "撩人、約會和結婚",
+      "play": "附 GIF 的趣味動作",
+      "games": "決鬥、遊戲和產生器"
+    },
+    "cmd": {
+      "flirt": "對某人說一句撩人情話",
+      "compliment": "稱讚某人",
+      "date": "和某人計畫一次約會",
+      "propose": "向某人求婚（對方可以答應或拒絕）",
+      "marriage": "查看某人和誰結婚了",
+      "divorce": "結束你的婚姻",
+      "rizz": "測一測某人的魅力",
+      "spank": "開玩笑地拍某人的屁股",
+      "boop": "戳某人的鼻子",
+      "nuzzle": "蹭蹭某人",
+      "pinch": "捏某人的臉",
+      "snowball": "向某人丟雪球",
+      "pillow": "用枕頭砸某人",
+      "tackle": "撲倒某人",
+      "squish": "捏某人的臉頰",
+      "duel": "向某人發起決鬥",
+      "rps": "剪刀石頭布",
+      "roast": "吐槽某人（或自己）",
+      "rate": "幫任何東西打 0 到 10 分",
+      "fortune": "打開今天的幸運餅乾",
+      "iq": "測某人的智商",
+      "vibe": "測某人的氛圍感",
+      "simp": "測某人有多舔狗",
+      "mock": "用這種方式重複文字（sPoNgEbOb）",
+      "emojify": "把文字變成表情符號字母"
+    },
+    "opt": {
+      "user": "誰",
+      "text": "文字",
+      "thing": "要 Murphy 評價什麼？"
+    },
+    "pool": {
+      "flirt": {
+        "1": "你是 Wi-Fi 嗎？我感覺到了連線。",
+        "2": "你有地圖嗎？我總在你眼裡迷路。",
+        "3": "你是一首歌嗎？你在我腦海裡循環了一整天。",
+        "4": "如果你是蔬菜，一定是最可愛的小黃瓜。",
+        "5": "你叫 Google 嗎？我想找的一切你都有。",
+        "6": "你是貸款嗎？因為你引起了我的興趣。",
+        "7": "你相信一見鍾情嗎，還是我再進一次語音？",
+        "8": "我會把你放進最愛播放清單，永遠不跳過。"
+      },
+      "compliment": {
+        "1": "有你在，這個伺服器就更好了。",
+        "2": "你的音樂品味真的很頂。",
+        "3": "因為你，大家半夜還待在語音裡。",
+        "4": "你有主角光環。",
+        "5": "和你聊天就像發現一首寶藏歌曲。",
+        "6": "你比你想像的更有趣。真的。",
+        "7": "如果善良能加經驗值，你早就滿等了。",
+        "8": "你是完美播放清單的真人版。"
+      },
+      "roast": {
+        "1": "佇列裡有跳過按鈕就是因為你。",
+        "2": "你的 Wi-Fi 都比你有個性。",
+        "3": "你打字像戴著隔熱手套。",
+        "4": "連機器人都已讀不回你。",
+        "5": "你的播放清單應該貼個警告標籤。",
+        "6": "你就像載入畫面：沒人高興看到你。",
+        "7": "你的能量像只剩 1% 電的手機。",
+        "8": "就算偷懶是項運動，你也會翹掉練習。"
+      },
+      "fortune": {
+        "1": "好消息正在路上。看看你的私訊。",
+        "2": "今天你會找回遺失的東西。",
+        "3": "這個伺服器裡有人在想你。",
+        "4": "今天的小冒險會帶來大勝利。",
+        "5": "下一首歌正是你需要的。",
+        "6": "對下一個邀請說好。",
+        "7": "耐心：你想要的比看起來更近。",
+        "8": "今天是開始新事物的好日子。"
+      },
+      "place": {
+        "1": "夕陽下的頂樓",
+        "2": "溫馨的咖啡廳",
+        "3": "電影院最後一排",
+        "4": "公園野餐",
+        "5": "深夜電玩場",
+        "6": "海邊散步"
+      },
+      "activity": {
+        "1": "對唱卡拉 OK",
+        "2": "看星星",
+        "3": "廚藝挑戰",
+        "4": "保齡球（輸的人請客）",
+        "5": "Discord 電影之夜",
+        "6": "密室逃脫"
+      },
+      "food": {
+        "1": "披薩",
+        "2": "壽司",
+        "3": "塔可",
+        "4": "冰淇淋",
+        "5": "拉麵",
+        "6": "午夜鬆餅"
+      },
+      "move": {
+        "1": "{a} 用椅子砸 {b}",
+        "2": "{a} 把鍵盤丟向 {b}",
+        "3": "{a} 對 {b} 打出完美連招",
+        "4": "{a} 掄起平底鍋砸向 {b}",
+        "5": "{a} 把鋼琴砸在 {b} 身上",
+        "6": "{a} 對 {b} 使用暴擊迷因",
+        "7": "{a} 一腳把 {b} 踢回大廳",
+        "8": "{a} 把橡皮鴨丟向 {b}"
+      }
+    },
+    "flirt_intro": "{a} 滑進了 {b} 的私訊：",
+    "flirt_self": "{a} 對著鏡子練習：",
+    "flirt_score": "絲滑度：{score}/100",
+    "compliment_intro": "{a} 有話想對 {b} 說：",
+    "compliment_self": "{a}，給你的提醒：",
+    "compliment_score": "真誠度：{score}/100",
+    "roast_intro": "{a} 吐槽 {b}：",
+    "roast_self": "{a} 自找的：",
+    "roast_score": "灼燒等級：{score}/100 🔥",
+    "encore": "安可：「{line}」",
+    "fortune_open": "{a} 掰開一塊幸運餅乾…",
+    "fortune_lucky": "幸運數字：{number}",
+    "fortune_daily": "每天一塊新餅乾",
+    "fortune_premium": "Premium 運勢：今天好運機率為 {percent}%。",
+    "date_intro": "Murphy 為 {a} 和 {b} 安排了一次約會：",
+    "date_place": "地點",
+    "date_activity": "活動",
+    "date_food": "食物",
+    "date_chance": "第二次約會的機率",
+    "date_high": "這將是傳奇的一次。💖",
+    "date_mid": "可能會很甜。帶點零食。",
+    "date_low": "也許先從朋友做起。😅",
+    "date_premium": "Premium：Murphy 預訂了 {hour}:00 最好的座位。",
+    "meter_rizz": "{user} 的魅力掃描：",
+    "meter_iq": "{user} 的大腦掃描：",
+    "meter_vibe": "{user} 的氛圍檢測：",
+    "meter_simp": "{user} 的舔狗偵測器：",
+    "meter_rizz_low": "零魅力。一點都沒有。🫠",
+    "meter_rizz_mid": "還行的魅力。狀態好時有用。",
+    "meter_rizz_high": "無聲的魅力。危險。😎",
+    "meter_iq_low": "燈亮著，但家裡沒人。",
+    "meter_iq_mid": "很紮實。不用手指也能數到十。",
+    "meter_iq_high": "銀河級大腦。🧠✨",
+    "meter_vibe_low": "今天氛圍不對。多喝水。",
+    "meter_vibe_mid": "氛圍很放鬆。還不錯。",
+    "meter_vibe_high": "完美氛圍。✨",
+    "meter_simp_low": "不是舔狗。冷若冰霜。🧊",
+    "meter_simp_mid": "兼職舔狗。",
+    "meter_simp_high": "認證舔狗。快去求助。🥺",
+    "meter_daily": "結果每天都會變。",
+    "meter_premium": "Premium 排名：今天在本伺服器第 {rank} 名。",
+    "rate_intro": "Murphy 評價 {thing}：",
+    "rate_high": "完美無瑕。",
+    "rate_mid": "不好不壞。",
+    "rate_low": "免了。",
+    "rate_premium": "Premium 加分：{score}/10。",
+    "mock_by": "{user} 好像是這麼說的",
+    "propose_invalid": "選另一個人求婚（不能是自己或機器人）。",
+    "already_married_you": "你在這裡已經結婚了。先 `/social love divorce`。👀",
+    "already_married_them": "{user} 已經結婚了。",
+    "propose_yes": "我願意！",
+    "propose_no": "不",
+    "propose_text": "💍 {a} 在 {b} 面前單膝跪下…",
+    "propose_wait": "{b}，你有 2 分鐘回答。",
+    "propose_race": "太晚了，你們之中有人剛和別人結婚了。",
+    "propose_accepted": "🎉 **{a} 和 {b} 結婚了！** 恭喜！",
+    "propose_premium": "Premium 婚禮：彩帶砲、弦樂四重奏和三層蛋糕。",
+    "propose_declined": "💔 {b} 拒絕了 {a}。好痛。",
+    "single_you": "你在這個伺服器還沒結婚。用 `/social love propose` 求婚吧！",
+    "single_them": "{user} 在這個伺服器還沒結婚。",
+    "married_to": "💍 {a} 和 {b} 結婚了。",
+    "married_since": "自 {date} 結婚（{days} 天）",
+    "married_premium": "Premium：你們之間互動 {count} 次 · 下個紀念日 {next}",
+    "divorce_yes": "離婚",
+    "divorce_no": "繼續在一起",
+    "divorce_confirm": "確定要和 {b} 離婚嗎？",
+    "divorce_kept": "呼。你還和 {b} 在一起。💞",
+    "divorce_done": "💔 {a} 和 {b} 離婚了。",
+    "duel_invalid": "選另一個人決鬥。",
+    "duel_accept": "開打！",
+    "duel_decline": "逃跑",
+    "duel_challenge": "⚔️ {a} 向 {b} 發起決鬥！",
+    "duel_wait": "60 秒內接受。",
+    "duel_declined": "🏳️ {b} 逃離了決鬥。",
+    "duel_start": "兩位鬥士互相繞圈…",
+    "duel_winner": "{user} 贏得決鬥！",
+    "duel_rounds": "{rounds} 回合 · 剩餘 {hp} HP · {loser} 倒下了",
+    "duel_premium": "Premium：{user} 獲得伺服器名人堂金盃。",
+    "duel_miss": "{a} 攻擊 {b} 但沒打中！",
+    "duel_crit": "暴擊！",
+    "rps_rock": "石頭",
+    "rps_paper": "布",
+    "rps_scissors": "剪刀",
+    "rps_bot": "{a} 對 Murphy。出招吧！",
+    "rps_vs": "{a} 對 {b}。你們都出招！",
+    "rps_pick": "雙方都選好之前，你的選擇是保密的。",
+    "rps_not_yours": "這不是你的遊戲。",
+    "rps_locked": "已選：{move}",
+    "rps_1": "剪刀…",
+    "rps_2": "石頭…",
+    "rps_3": "布！",
+    "rps_draw": "平手！",
+    "rps_win": "{user} 贏了！",
+    "rps_premium": "Premium：再戰一局永遠免費。"
+  },
+  "afk": {
+    "description": "告訴大家你不在：原因、時間和誰提及了你。",
+    "title": "AFK",
+    "server_only": "AFK 只能在伺服器中使用。",
+    "cmd": {
+      "set": "設定 AFK 並說明原因",
+      "off": "取消你的 AFK 狀態",
+      "status": "查看某人是否 AFK",
+      "list": "列出 AFK 成員（管理員）"
+    },
+    "opt": {
+      "reason": "你離開的原因",
+      "time": "多久，例如 30m、2h、1d",
+      "nick": "在暱稱前加上 [AFK]",
+      "user": "要查看誰",
+      "keep": "維持 AFK 直到你關閉（發訊息也不會結束）"
+    },
+    "off_done": "歡迎回來！你被提及了 {count} 次。",
+    "not_afk": "你沒有處於 AFK。",
+    "status_none": "{user} 沒有 AFK。",
+    "is_away": "{user} 正在 AFK（自 {time}）",
+    "no_reason": "未提供原因。",
+    "back_at": "{time} 回來",
+    "status_pings": "目前被提及 {count} 次",
+    "list_permission": "查看清單需要「管理訊息」權限。",
+    "list_empty": "現在沒有人 AFK。",
+    "bad_time": "我看不懂這個時間。請用 30m、2h 或 1d 這類格式（最多 7 天）。",
+    "set_done": "{user} 現在 AFK 了。",
+    "nick_done": "已在你的暱稱前加上 [AFK]。",
+    "nick_failed": "我無法修改你的暱稱（缺少權限或你的身分組太高）。",
+    "reason_cut": "你的原因已縮短為 {limit} 個字元。",
+    "set_hint": "傳送任意訊息即可回來，或使用 `/afk off`。",
+    "premium_set": "Premium：更長的原因，以及所有提及你的人的連結清單。",
+    "free_set": "Premium 伺服器還能看到誰提及了你。",
+    "back": "👋 歡迎回來 {user}！你離開了 {time}。",
+    "back_pings": "你被提及了 **{count}** 次。",
+    "back_quiet": "沒有人提及你。",
+    "ping_log": "提及你的人：",
+    "ping_log_premium": "在 Premium 伺服器上，你能看到誰提及了你並附上連結。",
+    "premium_note": "回來後他們會看到誰提及了自己。",
+    "keep_on": "在你使用 `/afk off` 之前，AFK 會一直開啟。",
+    "keep_hint": "發訊息不會結束 AFK。回來後使用 `/afk off`。",
+    "until_off": "離開中，直到手動關閉"
+  }
+}

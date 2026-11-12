@@ -1,0 +1,5675 @@
+{
+  "pro_ui": {
+    "help_intro": "カテゴリを選び、コマンドを開いてオプションを確認できます。",
+    "dashboard": "ダッシュボード"
+  },
+  "pro_access": {
+    "expired": "このサーバーのサブスクリプションは期限切れ、または無効です。Murphy を使うには更新してください。",
+    "missing": "このサーバーには有効な Premium プランがありません。Murphy を使うにはサーバーにプランを割り当ててください。",
+    "unavailable": "現在サブスクリプションを確認できません。後でもう一度お試しください。",
+    "guild_required": "Murphy は有効な Premium プランが割り当てられたサーバーで使えます。自分のサーバーでこのコマンドを使ってください。",
+    "manage": "サブスクリプション管理"
+  },
+  "common": {
+    "something_went_wrong": "何か問題が発生しました!",
+    "not_for_you": "×あなたには向きません！",
+    "slash_only": "このコマンドはスラッシュ コマンドとしてのみ使用できます。",
+    "unknown": "未知",
+    "error": "エラー",
+    "cooldown_title": "クールダウン",
+    "cooldown_wait": "`/{command}` を再利用する前に、*{seconds}** 秒待ってください。**",
+    "next_available": "次に利用可能なもの:",
+    "no_permission": "このコマンドを使用する権限がありません。",
+    "no_required_permissions": "このコマンドを実行するために必要な権限がありません。",
+    "no_bot_permissions": "このコマンドを実行するために必要な権限がありません。",
+    "must_be_in_voice": "このコマンドを使用するには、音声チャネルに参加している必要があります。",
+    "nothing_playing": "現在何も再生されていません。",
+    "need_dj_role": "このコマンドを使用するには、DJ ロールが必要です。",
+    "command_error": "このコマンドの実行中にエラーが発生しました。",
+    "command_timeout": "このコマンドは時間がかかりすぎたため、停止されました。もう一度試してください。",
+    "ticket_not_configured": "チケットシステムが設定されていません。",
+    "invalid_ticket_category": "チケット カテゴリの構成が無効です。",
+    "verification_config_not_found": "検証構成が見つかりません。",
+    "verification_role_not_found": "検証は成功しましたが、役割が見つかりません。管理者に連絡してください。",
+    "welcome_message": "**Murphy の準備ができました。**\n\nこのガイドを開くには、`/play` でリスニング セッションを開始するか、`/help` を参照するか、`{prefix} commands` と入力してください。説明の後にコマンド名を追加して、その動作を確認します。\n\nサーバー ダッシュボードでプレーヤーをセットアップするか、サポートが必要な場合は [Murphy サポート サーバー]({support}) にアクセスしてください。",
+    "enabled": "有効",
+    "disabled": "無効",
+    "error_occurred": "このリクエストの処理中にエラーが発生しました。",
+    "access_vote_title": "投票が必要です",
+    "access_premium_title": "プレミアムが必要です",
+    "access_required": "このコマンドには **{requirement}** アクセスが必要です。",
+    "access_vote_button": "Top.gg に投票する",
+    "access_premium_button": "アップグレードプレミアム",
+    "tagline": "あなたのサーバー。さらなる可能性"
+  },
+  "command_options": {
+    "create": "新しいアイテムを作成する",
+    "list": "設定された項目を一覧表示する",
+    "toggle": "項目を有効または無効にする",
+    "run": "選択した項目を今すぐ実行します",
+    "restore": "保存したバージョンを復元する",
+    "schedule": "自動スケジュールを構成する",
+    "responses": "収集した回答を確認する",
+    "export": "利用可能なデータをエクスポートする",
+    "remind": "イベントリマインダーを設定する",
+    "attendees": "イベント参加者を表示",
+    "setup": "この機能を設定する",
+    "limit": "ルームのユーザー制限を設定する",
+    "rename": "選択した項目の名前を変更します",
+    "transfer": "所有権を譲渡する",
+    "preview": "構成された出力をプレビューする",
+    "test": "安全なテストを送信する",
+    "template": "再利用可能なテンプレートを作成または更新する",
+    "send": "用意した内容を送信する",
+    "activity": "アクティビティ統計を表示する",
+    "members": "メンバーの統計を表示する",
+    "voice": "音声統計を表示する",
+    "music": "音楽統計を表示する",
+    "suspicious": "不審な管理アクションを見つける",
+    "edit": "既存の項目を編集する",
+    "evidence": "モデレーション事件に証拠を添付する",
+    "modnote-add": "プライベートモデレーターメモを追加する",
+    "modnote-list": "プライベートモデレーターのメモをリストする",
+    "appeal-submit": "訴訟の控訴を提出する",
+    "appeal-review": "提出された異議申し立てを確認する",
+    "enable": "この機能を有効にする",
+    "disable": "この機能を無効にする",
+    "status": "現在のステータスを表示する",
+    "quarantine": "疑わしいメンバーを隔離する",
+    "diagnose": "構成と権限を診断する",
+    "bots": "ボットアカウントを監査する",
+    "inactive": "非アクティブなメンバーを監査する",
+    "roles": "未使用のロールを監査する",
+    "add": "新しいアイテムを追加する",
+    "remove": "選択した項目を削除します",
+    "timezone": "IANA タイムゾーンを設定する",
+    "privacy": "プライバシー設定を変更する",
+    "show": "要求された情報を表示する",
+    "delete": "選択した項目を削除します",
+    "import": "ファイルからデータをインポートする",
+    "save": "現在のデータを保存する",
+    "load": "セーブデータをロードする",
+    "invite": "セッションへの招待状を作成する",
+    "join": "既存のセッションに参加する",
+    "normalization": "オーディオの正規化を有効または無効にする",
+    "crossfade": "トランジションのフェード時間を設定する",
+    "like": "現在のトラックのように",
+    "dislike": "現在のトラックが嫌い",
+    "set": "新しい値を設定する",
+    "similar": "似たトラックを探す",
+    "id": "一意のアイテムID",
+    "name": "表示名",
+    "trigger": "このアクションをいつ実行するかを選択してください",
+    "channel": "Discordチャンネルを選択してください",
+    "message": "メッセージ内容",
+    "enabled": "これを有効にするかどうかを選択してください",
+    "confirm": "必要な確認フレーズを入力してください",
+    "title": "タイトル",
+    "description": "説明",
+    "starts_at": "開始日時",
+    "duration": "アクションの継続時間",
+    "code": "招待コードまたは確認コード",
+    "user": "Discordユーザーを選択してください",
+    "role": "Discordの役割を選択してください",
+    "reason": "この行動の理由",
+    "days": "日数",
+    "hours": "時間数",
+    "minutes": "分数",
+    "seconds": "秒数",
+    "song": "曲名、アーティストまたはURL",
+    "language": "出力言語を選択してください",
+    "text": "テキストの内容",
+    "url": "有効なHTTPS URL",
+    "expression": "数学的表現",
+    "date": "日付、時刻、または Unix タイムスタンプ",
+    "zone": "IANA タイムゾーン、例: Europe/Warsaw",
+    "file": "ファイルを選択してください",
+    "mode": "動作モードを選択します",
+    "note": "オプションのメモ",
+    "decision": "このリクエストを承認または拒否します",
+    "version": "保存されたバージョンの識別子",
+    "starts": "イベント開始までの時間",
+    "capacity": "最大参加者数",
+    "question": "フォームに表示された質問",
+    "results": "収集した結果を表示またはエクスポートする",
+    "creator": "現在の仮ルームオーナー",
+    "category": "Discord カテゴリを選択してください",
+    "amount": "適用する数値",
+    "content": "メッセージまたは応答の内容",
+    "case": "モデレーションケース番号",
+    "reference": "証拠の参照または URL",
+    "response": "異議申し立てに対する回答",
+    "time": "時間または期間",
+    "tag": "タグ名"
+  },
+  "cmd": {
+    "247": {
+      "description": "音声チャネルに留まるようにボットを設定する",
+      "errors": {
+        "not_in_voice": "このコマンドを使用するには、音声チャネルにいる必要があります。",
+        "generic": "このコマンドを実行しようとしたときにエラーが発生しました。"
+      },
+      "messages": {
+        "disabled": "`OK` | 24/7 モードは `DISABLED` になりました",
+        "enabled": "`OK` | 24/7 モードは `ENABLED` になりました。 \n **音声チャンネルに人がいなくても、ボットは音声チャンネルから離れることはありません。**"
+      }
+    },
+    "premium_features": {
+      "description": "プラン固有の個人、サーバー、およびサポーター機能を構成する",
+      "title": "プレミアム機能のコントロール",
+      "options": {
+        "status": "アクティブなプラン固有の機能設定を表示する",
+        "audio-sync": "個人のソース、ボリューム、フィルターをサーバー間で同期する",
+        "smart-radio": "個人のスマート ラジオ シードとブロックされたアーティストを構成する",
+        "wrapped": "個人的な毎月のリスニングを表示します",
+        "reports": "週次または月次のサーバー レポートをスケジュールする",
+        "music-rules": "トラック、アーティスト、単語、音楽ソースをブロックする",
+        "autodj": "高度な AutoDJ ルールを構成する",
+        "alerts": "RAID、モデレーション、構成アラートを構成する",
+        "dj-profile": "ロールベースの DJ コマンド プロファイルを作成する",
+        "share-playlist": "このサーバーと個人プレイリストを共有します",
+        "supporter": "サポーターのリスト、テーマ、実験を構成する",
+        "vote": "次の Murphy 機能に投票してください"
+      },
+      "fields": {
+        "filters": "カンマ区切りの同期フィルターのプリセット",
+        "seeds": "シードとして使用されるカンマ区切りのアーティスト、トラック、またはジャンル",
+        "blocked_artists": "スマートラジオから除外されるカンマ区切りのアーティスト",
+        "frequency": "レポートの配信頻度",
+        "kind": "ブロックする音楽コンテンツの種類",
+        "values": "カンマ区切りの値。値が空の場合はリストがクリアされます",
+        "avoid_hours": "AutoDJ がトラックを繰り返す数時間前",
+        "raids": "RAID 保護がトリガーされたときにアラートを送信する",
+        "moderation": "モデレーターの異常なアクティビティに関する警告",
+        "configuration": "危険な構成または不完全な構成に関するアラート",
+        "commands": "この DJ プロファイルで許可されるカンマ区切りのコマンド",
+        "public": "オプトインのパブリック サポーター リストに表示してください",
+        "theme": "限定サポーターのダッシュボードテーマ識別子",
+        "experiment": "このサーバーの実験的機能の識別子",
+        "feature": "ロードマップ機能への投票受付中"
+      },
+      "messages": {
+        "upgrade_required": "この設定は有効なプランには含まれません。プランを比較するには /premium を使用します。",
+        "admin_required": "サーバー全体のプレミアム設定には、サーバーの管理権限が必要です。",
+        "status_result": "プラン: **{plan}**\n個人的なオーディオ同期: **{audio}**\n自動レポート: **{report}**",
+        "audio_saved": "オーディオ同期は **{state}** です。デフォルトのボリューム: **{volume}%**、ソース: **{source}**。",
+        "radio_saved": "スマート ラジオは **{seeds}** シードと **{blocked}** ブロックされたアーティストを保存しました。",
+        "wrapped_result": "今月: **{tracks} トラック**、**{minutes} 分**。トップアーティスト: **{artist}**。",
+        "reports_saved": "自動サーバーレポートは **{frequency}** になりました。",
+        "rules_saved": "**{count}** ブロックされた {kind} エントリが保存されました。",
+        "autodj_saved": "高度な AutoDJ ルールが保存されました。",
+        "alerts_saved": "プレミアム運用アラートが保存されました。",
+        "dj_saved": "{role} の DJ プロフィールが保存されました。",
+        "playlist_shared": "プレイリスト **{name}** はこのサーバーと共有されました。",
+        "playlist_missing": "**{name}** という名前の個人プレイリストが見つかりませんでした。",
+        "supporter_saved": "サポーターの表示設定、テーマ、およびサーバーごとの実験設定が保存されました。",
+        "vote_saved": "**{feature}** に対するサポーターの投票が記録されました。"
+      },
+      "music_blocked": "このリクエストは、サーバーの Guild Plus 音楽ルール ({reason}) によってブロックされます。",
+      "experimental_source_required": "このソースは、サポーターの早期アクセス ロールアウトに含まれています。別のソースを選択するか、Murphy Supporter を有効にしてください。"
+    },
+    "about": {
+      "description": "Murphy Bot の詳細、利用できる音楽ノード、稼働状況を表示します。",
+      "modern_description": "最新の Discord 音楽ボットは、高速再生、クリーンなコントロール、経済システム、信頼性の高い Lavalink セッションに重点を置いています。",
+      "made_by": "制作者:",
+      "servers": "サーバー:",
+      "commands": "コマンド:",
+      "buttons": {
+        "overview": "概要",
+        "team": "チーム",
+        "invite": "サーバーに追加",
+        "support": "サポートサーバー",
+        "website": "ウェブサイト"
+      },
+      "title": "Murphy について",
+      "projects": {
+        "title": "Murphy チームのほかのサービス",
+        "video": "動画プラットフォーム",
+        "video_text": "動画を見て共有しよう",
+        "lavalink": "Lavalink ホスティング",
+        "lavalink_text": "音楽 Bot 向けのマネージド音声ノード",
+        "listing": "Bot とサーバーのリスト",
+        "listing_text": "Discord の Bot やサーバーを宣伝しよう"
+      }
+    },
+    "support": {
+      "description": "Murphy の開発をサポートする方法を示します。",
+      "title": "Murphy を応援",
+      "subtitle": "**皆さんの支援が、より多くのコミュニティで Murphy を使い続けられる力になります。**",
+      "body": "Murphy は実際のインフラストラクチャ上で実行され、メイン マシンだけで毎月約 **$30__ が必要です**。ドメイン、ツール、開発、チームのコストもかかります。",
+      "premium_title": "Murphy",
+      "premium_body": "サブスクリプションを購入するとプロジェクトがサポートされ、**Murphy** のプレミアムのロックが解除されます。",
+      "transparency_title": "お金の行き先",
+      "transparency_body": "**支援金の 100% は Bot に使われます:** ホスティング、マシン、ドメイン、開発、保守、プロジェクトのツール。Murphy に関係ない用途には使いません。",
+      "buttons": {
+        "neo": "Murphy",
+        "patreon": "Patreon",
+        "kofi": "Ko-fi",
+        "invite": "サーバーに追加"
+      }
+    },
+    "vote": {
+      "description": "投票で Murphy を応援 · Top.gg",
+      "title": "投票で Murphy を応援",
+      "prompt": "Top.ggで投票すると、有効期限まで月間Wrappedを見られます。投票で通貨やPremiumが付与されることはありません。",
+      "confirmed_title": "Murphy への応援ありがとうございます",
+      "confirmed": "投票は<t:{votedAt}:R>に記録されました。有効なため、`/wrapped`を利用できます。",
+      "next_vote": "次回は<t:{availableAt}:R>（<t:{availableAt}:f>）に投票できます。",
+      "confirmed_untracked": "Top.ggは、最近の投票が<t:{verifiedAt}:R>から有効であることを確認しました。",
+      "next_vote_estimate": "投票記録が保存されていないため、次回投票時刻は推定です：<t:{availableAt}:R>（<t:{availableAt}:f>）。"
+    },
+    "changelog": {
+      "description": "Murphy の最新リリースとアップデートを確認します。",
+      "title": "Murphy 更新履歴"
+    },
+    "suggest": {
+      "description": "機能に関する提案を Murphy チームに送信します。",
+      "options": {
+        "text": "ボットに関する提案。"
+      },
+      "sent_title": "提案が送信されました",
+      "sent": "ありがとう。あなたの提案はチームキューに送信されました。",
+      "log_title": "新しい提案"
+    },
+    "bugreport": {
+      "description": "Murphy チームにバグを報告してください。",
+      "options": {
+        "text": "何が壊れたのか、そしてそれを再現する方法を説明します。"
+      },
+      "sent_title": "バグレポートが送信されました",
+      "sent": "ありがとう。あなたのバグレポートはチームキューに送信されました。",
+      "log_title": "新しいバグレポート"
+    },
+    "partner": {
+      "description": "提携情報を表示します。",
+      "title": "パートナーシップ",
+      "body": "Murphy や Nexora Labs と提携したい場合は、サポートサーバーに参加して、サーバーやプロジェクトの詳細を書いたチケットを開いてください。",
+      "requirements": "適切なもの: アクティブなコミュニティ、ミュージック サーバー、クリエイター プロジェクト、ホスティング パートナー、実際に Discord コミュニティを支援するツール。",
+      "button": "オープンサポート"
+    },
+    "privacy": {
+      "description": "現在のプライバシー設定を表示 · Murphy の個人データをエクスポート",
+      "title": "プライバシー設定",
+      "options": {
+        "status": "現在のプライバシー設定を表示",
+        "export": "Murphy の個人データをエクスポート",
+        "delete": "削除可能なMurphyの個人データを完全に削除",
+        "confirm": "完全な削除を確認するにはDELETEと正確に入力",
+        "opt_out": "任意の利用状況分析を管理",
+        "enabled": "このアカウントの任意の利用状況分析を無効にする",
+        "manage": "Murphy のプライバシーとアカウント設定を開く"
+      },
+      "export_ready": "あなたのMurphy個人データのエクスポートを添付しました。",
+      "opted_out": "アカウントの任意の利用状況分析を無効にしました。",
+      "opted_in": "アカウントの任意の利用状況分析を有効にしました。",
+      "status": "任意の製品分析：**{state}**。製品分析のためにメッセージの内容を保存することはありません。",
+      "enabled": "有効",
+      "disabled": "無効",
+      "delete_confirm": "削除をキャンセルしました。削除可能な個人データを完全に削除するには、`DELETE` と正確に入力してください。",
+      "deleted": "個人データを削除しました（{count} 件）。支払い、モデレーション、不正利用防止の記録は、法的または運営上必要な場合に保持されます。",
+      "button": "プライバシーポリシー",
+      "body": "このコマンドで任意の分析を管理できます。保存されるデータ、保存期間、あなたの権利についてはポリシーをご覧ください。"
+    },
+    "connections": {
+      "title": "接続済みサービス",
+      "description": "接続トークンは Murphy のサーバーに暗号化して保存され、Discord に表示されることはありません。",
+      "manage": "接続を管理",
+      "help": "接続のヘルプ",
+      "provider_title": "接続先：{provider}",
+      "reconnect_hint": "接続管理で、このサービスの接続・テスト・再接続ができます。",
+      "unknown": "不明な接続先サービスです。",
+      "options": {
+        "status": "対応しているすべての接続状況を表示",
+        "spotify": "Spotify の確認または再接続",
+        "youtube": "YouTube の確認または再接続",
+        "lastfm": "Last.fm の確認または再接続",
+        "listenbrainz": "ListenBrainz の確認または再接続"
+      },
+      "states": {
+        "connected": "接続済み",
+        "reconnect": "再接続が必要",
+        "disconnected": "未接続"
+      }
+    },
+    "insights": {
+      "description": "サーバー統計: 再生された曲, 参加したメンバー, モデレーションの対応件数",
+      "title": "サーバー統計",
+      "options": {
+        "overview": "サーバー統計",
+        "music": "再生された曲 / リクエストしたユーザー数",
+        "retention": "参加したメンバー / 退出したメンバー / 純増数",
+        "moderation": "モデレーションの対応件数",
+        "recommendations": "3つの実用的な提案",
+        "export": "日別の統計を CSV にエクスポート"
+      },
+      "period": "集計期間",
+      "voice_hours": "ボイスチャンネルの利用時間",
+      "commands": "使用されたコマンド",
+      "plays": "再生された曲",
+      "listeners": "リクエストしたユーザー数",
+      "moderation_actions": "モデレーションの対応件数",
+      "joins": "参加したメンバー",
+      "leaves": "退出したメンバー",
+      "net_growth": "純増数",
+      "recommend_retention": "退出数が新規参加数に近づいています。案内、歓迎、認証の手順に負担がないか確認してください。",
+      "recommend_retention_ok": "選択した期間のメンバー定着状況は良好です。",
+      "recommend_music": "サーバーのプレイリストを作成するか、Music Venue のセッションを予定して、一緒に楽しむ機会を増やしましょう。",
+      "recommend_music_ok": "音楽は活発に利用されています。Smart Radio への評価は今後のおすすめの改善に役立ちます。",
+      "export_premium": "7日間の概要は無料です。Guild Plus では、より長い履歴と CSV エクスポートを利用できます。",
+      "export_ready": "{days} 日分のサーバー統計のエクスポートを添付しました。"
+    },
+    "schedule": {
+      "description": "サーバー メッセージ、イベント、投票、賞品の抽選、音楽セッションを計画します。",
+      "title": "サーバースケジュール",
+      "options": {
+        "message": "チャネル メッセージをスケジュールする",
+        "event": "スケジュールされたコミュニティ イベントを作成する",
+        "poll": "ネイティブ Discord ポーリングをスケジュールする",
+        "giveaway": "賞品の抽選をスケジュールする",
+        "playlist": "音声チャンネルで音楽をスケジュールする",
+        "list": "保留中、一時停止、および失敗したアクションのリスト",
+        "pause": "スケジュールされたアクションを一時停止する",
+        "resume": "一時停止または失敗したアクションを再開します",
+        "cancel": "スケジュールされたアクションをキャンセルします"
+      },
+      "fields": {
+        "channel": "ターゲット テキスト チャネル",
+        "content": "メッセージ内容",
+        "when": "将来の ISO 日付または相対期間 (2h など)",
+        "title": "イベントタイトル",
+        "description": "オプションのイベントの説明",
+        "question": "アンケートの質問",
+        "poll_options": "回答は | で区切られています。キャラクター",
+        "hours": "ポーリング期間 (時間単位)",
+        "prize": "抽選賞品",
+        "duration": "賞品抽選期間 (1d など)",
+        "winners": "当選者数",
+        "voice": "ターゲット音声チャネル",
+        "query": "プレイリスト、URL または音楽検索",
+        "id": "スケジュールされたアクション ID"
+      },
+      "empty": "保留中、一時停止、または失敗したスケジュールされたアクションはありません。",
+      "invalid_id": "有効なスケジュールされたアクション ID を入力してください。",
+      "invalid_time": "将来の ISO 日付、または 30m、2h、1d などの相対的な期間を入力します。",
+      "invalid_duration": "賞品の抽選時間は少なくとも 1 分である必要があります。",
+      "poll_min": "アンケートには、| で区切られた少なくとも 2 つの回答が必要です。",
+      "updated": "スケジュールされたアクション `{id}` は **{status}** になりました。",
+      "not_found": "そのアクションが見つからないか、現在の状態から変更できません。",
+      "created": "<t:{timestamp}:F> に対して `{type}` アクション `{id}` をスケジュールしました。",
+      "event_created": "イベント `{id}` が <t:{timestamp}:F> に対して作成されました。"
+    },
+    "mod_inbox": {
+      "description": "未対応の通報と、審査待ちのモデレーションへの異議申し立てを確認します。",
+      "title": "サーバーモデレーション受信箱",
+      "reports": "レポートを開く",
+      "appeals": "控訴保留中",
+      "empty": "サーバーのモデレーション受信箱がクリアされています。"
+    },
+    "terms": {
+      "description": "Murphy 用語のリンクを表示します。",
+      "title": "利用規約",
+      "body": "公開サーバーやコミュニティサーバーで Murphy を使う前に、利用規約をお読みください。",
+      "button": "公開規約"
+    },
+    "addsong": {
+      "description": "プレイリストに曲を追加します",
+      "options": {
+        "playlist": "追加したいプレイリスト",
+        "song": "追加したい曲"
+      },
+      "messages": {
+        "no_playlist": "プレイリストを提供してください",
+        "no_song": "曲を提供してください",
+        "playlist_not_found": "そのプレイリストは存在しません",
+        "no_songs_found": "曲が見つかりませんでした",
+        "added": "{count} 曲を {playlist} に追加しました",
+        "track_limit_reached": "あなたのプランでは、1 つのプレイリストで最大 {limit} トラックが許可されています。"
+      }
+    },
+    "announce": {
+      "description": "アナウンスを許可するサーバーにグローバル ボット アナウンスを送信します。",
+      "modal": {
+        "title": "お知らせの作成",
+        "title_label": "タイトル",
+        "title_placeholder": "お知らせのタイトル",
+        "description_label": "説明",
+        "description_placeholder": "お知らせの説明",
+        "color_label": "色 (16 進数)",
+        "thumbnail_label": "サムネイル URL",
+        "image_label": "大きな画像 URL"
+      },
+      "defaults": {
+        "title": "お知らせ",
+        "description": "説明がありません。"
+      },
+      "status": {
+        "preview": "発表プレビュー",
+        "broadcasting": "放送中...",
+        "stopping": "ブロードキャストを停止しています...",
+        "cancelled": "発表はキャンセルされました",
+        "complete": "アナウンス完了"
+      },
+      "results": {
+        "title": "結果",
+        "total": "合計サーバー数",
+        "sent": "送信済み",
+        "failed": "失敗しました",
+        "skipped": "スキップされました",
+        "content": "コンテンツ",
+        "announcement_title": "タイトル",
+        "color": "カラー",
+        "photos": "画像",
+        "buttons": "ボタン"
+      },
+      "progress": {
+        "starting": "にアナウンスを送信しています",
+        "ready": "にブロードキャストする準備ができました",
+        "servers": "サーバー",
+        "across": "全体",
+        "shards": "シャード",
+        "progress": "進捗",
+        "speed": "速度",
+        "elapsed": "が経過しました",
+        "eta": "到着予定時刻"
+      },
+      "buttons": {
+        "cancel": "キャンセル",
+        "start": "開始のお知らせ",
+        "add_link": "リンクの追加ボタン"
+      },
+      "button_modal": {
+        "title": "追加ボタン",
+        "label": "ラベル",
+        "url": "URL"
+      },
+      "errors": {
+        "already_acknowledged": "このインタラクションはすでに承認されています。",
+        "max_buttons": "最大 4 つのリンク ボタンが許可されます。",
+        "invalid_button": "有効なラベルと HTTPS URL を入力してください。",
+        "timed_out": "アナウンスエディターがタイムアウトしました。 /announce を再度実行します。"
+      }
+    },
+    "announcements": {
+      "description": "発表内容の説明",
+      "messages": {
+        "interaction_error": "これはあなたのためのものではありません。"
+      },
+      "title": "アナウンス設定",
+      "subtitle": "ボットがこのサーバーにグローバル アナウンスを送信する方法を構成します。",
+      "status": "状態：",
+      "channel": "チャネル：",
+      "system_channel": "システムチャンネル (デフォルト)",
+      "footer": "Murphy / お知らせシステム",
+      "enable": "有効にする",
+      "disable": "無効にする",
+      "reset_channel": "チャンネルをリセットする",
+      "select_channel": "アナウンスチャンネルの選択"
+    },
+    "autoplay": {
+      "description": "自動再生を切り替えます",
+      "messages": {
+        "enabled": "`OK` |自動再生は `ENABLED` になりました。",
+        "disabled": "`OK` |自動再生は `DISABLED` になりました。"
+      }
+    },
+    "clearqueue": {
+      "description": "キューをクリアします",
+      "messages": {
+        "cleared": "キューはクリアされました。"
+      }
+    },
+    "create": {
+      "description": "プレイリストを作成します",
+      "options": {
+        "name": "プレイリストの名前"
+      },
+      "messages": {
+        "name_too_long": "プレイリスト名の長さは 50 文字のみです。",
+        "playlist_exists": "その名前のプレイリストはすでに存在します。別の名前を使用してください。",
+        "playlist_created": "プレイリスト **{name}** が作成されました。",
+        "name_empty": "プレイリスト名を指定する必要があります。",
+        "playlist_limit_reached": "あなたのプランでは、最大 {limit} 件のプレイリストが許可されています。"
+      }
+    },
+    "createinvite": {
+      "guild_not_found": "ギルドが見つかりません",
+      "no_suitable_channel": "適切なチャンネルが見つかりません",
+      "description": "サーバーの招待リンクを作成します。",
+      "created": "`{server}` の招待リンク: {url}"
+    },
+    "delete": {
+      "description": "プレイリストを削除します",
+      "options": {
+        "playlist": "削除したいプレイリスト"
+      },
+      "messages": {
+        "playlist_not_found": "そのプレイリストは存在しません。",
+        "playlist_deleted": "プレイリスト **{playlistName}** を削除しました。"
+      }
+    },
+    "dj": {
+      "description": "DJ モードと関連する役割を管理する",
+      "errors": {
+        "provide_role": "役割を提供してください。",
+        "no_roles": "DJの役割は空です。",
+        "invalid_subcommand": "有効なサブコマンドを指定してください。"
+      },
+      "messages": {
+        "role_exists": "DJ ロール <@&{roleId}> はすでに追加されています。",
+        "role_added": "DJ ロール <@&{roleId}> が追加されました。",
+        "role_not_found": "DJ ロール <@&{roleId}> は追加されません。",
+        "role_removed": "DJ ロール <@&{roleId}> は削除されました。",
+        "all_roles_cleared": "DJ の役割はすべて削除されました。",
+        "toggle": "DJ モードは {status} に切り替えられました。"
+      },
+      "options": {
+        "add": "追加したいDJロール",
+        "remove": "削除したい DJ ロール",
+        "clear": "すべてのDJロールをクリアする",
+        "toggle": "DJ の役割を切り替えます",
+        "role": "DJの役割"
+      },
+      "subcommands": "サブコマンド"
+    },
+    "fairplay": {
+      "description": "音楽を公平に再生するようにボットを設定する",
+      "messages": {
+        "disabled": "`OK` |フェアプレイ モードは `DISABLED` になりました。",
+        "enabled": "`OK` |フェアプレイ モードは `ENABLED` になりました。"
+      }
+    },
+    "grab": {
+      "description": "DM で現在再生中の曲を取得します",
+      "content": "**期間:** {length}\n**リクエスト者:** <@{requester}>\n**リンク:** [ここをクリック]({uri})",
+      "check_dm": "DMをご確認ください。",
+      "dm_failed": "DMが送れませんでした。ダイレクトメッセージを許可する設定がオンになっていることを確認してください。"
+    },
+    "help": {
+      "description": "ヘルプメニューを表示します。",
+      "options": {
+        "command": "情報を取得したいコマンド"
+      },
+      "placeholder_category": "カテゴリを選択してください",
+      "no_commands": "このカテゴリにはコマンドがありません。",
+      "category": {
+        "4fun": "楽しい",
+        "config": "構成",
+        "dev": "開発者",
+        "filters": "フィルター",
+        "info": "情報",
+        "moderation": "節度",
+        "music": "音楽",
+        "playlist": "プレイリスト",
+        "utility": "ユーティリティ",
+        "economy": "経済",
+        "automod": "オートモッド",
+        "main": "メインメニュー"
+      },
+      "labels": {
+        "category": "カテゴリ：",
+        "cooldown": "クールダウン：",
+        "usage": "使用法：",
+        "examples": "例",
+        "music_commands": "音楽コマンド:",
+        "visible_commands": "表示されるコマンド グループ:",
+        "servers": "サーバー:",
+        "commands": "コマンド",
+        "subcommands": "サブコマンド"
+      },
+      "home_title": "Murphy ヘルプ",
+      "home_description": "`@Murphy commands` でこのガイドが開きます。コマンド名とともに Murphy を指定して詳細を確認するか、以下に示すスラッシュ コマンドを使用します。",
+      "choose_category": "以下のカテゴリを選択してください。",
+      "more_subcommands": "および {count} のその他のサブコマンド。",
+      "command_not_found": "コマンドガイドに `{command}` が見つかりませんでした。 `/help` を試して、使用可能なコマンドを参照してください。",
+      "category_hint": "{count}個のコマンド。詳細は下から選んでね。",
+      "category_count": "{roots}個のコマンド · {count}個のオプション",
+      "about": {
+        "music": "再生、キュー、フィルター、ラジオ、再生統計。",
+        "playlist": "プレイリストを保存して共有。",
+        "config": "サーバー設定：歓迎、チケット、認証など。",
+        "info": "ボット・サーバー・ユーザー情報、ステータス、Premium。",
+        "moderation": "BAN、警告、ケース、レイド対策、掃除。",
+        "utility": "無料ゲーム、AFK、リマインダー、タグ、便利ツール。",
+        "fun": "ソーシャルアクション、恋愛、決闘、ゲーム、パーティーコマンド。",
+        "economy": "コイン、釣り、農場、クエスト、季節イベント。"
+      },
+      "section": {
+        "interactions": "交流",
+        "party": "パーティー",
+        "random": "ランダム",
+        "questions": "質問",
+        "love": "恋愛",
+        "play": "遊び",
+        "games": "ゲーム",
+        "emotions": "感情",
+        "gestures": "ジェスチャー",
+        "characters": "キャラクター"
+      }
+    },
+    "info": {
+      "description": "ボット、音楽ノード、VPS に関する詳細情報を表示します。",
+      "options": {
+        "bot": "ボット、システム、Lavalink、およびソース情報を表示します"
+      },
+      "title": "Murphy の統計",
+      "footer": "思いのままに音楽を",
+      "bot": {
+        "title": "ボットの統計",
+        "servers": "サーバー",
+        "users": "ユーザー",
+        "channels": "チャンネル",
+        "commands": "コマンド",
+        "players": "再生中",
+        "shards": "シャード",
+        "ping": "Ping",
+        "online": "起動日時",
+        "version": "バージョン"
+      },
+      "system": {
+        "title": "VPS 統計",
+        "os": "オペレーティング·システム",
+        "hostname": "ホスト名",
+        "cpuUsed": "CPU使用率",
+        "memUsed": "使用メモリ",
+        "memTotal": "総メモリ",
+        "nodeVersion": "Node.jsのバージョン",
+        "discordJsVersion": "Discord.jsのバージョン",
+        "uptime": "稼働時間"
+      },
+      "lavalink": {
+        "title": "ノード統計",
+        "status": "状態",
+        "players": "総プレイヤー数",
+        "playingPlayers": "プレイヤーをプレイする",
+        "memoryUsed": "メモリ使用量",
+        "systemLoad": "システム負荷",
+        "lavalinkLoad": "Lavalink 負荷"
+      },
+      "sources": {
+        "title": "情報源"
+      }
+    },
+    "node": {
+      "description": "プライバシーに配慮した詳細な Lavalink ノード診断を表示します。",
+      "title": "Lavalink ノード診断",
+      "node": "ノード",
+      "privacy": "ネットワーク アドレスと資格情報は表示されません。",
+      "empty": "Lavalink ノードが構成されていません。",
+      "yes": "はい",
+      "no": "いいえ",
+      "connected": "接続されました",
+      "not_connected": "接続されていません",
+      "available": "利用可能",
+      "unavailable": "は利用できません",
+      "updated": "更新されました",
+      "disabled_note": "このノードは、構成されたモードが再生を無効にしている間は接続されません。",
+      "runtime_note": "ランタイムの詳細は、Lavalink /v4/info およびアクティブな WebSocket セッションから取得されます。",
+      "states": {
+        "online": "オンライン",
+        "offline": "構成により無効になっています",
+        "permanent_degraded": "永続的に劣化しました",
+        "disconnected": "切断されました"
+      },
+      "fields": {
+        "state": "州",
+        "configured": "構成済みモード",
+        "enabled": "再生可能",
+        "connection": "WebSocket",
+        "profile": "ルーティング プロファイル",
+        "ping": "ピン",
+        "uptime": "稼働時間",
+        "players": "プレイ人数 / 合計",
+        "local_players": "このシャードのプレーヤー",
+        "listeners": "このシャード上のキャッシュされたリスナー",
+        "failures": "過去 15 分間の障害",
+        "cpu_cores": "CPUコア",
+        "system_cpu": "システムCPU",
+        "lavalink_cpu": "Lavalink CPU",
+        "memory_used": "RAM 使用量",
+        "memory_allocated": "RAM が割り当てられました",
+        "memory_free": "RAM 空き容量",
+        "memory_reservable": "RAM 予約可能",
+        "memory_pressure": "RAM 圧力",
+        "frames": "オーディオ フレームの送信 / ヌル化 / 不足",
+        "sources": "ソースマネージャー",
+        "filters": "オーディオフィルター",
+        "plugins": "プラグイン",
+        "version": "Lavalink バージョン",
+        "jvm": "JVM",
+        "lavaplayer": "Lavaplayer",
+        "git": "Git ビルド",
+        "build_time": "ビルド時間",
+        "resume": "Lavalink セッション再開",
+        "transport": "トランスポート"
+      },
+      "buttons": {
+        "previous": "前のノード",
+        "next": "次のノード",
+        "refresh": "リフレッシュ",
+        "overview": "概要",
+        "performance": "パフォーマンス",
+        "sources": "情報源",
+        "runtime": "ランタイム"
+      }
+    },
+    "join": {
+      "description": "Murphy を今いるボイスチャンネルに接続します。",
+      "already_connected": "すでに <#{channelId}> に接続しています。",
+      "no_voice_channel": "このコマンドを使用するには、音声チャネルにいる必要があります。",
+      "joined": "<#{channelId}> に正常に参加しました。"
+    },
+    "language": {
+      "description": "ボットの言語を設定する",
+      "invalid_language": "有効な言語を入力してください。例: 英語 (米国) の場合は `EnglishUS`\n\nサポートされている言語のリストは [こちら](https://discord.com/developers/docs/reference#locales)\n\n**利用可能な言語:**\n{languages}",
+      "already_set": "言語はすでに `{language}` に設定されています",
+      "not_set": "言語が設定されていません。",
+      "set": "`OK` |言語は `{language}` に設定されました",
+      "reset": "`OK` |言語がデフォルトの言語にリセットされました。",
+      "options": {
+        "set": "ボットの言語を設定する",
+        "language": "設定したい言語",
+        "reset": "言語をデフォルトの言語に戻します"
+      }
+    },
+    "leave": {
+      "description": "Murphy を今のボイスチャンネルから切断します。",
+      "left": "<#{channelId}> から離脱しました。",
+      "not_in_channel": "音声チャンネルに参加していません。"
+    },
+    "list": {
+      "description": "ユーザーのすべてのプレイリストを取得します",
+      "options": {
+        "user": "プレイリストを取得したいユーザー"
+      },
+      "messages": {
+        "no_playlists": "このユーザーにはプレイリストがありません。",
+        "your": "あなたの",
+        "playlists_title": "{username} のプレイリスト",
+        "error": "プレイリストの取得中にエラーが発生しました。",
+        "invalid_username": "そのユーザーが見つかりませんでした。",
+        "invalid_userid": "ユーザーIDを解決できませんでした。",
+        "track": "追跡",
+        "tracks": "トラック"
+      }
+    },
+    "load": {
+      "description": "プレイリストをロードします",
+      "options": {
+        "playlist": "ロードしたいプレイリスト"
+      },
+      "messages": {
+        "playlist_not_exist": "そのプレイリストは存在しません。",
+        "playlist_empty": "そのプレイリストは空です。",
+        "playlist_loaded": "`{name}` に `{count}` 曲をロードしました。",
+        "no_lavalink_nodes": "プレイリストをロードするために使用できる Lavalink ノードがありません。"
+      }
+    },
+    "lyrics": {
+      "description": "トラックの歌詞を取得します",
+      "lyrics_for_track": "### 歌詞: [{trackTitle}]({trackUrl})",
+      "no_lyrics_on_page": "このページには歌詞がありません。",
+      "searching": "**{trackTitle}** の歌詞を検索しています...",
+      "page_indicator": "ページ {current}/{total}",
+      "no_lyrics_available": "歌詞がありません",
+      "button_subscribe": "ライブ歌詞を購読する",
+      "button_unsubscribe": "ライブ歌詞の購読を解除する",
+      "subscribed": "ライブ歌詞更新を購読しました!",
+      "unsubscribed": "ライブ歌詞更新の購読を解除しました。",
+      "errors": {
+        "no_results": "現在のトラックの歌詞が見つかりません。",
+        "lyrics_error": "歌詞の取得中にエラーが発生しました。"
+      },
+      "options": {
+        "song": {
+          "description": "歌詞を取得したい曲。"
+        }
+      }
+    },
+    "movenode": {
+      "description": "プレイヤーを別の Lavalink ノードに移動します",
+      "options": {
+        "node": "プレイヤーを移動するノードID"
+      },
+      "no_player": "このサーバーにはアクティブな音楽プレーヤーがありません。",
+      "no_available_nodes": "移動先として利用可能なノードがありません。",
+      "available_nodes_title": "利用可能なノード",
+      "current_node": "現在のノード",
+      "available_nodes": "利用可能なノード",
+      "usage_hint": "使用: movenode <nodeId>",
+      "node_not_found": "ノード `{node}` が見つかりませんでした。",
+      "node_not_connected": "ノード `{node}` は接続されていません。",
+      "same_node": "プレーヤーはすでにノード `{node}` 上にいます。",
+      "moving": "プレーヤーを `{from}` から `{to}` に移動します...",
+      "error": "プレーヤーの移動に失敗しました: {error}",
+      "moving_all_players": "すべてのプレイヤーをノード `{node}` に移動しています...",
+      "results_title": "移動ノードの結果",
+      "guild_move": "- `{guildId}` (`{from}` -> `{to}`)",
+      "guild_move_failed": "- `{guildId}`: {error}",
+      "no_players_moved": "プレイヤーを移動させる必要はありませんでした。",
+      "unknown_error": "不明なエラー",
+      "no_players": "移動するプレイヤーはいません。",
+      "moved_summary": "移動されたプレイヤー: `{count}`",
+      "failed_summary": "失敗した移動: `{count}`"
+    },
+    "nowplaying": {
+      "description": "現在再生中のトラックを表示します。",
+      "title": "プレイ中",
+      "live": "ライブ",
+      "duration": "間隔：",
+      "requester": "リクエスト者:",
+      "queue": "列："
+    },
+    "pause": {
+      "description": "現在の曲を一時停止します",
+      "successfully_paused": "曲が一時停止に成功しました。"
+    },
+    "ping": {
+      "description": "ボットの ping を表示します。",
+      "fields": {
+        "bot_latency": "ボットの遅延",
+        "api_latency": "API レイテンシー",
+        "database_latency": "データベースの遅延",
+        "site_latency": "サイトの遅延",
+        "ram-usage": "RAM 使用量"
+      }
+    },
+    "play": {
+      "description": "YouTube、Spotify、または http から曲を再生します",
+      "options": {
+        "song": "弾きたい曲",
+        "source": "使用したいソース (YouTube、Spotify、SoundCloud など)"
+      },
+      "errors": {
+        "search_error": "検索中にエラーが発生しました。",
+        "spotify_generated_playlist_title": "Spotify プレイリストが利用できない",
+        "spotify_generated_playlist": "この Spotify が生成したプレイリストはロードできません。代わりに、通常の公開プレイリスト、アルバム、またはトラックを試してください。"
+      },
+      "playlist_sent": "プレイリスト追加OK",
+      "track_queued": "キューにあるトラック",
+      "playlist_queued_detail": "{count} トラックがキューに追加されました。",
+      "total_duration": "合計期間"
+    },
+    "playlocal": {
+      "description": "ローカルのオーディオ ファイルを再生します。",
+      "options": {
+        "file": "再生したい音声ファイル。"
+      },
+      "errors": {
+        "empty_query": "再生するには音声ファイルを添付してください。",
+        "invalid_format": "音声ファイル（MP3、WAV、OGG、FLAC、AAC、M4A）を使用してください。",
+        "no_results": "音声ファイルの再生に失敗しました。破損している可能性があります。"
+      },
+      "added_to_queue": "[**{title}**]({url}) をキューに追加しました"
+    },
+    "playnext": {
+      "description": "次に再生する曲をキューに追加します",
+      "options": {
+        "song": "弾きたい曲",
+        "source": "使用したいソース (YouTube、Spotify、SoundCloud など)"
+      },
+      "added_to_play_next": "キューの次に再生する [{title}]({uri}) を追加しました。",
+      "added_playlist_to_play_next": "プレイリストがキューの先頭に移動されました"
+    },
+    "queue": {
+      "description": "現在のキューを表示します",
+      "live": "ライブ",
+      "title": "列",
+      "empty": "キューは空です。",
+      "now": "現在プレイ中:",
+      "up_next": "次は:",
+      "total_duration": "合計期間:"
+    },
+    "radio": {
+      "description": "ラジオ局を再生します。",
+      "options": {
+        "query": "再生したいラジオ局。",
+        "play": "遊ぶ",
+        "list": "利用可能なラジオ局をリストする",
+        "favorites": "おすすめのラジオ局を表示します。"
+      },
+      "radio_station": "ラジオ局",
+      "fields": {
+        "country": "国",
+        "tags": "タグ"
+      },
+      "menu": {
+        "country_selection": "### ラジオ ラジオ ブラウザ\nステーションを参照する国を選択してください:",
+        "station_selection": "### 📻 {country}\n再生するステーションを選択してください:"
+      },
+      "placeholders": {
+        "select_country": "国を選択してください",
+        "select_station": "{country} から駅を選択してください"
+      },
+      "errors": {
+        "search_error": "ラジオ局の検索でエラーが発生しました。",
+        "no_stream_url": "ステーションは見つかりましたが、有効なストリーム URL がありません。",
+        "provide_station": "駅名を入力してください。",
+        "fetch_countries": "国の取得に失敗しました。",
+        "fetch_stations": "**{country}** のステーションを取得できませんでした。",
+        "no_stations_country": "**{country}** のステーションが見つかりませんでした。",
+        "load_station": "ステーションの詳細をロードできませんでした。",
+        "generic": "エラーが発生しました。",
+        "fetch_lists": "リストの取得中にエラーが発生しました。",
+        "no_stations_query": "**{query}** のラジオ局が見つかりませんでした",
+        "api_unavailable": "現在、ラジオ API は利用できません。後でもう一度試してください。",
+        "stream_unstable": "ラジオ ストリームが一時的に不安定です。自動再接続を 2 回試行した後、再生が停止しました。しばらくしてからステーションをもう一度試してください。"
+      },
+      "favorites_title": "おすすめのラジオ"
+    },
+    "remove": {
+      "description": "キューから曲を削除します",
+      "options": {
+        "song": "削除したい曲番号"
+      },
+      "errors": {
+        "no_songs": "キューに曲がありません。",
+        "invalid_number": "有効な曲番号を入力してください。"
+      },
+      "messages": {
+        "removed": "曲番号 {songNumber} をキューから削除しました。"
+      }
+    },
+    "removesong": {
+      "description": "プレイリストから曲を削除します",
+      "options": {
+        "playlist": "削除したいプレイリスト",
+        "song": "削除したい曲"
+      },
+      "messages": {
+        "provide_playlist": "プレイリストを提供してください。",
+        "provide_song": "曲を提供してください。",
+        "playlist_not_exist": "そのプレイリストは存在しません。",
+        "song_not_found": "一致する曲が見つかりませんでした。",
+        "song_removed": "{playlist} から {song} を削除しました。",
+        "error_occurred": "曲の削除中にエラーが発生しました。"
+      }
+    },
+    "replay": {
+      "description": "現在のトラックを再生します",
+      "errors": {
+        "not_seekable": "このトラックはシークできないため、再生できません。"
+      },
+      "messages": {
+        "replaying": "現在のトラックを再生します。"
+      }
+    },
+    "resume": {
+      "description": "現在の曲を再開します",
+      "errors": {
+        "not_paused": "プレーヤーは一時停止されません。"
+      },
+      "messages": {
+        "resumed": "プレーヤーを再開しました。"
+      }
+    },
+    "search": {
+      "description": "曲を検索する",
+      "options": {
+        "song": "あなたが探している曲"
+      },
+      "select": "リストから曲を選択してください...",
+      "errors": {
+        "no_results": "結果が見つかりませんでした。",
+        "no_results_title": "検索結果が見つかりません!",
+        "no_results_description": "あなたのクエリに一致する曲が見つかりませんでした。キーワードを変更するか、リンクを提供してみてください。",
+        "invalid_selection_title": "選択が無効です!",
+        "invalid_selection_description": "選択されたオプションは無効です。リストから曲番号を選択してください。",
+        "vc_connect_fail_title": "音声チャンネル接続エラー",
+        "vc_connect_fail_description": "音声チャンネルに接続できませんでした。適切な権限があることを確認してください。"
+      },
+      "messages": {
+        "results_found": "**{count}** 曲を見つけました。",
+        "select_prompt": "番号を選択して曲をキューに追加します。",
+        "page_info": "ページ {currentPage}/{maxPages}",
+        "added_to_queue": "**[{title}]({uri})** をキューに追加しました。"
+      }
+    },
+    "seek": {
+      "description": "曲の中の特定の時間を探します",
+      "options": {
+        "duration": "トラック位置、例: 1m 30s"
+      },
+      "errors": {
+        "invalid_format": "1m 30s または 0s などの時間を入力します。",
+        "not_seekable": "このトラックはシークできません。",
+        "beyond_duration": "{length} の曲の長さを超えてシークすることはできません。"
+      },
+      "messages": {
+        "seeked_to": "{duration} を求めました"
+      }
+    },
+    "setup": {
+      "description": "このサーバーの Murphy 機能を設定します。",
+      "errors": {
+        "channel_exists": "曲リクエストチャンネルはすでに存在します。",
+        "channel_not_exists": "曲リクエストチャンネルが存在しません。"
+      },
+      "messages": {
+        "channel_created": "曲リクエストチャンネルが<#{channelId}>に作成されました。",
+        "channel_deleted": "楽曲リクエストチャンネルが削除されました。",
+        "channel_info": "曲のリクエストチャンネルは<#{channelId}>です。"
+      },
+      "options": {
+        "create": "曲リクエストチャンネルを作成します",
+        "delete": "曲リクエストチャンネルを削除します",
+        "info": "曲のリクエストチャンネルを表示します",
+        "preset": "安全なサーバー構成プリセットを適用する",
+        "preset_type": "音楽、コミュニティ、サーバー モデレーション、または完全なプリセット",
+        "validate": "ボットの権限を確認し、健全性をセットアップしてください",
+        "audit": "構成を変更せずにセットアップの健全性をプレビューする",
+        "fix": "ロールバック バックアップの作成後に安全なデフォルトを適用する",
+        "rollback": "最新のセットアップ安全バックアップを復元します"
+      },
+      "panel_title": "セットアップチャンネル",
+      "channel_topic": "Murphy プレイヤー。パネルの「曲を追加」を押して再生できます。",
+      "panel_hint": "**曲を追加** を押して、曲名を入力するかリンクを貼り付けてください。",
+      "created_title": "ミュージックルームの準備ができました",
+      "created_body": "<#{channelId}> にプレイヤーを置きました。**曲を追加** を押して曲名を入力するかリンクを貼ると、Murphy がボイスチャンネルで再生します。",
+      "created_note": "このチャンネルは書き込みをオフにしているので、プレイヤーが常にいちばん上に表示されます。",
+      "exists": "このサーバーにはすでにミュージックルームがあります: <#{channelId}>。新しく作る場合は先に `/setup delete` を使ってください。",
+      "open_channel": "チャンネルを開く",
+      "play_now": "何か再生する",
+      "check": "設定を確認",
+      "dashboard": "ダッシュボード",
+      "request_title": "曲を追加",
+      "request_label": "曲名またはリンク",
+      "request_placeholder": "例: Kavinsky Nightcall や Spotify のリンク"
+    },
+    "color": {
+      "description": "HEX 色と RGB 色を変換",
+      "options": {
+        "value": "A HEX または RGB カラー"
+      }
+    },
+    "snowflake": {
+      "description": "Discord ID とその作成時間を検査します",
+      "options": {
+        "id": "Discordのユーザー、サーバー、チャンネル、ロール、メッセージのID"
+      }
+    },
+    "password": {
+      "description": "暗号的に安全なパスワードを生成します",
+      "options": {
+        "length": "パスワードの長さは 12 ～ 64 文字です"
+      }
+    },
+    "text_tools": {
+      "description": "URL および Base64 テキストをエンコードまたはデコードする",
+      "options": {
+        "action": "適用する変換",
+        "text": "処理するテキスト"
+      }
+    },
+    "shuffle": {
+      "description": "キューをシャッフルします",
+      "messages": {
+        "shuffled": "キューをシャッフルしました。"
+      },
+      "errors": {
+        "fairplay": "FairPlay が有効になっているため、キューの順序をシャッフルできません。"
+      }
+    },
+    "skip": {
+      "description": "現在の曲をスキップします",
+      "messages": {
+        "skipped": "[{title}]({uri}) をスキップしました。"
+      }
+    },
+    "skipto": {
+      "description": "キュー内の特定の曲にスキップします",
+      "options": {
+        "number": "スキップしたい曲の番号"
+      },
+      "errors": {
+        "invalid_number": "有効な番号を入力してください。"
+      },
+      "messages": {
+        "skipped_to": "曲番号 {number} にスキップします。"
+      },
+      "title": "キューにジャンプしました"
+    },
+    "steal": {
+      "description": "別のユーザーからプレイリストを盗み、それを自分のプレイリストに追加します",
+      "options": {
+        "playlist": "盗みたいプレイリスト",
+        "user": "プレイリストを盗みたいユーザー"
+      },
+      "messages": {
+        "provide_playlist": "プレイリスト名を入力してください。",
+        "provide_user": "ユーザーについて言及してください。",
+        "playlist_not_exist": "言及されたユーザーにはそのプレイリストは存在しません。",
+        "playlist_stolen": "{user} からプレイリスト `{playlist}` を盗むことに成功しました。",
+        "error_occurred": "プレイリストの盗用中にエラーが発生しました。",
+        "playlist_exists": "言及されたユーザーにはそのプレイリストが存在します。",
+        "playlist_limit_reached": "あなたのプランでは、最大 {limit} 件のプレイリストが許可されています。",
+        "track_limit_reached": "そのプレイリストは、プランの制限である {limit} トラックを超えています。"
+      }
+    },
+    "stop": {
+      "description": "音楽を停止し、キューをクリアします",
+      "messages": {
+        "stopped": "音楽を止めてキューをクリアしました。"
+      }
+    },
+    "volume": {
+      "description": "プレーヤーの音量を設定します",
+      "options": {
+        "number": "設定したい音量"
+      },
+      "messages": {
+        "invalid_number": "有効な番号を入力してください。",
+        "too_low": "音量を 0 より小さくすることはできません。",
+        "too_high": "音量の上限は200%です。",
+        "set": "音量を {volume} に設定します"
+      }
+    },
+    "resolve": {
+      "messages": {
+        "provide_query": "クエリまたは追跡リンクを入力してください。",
+        "nodes_error": "NODES 変数の解析中にエラーが発生しました。",
+        "connection_error": "Lavalink との接続エラー: {err}",
+        "lavalink_error": "Lavalink 応答エラー: {status}",
+        "json_error": "JSON への変換中にエラーが発生しました。",
+        "forbidden": "アクセスが拒否されました。ノードのパスワードと認可設定を確認してください。",
+        "response_title": "Lavalink 応答",
+        "response_attached": "応答が長すぎるため、ここに表示できません。ファイルとして添付されています。"
+      }
+    },
+    "music": {
+      "description": "トラックを再生、検索、保存するためのミュージック コントロール センター。"
+    },
+    "audio": {
+      "description": "一時停止、再開、シーク、音量、ループ、自動再生のオーディオ コントロール。",
+      "guild_premium_required": "サーバー全体のオーディオ強化には、Guild Basic またはそれ以上のギルド プランが必要です。",
+      "normalization_saved": "適応正規化は **{state}** です。",
+      "crossfade_saved": "フェード トランジションを **{seconds} 秒 ** に設定しました。これにより、フェードアウト/fade-inが実行されます。真のデコーダー オーバーラップには Lavalink クロスフェード プラグインが必要です。",
+      "crossfade_disabled": "フェードトランジションが無効になっています。"
+    },
+    "queue_group": {
+      "description": "リスト、スキップ、移動、削除、シャッフルのキュー コントロール。"
+    },
+    "globalban": {
+      "description": "ボットに対するグローバル ユーザーとサーバーの禁止を管理します。",
+      "options": {
+        "user": "ユーザーがグローバルに禁止する",
+        "duration": "期間（1d、7d、またはパーマなど）",
+        "reason": "理由",
+        "guild_id": "グローバルにブロックするサーバーID",
+        "target_type": "ターゲットの種類",
+        "target_id": "ターゲットID"
+      },
+      "invalid_title": "無効なグローバル禁止アクション",
+      "invalid": "add-user、add-server、remove、または list を使用します。",
+      "no_user": "有効なユーザーを指定してください。",
+      "no_guild": "有効なサーバー ID を入力してください。",
+      "no_reason": "理由は示されていません。",
+      "bad_duration": "無効な期間です。 1d、7d、または perm などの値を使用します。",
+      "added_title": "世界的な禁止が追加されました",
+      "removed_title": "世界的な禁止が解除されました",
+      "not_found_title": "グローバル禁止が見つかりません",
+      "removed": "世界的な禁止エントリーが解除されました。",
+      "not_found": "一致するグローバル禁止エントリが見つかりませんでした。",
+      "list_title": "世界的な禁止リスト",
+      "empty": "世界的な禁止は見つかりませんでした。",
+      "target": "ターゲット",
+      "type": "タイプ",
+      "reason": "理由",
+      "expires": "有効期限が切れます",
+      "permanent": "永続",
+      "user_note": "インストーラーが検証できる場合、このユーザーはボット コマンドを使用したり、ボットをインストールしたりすることはできません。",
+      "server_note": "このサーバーはボット コマンドの使用をブロックされます。",
+      "subcommands": {
+        "add_user": "ユーザーを世界的に禁止します。",
+        "add_server": "サーバーによるボットの使用をグローバルにブロックします。",
+        "remove": "世界的な禁止を解除します。",
+        "list": "世界的な禁止事項をリストします。"
+      }
+    },
+    "loop": {
+      "description": "プレーヤーのループモードを設定します",
+      "options": {
+        "mode": "設定したいループモード"
+      },
+      "looping_song": "「**現在のトラック**をループ中です。」",
+      "looping_queue": "🔁 現在、**キュー全体**をループしています。",
+      "looping_off": "ループ: ループ モードは **無効になっています**。",
+      "invalid_mode": "X 無効なループ モードです。 `off`、`song`、または `queue` を使用します。"
+    },
+    "like": {
+      "description": "現在のトラックをお気に入りのプレイリストに保存します",
+      "saved": "「いいね」した曲に追加しました。",
+      "playlist_hint": "/favorites プレイで好きなものをプレイしてください。",
+      "button": "のように",
+      "removed": "「いいね」した曲から削除しました。"
+    },
+    "history": {
+      "description": "このサーバー上で最近再生されたトラックを表示します",
+      "title": "最近のトラック",
+      "empty": "前回の再起動以降、トラックは再生されていません。",
+      "options": {
+        "list": "サーバー履歴を表示する",
+        "play": "履歴からトラックを再生する",
+        "clear": "サーバー履歴をクリアする",
+        "index": "履歴項目番号"
+      },
+      "cleared": "履歴がクリアされました。",
+      "invalid_index": "その履歴項目は存在しません。",
+      "not_found": "この履歴項目をロードできませんでした。",
+      "loaded": "履歴から **{title}** をロードしました。"
+    },
+    "voteskip": {
+      "description": "現在のトラックをスキップするには投票してください",
+      "voted": "投票が追加されました",
+      "skipped": "投票可決 - トラックをスキップ",
+      "needed": "集められた票"
+    },
+    "djpanel": {
+      "description": "音楽設定パネルを表示する",
+      "title": "音楽設定",
+      "subtitle": "Murphy 操作の概要",
+      "dj_mode": "DJモード：",
+      "dj_roles": "DJの役割:",
+      "setup": "セットアップチャンネル:",
+      "configured": "設定済み",
+      "not_configured": "設定されていません",
+      "button": "スラッシュコマンドを使用する"
+    },
+    "favorites": {
+      "description": "保存したお気に入りのトラックを管理します。",
+      "title": "お気に入り",
+      "empty": "お気に入りのトラックはまだありません。トラックの再生中に `/like` を使用します。",
+      "total": "お気に入りの合計数: `{count}`",
+      "play_hint": "/favorites play",
+      "invalid_index": "有効なお気に入りの番号を選択してください。",
+      "removed": "お気に入りの `#{index}` を削除しました。",
+      "loaded": "`{count}` 個のお気に入りトラックをキューにロードしました。",
+      "options": {
+        "list": "お気に入りを表示します。",
+        "play": "お気に入りをすべて再生します。",
+        "remove": "お気に入りのトラックを削除します。",
+        "index": "削除するお気に入りの番号。"
+      }
+    },
+    "move": {
+      "description": "キューに登録されているトラックを別の位置に移動します。",
+      "title": "トラックが移動されました",
+      "empty": "キューは空です。",
+      "invalid": "`1` から `{size}` の間でポジションを選択してください。",
+      "moved": "**{title}** を `#{from}` から `#{to}` に移動しました。",
+      "options": {
+        "from": "現在のキューの位置。",
+        "to": "新しいキューの位置。"
+      }
+    },
+    "shardstats": {
+      "description": "シャードサーバーの数と合計ギルド統計を表示します。",
+      "title": "シャード統計",
+      "shard_line": "シャード {shard}: {count} サーバー",
+      "total_line": "合計: {count} サーバー",
+      "total_sharded_line": "合計: {count} サーバー ({shards} シャード)",
+      "fetch_failed": "シャード統計の取得に失敗しました。後でもう一度試してください。"
+    },
+    "avatar": {
+      "description": "ユーザーのアバターを表示します。",
+      "title": "アバター",
+      "user": "ユーザー",
+      "link": "リンク",
+      "options": {
+        "user": "アバターを表示したいユーザー"
+      }
+    },
+    "server-icon": {
+      "description": "このサーバーのアイコンを表示します。",
+      "title": "サーバーアイコン",
+      "server": "サーバ",
+      "link": "リンク",
+      "none": "このサーバーにはアイコンがありません。"
+    },
+    "coinflip": {
+      "description": "コインを投げます。",
+      "title": "コインフリップ",
+      "heads": "コインは**表**に着地しました。",
+      "tails": "コインは**裏**に着地しました。",
+      "toss": "Murphyがコインを投げた…",
+      "spin": "回転中…",
+      "fall": "落ちてくる…",
+      "edge": "コインが縁で立った！",
+      "edge_note": "500分の1。スクショして！",
+      "won": "大当たり！",
+      "lost": "ハズレ。",
+      "streak": "同じ面が{count}回連続",
+      "premium": "Premium統計：この連続の確率は{percent}%。",
+      "options": {
+        "call": "予想しよう：表か裏か"
+      }
+    },
+    "choose": {
+      "description": "リストからオプションを 1 つ選択します。",
+      "title": "選ぶ",
+      "result": "選択：",
+      "need_options": "少なくとも 2 つのオプションを `|` で区切って指定します。",
+      "options": {
+        "options": "| で区切られたオプション (例: ピザ | )寿司 |拉麺"
+      },
+      "thinking": "{count}個の選択肢から選んでいます…",
+      "from": "{count}個の選択肢から選びました。",
+      "podium": "表彰台"
+    },
+    "balance": {
+      "description": "経済バランスを示します。",
+      "options": {
+        "user": "残高を確認したいユーザー"
+      },
+      "title": "バランス",
+      "user": "ユーザー：",
+      "wallet": "財布：",
+      "bank": "銀行：",
+      "xp": "XP:",
+      "total": "合計：",
+      "gems": "宝石:"
+    },
+    "daily": {
+      "description": "毎日の経済報酬を請求します。",
+      "title": "毎日の報酬",
+      "cooldown_title": "日次はすでに請求されています",
+      "claimed": "毎日の報酬を請求しました。",
+      "reward": "褒美：",
+      "xp": "XP:",
+      "streak": "ストリーク:",
+      "cooldown": "あなたはすでに毎日の報酬を受け取りました。",
+      "remaining": "利用可能な地域:",
+      "milestone": "連続受取ボーナス"
+    },
+    "work": {
+      "description": "コインとXPを得るために短い仕事をします。",
+      "title": "作業完了",
+      "cooldown_title": "作業のクールダウン",
+      "earned": "獲得:",
+      "xp": "XP:",
+      "cooldown": "再び働く前に休む必要があります。",
+      "remaining": "利用可能な地域:",
+      "jobs": {
+        "studio": "あなたは深夜のセッションの前にスタジオの調整を手伝ってくれました。",
+        "stage": "あなたはステージを準備し、ショーを続けました。",
+        "mix": "混沌としたミックスを整理して、シャープなサウンドに仕上げました。",
+        "support": "あなたは、ビジー状態の音楽サーバーのサポート チケットを処理しました。",
+        "playlist": "あなたは、人々が実際に再生したプレイリストを厳選しました。"
+      }
+    },
+    "fish": {
+      "description": "釣り竿、餌、木箱、突然変異、グローバルブーストを備えた完全な漁業経済。",
+      "title": "釣果",
+      "cooldown_title": "釣りのクールダウン",
+      "sold_for": "販売価格:",
+      "xp": "釣りXP:",
+      "cooldown": "釣り場は復旧まで少し時間がかかります。",
+      "remaining": "利用可能な地域:",
+      "fish": {
+        "common": "一般的な魚",
+        "rare": "珍しい魚",
+        "epic": "エピックイカ",
+        "legendary": "伝説のクジラ"
+      },
+      "no_bait_title": "餌はありません",
+      "no_bait": "餌が選択されていません。 `/fish buy` で餌を購入するか、`/fish bait` で別の餌を選択してください。",
+      "weight": "重さ：",
+      "length": "長さ：",
+      "quality": "品質：",
+      "crate_found": "宝箱:",
+      "leviathan": "古代リヴァイアサンイベントが発生しました。この捕獲はほぼ不可能です。",
+      "used_bait": "使用済み餌",
+      "shop_title": "釣具店",
+      "shop_hint": "以下のショップ カテゴリを選択し、`/fish buy item:<id>` を使用して餌、ロッド、またはグローバル ブーストを購入してください。",
+      "buy_title": "購入完了",
+      "buy_failed_title": "購入に失敗しました",
+      "item": "アイテム：",
+      "amount": "額：",
+      "bait_title": "選択された餌",
+      "bait_failed_title": "餌は失敗しました",
+      "bait_selected": "選択した餌が更新されました。",
+      "upgrade_title": "ロッドがアップグレードされました",
+      "upgrade_done_title": "アップグレードが完了しました",
+      "upgrade_choose": "アップグレードしたい釣り具を選択してください。",
+      "upgrade_failed_title": "アップグレードに失敗しました",
+      "rod_level": "ロッドのアップグレード:",
+      "cost": "料金：",
+      "backpack_title": "釣り用バックパック",
+      "backpack_baits": "餌",
+      "backpack_latest": "最新の魚",
+      "inventory_title": "魚の在庫",
+      "inventory_empty": "魚の在庫は空です。 `/fish catch` を使用して開始します。",
+      "collection_title": "魚のコレクション",
+      "collection_progress": "コレクション：",
+      "mutations_title": "発見された変異:",
+      "stats_title": "釣りの統計",
+      "level": "釣りレベル:",
+      "fishing_xp": "釣りXP:",
+      "rod": "ロッド：",
+      "total_caught": "捕獲された合計:",
+      "total_value": "合計値:",
+      "crates": {
+        "silver": "シルバークレート",
+        "gold": "ゴールドクレート",
+        "diamond": "ダイヤモンド箱"
+      },
+      "divine_caught": "神聖な獲物:",
+      "leaderboard_title": "釣りリーダーボード",
+      "leaderboard_empty": "釣りプロフィールはまだありません。",
+      "boosts_title": "世界的な漁業促進",
+      "no_boosts": "グローバルな釣りブーストは有効ではありません。",
+      "active_boost": "アクティブブースト:",
+      "boost_by": "による",
+      "boost_starts": "開始:",
+      "boost_expires": "有効期限:",
+      "rods_title": "釣り竿",
+      "subcommands": {
+        "quests": "釣りクエストを表示します。",
+        "prestige": "あなたの釣りの進歩に自信を与えましょう。",
+        "aquarium": "水族館の不労所得を主張します。",
+        "pets": "釣り用のペットを管理します。",
+        "catch": "魚を捕まえる。",
+        "shop": "釣具店をオープンします。",
+        "buy": "エサ、ロッド、またはグローバルブーストを購入してください。",
+        "bait": "今後の釣果に備えて餌を選択します。",
+        "upgrade": "現在お使いのロッドをアップグレードしてください。",
+        "backpack": "バックパックの中の餌、道具、最新の魚を見せてください。",
+        "inventory": "最新の魚を見せてください。",
+        "collection": "魚の収集の進捗状況を表示します。",
+        "stats": "釣りの統計を表示します。",
+        "leaderboard": "釣りのリーダーボードを表示します。",
+        "boosts": "アクティブなグローバル ブーストを表示します。",
+        "rods": "ロッドの進行を表示します。",
+        "repair": "現役の釣り竿を修理する",
+        "season": "現在の漁期を表示します。",
+        "market": "漁業市場と最も貴重な魚を紹介します。",
+        "sell": "飼っている魚は全部売りましょう。",
+        "trophies": "トロフィーと最高の獲物を表示します。"
+      },
+      "options": {
+        "pet_action": "ペットアクション",
+        "pet": "釣りペット",
+        "category": "ショップカテゴリー",
+        "item": "購入するアイテムID",
+        "amount": "購入金額",
+        "bait": "選択するベイトID",
+        "quest_action": "クエストアクション。"
+      },
+      "categories": {
+        "bait": "餌",
+        "rods": "ロッド",
+        "boosts": "ブースト"
+      },
+      "buy_failed": {
+        "missing": "この項目は存在しません。",
+        "funds": "十分なコインまたはジェムがありません。",
+        "db": "商品購入時にデータベースエラーが発生しました。"
+      },
+      "bait_failed": {
+        "missing": "この餌は存在しません。",
+        "empty": "あなたはこの餌を所有していません。"
+      },
+      "upgrade_failed": {
+        "max": "あなたのロッドはすでに+15です。",
+        "funds": "このアップグレードに必要なコインがありません。",
+        "db": "ロッドのアップグレード中にデータベース エラーが発生しました。"
+      },
+      "rarities": {
+        "common": "一般",
+        "uncommon": "珍しい",
+        "rare": "レア",
+        "epic": "すごい",
+        "legendary": "伝説の",
+        "mythical": "神話的な",
+        "divine": "神聖な"
+      },
+      "mutations": {
+        "golden": "ゴールデン",
+        "albino": "アルビノ",
+        "crystal": "結晶",
+        "shadow": "影",
+        "infernal": "地獄",
+        "celestial": "天体"
+      },
+      "baits": {
+        "worm": "ワームベイト",
+        "premium": "プレミアムベイト",
+        "lucky": "ラッキーベイト",
+        "golden": "ゴールデンベイト",
+        "diamond": "ダイヤモンドベイト",
+        "nightcrawler": "ナイトクローラーの餌",
+        "crystal_lure": "クリスタルルアー",
+        "divine": "ディバインベイト",
+        "storm_lure": "ストームルアー",
+        "moon_lure": "ムーンルアー",
+        "abyss_lure": "アビスルアー",
+        "royal_lure": "ロイヤルルアー",
+        "leviathan_lure": "リヴァイアサン ルアー"
+      },
+      "rods": {
+        "wooden": "木の棒",
+        "stone": "ストーンロッド",
+        "iron": "鉄の棒",
+        "steel": "スチールロッド",
+        "golden": "ゴールデンロッド",
+        "diamond": "ダイヤモンドロッド",
+        "emerald": "エメラルドロッド",
+        "obsidian": "オブシディアンロッド",
+        "mythic": "ミシックロッド",
+        "aurora": "オーロラロッド",
+        "celestial": "セレスティアルロッド",
+        "abyssal": "アビサルロッド",
+        "prismatic": "角柱ロッド",
+        "leviathan": "リヴァイアサンロッド"
+      },
+      "boosters": {
+        "global_fishing_xp": "グローバルフィッシングXPブースター",
+        "global_fishing_xp_short": "5m グローバル フィッシング XP ブースター",
+        "global_fishing_xp_week": "ウィークリー グローバル フィッシング XP ブースター",
+        "global_fishing_coins": "グローバルフィッシングコインブースター",
+        "global_fishing_coins_day": "デイリーグローバルフィッシングコインブースター",
+        "global_fishing_luck": "グローバルフィッシングラックブースター",
+        "global_fishing_luck_year": "毎年恒例の世界的な釣り運ブースター",
+        "global_fishing_crates": "グローバルクレートブースト",
+        "global_fishing_stability": "グローバルな安定性の向上"
+      },
+      "boost_kinds": {
+        "fishing_xp": "釣り経験値",
+        "fishing_coins": "釣りコイン",
+        "fishing_luck": "釣り運",
+        "fishing_crates": "クレートチャンス",
+        "fishing_stability": "釣りの安定性"
+      },
+      "gear": {
+        "target": "ターゲット：",
+        "level": "レベル：",
+        "rod": "ロッド",
+        "line": "ライン",
+        "hook": "フック",
+        "all": "すべて修復する"
+      },
+      "season": "季節：",
+      "seasons": {
+        "spring_rivers": "スプリング・リバーズ",
+        "deep_sea_week": "深海週間",
+        "storm_tide": "嵐の潮流",
+        "royal_festival": "ロイヤルフェスティバル"
+      },
+      "species": {
+        "roach": "ローチ",
+        "bleak": "荒涼とした",
+        "gudgeon": "ガジョン",
+        "minnow": "ミノー",
+        "bream": "鯛",
+        "rudd": "ラッド",
+        "perch": "止まり木",
+        "crucian_carp": "フナ",
+        "tench": "テンチ",
+        "carp": "鯉",
+        "grass_carp": "ソウギョ",
+        "silver_carp": "銀の鯉",
+        "barbel": "バーベル",
+        "chub": "チャブ",
+        "ide": "井手",
+        "dace": "ウグイ",
+        "grayling": "グレイリング",
+        "brown_trout": "ブラウントラウト",
+        "rainbow_trout": "ニジマス",
+        "brook_trout": "カワマス",
+        "pike": "パイク",
+        "zander": "ザンダー",
+        "wels_catfish": "ウェルスナマズ",
+        "eel": "うなぎ",
+        "burbot": "バーボット",
+        "asp": "アスプ",
+        "salmon": "鮭",
+        "atlantic_cod": "タイセイヨウタラ",
+        "haddock": "ハドック",
+        "pollock": "ポロック",
+        "hake": "メルルーサ",
+        "mackerel": "サバ",
+        "herring": "ニシン",
+        "sardine": "イワシ",
+        "anchovy": "アンチョビ",
+        "sea_bass": "シーバス",
+        "european_flounder": "ヨーロッパヒラメ",
+        "halibut": "オヒョウ",
+        "turbot": "ターボット",
+        "sole": "唯一",
+        "red_snapper": "鯛",
+        "grouper": "ハタ",
+        "mahi_mahi": "マヒマヒ",
+        "barracuda": "カマス",
+        "tuna": "マグロ",
+        "yellowfin_tuna": "キハダマグロ",
+        "bluefin_tuna": "本マグロ",
+        "swordfish": "メカジキ",
+        "marlin": "カジキ",
+        "sailfish": "バショウカジキ",
+        "sturgeon": "チョウザメ",
+        "beluga_sturgeon": "シロチョウザメ",
+        "arapaima": "アラパイマ",
+        "alligator_gar": "アリゲーターガー",
+        "peacock_bass": "ピーコックバス",
+        "piranha": "ピラニア",
+        "oscar": "オスカー",
+        "angelfish": "エンゼルフィッシュ",
+        "discus": "円盤投げ",
+        "clownfish": "カクレクマノミ",
+        "lionfish": "ミノカサゴ",
+        "moray_eel": "ウツボ",
+        "electric_eel": "デンキウナギ",
+        "pufferfish": "ふぐ",
+        "triggerfish": "モンガラカワハギ",
+        "parrotfish": "ブダイ",
+        "wrasse": "ベラ",
+        "bluegill": "ブルーギル",
+        "largemouth_bass": "オオクチバス",
+        "smallmouth_bass": "スモールマウスバス",
+        "striped_bass": "ストライプバス",
+        "whitefish": "ホワイトフィッシュ",
+        "lake_trout": "レイクトラウト",
+        "char": "シャア",
+        "king_salmon": "キングサーモン",
+        "coho_salmon": "ギンザケ",
+        "sockeye_salmon": "紅鮭",
+        "pink_salmon": "ピンクサーモン",
+        "tilapia": "ティラピア",
+        "milkfish": "サバヒー",
+        "catla": "カトラ",
+        "rohu": "ロフ",
+        "mrigal": "ムリガル",
+        "giant_snakehead": "オオライギョ",
+        "snakehead": "スネークヘッド",
+        "asian_seabass": "アジアシーバス",
+        "giant_trevally": "ロウニンアジ",
+        "trevally": "アジ",
+        "bonefish": "ボーンフィッシュ",
+        "tarpon": "ターポン",
+        "permit": "許可する",
+        "red_drum": "レッドドラム",
+        "black_drum": "ブラックドラム",
+        "snook": "スヌーク",
+        "wahoo": "ワフー",
+        "amberjack": "カンパチ",
+        "cobia": "コビア",
+        "monkfish": "アンコウ",
+        "oarfish": "リュウグウノツカイ",
+        "coelacanth": "シーラカンス",
+        "sunfish": "マンボウ",
+        "manta_ray": "マンタ",
+        "stingray": "アカエイ",
+        "hammerhead_shark": "シュモクザメ",
+        "tiger_shark": "イタチザメ",
+        "great_white_shark": "ホホジロザメ",
+        "whale_shark": "ジンベエザメ",
+        "ancient_leviathan": "古代リヴァイアサン"
+      },
+      "quests_title": "釣りクエスト",
+      "quest_collection": "コレクションを展開する",
+      "quest_rare": "レアなトロフィーを獲得する",
+      "prestige_title": "釣りの威信",
+      "prestige_failed_title": "威信が利用できません",
+      "prestige_success": "プレステージ完成しました。釣りレベルがリセットされ、永続的な名声が増加しました。",
+      "prestige_failed": {
+        "level": "名声を得るには釣りレベル100が必要です。",
+        "db": "プレステージ中にデータベース エラーが発生しました。"
+      },
+      "aquarium_title": "水族館収入",
+      "aquarium_failed_title": "水族館の準備ができていません",
+      "aquarium_claimed": "水族館の不労所得が請求されました。",
+      "aquarium_failed": {
+        "cooldown": "あなたの水族館は今でも収入を生み出しています。",
+        "empty": "伝説の魚、神話上の魚、または神聖な魚を捕まえて、水族館の収入を生み出しましょう。",
+        "db": "水族館の収入を請求中にデータベース エラーが発生しました。"
+      },
+      "pets_title": "釣りペット",
+      "pet_buy_title": "ペットを購入しました",
+      "pet_select_title": "ペットが選択されました",
+      "pet_failed_title": "ペットのアクションが失敗しました",
+      "pet_selected": "アクティブな釣りペットが変更されました。",
+      "pet": "ペット：",
+      "pet_failed": {
+        "missing": "このペットは存在しません。",
+        "funds": "このペットに使用できる十分な通貨がありません。",
+        "empty": "あなたはこのペットを飼っていません。",
+        "db": "このペットの処理中にデータベース エラーが発生しました。"
+      },
+      "pet_actions": {
+        "list": "ペットのリストを作成する",
+        "buy": "ペットを購入する",
+        "select": "ペットを選択してください"
+      },
+      "pets": {
+        "otter": "カワウソ",
+        "penguin": "ペンギン",
+        "seal": "シール",
+        "dolphin": "イルカ",
+        "golden_koi": "黄金の鯉",
+        "sea_turtle": "ウミガメ",
+        "sea_dragon": "シードラゴン",
+        "crab": "カニ",
+        "axolotl": "ウーパールートル",
+        "orca": "シャチ",
+        "angler_spirit": "アングラースピリット",
+        "reef_fox": "リーフフォックス",
+        "storm_ray": "ストーム・レイ",
+        "moon_jelly": "ムーンゼリー",
+        "abyss_whale": "深淵のクジラ",
+        "prismatic_drake": "プリズムドレイク"
+      },
+      "variants": {
+        "river": "川",
+        "lake": "湖",
+        "deep_sea": "深海",
+        "storm": "嵐",
+        "moonlit": "月明かりに照らされて",
+        "ancient": "古代",
+        "abyssal": "アビサル",
+        "aurora": "オーロラ",
+        "prismatic": "プリズム状",
+        "royal": "ロイヤル"
+      },
+      "crates_found": "見つかった木箱:",
+      "durability": "耐久性",
+      "rod_durability": "ロッドの耐久性",
+      "line_durability": "ライン耐久性",
+      "hook_durability": "フックの耐久性",
+      "rod_damage": "ロッドの損傷",
+      "rod_broken_title": "ロッドが壊れました",
+      "rod_broken": "あなたのロッドは壊れています。再び釣りをする前に `/fish repair` を使用してください。",
+      "repair_title": "ロッドを修理しました",
+      "repair_done_title": "修理完了",
+      "repair_choose": "修理したい釣具を選択してください。",
+      "repair_failed_title": "修復に失敗しました",
+      "repair_success": "アクティブロッドは完全に修理されました。",
+      "repair_failed": {
+        "full": "あなたのロッドはすでに完全に修理されています。",
+        "funds": "このロッドを修理するのに十分なコインがありません。",
+        "db": "ロッドの修復中にデータベース エラーが発生しました。"
+      },
+      "failure": {
+        "escaped_title": "魚が逃げた",
+        "escaped": "魚は餌を飲み込んでしまい、巻き上げる前に逃げてしまいました。",
+        "line_break_title": "線が切れた",
+        "line_break": "魚は激しく格闘し、糸は切れ、獲物は失われました。"
+      },
+      "season_title": "釣りシーズン",
+      "season_boosted": "強化されたレア度:",
+      "season_variants": "ブーストされたバリアント:",
+      "season_reduced": "レアリティの低下:",
+      "season_multiplier": "シーズン乗数:",
+      "market_title": "魚市場",
+      "market_hint": "基本価値で最も価値のある魚。品質、重量、突然変異、餌、ブーストによって配当が大きく変わる可能性があります。",
+      "sell_title": "販売された魚",
+      "sell_failed_title": "販売に失敗しました",
+      "trophies_title": "釣りのトロフィー",
+      "best_catch": "最高の獲物",
+      "no_trophies": "まだトロフィーはありません。初めての魚を釣りましょう。"
+    },
+    "give": {
+      "description": "あなたのウォレットから別のユーザーにコインを与えます。",
+      "options": {
+        "user": "コインを受け取るユーザー",
+        "amount": "与えるコインの量"
+      },
+      "title": "転送完了",
+      "failed_title": "転送に失敗しました",
+      "invalid_title": "無効な転送",
+      "invalid": "ユーザーと 0 より大きい金額を選択します。",
+      "to": "に：",
+      "amount": "額：",
+      "self": "自分自身にコインを送ることはできません。",
+      "funds": "財布に十分なコインがありません。",
+      "failed": "転送を完了できませんでした。"
+    },
+    "leaderboard": {
+      "description": "最も裕福な経済ユーザーを示します。",
+      "title": "経済リーダーボード",
+      "page": "グローバル リーダーボード ページ `{current}/{total}` ～ `{count}` プロフィールはウォレットと銀行別にランク付けされています。",
+      "wallet": "財布",
+      "bank": "銀行",
+      "empty": "経済プロファイルはまだありません。 `/daily`、`/work`、または `/fish` を使用して開始します。"
+    },
+    "xp": {
+      "description": "ユーザーのXPランクとレベルを表示します。",
+      "title": "XPランク",
+      "user": "ユーザー",
+      "level": "レベル",
+      "total": "合計XP",
+      "next_level": "XP を次のレベルへ",
+      "progress": "進捗",
+      "global_rank": "グローバルランク",
+      "options": {
+        "user": "検査するユーザー"
+      }
+    },
+    "xptop": {
+      "description": "サーバー XP のリーダーボードを表示します。",
+      "title": "サーバー XP リーダーボード",
+      "subtitle": "{guild} ～ {count} ランクの XP プロファイル",
+      "summary": "`{count}` メンバーは、このサーバー上の XP によってランク付けされます。",
+      "guild_only": "XPトップはサーバー内でのみ使用できます。"
+    },
+    "xpglobal": {
+      "description": "グローバル XP リーダーボードを表示します。",
+      "title": "グローバル XP リーダーボード",
+      "subtitle": "Murphy 全体でランク付けされた XP プロフィール {count} 件",
+      "summary": "`{count}` プロファイルは XP によってグローバルにランク付けされます。"
+    },
+    "weekly": {
+      "description": "毎週のエコノミー報酬を受け取ろう",
+      "title": "ウィークリー報酬",
+      "cooldown_title": "毎週の報酬クールダウン",
+      "claimed": "毎週の報酬が請求されました。",
+      "reward": "コイン",
+      "xp": "XP",
+      "gems": "宝石",
+      "streak": "毎週の連続記録",
+      "cooldown": "あなたはすでに毎週の報酬を受け取りました。",
+      "remaining": "で利用可能"
+    },
+    "monthly": {
+      "description": "毎月のエコノミー報酬を請求しましょう",
+      "title": "毎月の報酬",
+      "cooldown_title": "毎月の報酬のクールダウン",
+      "claimed": "毎月の報酬が請求されました。",
+      "reward": "コイン",
+      "xp": "XP",
+      "gems": "宝石",
+      "claims": "月々の請求",
+      "cooldown": "あなたはすでに毎月の報酬を受け取りました。",
+      "remaining": "で利用可能"
+    },
+    "profile": {
+      "description": "詳細な経済プロファイルを表示します",
+      "options": {
+        "user": "検査するユーザー"
+      },
+      "title": "経済プロフィール",
+      "user": "ユーザー",
+      "wallet": "財布",
+      "bank": "銀行",
+      "gems": "宝石",
+      "xp": "XP",
+      "daily_streak": "毎日の連続記録",
+      "fishing": "釣り",
+      "fishing_value": "レベル `{level}` |プレステージ `{prestige}` | `{caught}` をキャッチ",
+      "account_age": "アカウントが作成されました",
+      "now_listening": "今聞いています",
+      "last_listened": "最後に聴いた",
+      "no_listening_history": "まだ視聴履歴がありません",
+      "supporter_badge": "公式 Murphy Supporter"
+    },
+    "spotify": {
+      "description": "接続されている Spotify ライブラリを参照します。",
+      "playlists": "接続されている Spotify プレイリストを一覧表示します。"
+    },
+    "youtube": {
+      "description": "接続されている YouTube ライブラリを参照します。",
+      "playlists": "接続されている YouTube プレイリストを一覧表示します。"
+    },
+    "external_playlists": {
+      "title": "プレイリスト",
+      "play_button": "遊ぶ",
+      "not_connected": "このコマンドを使用する前に、Murphy Web サイトで {source} に接続してください。",
+      "error": "{source} プレイリストをロードできませんでした。",
+      "hint": "番号付きのボタンを使用して、そのプレイリストをキューに入れます。",
+      "track": "追跡",
+      "tracks": "トラック",
+      "owner_only": "これらのボタンを使用できるのはコマンド作成者だけです。",
+      "queued": "キューに入れられたプレイリスト: {count} トラック。",
+      "play_error": "プレイリストを再生できませんでした。ソースを確認して再試行してください。"
+    },
+    "deposit": {
+      "description": "銀行にコインを入金する",
+      "options": {
+        "amount": "入金金額または全額"
+      },
+      "title": "入金完了",
+      "failed_title": "入金に失敗しました",
+      "amount": "入金済み",
+      "wallet": "財布",
+      "bank": "銀行",
+      "invalid": "有効な金額または `all` を入力してください。",
+      "funds": "財布に十分なコインがありません。",
+      "empty": "あなたの財布は空です。"
+    },
+    "withdraw": {
+      "description": "銀行からコインを引き出す",
+      "options": {
+        "amount": "出金金額または全額"
+      },
+      "title": "出金完了",
+      "failed_title": "出金に失敗しました",
+      "amount": "撤回されました",
+      "wallet": "財布",
+      "bank": "銀行",
+      "invalid": "有効な金額または `all` を入力してください。",
+      "funds": "銀行に十分なコインがありません。",
+      "empty": "あなたの銀行は空です。"
+    },
+    "crime": {
+      "description": "コインのために犯罪の危険を冒してください。お金に勝っても負けても構いません。",
+      "title_success": "犯罪は成功した",
+      "title_fail": "犯罪は失敗した",
+      "cooldown_title": "犯罪のクールダウン",
+      "earned": "獲得:",
+      "lost": "失った：",
+      "xp": "XP:",
+      "wallet": "財布：",
+      "cooldown": "別の犯罪を犯す前に、身を隠す必要があります。",
+      "remaining": "利用可能な地域:",
+      "success": {
+        "market": "あなたは混雑した市場をすり抜けて、**{amount}** コインを稼ぎました。",
+        "courier": "あなたは怪しい配達員を捕らえ、**{amount}** コインを発見しました。",
+        "wallet": "あなたは放置された財布を盗み、**{amount}** コインを入手しました。",
+        "auction": "あなたは、**{amount}** コインの偽造オークション チケットを投げました。",
+        "server": "疑わしいサーバーの情報を **{amount}** コインで販売しました。"
+      },
+      "fail": {
+        "police": "あなたは警察官から強盗をしようとしました。悪い考えだ。 **{amount}** コインを失いました。",
+        "camera": "カメラがすべてを捉え、罰金として **{amount}** コインがかかりました。",
+        "guard": "警備員があなたを呼び止め、代償として **{amount}** コインを受け取りました。",
+        "fake": "あなたの購入者は偽のお金で支払いました。混乱を修復するために **{amount}** コインを失いました。",
+        "trap": "セットアップに入り、**{amount}** コインを失いました。"
+      }
+    },
+    "rob": {
+      "description": "別のユーザーのウォレットを強盗しようとします。",
+      "options": {
+        "user": "強盗するユーザー"
+      },
+      "title_success": "強盗は成功した",
+      "title_fail": "強盗失敗",
+      "invalid_title": "無効なターゲット",
+      "empty_title": "盗むものは何もない",
+      "cooldown_title": "ロブのクールダウン",
+      "invalid": "別の非ボット ユーザーを選択します。",
+      "empty": "そのユーザーは盗めるプラスのウォレットコインを持っていません。",
+      "cooldown": "再び強盗する前に待つ必要があります。",
+      "remaining": "利用可能な地域:",
+      "stolen": "盗難:",
+      "penalty": "ペナルティ:",
+      "wallet": "財布：",
+      "success": {
+        "pocket": "あなたは {target} のポケットからコインを取り出し、**{amount}** を盗みました。",
+        "market": "あなたは市場近くで{target}の注意をそらし、**{amount}**を盗みました。",
+        "backpack": "あなたは{target}のバックパックを開け、**{amount}**とともに逃げました。"
+      },
+      "fail": {
+        "police": "{target} を強奪しようとしましたが、セキュリティに捕まりました。 **{amount}** を支払いました。",
+        "counter": "{target} はすぐにあなたに気づき、**{amount}** の支払いを強制しました。",
+        "witness": "目撃者があなたを通報したため、あなたは **{amount}** の罰金を支払いました。"
+      }
+    },
+    "moderation": {
+      "user": "ユーザー",
+      "reason": "理由",
+      "no_reason": "理由は示されていません。",
+      "description": "サーバーをクリーンに保つためのモデレーション ツール。"
+    },
+    "ban": {
+      "description": "このサーバーからメンバーを禁止する",
+      "title": "メンバーが禁止されました",
+      "failed_title": "禁止に失敗しました",
+      "no_user": "禁止する有効なユーザーを指定してください。",
+      "not_bannable": "このユーザーを禁止することはできません。役割の階層と権限を確認してください。",
+      "options": {
+        "user": "禁止するユーザー",
+        "reason": "禁止の理由",
+        "delete_days": "削除するメッセージの日数"
+      }
+    },
+    "kick": {
+      "description": "このサーバーからメンバーをキックします",
+      "title": "メンバーがキックされました",
+      "failed_title": "キック失敗",
+      "no_user": "キックする有効なユーザーを指定します。",
+      "not_found": "このユーザーはサーバー上にいません。",
+      "not_kickable": "このユーザーをキックすることはできません。役割の階層と権限を確認してください。",
+      "options": {
+        "user": "キックするユーザー",
+        "reason": "キックの理由"
+      }
+    },
+    "timeout": {
+      "description": "メンバーのタイムアウト",
+      "title": "メンバーがタイムアウトしました",
+      "failed_title": "タイムアウトに失敗しました",
+      "invalid": "有効なユーザーと 1s から 28d までの期間を指定します。",
+      "not_moderatable": "このユーザーをタイムアウトできません。役割の階層と権限を確認してください。",
+      "duration": "間隔",
+      "options": {
+        "user": "ユーザーがタイムアウトする",
+        "duration": "期間、例: 10m、2h、7d",
+        "reason": "タイムアウトの理由"
+      }
+    },
+    "unban": {
+      "description": "ユーザー ID によるサーバー禁止を解除します。",
+      "title": "ユーザーの禁止が解除されました",
+      "failed_title": "禁止解除に失敗しました",
+      "invalid_id": "有効な Discord ユーザー ID を入力してください。",
+      "not_banned": "この禁止を解除することはできませんでした。ユーザーを禁止することはできません。",
+      "options": {
+        "user_id": "禁止を解除する Discord ユーザー ID",
+        "reason": "禁止の理由"
+      }
+    },
+    "softban": {
+      "description": "最近のメッセージを削除するためにユーザーを禁止し、すぐに禁止を解除します。",
+      "title": "ユーザーがソフト禁止されました",
+      "failed_title": "ソフバン失敗",
+      "no_user": "有効なユーザーを指定してください。",
+      "not_bannable": "このユーザーをソフトバンすることはできません。役割の階層と権限を確認してください。",
+      "options": {
+        "user": "ユーザーからソフトバンへ",
+        "reason": "ソフトバンの理由",
+        "delete_days": "何日分のメッセージを削除するか"
+      }
+    },
+    "warn": {
+      "description": "メンバーに警告する",
+      "title": "警告が追加されました",
+      "failed_title": "警告失敗",
+      "invalid": "有効なユーザーと理由を入力してください。",
+      "options": {
+        "user": "警告するユーザー",
+        "reason": "警告の理由"
+      }
+    },
+    "warnings": {
+      "description": "ユーザー警告を表示する",
+      "title": "警告",
+      "no_user": "有効なユーザーを指定してください。",
+      "empty": "このユーザーには、このサーバー上で警告はありません。",
+      "options": {
+        "user": "検査するユーザー"
+      }
+    },
+    "purge": {
+      "description": "このチャンネルから最近のメッセージを削除します",
+      "title": "削除されたメッセージ",
+      "failed_title": "パージに失敗しました",
+      "invalid": "金額は 1 ～ 100 の間で指定する必要があります。",
+      "deleted": "削除されました",
+      "options": {
+        "amount": "削除するメッセージの数"
+      }
+    },
+    "reminder": {
+      "description": "一時的なリマインダーを設定します。",
+      "options": {
+        "time": "時刻、例: 30m、2h、1d",
+        "text": "リマインダーテキスト"
+      },
+      "title": "リマインダーセット",
+      "failed_title": "リマインダーが失敗しました",
+      "invalid": "10 秒から 30 日までの期間を使用します。",
+      "when": "いつ：",
+      "text": "文章：",
+      "due_title": "リマインダー"
+    },
+    "8ball": {
+      "description": "マジック8ボールに質問してください。",
+      "options": {
+        "question": "質問"
+      },
+      "title": "エイトボール",
+      "question": "質問：",
+      "answer": "答え：",
+      "answers": {
+        "1": "確かにそうです。",
+        "2": "非常に可能性が高いです。",
+        "3": "良さそうです。",
+        "4": "後でもう一度質問してください。",
+        "5": "まだわかりません。",
+        "6": "信号が乱雑です。",
+        "7": "おそらくそうではありません。",
+        "8": "いいえ。",
+        "9": "絶対に違います。",
+        "10": "あなたがそれにコミットした場合にのみ。",
+        "11": "待ったほうがいいよ。",
+        "12": "確率が異様に高いですね。"
+      },
+      "shake_1": "Murphyがボールを振っている…",
+      "shake_2": "ボールが曇ってきた…",
+      "shake_3": "答えが浮かんできた…",
+      "certainty": "確信度：",
+      "mood_yes": "星は賛成している。",
+      "mood_no": "星はノーと言っている。",
+      "mood_maybe": "未来はぼやけている。",
+      "premium": "Premiumのセカンドオピニオン：{answer}"
+    },
+    "roll": {
+      "description": "サイコロを転がします。",
+      "options": {
+        "sides": "辺の数"
+      },
+      "title": "ロール",
+      "sides": "側面:",
+      "result": "結果：",
+      "rolling": "d{sides}を振っています…",
+      "critical": "クリティカル！最大値。",
+      "fumble": "ファンブル。痛い。",
+      "premium": "Premiumの有利ロール：2回目{second}、最高{best}。"
+    },
+    "poll": {
+      "description": "Discord の投票を作成・管理します。",
+      "options": {
+        "create": "ネイティブ Discord 投票を作成する",
+        "close": "このサーバーの追跡された投票の 1 つを閉じます",
+        "results": "現在の投票結果を表示します",
+        "export": "投票結果を CSV としてエクスポート",
+        "question": "アンケートの質問",
+        "answers": "| で区切られた 2 ～ 10 個の回答キャラクター",
+        "message_id": "Discord 投票のメッセージ ID",
+        "duration": "投票期間 (時間単位) (最大 7 日間)",
+        "multiple": "各メンバーが複数の回答を選択できるようにする"
+      },
+      "title": "投票",
+      "invalid_answers": "`|` で区切って 2 ～ 10 個の回答を入力してください。各回答には最大 55 文字を含めることができます。",
+      "created": "{hours} 時間の {count} 回答を含むネイティブ Discord 投票が作成されました。",
+      "open": "公開投票",
+      "not_found": "追跡された投票が見つからないか、そのメッセージが利用できません。",
+      "owner_only": "アンケートの作成者またはメッセージの管理を持つモデレーターのみがアンケートを閉じることができます。",
+      "closed": "投票は終了し、最終結果が表示されました。",
+      "total_votes": "記録された選択の合計: **{total}**。",
+      "exported": "{count} 投票の回答をエクスポートしました。"
+    },
+    "ship": {
+      "description": "二人の相性をチェック。",
+      "options": {
+        "user1": "最初のユーザー",
+        "user2": "2番目のユーザー"
+      },
+      "title": "Ship",
+      "high": "強い試合。",
+      "medium": "可能性はあります。",
+      "low": "これには作業が必要です。",
+      "playful": "お遊びです。",
+      "tier_0": "💔 縁がなかった。",
+      "tier_1": "🥶 かなり冷たい。",
+      "tier_2": "🙂 可能性のある友達。",
+      "tier_3": "💕 何かある！",
+      "tier_4": "💞 ソウルメイト！",
+      "self": "自分への愛：100%。それでいい。💅",
+      "stat_chemistry": "相性",
+      "stat_trust": "信頼",
+      "stat_humor": "ユーモア",
+      "stat_talk": "会話",
+      "advice_0": "アドバイス：友達のままで。または他人で。",
+      "advice_1": "アドバイス：ラブレターじゃなくミームから始めよう。",
+      "advice_2": "アドバイス：ボイスに誘って様子を見よう。",
+      "advice_3": "アドバイス：今日、勇気を出して。",
+      "advice_4": "アドバイス：もう結婚しちゃえ。`/social love propose`",
+      "premium_1": "Premium予報：{years}年後に結婚、ペット{pets}匹。",
+      "premium_2": "Premium予報：子ども{kids}人と共有のSpotifyアカウント。",
+      "premium_3": "Premium予報：{years}か月後にピザのトッピングで初ゲンカ。",
+      "premium_4": "Premium予報：猫{pets}匹と大きなソファのある家。"
+    },
+    "quote": {
+      "description": "短い引用を表示します。",
+      "title": "引用",
+      "items": {
+        "0": "小さなステップでもサーバー全体が前進します。",
+        "1": "良い音楽、良い人々、良いタイミング。",
+        "2": "参加したいと思った雰囲気を作りましょう。",
+        "3": "面倒だと感じたら、次の小さなアクションに名前を付けます。",
+        "4": "行列は長いですが、雰囲気はまだきれいです。",
+        "5": "穏やかなボットは強力なボットです。",
+        "6": "人々が実際に使用するものを構築します。",
+        "7": "優れたパネルは何千もの説明を省くことができます。",
+        "8": "スピードは重要ですが、明瞭さがそれを生かします。",
+        "9": "まず便利なものにし、次に派手なものを作りましょう。",
+        "10": "一貫性が特徴です。",
+        "11": "最高のアップデートとは、ユーザーが即座に感じるアップデートです。",
+        "12": "あなたのやり方で音楽を。"
+      }
+    },
+    "wyr": {
+      "description": "質問をしてください。",
+      "title": "むしろあなたは",
+      "items": {
+        "0": "完璧なプレイリストを永久に保持したいですか、それとももうキューに並ばないほうがいいですか?",
+        "1": "すべての言語を話すのと、すべての楽器をマスターするのとではどちらが良いでしょうか?",
+        "2": "すべてのゲームに勝つのと、常に正しい答えを知っているほうがいいですか?",
+        "3": "巨大なサーバーを 1 つ持つのと、緊密なコミュニティを 10 個持つのとではどちらが良いでしょうか?",
+        "4": "音楽をボタンまたはコマンドのみで制御したいですか?",
+        "5": "1週間コインが2倍になるのと幸運が2倍になるのとどちらがいいでしょうか?",
+        "6": "チャットを管理したり、イベントを管理したりしたいですか?",
+        "7": "珍しいバッジと珍しいペットどちらが欲しいですか?",
+        "8": "決闘で勝ちたいですか、それともプレゼントで勝ちたいですか?",
+        "9": "すべてのコマンドを知っているほうがいいですか、それとも完璧なパネルを 1 つ持っているほうがいいですか?",
+        "10": "無限スキップと無限ボリュームコントロールのどちらを使用しますか?",
+        "11": "神話的な獲物を釣りたいですか、それとも巨大な木箱を見つけたいですか?",
+        "12": "すべてのメッセージを翻訳したいですか、それともすべての曲のタイトルを翻訳したいですか?",
+        "13": "いつも10分遅刻するのと20分早く着くの、どっちがいい？",
+        "14": "スマホをなくすのと財布をなくすの、どっちがいい？",
+        "15": "1年間音楽なしとゲームなし、どっちがいい？",
+        "16": "有名になるのとお金持ちになるの、どっちがいい？",
+        "17": "心が読めるのと透明になれるの、どっちがいい？",
+        "18": "ネットなしとピザなし、どっちで暮らす？",
+        "19": "馬サイズのアヒル1羽とアヒルサイズの馬100頭、どっちと戦う？",
+        "20": "全部の曲を暗記するのと全部の映画を暗記するの、どっちがいい？"
+      }
+    },
+    "truth": {
+      "description": "真実の質問を受けてください。",
+      "title": "真実",
+      "items": {
+        "0": "今の気分を最もよく表している曲は何ですか?",
+        "1": "今でも覚えているサーバーの記憶は何ですか?",
+        "2": "今年学びたいスキルは何ですか?",
+        "3": "最近最も再生されている曲は何ですか?",
+        "4": "あなたが密かに気に入っているボット機能は何ですか?",
+        "5": "改善したいサーバー ルールを 1 つ挙げてください。",
+        "6": "今週最も面白かった Discord の瞬間は何ですか?",
+        "7": "嫌いなふりをしている音楽ジャンルは何ですか?",
+        "8": "最初にどの経済コマンドを粉砕しますか?",
+        "9": "サーバーが生きていると感じさせるものは何でしょうか?",
+        "10": "現在のキューについての正直な評価は何ですか?",
+        "11": "プレミアム料金を払ってでも利用したい機能は何ですか?",
+        "12": "このサーバーで最高のニックネームは何ですか?",
+        "13": "スマホで最後に検索したのは何？",
+        "14": "このサーバーで誰にならパスワードを預けられる？",
+        "15": "一番恥ずかしいあだ名は？",
+        "16": "好きだと絶対認めない曲は？",
+        "17": "初恋の相手は？",
+        "18": "一番長く寝なかったのはどれくらい？",
+        "19": "覚えている一番変な夢は？",
+        "20": "わかったふりをしていることは？"
+      }
+    },
+    "dare": {
+      "description": "あえてプロンプトを表示します。",
+      "title": "あえて",
+      "items": {
+        "0": "最後に気に入った曲を送信します。",
+        "1": "次にここに書く人を褒めてください。",
+        "2": "10分間ステータスを歌詞に変更します。",
+        "3": "これまでに試したことのないコマンドを使用します。",
+        "4": "最後に話した人を褒めます。",
+        "5": "2曲のミニプレイリストを作成します。",
+        "6": "10分間ニックネームを変更します。",
+        "7": "実際の質問からアンケートを開始します。",
+        "8": "今すぐ 1 つの釣りを試してみてください。",
+        "9": "隠れた名曲をオススメします。",
+        "10": "サーバーのスローガンを 1 行で書きます。",
+        "11": "次のプレイリストの雰囲気をチャットで選択しましょう。",
+        "12": "行列について良いことを 1 つ言ってください。",
+        "13": "ギャラリーの5枚目の写真を送って（問題なければ）。",
+        "14": "次の5メッセージは絵文字だけで話して。",
+        "15": "ボイスに入って好きな曲を1フレーズ歌って。",
+        "16": "次に書き込んだ人に口説き文句を言おう。`/social love flirt`",
+        "17": "このサーバーについて俳句を書いて。",
+        "18": "1時間おもしろいステータスにして。",
+        "19": "ボイスにいる全員を1〜10で採点して。",
+        "20": "1日だけ誰かにアイコンを選んでもらって。"
+      }
+    },
+    "meme": {
+      "description": "ミームを取得します。",
+      "title": "ミーム",
+      "failed": "現在ミームを取得できませんでした。"
+    },
+    "automod": {
+      "description": "このサーバーの Discord AutoMod ルールを設定します。",
+      "options": {
+        "panel": "現在の AutoMod 設定を表示します。",
+        "words": "ブロックされた単語を管理します。",
+        "mode": "実行するアクション。",
+        "word_list": "単語はカンマまたは改行で区切られます。",
+        "spam": "スパム保護を有効または無効にします。",
+        "raid": "メンションスパム保護を有効または無効にします。",
+        "rules": "Discord AutoMod ルールを同期します。",
+        "enabled": "このモジュールを有効にします。",
+        "threshold": "スパムのしきい値。",
+        "mentions": "言及制限。",
+        "links": "リンクフィルターのホワイトリストを設定します。",
+        "domains": "カンマで区切られた許可されたドメイン。",
+        "link_roles": "リンクの投稿を許可される役割の言及または ID。",
+        "blocked_domains": "常にブロックする必要があるドメイン。",
+        "ignored_channels": "チャネルのメンションまたは ID はリンク フィルターによって無視されます。",
+        "ignored_roles": "ロールの言及または ID はリンク フィルターによって無視されます。",
+        "preset": "準備ができた automod プリセットを適用します。",
+        "preset_level": "保護レベル。",
+        "test_mode": "Discord ルールを公開せずに設定を保存します。",
+        "test": "アクションを起こさずにサンプル メッセージをテストします。",
+        "test_message": "評価するメッセージの内容。",
+        "test_content": "サーバーモデレーションアクションを適用せずにチェックするメッセージテキスト"
+      },
+      "title": "AutoMod パネル",
+      "word_filter": "ワードフィルター",
+      "words": "ブロックされた単語",
+      "spam": "スパム対策",
+      "raid": "襲撃対策",
+      "hint": "`/automod words`、`/automod spam`、`/automod raid`、および `/automod rules` を使用して保護を調整します。",
+      "synced": "Discord AutoMod ルールが同期されました。",
+      "saved": "AutoMod 設定が保存されました。",
+      "words_required": "このアクションに対して少なくとも 1 つの単語を入力してください。",
+      "words_saved": "ワードフィルターが保存されました。現在ブロックされている単語: `{count}`。",
+      "links": "リンクフィルター",
+      "domains": "許可されたドメイン",
+      "link_roles": "許可されるリンクの役割",
+      "links_saved": "リンクフィルターが保存されました。ドメイン: `{domains}`、ロール: `{roles}`。",
+      "link_blocked_title": "リンクがブロックされました",
+      "link_blocked": "{user}、このサーバーではリンクがブロックされています。",
+      "blocked_domains": "ブロックされたドメイン",
+      "ignored": "無視されたチャネル/roles",
+      "preset_saved": "Automod プリセット {preset} が保存されました。",
+      "test_title": "Automod テスト結果",
+      "risk_score": "リスクスコア",
+      "test_result": "決断",
+      "test_reasons": "一致した信号"
+    },
+    "ticket": {
+      "description": "サポート チケットを構成および管理します。",
+      "options": {
+        "setup": "チケットカテゴリとパネルチャネルを設定します。",
+        "category": "新しいチケットが作成されるカテゴリ。",
+        "panel_channel": "チケットパネルが投稿されるチャネル。",
+        "transcript_channel": "チケットトランスクリプトのチャンネル。",
+        "support_role": "チケットの作成時にロールが ping されます。",
+        "panel": "チケットパネルを送信します。",
+        "close": "現在のチケットを閉じます。",
+        "settings": "チケットのメッセージと動作をカスタマイズします。",
+        "log_channel": "チケットログのチャネル。",
+        "max_open": "ユーザーごとのオープンチケットの最大数。",
+        "title": "パネルとチケットのタイトル。",
+        "description": "パネルの説明。",
+        "open_message": "新しいチケット内に表示されるメッセージ。",
+        "button_label": "ボタンのラベルを開きます。",
+        "banner": "パネルバナーのURL。",
+        "close_mode": "クローズ動作。",
+        "manage": "現在のチケットのワークフローを管理します。",
+        "priority": "チケット優先。",
+        "assignee": "チケットに割り当てられたスタッフメンバー。",
+        "tags": "カンマ区切りのチケットタグ。"
+      },
+      "saved": "チケット設定が保存されました。",
+      "not_configured": "チケットはまだ設定されていません。",
+      "panel_sent": "チケットパネルを発送しました。",
+      "open_button": "オープンチケット",
+      "panel_title": "サポートチケット",
+      "panel_body": "下のボタンをクリックしてプライベート サポート チケットを作成します。",
+      "not_ticket": "このチャンネルは追跡可能なチケットではありません。",
+      "closed": "チケットはクローズされました。",
+      "closed_moved": "チケットはクローズされ、クローズされたカテゴリに移動されました。",
+      "settings_saved": "チケット設定が更新されました。",
+      "max_open_reached": "開いているチケットの数がすでに最大数に達しています。",
+      "log_opened": "チケットがオープンしました",
+      "manage_empty": "更新する優先順位、担当者、またはタグを指定します。",
+      "managed": "チケットのワークフロー設定が更新されました。",
+      "create_failed": "I couldn't create the ticket channel. Ask an admin to give Murphy the Manage Channels and Manage Roles permissions in the ticket category."
+    },
+    "giveaway": {
+      "description": "プレゼントを作成および管理します。",
+      "options": {
+        "start": "プレゼントキャンペーンを開始します。",
+        "end": "プレゼントを終了します。",
+        "reroll": "リセマラ特典の当選者。",
+        "list": "アクティブな特典をリストします。",
+        "prize": "プレゼント賞品。",
+        "duration": "期間、例: 10m、2h、1d。",
+        "winners": "勝者の数。",
+        "channel": "プレゼントを投稿するチャンネル。",
+        "message_id": "プレゼントメッセージID。",
+        "required_role": "入力するにはロールが必要です。",
+        "bonus_role": "追加のエントリを 1 つ許可するロール。",
+        "min_account_days": "Discord アカウントの最小経過日数。",
+        "starts_at": "ISO 形式のオプションのスケジュールされた開始日。"
+      },
+      "invalid_duration": "無効な期間です。 `10m`、`2h`、`1d` などの値を使用します。",
+      "join_button": "参加する",
+      "list_button": "参加者",
+      "title": "譲る",
+      "scheduled_title": "予定されている賞品の抽選",
+      "prize": "賞",
+      "winners": "勝者",
+      "ends": "終わり",
+      "host": "ホスト",
+      "started": "プレゼントが始まりました。メッセージ ID: `{id}`。",
+      "reroll_title": "プレゼントのリセマラ",
+      "end_title": "プレゼントは終了しました",
+      "no_winners": "有効な勝者はいません。",
+      "active_title": "アクティブなプレゼント",
+      "no_active": "このサーバーにはアクティブな特典がありません。",
+      "messages": {
+        "not_found": "プレゼントが見つかりませんでした。",
+        "ended_btn": "このプレゼント企画はすでに終了しております。",
+        "leave": "プレゼントを残しました。",
+        "join": "プレゼントに参加しました。",
+        "no_participants_list": "この特典にはまだ参加者がいません。",
+        "not_started": "このプレゼント企画はまだ始まっていません。",
+        "role_required": "必要な役割がありません。",
+        "account_too_new": "あなたの Discord アカウントはこのプレゼントには新しすぎます。"
+      },
+      "required_role": "必要な役割",
+      "min_account_age": "アカウントの最小経過日数",
+      "starts": "始まります",
+      "invalid_start": "有効な現在または将来の開始日を指定してください。"
+    },
+    "autorole": {
+      "description": "ユーザーが参加するときに自動的に割り当てられるロールを構成します。",
+      "options": {
+        "set": "オートロールを設定します。",
+        "disable": "オートロールを無効にします。",
+        "status": "オートロールのステータスを表示します。",
+        "role": "新しいメンバーに割り当てられる役割。"
+      },
+      "title": "オートロール",
+      "state": "州",
+      "role": "役割",
+      "saved": "オートロールが保存されました: {role}。",
+      "disabled": "オートロールが無効になっています。"
+    },
+    "selfrole": {
+      "description": "ボタンを備えた構成可能な自己役割パネルを作成します。",
+      "options": {
+        "setup": "自己役割パネルを作成または更新します。",
+        "panel": "自己役割パネルを再度送信します。",
+        "list": "自己役割パネルをリストします。",
+        "delete": "自己役割パネル構成を削除します。",
+        "id": "ショートメニューID。",
+        "channel": "パネルが送信されるチャネル。",
+        "roles": "役割の言及または ID、最大 20。",
+        "emojis": "カンマ区切りの絵文字リスト、最大 20 個。",
+        "title": "パネルのタイトル。",
+        "description": "パネルの説明。",
+        "banner": "パネルバナーのURL。"
+      },
+      "default_title": "役割を選択してください",
+      "default_description": "役割を追加または削除するには、下のボタンを使用します。",
+      "invalid": "有効な ID と少なくとも 1 つのロールを指定します。",
+      "saved": "自己役割パネルが保存され、送信されました。",
+      "panel_sent": "自役パネルを送信しました。",
+      "missing": "この自己役割パネルは存在しません。",
+      "channel_missing": "設定された自己役割チャネルが見つかりませんでした。",
+      "title": "自己役割パネル",
+      "empty": "自己役割パネルが構成されていません。",
+      "deleted": "自己役割パネルが削除されました。",
+      "added": "{role} を追加しました。",
+      "removed": "{role} を削除しました。",
+      "permission_error": "そのロールを更新できません。自分の役割の位置と役割の管理権限を確認してください。"
+    },
+    "fun": {
+      "description": "Discord のコマンド数を抑えるために楽しいコマンドがグループ化されています。"
+    },
+    "utility": {
+      "description": "Discord のコマンド数を抑えるためにグループ化されたユーティリティ ツール。"
+    },
+    "playlist": {
+      "description": "プレイリストを 1 つのクリーンなコマンド グループで管理します。"
+    },
+    "economy": {
+      "description": "エコノミー コマンドが 1 つのクリーンなコマンドにグループ化されました。"
+    },
+    "lock": {
+      "description": "現在のチャンネルをロックします。",
+      "title": "チャンネルがロックされています",
+      "done": "このチャンネルは現在、一般会員向けにロックされています。"
+    },
+    "unlock": {
+      "description": "現在のチャンネルのロックを解除します。",
+      "title": "チャンネルのロックが解除されました",
+      "done": "このチャンネルは現在ロック解除されています。"
+    },
+    "slowmode": {
+      "description": "現在のチャンネルでスローモードを設定します。",
+      "title": "スローモードが更新されました",
+      "done": "スローモードは **{seconds}s** に設定されています。",
+      "options": {
+        "seconds": "スローモードの継続時間は秒単位、0 は無効にします"
+      }
+    },
+    "nick": {
+      "description": "メンバーのニックネームを変更またはリセットします。",
+      "title": "ニックネームを更新しました",
+      "failed_title": "ニックネームの更新に失敗しました",
+      "not_manageable": "このメンバーのニックネームを管理できません。役割の階層と権限を確認してください。",
+      "nickname": "ニックネーム",
+      "reset": "リセット",
+      "options": {
+        "user": "更新するメンバー",
+        "nickname": "新しいニックネーム。リセットするには空のままにしてください"
+      }
+    },
+    "cooldowns": {
+      "description": "エコノミーのクールダウンを表示します。",
+      "title": "エコノミークールダウン",
+      "ready": "`ready`",
+      "items": {
+        "daily": "毎日",
+        "weekly": "毎週",
+        "monthly": "毎月",
+        "work": "仕事",
+        "crime": "犯罪",
+        "rob": "ロブ",
+        "fish": "魚",
+        "busk": "路上ライブ"
+      }
+    },
+    "settings": {
+      "description": "メインのサーバー設定パネルを表示します。",
+      "title": "サーバー設定",
+      "language": "言語",
+      "dj": "DJの役割",
+      "setup": "セットアップチャンネル",
+      "hint": "すべての設定コマンド (general、music、automod、community、ai) が /settings の下に存在するようになりました。",
+      "options": {
+        "overview": "サーバー設定の概要を表示します。"
+      },
+      "groups": {
+        "general": "言語、プレフィックス、アナウンス。",
+        "music": "音楽、DJ、セットアップチャンネルの設定。",
+        "automod": "Automod フィルターと Discord ルール。",
+        "community": "オートロール、セルフロール、チケット、プレゼント。"
+      }
+    },
+    "status": {
+      "description": "管理者向けにボット、シャード、ノード、プレーヤーの健全性を表示します。",
+      "title": "ボットのステータス"
+    },
+    "cases": {
+      "description": "最近のモデレーション事例を表示します。",
+      "title": "モデレーションのケース",
+      "empty": "モデレートのケースは見つかりませんでした。",
+      "options": {
+        "user": "ユーザーがケースをフィルタリングする基準"
+      }
+    },
+    "warnings_clear": {
+      "description": "メンバーに対するすべての警告をクリアします。",
+      "title": "警告が解除されました",
+      "removed": "削除された警告",
+      "options": {
+        "user": "警告をクリアする必要があるユーザー"
+      }
+    },
+    "role_add": {
+      "description": "メンバーに役割を追加します。",
+      "title": "役割が追加されました",
+      "options": {
+        "user": "対象メンバー",
+        "role": "追加する役割"
+      }
+    },
+    "role_remove": {
+      "description": "メンバーから役割を削除します。",
+      "title": "役割が削除されました",
+      "options": {
+        "user": "対象メンバー",
+        "role": "削除する役割"
+      }
+    },
+    "economy_shop": {
+      "description": "エコノミーアイテムショップを表示します。",
+      "title": "エコノミーショップ",
+      "item": "アイテム",
+      "amount": "額",
+      "cost": "料金",
+      "items": {
+        "lucky_crate": "ラッキークレート",
+        "work_snack": "仕事のおやつ",
+        "rob_shield": "ロブ・シールド"
+      },
+      "item_descriptions": {
+        "lucky_crate": "開けるとランダムなコイン報酬が得られます。",
+        "work_snack": "簡単なコイン報酬が得られる小さな消耗品。",
+        "rob_shield": "将来の経済機能のためのパッシブ保護アイテム。"
+      }
+    },
+    "buy": {
+      "description": "エコノミーショップのアイテムを購入します。",
+      "title": "購入した商品",
+      "invalid": "このショップの商品は存在しません。",
+      "no_funds": "ウォレットのコインが足りません。",
+      "options": {
+        "item": "購入するアイテムID",
+        "amount": "購入金額"
+      }
+    },
+    "inventory": {
+      "description": "経済在庫を表示します。",
+      "title": "エコノミー在庫",
+      "empty": "インベントリは空です。"
+    },
+    "use": {
+      "description": "エコノミーインベントリアイテムを使用します。",
+      "title": "使用アイテム",
+      "invalid": "この項目は存在しません。",
+      "none": "あなたはこのアイテムを所有していません。",
+      "reward": "褒美",
+      "passive": "この受動的アイテムは、将来の保護システムのために保管されます。",
+      "options": {
+        "item": "使用するアイテムID"
+      }
+    },
+    "report": {
+      "description": "Murphy チームにレポートを送信します。"
+    },
+    "wrapped": {
+      "description": "このサーバーの音楽ラップの概要を表示します。"
+    },
+    "automation": {
+      "description": "サーバー自動化の作成と管理",
+      "options": {
+        "conditions": "この自動化のためのオプションの Guild Plus JSON 条件"
+      }
+    },
+    "backup": {
+      "description": "サーバー構成のバックアップを作成、復元、スケジュール設定する"
+    },
+    "event_manager": {
+      "description": "イベントの作成とリマインダーの管理",
+      "options": {
+        "create": "新しいアイテムを作成する",
+        "remind": "イベントリマインダーを設定する",
+        "attendees": "イベント参加者を表示",
+        "page": "ページ"
+      }
+    },
+    "forms_manager": {
+      "description": "フォームを作成して回答を確認する"
+    },
+    "tempvoice": {
+      "description": "一時的な音声ルームの構成と管理"
+    },
+    "welcome_manager": {
+      "description": "ウェルカム メッセージの構成とテスト"
+    },
+    "server_stats": {
+      "description": "サーバーのアクティビティ、メンバー、音声、音楽の統計を表示します",
+      "options": {
+        "activity": "メッセージとコマンドのアクティビティ統計を表示します",
+        "members": "メンバーの参加と脱退の統計を表示する",
+        "voice": "音声アクティビティの統計を表示する",
+        "music": "音楽視聴の統計を表示する",
+        "compare": "現在と以前のレポート期間を比較します",
+        "export": "利用可能なサーバー統計をエクスポートします"
+      }
+    },
+    "audit_manager": {
+      "description": "不審な管理アクティビティを見つける"
+    },
+    "case_manager": {
+      "description": "ケースを編集し、証拠を添付し、控訴を検討する"
+    },
+    "cleanup_manager": {
+      "description": "監査ボット、非アクティブなメンバー、未使用のロール"
+    },
+    "lockdown": {
+      "description": "緊急サーバーロックダウンを有効または無効にする"
+    },
+    "permissions_diagnose": {
+      "description": "不足している Murphy 権限を診断する"
+    },
+    "raid_manager": {
+      "description": "襲撃保護を検査し、疑わしいメンバーを隔離する"
+    },
+    "growth": {
+      "description": "クリエイター フィード、エンゲージメント システム、サーバー テンプレート、グロース オートメーションを実行します",
+      "options": {
+        "overview": "Growth Suite の使用量とプランの制限を表示する",
+        "feed-add": "RSS、YouTube、Twitch、または Kick クリエイター フィードを追加します",
+        "feed-list": "設定されたクリエイター フィードのリストを表示します",
+        "feed-remove": "クリエイターフィードを削除します",
+        "role-temporary": "自動的に期限切れになるロールをメンバーに付与する",
+        "health-schedule": "自動サーバー ヘルス チェックをスケジュールする",
+        "autopilot": "週次コミュニティ オートパイロット レポートを構成する",
+        "digest": "現在の週次コミュニティ ダイジェストをプレビューする",
+        "mod-insights": "モデレータのアクティビティと取り消しを検査する",
+        "venue-schedule": "Music Venue セッションをスケジュールする",
+        "creator-launch": "クリエイターリリースキャンペーンをスケジュールする",
+        "templates": "すぐに使用できるサーバー テンプレートを参照する",
+        "template-apply": "サーバーテンプレートを適用する",
+        "concierge": "プロフェッショナル Murphy サーバーのセットアップをリクエストする"
+      },
+      "fields": {
+        "kind": "フィードソースのタイプ",
+        "url": "公式 URL、RSS URL または YouTube チャンネル ID",
+        "channel": "宛先テキスト チャネル",
+        "role": "通知または割り当てるオプションの役割",
+        "filters": "オプションのカンマ区切りのキーワード",
+        "interval": "更新間隔 (分)",
+        "id": "構成識別子",
+        "user": "ロールを受け取るメンバー",
+        "minutes": "分前にロールが期限切れになります",
+        "frequency": "リピート頻度",
+        "state": "このシステムを有効または無効にします",
+        "days": "日数",
+        "text_channel": "会場プレーヤー用のテキスト チャネル",
+        "voice_channel": "再生用のボイスまたはステージチャンネル",
+        "query": "ステーション URL、プレイリストまたは検索クエリ",
+        "starts": "ISO 日付、Unix タイムスタンプ、または読み取り可能な日付",
+        "title": "キャンペーンまたはリリースのタイトル",
+        "package": "コンシェルジュ パッケージ",
+        "goals": "サーバーと望ましい結果について説明してください"
+      },
+      "overview_title": "成長スイート",
+      "overview_plan": "現在のプラン: **{plan}**",
+      "overview_feeds": "クリエイター フィード: **{count}/{limit}**",
+      "overview_autopilot": "コミュニティ オートパイロット: **{state}**",
+      "admin_required": "サーバーの管理権限が必要です",
+      "upgrade_required": "このワークフローには、より高い Murphy プランが必要です",
+      "limit_reached": "現在のプランの制限に達しました",
+      "limit_detail": "{plan} プランでは、このモジュールに {limit} アイテムが許可されています。",
+      "invalid_feed": "フィード URL を受け入れられませんでした",
+      "feed_added": "クリエイターフィードが追加されました",
+      "feed_list": "クリエイター フィード",
+      "feed_new_item": "新しいクリエイターの出版物",
+      "feed_failures": "障害: {count}",
+      "label_id": "ID",
+      "removed": "構成が削除されました",
+      "not_found": "構成が見つかりません",
+      "temporary_role_saved": "一時的な役割がスケジュールされました",
+      "health_saved": "ヘルス スキャン スケジュールが更新されました",
+      "health_report": "スケジュールされたサーバー健全性レポート",
+      "health_permissions": "重要な権限がありません: **{count}**",
+      "health_nodes": "接続されている音楽ノード: **{count}**",
+      "health_ok": "重大な構成上の問題は検出されませんでした。",
+      "autopilot_saved": "コミュニティ オートパイロットが更新されました",
+      "digest_title": "毎週のコミュニティ ダイジェスト",
+      "digest_members": "メンバー: **+{joins} / -{leaves}**",
+      "digest_voice": "音声アクティビティ: **{hours} 時間**",
+      "digest_commands": "使用するコマンド: **{count}**",
+      "mod_title": "サーバーモデレーションの責任",
+      "mod_total": "**{count}** は過去 **{days} 日間のアクションを記録しました**",
+      "mod_row": "{moderator} · **{total}** アクション · {bans} 禁止 · {revoked} 取り消し",
+      "mod_preview": "無料プレビューは 7 日間に制限されています。 Guild Plus により、365 日の分析とエクスポートが可能になります。",
+      "venue_saved": "Music Venue セッションがスケジュールされました",
+      "creator_saved": "クリエイターローンチキャンペーン開催予定",
+      "creator_schedule": "{date} · {count} スケジュールされたメッセージ",
+      "creator_reminder": "{title} は 1 時間後に起動します",
+      "creator_reminder_body": "準備を整え、リリースの通知を有効にします。",
+      "creator_launch": "{title} はライブです",
+      "creator_launch_body": "このリリースは現在入手可能です。会話に参加してあなたの反応を共有してください。",
+      "creator_followup": "{title}はどうでしたか？",
+      "creator_followup_body": "フィードバックを共有し、作成者が次のリリースを計画するのを支援します。",
+      "invalid_date": "将来の日付またはタイムスタンプを入力してください",
+      "invalid_url": "有効なパブリック HTTP または HTTPS URL を入力してください",
+      "templates_title": "サーバー テンプレート ライブラリ",
+      "template_applied": "テンプレートが適用されました",
+      "template_review": "構成を公開する前に、チャネル、ロール、およびモジュールの設定を確認してください。",
+      "template_items": {
+        "community-starter": {
+          "name": "コミュニティ スターター",
+          "description": "バランスのとれたサーバーモデレーションと新しいコミュニティのアナウンス。"
+        },
+        "creator-launch": {
+          "name": "クリエーター起動キット",
+          "description": "クリエイターによる新しいリリースのお知らせとアラート。"
+        },
+        "gaming-community": {
+          "name": "ゲーム コミュニティ",
+          "description": "より厳格なスパム保護と一時的な音声ルーム。"
+        },
+        "support-desk": {
+          "name": "サポートサーバー",
+          "description": "サポート サーバーのチケットとバランスの取れたサーバー モデレーション。"
+        },
+        "music-venue": {
+          "name": "ミュージックサーバー",
+          "description": "12 時間のリピート ウィンドウを備えた自動再生と AutoDJ。"
+        },
+        "advanced-moderation": {
+          "name": "高度なサーバーモデレーション",
+          "description": "厳格なサーバー管理、RAID 保護、および異常なモデレータ アクティビティに対するアラート。"
+        }
+      },
+      "concierge_exists": "このサーバーにはすでにアクティブなコンシェルジュ リクエストがあります",
+      "concierge_created": "コンシェルジュ リクエストが作成されました",
+      "concierge_next": "支払いが要求される前に、Murphy チームからご連絡します。",
+      "empty": "まだ何も設定されていません。"
+    },
+    "role_manager": {
+      "description": "ロールを一括で安全に管理する"
+    },
+    "listening_goal": {
+      "description": "毎週のリスニング目標を設定して追跡する"
+    },
+    "feedback": {
+      "description": "Murphy を使用した後、製品のフィードバックを共有します。",
+      "options": {
+        "rating": "Murphy の体験を 1 から 5 で評価してください",
+        "category": "レビューしている Murphy の部分を選択してください",
+        "comment": "うまくいった点、または改善すべき点を教えてください"
+      },
+      "prompt_title": "Murphy はサーバーでどのように機能していますか?",
+      "prompt_body": "音楽といくつかのコマンドが正常に使用されました。お時間があるときに、`/feedback` を送信してください。プライベート フォームは実際に使用した後にのみ表示され、一方的な DM は決して送信されません。",
+      "sent_title": "フィードバックを受け取りました",
+      "sent_body": "{{rating}}/5 の評価をいただきありがとうございます。あなたのフィードバックは、次の改善の優先順位付けに役立ちます。"
+    },
+    "radio_feedback": {
+      "description": "サーバーが好むものをスマート ラジオに教えます",
+      "title": "スマートラジオのフィードバック",
+      "liked": "このサーバーの将来のスマート ラジオ キューに対して **{title}** を「いいね！」しました。",
+      "disliked": "このサーバーの将来のスマート ラジオ キューに対して **{title}** が嫌いです。"
+    },
+    "recommend_similar": {
+      "description": "曲または現在のトラックに似たトラックを検索します"
+    },
+    "scrobble_status": {
+      "description": "外部リスニング接続のステータスを表示する"
+    },
+    "music_session": {
+      "description": "他の人を招待してライブ音楽セッションをコピーして続行します"
+    },
+    "source_health": {
+      "description": "ライブ Lavalink ノードとソースの状態を表示する"
+    },
+    "bookmark_manager": {
+      "description": "役立つリンクと Discord メッセージを保存する",
+      "options": {
+        "add": "URL または Discord メッセージ リンクを保存します",
+        "list": "ブックマークをリストする",
+        "remove": "ブックマークを削除します"
+      },
+      "upsell": "個人の Murphy クラウド ライブラリにさらに多くのブックマークを保存します。"
+    },
+    "calculator": {
+      "description": "安全な数式を計算する"
+    },
+    "reminders_manager": {
+      "description": "永続的なリマインダーを作成し、タイムゾーンを管理します",
+      "options": {
+        "create": "永続的なリマインダーを作成する",
+        "list": "保留中のリマインダーをリストする",
+        "cancel": "リマインダーをキャンセルする",
+        "timezone": "IANA タイムゾーンを設定する"
+      },
+      "upsell": "ボットの再起動後も、より永続的なリマインダーをアクティブに保ちます。"
+    },
+    "tag_manager": {
+      "description": "再利用可能なサーバー応答を作成して使用する"
+    },
+    "timestamp": {
+      "description": "すべての表示スタイルで Discord タイムスタンプを作成する"
+    },
+    "serverinfo": {
+      "description": "詳細なサーバー情報を表示する",
+      "lines": {
+        "id": "**ID:** `{id}`",
+        "owner": "**所有者:** {owner}",
+        "members": "**メンバー:** `{members}` ({humans} キャッシュされた人間)",
+        "channels_roles": "**チャネル / 役割:** `{channels}` / `{roles}`",
+        "boosts": "**ブースト:** `{boosts}` · ティア `{tier}`",
+        "created": "**作成日:** {date}"
+      },
+      "labels": {
+        "text": "テキスト",
+        "voice": "ボイス",
+        "categories": "カテゴリー",
+        "emojis": "絵文字",
+        "verification": "認証"
+      }
+    },
+    "userinfo": {
+      "description": "詳細なユーザーおよびメンバー情報を表示する",
+      "options": {
+        "user": "検査するユーザー"
+      },
+      "unavailable": "利用不可",
+      "yes": "はい",
+      "no": "いいえ",
+      "lines": {
+        "user": "**ユーザー:** {user} · `{id}`",
+        "created": "**アカウントが作成されました:** {date}",
+        "joined": "**参加サーバー:** {date}",
+        "roles": "**役割:** `{count}`",
+        "bot": "**ボット:** `{value}`"
+      }
+    },
+    "roleinfo": {
+      "description": "役割の詳細と権限を表示する",
+      "options": {
+        "role": "検査する役割"
+      },
+      "none": "なし",
+      "lines": {
+        "id": "**ID:** `{id}`",
+        "members": "**メンバー:** `{count}`",
+        "position_color": "**位置:** `{position}` · **色:** `{color}`",
+        "mentionable_managed": "**メンション可能/管理可能:** `{mentionable}` / `{managed}`",
+        "permissions": "**権限 ({count}):** {permissions}{more}",
+        "created": "**作成日:** {date}"
+      }
+    },
+    "channelinfo": {
+      "description": "チャンネルの詳細と許可状態を表示する",
+      "options": {
+        "channel": "検査するチャネル"
+      },
+      "lines": {
+        "id": "**ID:** `{id}`",
+        "type": "**タイプ:** `{type}`",
+        "category": "**カテゴリ:** {category}",
+        "position": "**ポジション:** `{position}`",
+        "access": "**Murphy アクセス:** `{view}` を表示、`{send}` を送信、`{connect}` に接続",
+        "created": "**作成日:** {date}"
+      }
+    },
+    "premium": {
+      "description": "オープンなプレミアム管理",
+      "title": "Murphy Premium",
+      "options": {
+        "status": "プレミアムステータスと残りのサブスクリプション時間を表示します",
+        "plans": "利用可能なすべての Murphy プレミアム プランを比較する",
+        "benefits": "現在のプランに含まれている機能を表示する",
+        "usage": "現在のプレミアム制限と AI クレジットの使用状況を表示します",
+        "trial": "セットアップ後に 7 日間の 1 回限りのサーバー試用を開始します"
+      },
+      "supporter_badge": "Murphy サポーターバッジがアクティブです",
+      "trial": {
+        "title": "サーバープレミアムトライアル",
+        "started": "7 日間の Server Pro トライアルが有効です。正確な有効期限を確認するには、プレミアム ステータスを使用します。既存のサブスクリプションと以前のトライアルが置き換えられることはありません。",
+        "compare_plans": "Guild Basic を保持",
+        "lifecycle": {
+          "day2_title": "プレミアムトライアルは有効です",
+          "day2_body": "今すぐ、スケジュールされたバックアップと 1 つのサーバー自動化をお試しください。これらは、最も有用な Guild Basic ワークフローの 2 つです。",
+          "day5_title": "プレミアムトライアル期間は残り 2 日です",
+          "day5_body": "Guild Basic を保持するかどうかを決定する前に、サーバーの分析情報と復元された再生を確認してください。",
+          "ending_title": "プレミアムトライアルは明日終了します",
+          "ending_body": "Guild Basic は、スケジュールされたバックアップ、24 時間年中無休の再生、より高い制限、および週次サーバー レポートをアクティブに保ちます。",
+          "expired_title": "プレミアムトライアルは終了しました",
+          "expired_body": "データは安全に保たれ、無料機能も引き続き動作します。 Guild Basic の機能を復元したい場合は、いつでもアップグレードしてください。"
+        }
+      },
+      "status": {
+        "title": "プレミアムステータス",
+        "account": "個人アクセス",
+        "server": "このサーバー",
+        "free": "無料",
+        "owner": "プロジェクト所有者のアクセスは有効期限なしで有効です。",
+        "slots": "サーバースロット {used}/{max}",
+        "no_expiry": "有効期限なしでアクティブ",
+        "expired": "期限切れ",
+        "remaining": "{date} まで、残り {days} 日"
+      },
+      "inactive": {
+        "title": "プレミアムはアクティブではありません",
+        "description": "より高い制限、高度な音楽ツール、優先機能のロックを解除するには、以下のプランを選択してください。"
+      },
+      "plans": {
+        "title": "利用可能なサブスクリプション",
+        "personal": "Personal Premium、25 のプレイリスト、25 の毎日の AI リクエスト、90 日間の分析。",
+        "guild_basic": "24 時間年中無休の音楽、フィルター、5 つのコミュニティ ツールを備えた 1 サーバーのプレミアム。",
+        "guild_plus": "365 日の分析と 25 のコミュニティ ツールを備えた 3 台のサーバーのプレミアム。",
+        "supporter": "最大制限付きの 5 つのサーバーに対する Discord 限定のサポート プラン。",
+        "lifetime_title": "1 回限りの永久購入",
+        "personal_lifetime": "1 つの Discord アカウントの永久個人プレミアム (更新なし)。",
+        "guild_lifetime": "1 つの請求可能な Discord サーバーに対する永続的なギルド基本アクティベーション。",
+        "vat": "サブスクリプションは月額です。買い切りは更新されません。Discord が現地の税金を加算する場合があります。"
+      },
+      "usage": {
+        "title": "プランの使用量と制限",
+        "plan": "効果的な計画",
+        "playlists": "プレイリストとプレイリストごとのトラック",
+        "tools": "ブックマーク、リマインダー、保存されたキュー"
+      },
+      "benefits": {
+        "title": "{plan} の機能",
+        "free": "必須の再生、7 日間の分析、および無料の月間制限",
+        "adFree": "広告なしの対象となる Murphy ウェブサイト エリア",
+        "historyExport": "個人のリスニング履歴をエクスポートする",
+        "smartRadioAdvanced": "高度なスマート ラジオの推奨事項",
+        "cloudQueue": "パーソナルクラウドキューの保存と復元",
+        "scheduledBackups": "自動サーバーバックアップをスケジュールする",
+        "weeklyReports": "自動週次サーバーレポートを受信する",
+        "sharedPlaylists": "共有サーバープレイリストを使用する",
+        "analyticsExport": "分析をエクスポートして月ごとのアクティビティを比較する",
+        "advancedAutomation": "複数条件の自動化を構築する",
+        "customBranding": "サーバー側の Murphy ブランディングをカスタマイズする",
+        "betaFeatures": "他のプランよりも前にベータ版機能にアクセスする",
+        "supporterBadge": "Murphy Supporter バッジを表示",
+        "experimentalSources": "実験的な音楽ソースに早期アクセスできます",
+        "alwaysOnPlayback": "音楽をアクティブな状態に保ち、再起動後にプレーヤーを復元します",
+        "moderationHistoryExport": "拡張モデレーションのケース履歴をエクスポートする",
+        "scheduledHealthScans": "サーバーの健全性と構成のチェックをスケジュールする",
+        "creatorFeeds": "クリエイターとコンテンツフィードの更新を公開する",
+        "communityAutopilot": "地域の健康に関する自動提案とダイジェストを受け取る",
+        "modAccountability": "異常なモデレーションアクティビティを検出し、説明責任レポートを保持します",
+        "musicVenue": "スケジュールされたステーション、DJ シフト、および高度なリクエスト ポリシーを実行します。",
+        "premiumTemplates": "プレミアムサーバーセットアップと自動化テンプレートを適用する"
+      },
+      "buttons": {
+        "subscribe": "Discordで購読する",
+        "compare": "プランを比較する",
+        "manage": "管理",
+        "support": "サポートしてください"
+      }
+    },
+    "server-taste": {
+      "description": "このサーバーの音楽嗜好プロファイルを表示する"
+    },
+    "mood": {
+      "description": "ムードベースの音楽プリセットを作成する",
+      "options": {
+        "preset": "リスニングムードプリセット"
+      },
+      "open_player": "プレーヤーを開く",
+      "player_hint": "Web プレーヤーを開いてこのプリセットをキューに追加し、すべてのコントロールにアクセスします。",
+      "presets": {
+        "global-pop-night": "深夜のリスニングセッションのためのポップとラップ。",
+        "gaming": "一緒にゲームをするためのエネルギッシュな音楽。",
+        "party": "忙しい音声チャンネル向けの、おなじみの明るいトラック。",
+        "chill": "リラックスしたリスニングセッションのための静かな音楽。"
+      }
+    },
+    "radio-smart": {
+      "description": "現在のサーバーの雰囲気からスマートな無線キューを構築する",
+      "server_only": "スマート ラジオはサーバーでのみ使用できます。",
+      "open": "スマートラジオを開く",
+      "title": "スマートラジオ",
+      "vibe": "**検出された雰囲気:** {mood}",
+      "advanced_active": "アドバンスト スマート ラジオは、個人のシード、アーティスト ブロック、フィードバック学習、および拡張された推奨セットを使用してアクティブになります。",
+      "free_preview": "無料のスマート ラジオには 4 つの推奨事項が表示されます。個人は 8 つの推奨事項のロックを解除し、より強力な個人設定と履歴のエクスポートを行います。",
+      "dashboard_hint": "ダッシュボードを開いて、生成された無線キューを開始します。"
+    },
+    "recover": {
+      "description": "最後に中断されたプレミアム 24/7 プレーヤー セッションを復元します。",
+      "title": "プレイヤーの回復",
+      "messages": {
+        "restored": "回復が始まりました。 Murphy は再接続し、最後に保存されたキューを復元しています。",
+        "cancelled": "リカバリはキャンセルされました。"
+      },
+      "errors": {
+        "not_eligible": "回復にはサーバー Premium と有効な 24/7 モードが必要です。",
+        "already_active": "このサーバーにはすでにアクティブなプレーヤーまたはキューが存在します。",
+        "no_snapshot": "最近中断されたプレーヤー セッションは見つかりませんでした。"
+      },
+      "preview_title": "プレビューを復元する",
+      "preview_hint": "最後のプレミアム 24/7 プレーヤーのスナップショットを復元することを確認します。",
+      "buttons": {
+        "restore": "復元する"
+      },
+      "fields": {
+        "track": "追跡",
+        "author": "著者",
+        "position": "位置",
+        "queue": "列",
+        "snapshot_age": "スナップショット"
+      }
+    },
+    "sources": {
+      "description": "利用可能な音楽ソースとアクセス要件を表示します。",
+      "title": "音楽ソース",
+      "subtitle": "このサーバーとアカウントへのソース アクセス。",
+      "status": {
+        "available": "利用可能",
+        "premium": "プレミアム",
+        "vote": "投票する",
+        "disabled": "無効",
+        "restricted": "制限付き"
+      }
+    },
+    "diagnose": {
+      "description": "音声、権限、プレーヤー、Lavalink の状態をチェックします。",
+      "title": "音楽診断",
+      "healthy": "音楽をブロックする問題は検出されませんでした。",
+      "attention": "1 つ以上のチェックに注意が必要です。",
+      "region": "音声領域",
+      "node": "Lavalink ノード",
+      "latency": "ノードのレイテンシー",
+      "options": {
+        "music": "完全な音楽接続パスを確認してください。"
+      },
+      "checks": {
+        "voice": "あなたの音声チャンネル",
+        "connect_permission": "接続許可",
+        "speak_permission": "発言許可",
+        "lavalink": "Lavalink の稼働状況",
+        "player": "ギルドプレイヤー",
+        "same_channel": "プレイヤーボイスチャンネル",
+        "recent_errors": "最近の Lavalink エラー"
+      },
+      "details": {
+        "not_in_voice": "まずは音声チャンネルに参加してください",
+        "granted": "付与された",
+        "missing": "ない",
+        "disconnected": "切断された",
+        "active": "アクティブ",
+        "no_player": "アクティブなプレイヤーがいない",
+        "not_applicable": "適用できない",
+        "none": "なし",
+        "automatic": "自動"
+      }
+    },
+    "onboarding": {
+      "description": "安全なサーバー構成ウィザードを開きます。",
+      "title": "サーバーセットアップウィザード",
+      "intro": "プリセットを選択します。何かを保存する前に、変更されたすべての設定が表示されます。",
+      "safe_note": "チャネル ID、役割、言語、および既存のチケット設定が上書きされることはありません。",
+      "placeholder": "サーバーのプリセットを選択する",
+      "preview_title": "構成のプレビュー",
+      "confirm_note": "上記のすべての値を確認した後でのみ適用してください。",
+      "apply": "プリセットを適用する",
+      "cancel": "キャンセル",
+      "cancelled": "設定は変更されませんでした。",
+      "wrong_owner": "このセットアップ パネルは別の管理者に属します。",
+      "applied_title": "セットアップが完了しました",
+      "applied": "プリセットはアトミックに適用されました。ダッシュボードまたは /settings で各モジュールを調整できます。",
+      "presets": {
+        "community": {
+          "name": "コミュニティ",
+          "description": "バランスのとれたモデレーション、経済性、アナウンスと翻訳。"
+        },
+        "music": {
+          "name": "音楽",
+          "description": "音楽コントロール、自動再生、アナウンス、翻訳。"
+        },
+        "gaming": {
+          "name": "ゲーム",
+          "description": "経済、スパム対策、ギャンブル、コミュニティ機能。"
+        },
+        "support": {
+          "name": "サポート",
+          "description": "スパム対策、リンク保護、アナウンスと翻訳。"
+        },
+        "minimal": {
+          "name": "最小限",
+          "description": "オプションのシステムを無効にし、コアボットのみを保持します。"
+        }
+      }
+    },
+    "community": {
+      "description": "コミュニティのプロフィール、評判、提案、イベント、フォーム、バックアップ。",
+      "not_found": "要求されたアイテムが見つかりませんでした。",
+      "options": {
+        "profile": "完全なコミュニティ プロフィールを表示します。",
+        "user": "ユーザーを選択します。",
+        "reputation": "メンバーに毎日の評判を与えます。",
+        "reason": "オプションの理由。",
+        "favorite_track": "現在再生中のトラックをお気に入りとして設定します。",
+        "suggest": "サーバーの提案を作成します。",
+        "suggestions": "最近のサーバーの提案をリストします。",
+        "suggestion_status": "提案ステータスを更新します。",
+        "title": "タイトル。",
+        "content": "詳細な内容。",
+        "id": "数値のアイテム ID。",
+        "status": "新しいステータス。",
+        "comment": "スタッフのコメント（オプション）。",
+        "event_create": "コミュニティイベントを作成します。",
+        "event_description": "イベントの説明。",
+        "starts": "開始日、ISO 日付、または Discord のタイムスタンプ。",
+        "capacity": "参加者の最大数、0 は無制限です。",
+        "events": "今後のイベントをリストします。",
+        "event_join": "今後のイベントに参加します。",
+        "forms": "利用可能なフォームをリストします。",
+        "form_panel": "このチャネルでフォーム パネルを公開します。",
+        "form_id": "フォームID。",
+        "backup": "サーバー構成のバックアップを作成します。",
+        "backup_name": "オプションのバックアップ名。"
+      },
+      "profile": {
+        "title": "{user} のプロフィール",
+        "reputation": "評判",
+        "badges": "バッジ",
+        "achievements": "業績",
+        "level": "レベル",
+        "balance": "財布",
+        "votes": "トップ.ggの投票",
+        "favorite_track": "お気に入りのトラック",
+        "favorite_saved": "現在のトラックがお気に入りとして表示されます。",
+        "activity": "サーバーアクティビティ",
+        "messages": "メッセージ",
+        "voice": "ボイスタイム",
+        "events": "参加したイベント",
+        "no_data": "まだデータがありません。"
+      },
+      "reputation": {
+        "title": "評判",
+        "given": "{user} に評判が与えられました。",
+        "self": "自分自身に評判を与えることはできません。",
+        "cooldown": "評判を与えることができるのは、サーバーごとに毎日 1 回だけです。"
+      },
+      "suggestions": {
+        "title": "サーバーの提案",
+        "empty": "提案は作成されていません。",
+        "status": "状態",
+        "by": "によって提案されました",
+        "updated_title": "提案が更新されました",
+        "updated": "提案 #{id} は {status} になりました。",
+        "closed": "この提案は投票を受け付けなくなりました。",
+        "changelog_title": "サーバーの提案が受け入れられました"
+      },
+      "events": {
+        "title": "コミュニティイベント",
+        "empty": "今後のイベントはありません。",
+        "invalid_date": "将来の有効な日付を指定してください。",
+        "starts": "始まります",
+        "participants": "参加者",
+        "join_button": "イベントに参加する",
+        "joined": "イベントに参加しました。",
+        "waitlisted": "イベントは満席です。あなたは待機リストに追加されました。",
+        "missing": "このイベントは利用できません。",
+        "waitlisted_already": "あなたはすでに順番待ちリストに登録されています。",
+        "started_title": "イベント開始",
+        "reminder_title": "今後のイベントのリマインダー"
+      },
+      "forms": {
+        "title": "コミュニティフォーム",
+        "fields": "フィールド",
+        "empty": "利用できるフォームはありません。",
+        "panel_description": "フォームを開いて、回答を非公開で送信してください。",
+        "open_button": "フォームを開く",
+        "panel_sent": "フォームパネルを公開しました。",
+        "submit_failed": "フォームを送信できませんでした。",
+        "submitted_by": "提出者",
+        "submitted": "フォームは正常に送信されました。"
+      },
+      "backup": {
+        "title": "構成のバックアップ",
+        "created": "バックアップ バージョン {version} が作成されました。"
+      }
+    },
+    "room": {
+      "description": "一時的な音声ルームを管理します。",
+      "title": "臨時音声室",
+      "no_voice": "まずは一時的な音声ルームに参加してください。",
+      "not_temporary": "これは Murphy の一時ボイスルームではありません。",
+      "not_owner": "これを実行できるのはルーム所有者またはサーバー管理者のみです。",
+      "owner": "所有者",
+      "locked": "ロックされています",
+      "hidden": "隠れた",
+      "limit": "ユーザー制限",
+      "locked_done": "今、部屋は施錠されています。",
+      "unlocked_done": "これで部屋のロックが解除されました。",
+      "hidden_done": "現在、部屋は非表示になっています。",
+      "shown_done": "部屋が見えるようになりました。",
+      "renamed": "部屋名を更新しました。",
+      "limit_done": "ルーム利用者数制限を更新しました。",
+      "invalid_user": "別の非ボット ユーザーを選択します。",
+      "user_not_here": "そのユーザーはあなたの部屋にいる必要があります。",
+      "transferred": "部屋の所有権が譲渡されました。",
+      "allowed": "これでユーザーはルームに参加できるようになります。",
+      "blocked": "ユーザーはルームからブロックされました。",
+      "kicked": "ユーザーはルームから切断されました。",
+      "region_done": "音声リージョンは **{region}** になりました。",
+      "bitrate_done": "ルームのビットレートは **{kbps} kbps** になりました。",
+      "stats_done": "サーバー ルーム: **{rooms}** · あなたのルーム: **{owned}** · ここのメンバー: **{members}**",
+      "cleanup_done": "**{count}** の古い一時ルーム レコードを削除しました。",
+      "options": {
+        "info": "ルームの所有権とアクセスステータスを表示します。",
+        "lock": "新しいユーザーが参加できないようにします。",
+        "unlock": "ユーザーが再度参加できるようにします。",
+        "hide": "部屋をみんなから隠します。",
+        "show": "部屋を再び見えるようにします。",
+        "rename": "部屋名を変更します。",
+        "name": "新しい部屋名。",
+        "limit": "ルームのユーザー制限を設定します。",
+        "amount": "ユーザー制限。0 は無制限を意味します。",
+        "transfer": "部屋の所有権を譲渡します。",
+        "allow": "ユーザーが閲覧して参加できるようにします。",
+        "block": "ユーザーをブロックして切断します。",
+        "user": "ユーザーを選択します。",
+        "permit": "ユーザーがルームを表示して参加できるようにします。",
+        "reject": "ユーザーをブロックし、ルームから切断します。",
+        "kick": "ユーザーをブロックせずに切断します。",
+        "region": "ルームボイスの地域を設定するか、自動にリセットします。",
+        "region_value": "Discord 音声領域。自動の場合は空のままにします。",
+        "bitrate": "ルームオーディオのビットレートを設定します。",
+        "kbps": "キロビット/秒単位のビットレート。",
+        "stats": "一時的な部屋の統計を表示します。",
+        "cleanup": "古い一時的な会議室レコードを削除します。"
+      }
+    },
+    "voice": {
+      "description": "一時的な音声ルームを制御する"
+    },
+    "party": {
+      "description": "共有 Murphy リスニング パーティーを作成および管理する",
+      "title": "Murphy パーティー",
+      "options": {
+        "create": "現在のキューから 2 時間のパーティーを作成します",
+        "join": "招待コードを使用してパーティーに参加する",
+        "host": "パーティの所有権を別のメンバーに譲渡する",
+        "end": "自分が主催するパーティーを終了する",
+        "schedule": "今後 30 日以内にパーティーをスケジュールする",
+        "vote": "パーティー内のトラックに投票する",
+        "recap": "パーティーへの参加と投票結果を表示する"
+      },
+      "fields": {
+        "code": "8文字のパーティー招待コード",
+        "user": "新しいパーティー主催者",
+        "starts": "ISO 形式または Unix タイムスタンプの将来の開始日",
+        "track": "パーティーリストのトラック番号"
+      },
+      "created": "セッション `{code}`：**{count} 曲**。コードを共有して一緒に聴きましょう。",
+      "joined": "パーティ `{code}` に参加し、**{count} トラック ** をキューに登録しました。",
+      "owner_only": "現在のパーティの主催者のみがそれを行うことができます。",
+      "ended": "パーティーは終了し、招待コードは無効になりました。",
+      "host_changed": "パーティの所有権が {user} に譲渡されました。",
+      "invalid_date": "今後 30 日以内の将来の日付を入力してください。",
+      "scheduled": "パーティー `{code}` は <t:{timestamp}:F> に **{count} トラック ** でスケジュールされています。",
+      "starts_later": "このパーティは <t:{timestamp}:R> を開始します。",
+      "invalid_track": "そのトラックはこのパーティーにありません。トラックリストから番号を選択します。",
+      "voted": "トラック **{track}** への投票が保存されました。",
+      "recap_title": "パーティー概要",
+      "recap_top": "トップトラック: **{title}** · {author}",
+      "recap_no_votes": "まだ投票を受け取ったトラックはありません。"
+    },
+    "tasks": {
+      "description": "軽量チーム タスクを作成、割り当て、完了する",
+      "title": "チームのタスク",
+      "options": {
+        "create": "サーバー チームのタスクを作成する",
+        "assign": "未解決のタスクをメンバーに割り当てる",
+        "list": "開いているサーバー タスクのリストを表示します",
+        "complete": "割り当てられたタスクを完了としてマークします",
+        "due": "7 日以内に期限が切れるタスクを表示します"
+      },
+      "fields": {
+        "id": "タスク番号",
+        "title": "短いタスクのタイトル",
+        "assignee": "タスクを担当するメンバー",
+        "due": "オプションの将来の日付と時刻",
+        "description": "オプションのタスクの詳細"
+      },
+      "invalid_due": "将来の有効な日付と時刻を入力します。",
+      "created": "タスク `#{id}` が作成されました。",
+      "assigned": "タスク `#{id}` が {user} に割り当てられました。",
+      "completed": "タスク `#{id}` が完了しました。",
+      "not_found": "開いているタスクが見つからないか、完了できません。",
+      "empty": "一致するオープンタスクはありません。"
+    },
+    "incident": {
+      "description": "緊急ロックダウン、タイムライン、安全なロールバックを調整する",
+      "title": "インシデントモード",
+      "options": {
+        "start": "安全バックアップを作成し、テキスト チャネルをロックします",
+        "status": "現在のインシデントの状態を表示します",
+        "timeline": "最近のインシデントのアクションを表示",
+        "rollback": "インシデントスナップショットからチャネル権限を復元します"
+      },
+      "fields": {
+        "reason": "インシデントモードを開始した理由"
+      },
+      "status_line": "ステータス: **{status}**\n開始者: {actor}\n開始日: {time}",
+      "empty": "インシデントのアクションは記録されていません。",
+      "result": "インシデント アクション **{action}** が完了しました: **{changed}** チャネルが変更され、**{failed}** が失敗しました。"
+    },
+    "calendar": {
+      "description": "サーバー イベント、タイムゾーン、可用性、ICS エクスポートを管理する",
+      "title": "サーバーカレンダー",
+      "options": {
+        "birthday": "誕生日を月-日として保存します",
+        "timezone": "IANA タイムゾーンを保存する",
+        "availability": "短い可用性メモを保存します",
+        "event": "自動リマインダーを使用してサーバー イベントを作成する",
+        "ics": "今後のイベントを ICS カレンダーとしてエクスポート",
+        "sync": "カレンダー アプリにインポートできる ICS ファイルを作成します"
+      },
+      "fields": {
+        "date": "MM-DD 形式の誕生日",
+        "timezone": "IANA タイムゾーン (Europe/Warsaw など)",
+        "availability": "通常対応可能なとき",
+        "title": "イベントタイトル",
+        "starts": "将来の ISO 日付と時刻",
+        "description": "オプションのイベントの詳細"
+      },
+      "invalid_birthday": "MM-DD 形式を使用します (例: `08-21`)。",
+      "invalid_timezone": "有効な IANA タイムゾーンを入力します (例: `Europe/Warsaw`)。",
+      "saved": "カレンダーの設定が保存されました。",
+      "event_created": "イベント `#{id}` が <t:{timestamp}:F> に対して作成されました。",
+      "ics_ready": "**{count}** の今後のイベントをエクスポートしました。",
+      "sync_ready": "この更新された ICS ファイルを Google カレンダー、Apple カレンダー、または Outlook にインポートするか、購読します。 **{count}** の今後のイベントが含まれています。"
+    },
+    "forum": {
+      "description": "Discord フォーラムのスレッドを解決、タグ付け、アーカイブ、要約します",
+      "title": "フォーラム ツール",
+      "options": {
+        "solve": "現在のフォーラムのスレッドを解決済みとしてマークし、アーカイブします",
+        "tag": "既存のフォーラム タグを現在のスレッドに適用します",
+        "archive": "現在のフォーラムのスレッドをアーカイブします",
+        "digest": "現在のフォーラムのアクティブなスレッドを一覧表示します",
+        "faq": "再利用可能な FAQ 投稿をフォーラムに公開する"
+      },
+      "fields": {
+        "tag": "既存のフォーラム タグの正確な名前",
+        "forum": "FAQ が公開されるフォーラム チャネル",
+        "title": "FAQ の質問またはタイトル",
+        "answer": "承認済み FAQ の回答"
+      },
+      "not_forum": "このコマンドは、フォーラム チャネルまたはそのスレッドの 1 つで実行します。",
+      "thread_required": "このアクションはフォーラムのスレッド内で実行します。",
+      "empty": "このフォーラムにはアクティブなスレッドがありません。",
+      "tag_missing": "そのタグは親フォーラムに存在しません。",
+      "tagged": "**{tag}** タグを適用しました。",
+      "solved": "スレッドは解決済みとしてマークされ、アーカイブされました。",
+      "archived": "スレッドはアーカイブされました。",
+      "faq_created": "{thread} に公開された FAQ。"
+    },
+    "invites": {
+      "description": "招待、保持、報酬、不審な参加を追跡します",
+      "title": "招待追跡",
+      "options": {
+        "me": "招待の統計を表示します",
+        "user": "別のメンバーの招待統計を表示します",
+        "leaderboard": "サーバー招待リーダーボードを表示します",
+        "history": "招待者に起因する最近のメンバーを表示する",
+        "rewards": "設定された招待マイルストーン報酬を表示します",
+        "fraud": "疑わしいまたは低品質の招待アクティビティを確認する",
+        "settings": "招待の追跡とマイルストーンの役割を構成する"
+      },
+      "fields": {
+        "user": "招待状を表示する必要があるメンバー",
+        "enabled": "ベストエフォート型の招待追跡を有効にする",
+        "reward_role": "マイルストーンに到達した後に付与された役割",
+        "threshold": "ロールに必要な保持メンバーの数"
+      },
+      "settings_saved": "追跡が更新されました。報酬: **{threshold}** が招待を保持した後、{role}。",
+      "empty": "属性付きの招待状はまだ記録されていません。",
+      "no_risk": "最近の記録では、不審な招待アクティビティは見つかりませんでした。",
+      "rewards_status": "現在のマイルストーン: **{threshold}** が招待を保持した後の {role}。",
+      "left": "残り",
+      "active": "アクティブ",
+      "user_stats": "{user} には **{active} active**、**{left} left**、**{total} total** 属性の招待状があります。",
+      "best_effort": "招待の帰属はベストエフォートです: Discord では、バニティ リンク、期限切れの招待、または同時参加の一意のコードが表示されない場合があります。"
+    },
+    "boosters": {
+      "description": "サーバーブーストの進行状況を追跡し、サポーターに報酬を与えます",
+      "title": "サーバーブースター",
+      "options": {
+        "status": "現在のブースト層と進行状況を表示します",
+        "milestones": "Discord ブースト層マイルストーンを表示",
+        "rewards": "自動ブースター報酬ロールを構成する",
+        "thanks": "自動ブースター感謝メッセージを構成する"
+      },
+      "fields": {
+        "role": "報酬の役割、または報酬を無効にする場合は省略します。",
+        "channel": "ありがとうチャンネル、またはメッセージを無効にするには省略します",
+        "message": "{user}、{server}、{boosts} をサポート"
+      },
+      "status_line": "このサーバーには **{boosts} ブースト ** があり、現在層 **{tier}** にあります。",
+      "next_tier": "{target} ブースト マイルストーンに到達するには、さらに **{remaining}** のブーストが必要です。",
+      "max_tier": "サーバーは最高の標準ブースト マイルストーンに到達しました。",
+      "milestone_two": "**2 ブースト — Tier 1:** のオーディオの向上、絵文字スロットの増加、サーバーの背景。",
+      "milestone_seven": "**7 のブースト — Tier 2:** の高音質、大規模なアップロード、およびより多くのカスタマイズ。",
+      "milestone_fourteen": "**14 ブースト — 階層 3:** の最大オーディオ品質、最大のアップロード、および完全なブースト機能セット。",
+      "reward_saved": "新しいブースターは自動的に {role} を受け取ります。",
+      "reward_disabled": "自動ブースター報酬ロールが無効になりました。",
+      "thanks_saved": "新しいブーストは {channel} で自動的に感謝されます。",
+      "thanks_disabled": "自動ブースター感謝メッセージが無効になりました。"
+    },
+    "applications": {
+      "description": "構造化サーバー アプリケーションの作成、公開、レビュー",
+      "title": "アプリケーション",
+      "options": {
+        "create": "申請フォームの作成と宛先の確認",
+        "publish": "このチャネルでアプリケーション パネルを公開します",
+        "apply": "アプリケーションを非公開で開く",
+        "review": "保留中のアプリケーションのリストを表示します",
+        "approve": "アプリケーションを承認し、必要に応じてそのロールを付与します",
+        "reject": "申請を拒否する",
+        "stats": "アプリケーション パイプライン統計の表示",
+        "export": "アプリケーション レコードを JSON としてエクスポートします"
+      },
+      "fields": {
+        "form_id": "専用申請フォーム ID",
+        "name": "アプリケーション名",
+        "question": "最初のアプリケーションの質問",
+        "results": "プライベート チャネル受信アプリケーション",
+        "approval_role": "承認後に付与されるオプションのロール",
+        "submission": "申請提出番号",
+        "note": "申請者に送信されるオプションの審査員メモ"
+      },
+      "default_description": "以下の申し込みを完了してください。あなたの回答は、設定されたレビュー チームとのみ共有されます。",
+      "created": "申請書 `{id}` が作成されました。公開するには `/applications publish` を使用してください。",
+      "published": "アプリケーション パネルがこのチャンネルで公開されました。",
+      "apply_button": "設定を適用する",
+      "not_found": "要求されたアプリケーションまたは保留中の送信が見つかりませんでした。",
+      "empty": "一致する申請の提出はありません。",
+      "reviewed": "アプリケーション `#{id}` は **{status}** になりました。",
+      "accepted": "**{server}** での申請が受理されました。査読者メモ: {note}",
+      "rejected": "**{server}** での申請は拒否されました。査読者メモ: {note}",
+      "exported": "{count} アプリケーション レコードをエクスポートしました。"
+    },
+    "verification_command": {
+      "description": "検証を構成し、パネルをテストし、新しいメンバーを保護します",
+      "title": "検証",
+      "options": {
+        "setup": "検証チャネルと検証済みのロールを構成する",
+        "status": "現在の検証構成を表示します",
+        "test": "検証パネルを検証して更新します",
+        "disable": "検証を無効にしてパネルを削除します",
+        "quarantine": "検証前に割り当てられたロールを設定またはクリアします"
+      },
+      "fields": {
+        "channel": "検証パネルが公開されているチャンネル",
+        "role": "検証が成功した後に付与されたロール",
+        "quarantine_role": "検証が成功するまで割り当てられるオプションのロール"
+      },
+      "role_too_high": "確認済みのロールを Murphy ボット ロールの下に移動して、再試行してください。",
+      "configured": "{channel} で検証がアクティブです。成功したメンバーは {role} を受け取ります。",
+      "disabled": "検証が無効になり、アクティブなパネルが削除されました。",
+      "quarantine_set": "新しいメンバーは確認するまで {role} を受け取ります。",
+      "quarantine_cleared": "事前検証隔離ロールがクリアされました。",
+      "test_ok": "構成は有効であり、検証パネルは最新です。",
+      "status_line": "ステータス: **{status}**\nチャンネル: {channel}\n確認された役割: {role}",
+      "not_found": "既存のチャネルとロールを選択して、再試行してください。"
+    },
+    "server_migration": {
+      "description": "Murphy サーバー構成をバックアップ、比較し、安全に移行します",
+      "title": "サーバー構成の移行",
+      "options": {
+        "clone": "ポータブル構成スナップショットの作成",
+        "diff": "別のサーバーに対する変更をプレビューする",
+        "migrate": "設定を別のサーバーに安全にコピーします",
+        "rollback": "このサーバーをバックアップ バージョンから復元します"
+      },
+      "fields": {
+        "target": "ターゲット サーバー ID (サーバーの管理もある)",
+        "version": "復元するバックアップ バージョン",
+        "confirm_migrate": "「MIGRATE」と入力して、サーバー間のコピーを確認します。",
+        "confirm_restore": "「RESTORE」と入力してロールバックを確認します"
+      },
+      "cloned": "ポータブル バックアップ **v{version}** が作成されました。チェックサム: `{checksum}…`",
+      "premium_required": "サーバー間の比較と移行には Guild Plus が必要です。ポータブル バックアップとローカル ロールバックは引き続き利用できます。",
+      "same_server": "別のターゲット サーバーを選択してください。",
+      "target_denied": "Murphy は、そこにインストールされていること、およびターゲットに管理サーバーがあることを確認できませんでした。",
+      "diff": "移行により、**{count}** 構成セクションが変更されます。",
+      "no_diff": "ターゲットはすでにソース構成と一致しています。",
+      "confirm": "移行はキャンセルされました。確認フィールドに「`MIGRATE`」と正確に入力します。",
+      "migrated": "構成はサーバー `{target}` に安全に移行されました ({count} のセクションが変更されました)。ターゲットのロールバック バックアップが最初に作成されました。チェックサム: `{checksum}…`",
+      "rolled_back": "このサーバーはバックアップ **v{version}** から復元されました。"
+    },
+    "source": {
+      "description": "デフォルトの音楽検索プラットフォームを選択します。",
+      "platform": "デフォルトの検索プラットフォーム",
+      "invalid": "リストからプラットフォームを選択します。",
+      "saved": "保存されたデフォルトのソース: {source}。可用性はノードとプランによって異なります。"
+    },
+    "filter": {
+      "description": "音声エフェクトを適用、または通常の再生に戻す。",
+      "invalid": "一覧からフィルターを選んでください。",
+      "requested": "フィルター変更を要求しました：{preset}。プリセットは以前のフィルターを置き換えます。",
+      "options": {
+        "bass": "低音を強調する。",
+        "treblebass": "高音と低音を強調する。",
+        "nightcore": "再生速度と音程を上げる。",
+        "vaporwave": "再生速度と音程を下げる。",
+        "pop": "ポップ向けイコライザーを適用する。",
+        "soft": "穏やかなローパスフィルターを適用する。",
+        "karaoke": "ボーカルを弱める。効果は曲によって異なります。",
+        "reset": "すべての音声フィルターを解除する。",
+        "treble": "高音域を強調する。"
+      }
+    },
+    "game2048": {
+      "description": "2048で遊ぶ",
+      "score": "スコア",
+      "over": "ゲーム終了"
+    },
+    "social": {
+      "kiss": "キス",
+      "hug": "ハグ",
+      "cuddle": "寄り添う",
+      "pat": "頭をなでる",
+      "slap": "冗談のビンタ",
+      "highfive": "ハイタッチ",
+      "wave": "手を振る",
+      "kill": "架空のノックアウト",
+      "nuke": "このサーバーを破壊",
+      "unchanged": "サーバーは変更されていません。",
+      "clap": "拍手",
+      "dance": "ダンス",
+      "blush": "赤面",
+      "poke": "つんつん",
+      "tickle": "くすぐり",
+      "spank": "お尻ペンペン",
+      "boop": "ブープ",
+      "nuzzle": "すりすり",
+      "pinch": "つねる",
+      "snowball": "雪玉",
+      "pillow": "枕投げ",
+      "tackle": "タックル",
+      "squish": "ほっぺむにゅ"
+    },
+    "tools": {
+      "banner": "ユーザーバナー",
+      "charinfo": "Unicode文字の詳細",
+      "commands": "コマンド一覧を開く",
+      "hash": "テキストのハッシュ値を計算",
+      "timediff": "2つのDiscord IDの作成日時を比較",
+      "randomhex": "ランダムな色を生成",
+      "serverbanner": "サーバーバナーを表示",
+      "memberbanner": "メンバーのサーバーバナーを表示"
+    },
+    "membercount": {
+      "title": "メンバー数",
+      "people": "ユーザー",
+      "bots": "ボット"
+    },
+    "firstmessage": {
+      "title": "最初のメッセージ",
+      "empty": "メッセージが見つかりません。"
+    },
+    "start": {
+      "description": "音楽、報酬、サーバー設定の使い方を確認します。",
+      "title": "Murphy を使い始める"
+    },
+    "collect": {
+      "description": "受け取り可能なデイリー・ウィークリー・マンスリー報酬をまとめて受け取ります。",
+      "title": "あなたの報酬"
+    },
+    "deploy": {
+      "description": "スラッシュ コマンドを Discord に発行します。",
+      "dm_notice": "ダイレクトメッセージを確認してください。",
+      "title": "パブリッシュコマンド",
+      "choose_scope": "スラッシュ コマンドを公開する場所を選択します。",
+      "global_button": "世界中に公開",
+      "guild_button": "サーバーに公開",
+      "dm_error": "ダイレクト メッセージを送信できませんでした。ダイレクト メッセージを有効にして、もう一度お試しください。",
+      "scope_global": "グローバル",
+      "scope_guild": "からサーバー `{id}`",
+      "loading": "コマンドの公開 {scope}…",
+      "success_title": "コマンドが公開されました",
+      "success_guild": "コマンドはサーバー `{id}` に発行されました。",
+      "success_global": "コマンドはグローバルに公開されています。 Discord の更新には最大 1 時間かかる場合があります。",
+      "failed_title": "パブリケーションに失敗しました",
+      "rejected": "Discord が更新を拒否したか、要求がタイムアウトしました。"
+    },
+    "restart": {
+      "description": "ボットを再起動します。",
+      "button": "再起動の確認",
+      "confirm": "### ボットを再起動します\n**{name}**を再起動しますか?",
+      "running": "ボットを再起動しています…",
+      "failed": "ボットを再起動できませんでした。",
+      "cancelled": "再起動がキャンセルされました。"
+    },
+    "shutdown": {
+      "description": "ボットをシャットダウンします。",
+      "button": "シャットダウンの確認",
+      "confirm": "### ボットをシャットダウンします\n**{name}**をシャットダウンしますか?",
+      "running": "ボットをシャットダウンしています…",
+      "failed": "ボットをシャットダウンできませんでした。",
+      "cancelled": "シャットダウンがキャンセルされました。"
+    },
+    "destroyinvites": {
+      "description": "Delete サーバー上のボットによって作成された招待リンク。",
+      "deleted": "ボットによって作成された {count} の招待リンクを削除しました。",
+      "failed": "delete リンクを招待できませんでした。"
+    },
+    "guildlist": {
+      "description": "ボットを使用するサーバーをリストします。",
+      "title": "サーバーリスト",
+      "row": "- **{name}** (`{id}`) — メンバー: `{humans}` · ボット: `{bots}`",
+      "total": "**合計:** `{count}`",
+      "empty": "サーバーが見つかりません。",
+      "shown": "-# {shown}/{total} サーバーを表示しています。"
+    },
+    "changelog_send": {
+      "description": "変更履歴リリースをチャネルに公開します。",
+      "usage": "`changelog-send <channel> <version>` を使用します。",
+      "sent": "**v{version}** を <#{channel}> に 4 つの個別のパネルとして公開しました。",
+      "failed": "変更ログを公開できませんでした。"
+    },
+    "blend": {
+      "description": "ボイスチャンネルにいる全員の音楽の好みを一つのキューにまとめます",
+      "title": "ブレンド",
+      "mixed_from": "ミックス元",
+      "queued": "キューに {count} 曲を追加しました。みんなのお気に入りを順番に再生します。",
+      "empty": "このチャンネルにはまだ再生履歴のある人がいません。まず何曲か再生してください。",
+      "from_dashboard": "{user} がダッシュボードから開始しました。"
+    },
+    "time_machine": {
+      "description": "このサーバーが1週間前、1か月前、1年前に聴いていた曲を再生します",
+      "options": {
+        "period": "どれくらい前まで戻るか"
+      },
+      "title": "タイムマシン",
+      "queued": "{date} に戻ります。キューに {count} 曲を追加しました。",
+      "empty": "このサーバーには {date} 前後の再生履歴がありません。"
+    },
+    "sleep": {
+      "description": "しばらくしたら音楽を止めます。最後の1分で少しずつ音量を下げます",
+      "options": {
+        "minutes": "停止までの分数（0 で取り消し）"
+      },
+      "title": "スリープタイマー",
+      "set": "音楽は徐々に小さくなり、{time} に停止します。",
+      "cancelled": "スリープタイマーを取り消しました。",
+      "none": "取り消すタイマーはありません。",
+      "invalid": "0〜480 分で指定してください。"
+    },
+    "quiz": {
+      "description": "曲当てクイズ：このサーバーの再生履歴から出題します",
+      "options": {
+        "rounds": "ラウンド数（3〜10）"
+      },
+      "title": "音楽クイズ",
+      "round": "第 {round} ラウンド / 全 {total} ラウンド。流れている曲は？",
+      "hint": "{seconds} 秒以内に最初に正解した人に1ポイント。回答は1人1回です。",
+      "correct": "{user} が正解：**{title}** · {author}",
+      "nobody": "正解者なし。正解は **{title}** · {author}",
+      "wrong": "これではありません。",
+      "one_guess": "このラウンドではすでに回答しています。",
+      "results": "最終スコア",
+      "points": "{count} pt",
+      "no_scores": "今回はポイントなし。知っている曲で再挑戦しましょう。",
+      "not_enough": "クイズにはこのサーバーで再生された {count} 曲以上の異なる曲が必要です。",
+      "busy": "先に音楽を止めてください。クイズはプレーヤーを使います。"
+    },
+    "busk": {
+      "description": "路上ライブでコインを稼ぎましょう。ボイスチャンネルで聴いている人がいると報酬が増えます。",
+      "title": "路上ライブ",
+      "cooldown_title": "声を休ませましょう",
+      "cooldown": "さっきライブをしたばかりです。少し時間をおいてから戻ってきてください。",
+      "spots": {
+        "station": "駅前でカバー曲を演奏しました。",
+        "park": "公園でギターを広げました。",
+        "bridge": "夕暮れの古い橋の上で演奏しました。",
+        "market": "市場の屋台のあいだで演奏しました。",
+        "subway": "地下鉄で演奏しました。反響が味方してくれました。"
+      },
+      "live": "Murphy が **{title}** を流していて、{count} 人が足を止めて聴いてくれました。報酬 ×{multiplier}。",
+      "solo_hint": "Murphy がボイスチャンネルで流れているあいだに演奏すると、一緒に聴いている人が観客になります。"
+    },
+    "tip": {
+      "description": "再生中の曲を追加した人にチップを渡します",
+      "options": {
+        "amount": "渡すコインの数"
+      },
+      "title": "チップを送りました",
+      "failed_title": "チップは送られませんでした",
+      "nothing": "何も再生されていないので、チップを渡す相手がいません。",
+      "no_dj": "この曲を追加した人がいないので、チップを渡す相手がいません。",
+      "self": "この曲を追加したのはあなた自身です。",
+      "sent": "{user} に **{track}** のチップとして **{amount}** コインを渡しました。"
+    },
+    "music_ban": {
+      "description": "メンバーの音楽操作を禁止します",
+      "options": {
+        "action": "音楽禁止の追加・解除・一覧",
+        "user": "禁止するメンバー"
+      },
+      "title": "音楽禁止",
+      "empty": "音楽操作を禁止されている人はいません。",
+      "invalid_target": "自分自身、ボット、サーバー管理者は禁止できません。",
+      "already": "{user} はすでに音楽操作を禁止されています。",
+      "added": "{user} はこのサーバーで音楽を操作できなくなりました。",
+      "not_banned": "{user} は音楽操作を禁止されていません。",
+      "removed": "{user} は再び音楽を操作できます。",
+      "blocked": "モデレーターがこのサーバーでのあなたの音楽操作をオフにしました。"
+    },
+    "voicekick": {
+      "description": "メンバーをボイスチャンネルから切断します",
+      "options": {
+        "user": "切断するメンバー"
+      },
+      "title": "ボイス切断",
+      "not_in_voice": "そのメンバーはボイスチャンネルにいません。",
+      "not_allowed": "そのメンバーを切断できません。ロールの順序と、私の「メンバーを移動」権限を確認してください。",
+      "done": "{user} を {channel} から切断しました。"
+    },
+    "duet": {
+      "description": "2人の音楽の好みがどれくらい合うかを見ます",
+      "options": {
+        "user": "1人目",
+        "user2": "2人目(省略時はあなた)"
+      },
+      "title": "音楽の相性",
+      "not_enough": "{user} はこのサーバーでまだ十分に音楽を聴いていません。",
+      "verdict": {
+        "0": "まったく違う世界。おすすめを教え合うのにぴったりです。",
+        "1": "少し共通点があって、発見もたくさんありそうです。",
+        "2": "なかなかの相性。イヤホンを半分こできそうです。",
+        "3": "とても近い好み。一緒に blend を始めましょう。",
+        "4": "音楽の双子です。"
+      },
+      "shared": "**2人とも聴いている** {artists}",
+      "no_shared": "共通のアーティストはまだいません。",
+      "shared_track": "**2人の曲** {title} · {author}",
+      "blend_hint": "一緒にボイスチャンネルに入って /music blend を使うと、2人のお気に入りを1つのキューにできます。"
+    },
+    "vibe": {
+      "description": "このサーバーでの誰かの音楽の個性を表示します",
+      "options": {
+        "user": "誰の雰囲気を見るか(省略時はあなた)"
+      },
+      "title": "{user} の雰囲気",
+      "style": {
+        "explorer": "探検家 · 同じアーティストをほとんど繰り返さない",
+        "loyal": "一途なファン · いつも同じアーティストに戻ってくる",
+        "balanced": "バランス型 · お気に入りと新しい発見をミックス"
+      },
+      "top_artists": "**よく聴くアーティスト** {artists}",
+      "anthem": "**テーマ曲** {title} · {author} ({plays}回)",
+      "time": {
+        "night": "夜型: 深夜0時から6時にいちばん聴いています (UTC)。",
+        "morning": "朝型: 朝にいちばん聴いています (UTC)。",
+        "afternoon": "昼型: 12時から18時にいちばん聴いています (UTC)。",
+        "evening": "夕方型: 18時以降にいちばん聴いています (UTC)。"
+      },
+      "plays": "このサーバーでの {plays} 回の再生にもとづいています。"
+    },
+    "freegames": {
+      "title": "無料ゲーム",
+      "description": "ストアが永久無料で配るゲームをチャンネルに投稿",
+      "server_only": "無料ゲーム通知はサーバーごとに設定します。サーバーで使ってね。",
+      "disabled": "無料ゲーム通知はオフです。`/freegames setup` でまたオンにできます。",
+      "test_sent": "テストを送信しました。チャンネルを確認してね。",
+      "test_no_channel": "まず `/freegames setup` でチャンネルを選んでね。",
+      "test_no_offer": "今は無料ゲームがありません。あとでまた試してね。",
+      "test_failed": "そこに投稿できません。チャンネルの閲覧、メッセージ送信、ファイル添付、埋め込みリンクの権限を確認してね。",
+      "now_title": "今なら永久無料",
+      "now_lead": "ストアのキャンペーンのみ：受け取ればライブラリに残ります。キー配布や抽選はなし。",
+      "none": "今は無料のものがありません。ストアは木曜日に新作を追加することが多いです。",
+      "kind_game": "ゲーム",
+      "kind_dlc": "DLC",
+      "free": "無料",
+      "ends": "{time}に終了",
+      "starts": "{time}から無料",
+      "keep": "永久無料",
+      "next_title": "次の予定",
+      "all": "すべての無料ゲーム",
+      "dashboard": "ダッシュボードで設定",
+      "footer": "Murphy Free Games · themurphybot.com",
+      "pick_channel": "私が投稿できるテキストかお知らせチャンネルを選んでね。",
+      "setup_done": "完了！新しい無料ゲームは {channel} に届きます。",
+      "setup_role": "新しいゲームごとに {role} をメンションします。",
+      "setup_next": "ストアやプラットフォームなどはダッシュボードで選べます。これから無料になったゲームだけ投稿するので、チャンネルが埋まりません。",
+      "premium_hint": "Premiumならコンソールとモバイル、DLC、毎日のまとめ、Epicの予告、各ゲームのスレッドが追加されます。",
+      "premium_on": "Premium：コンソール、モバイル、DLC、毎日のまとめ、予告が使えます。",
+      "not_configured": "無料ゲーム通知はまだ設定されていません。`/freegames setup` から始めてね。",
+      "on": "オン",
+      "off": "オフ",
+      "paused": "一時停止：チャンネルにアクセスできなくなりました。権限を直したら設定を保存し直してね。",
+      "platforms": "プラットフォーム",
+      "kinds": "種類",
+      "delivery": "配信",
+      "delivery_instant": "無料になったらすぐ",
+      "delivery_daily": "毎日{hour}にまとめて1回",
+      "new_title": "新しい無料ゲーム",
+      "upcoming_title": "まもなく無料",
+      "test_note": "ダッシュボードからのテストメッセージ",
+      "claim": "無料で入手",
+      "view": "ストアで見る",
+      "digest_title": "新しい無料ゲーム{count}本",
+      "digest_lead": "今日ストアが永久無料にしたゲームのまとめ。",
+      "kind_deal": "セール",
+      "kind_release": "新作ゲーム",
+      "kind_release_dlc": "新作DLC",
+      "free_to_play": "基本無料",
+      "deal_title": "大幅値下げ",
+      "release_title": "本日発売",
+      "details": "詳細とレビュー",
+      "push_sent": "無料ゲームを{count}本投稿しました。投稿済みのものはスキップしました。",
+      "push_nothing": "設定に合う無料ゲームはすでに全部チャンネルにあります。",
+      "push_cooldown": "さっき実行したばかりです。1分後にまた試してね。"
+    },
+    "nuke": {
+      "title": "NUKEプロトコル",
+      "title_done": "サーバー破壊完了",
+      "this_server": "このサーバー",
+      "target": "標的",
+      "operator": "オペレーター",
+      "auth_code": "認証コード",
+      "session": "セッション",
+      "stats": "チャンネル{channels} · ロール{roles} · メンバー{members}",
+      "countdown": "**{seconds}**秒後に起爆…",
+      "no_abort": "発射確認。もう中止できません。",
+      "step_connect": "サーバーAPIに接続中",
+      "step_bypass": "管理者権限を回避中",
+      "step_backup": "メンバー一覧をエクスポート中",
+      "step_webhooks": "Webhookを乗っ取り中",
+      "step_channels": "チャンネルを削除中",
+      "step_roles": "ロールを削除中",
+      "step_members": "メンバーをBAN中",
+      "step_audit": "監査ログを消去中",
+      "log_connect": "handshake OK · セッション {session} · {node} · 23 ms",
+      "log_bypass": "権限オーバーライド注入 · ADMINISTRATOR = true",
+      "log_backup": "{members}人のメンバーをエクスポート → dump.bin",
+      "log_webhooks": "乗っ取ったWebhook：{count}",
+      "log_channels": "DELETE /channels · {count}件削除",
+      "log_roles": "DELETE /roles · {count}件削除",
+      "log_members": "PUT /bans · {count}人BAN",
+      "log_audit": "監査ログ消去 · 痕跡削除",
+      "done_title": "作戦完了",
+      "done_summary": "チャンネル**{channels}**個とロール**{roles}**個を削除、メンバー**{members}**人をBAN。",
+      "done_time": "作戦時間：{seconds}秒",
+      "done_trace": "痕跡は残っていません。",
+      "title_premium": "NUKEプロトコル · 戦術核弾頭",
+      "arming": "弾頭を起動中。発射キーを回しました。",
+      "step_automod": "AutoModを無効化中",
+      "step_invites": "招待を取り消し中",
+      "step_emojis": "絵文字を削除中",
+      "step_icon": "サーバーアイコンを置換中",
+      "step_warhead": "第二弾頭を発射中",
+      "log_token": "トークン承認 · scope=bot applications.commands",
+      "log_automod": "AutoModルール：4件検出 · 4件無効化",
+      "log_invites": "DELETE /invites · {count}件取消",
+      "log_emojis": "DELETE /emojis · {count}件削除",
+      "log_ratelimit": "429 Too Many Requests · 1.2秒後に再試行",
+      "log_failover": "ゲートウェイリセット · バックアップノードで再接続",
+      "log_icon": "PATCH /guild · icon=skull.png",
+      "log_warhead": "第二弾頭発射 · 着弾確認",
+      "alert_automod": "AutoModが作戦を止めようとした",
+      "alert_ratelimit": "Discordのレート制限 · 再試行中",
+      "alert_failover": "接続が切れた · バックアップノードに切り替え中",
+      "done_extra": "さらに絵文字{emojis}個を削除、招待{invites}件を取り消し、Webhook{webhooks}個を乗っ取りました。",
+      "done_premium": "戦術核弾頭：クレーターは宇宙から見えます。"
+    },
+    "fun_level": {
+      "0": "かんたん",
+      "1": "ふつう",
+      "2": "激辛",
+      "premium": "Premiumボーナス：{item}",
+      "next": "次へ"
+    }
+  },
+  "premium": {
+    "upsell": {
+      "title": "Murphy プレミアムでさらにロックを解除しましょう",
+      "usage": "現在の使用量: {used}/{limit}",
+      "current": "現在のプラン: **{plan}**",
+      "unlock": "**{plan}** のロック解除: {benefit}",
+      "compare": "プランを比較する"
+    }
+  },
+  "buttons": {
+    "invite": "Murphy を招待",
+    "support": "サポートサーバー",
+    "first": "初め",
+    "previous": "前の",
+    "next": "次",
+    "last": "最後",
+    "resume": "再開する",
+    "stop": "停止",
+    "skip": "スキップ",
+    "loop": "ループ",
+    "vote": "私に投票してください！",
+    "errors": {
+      "not_author": "このボタンは使用できません。"
+    },
+    "cancel": "キャンセル"
+  },
+  "player": {
+    "errors": {
+      "no_player": "このサーバーにはアクティブな音楽プレーヤーがありません。",
+      "no_channel": "このコマンドを使用するには、音声チャネルにいる必要があります。",
+      "queue_empty": "キューは空です。",
+      "no_previous": "キューに以前の曲はありません。",
+      "no_song": "キューに曲がありません。",
+      "already_paused": "曲はすでに一時停止されています。",
+      "not_in_same_voice": "Murphy が再生しているボイスチャンネルに参加してください。",
+      "not_paused": "プレーヤーは一時停止されません。",
+      "user_not_in_voice_channel": "このコマンドを使用するには、音声チャネルにいる必要があります。",
+      "not_in_voice": "音声チャネルに接続する必要があります。",
+      "music_error_title": "音楽エラー",
+      "spotify_generated_playlist": "この Spotify が生成したプレイリストはロードできません。代わりに、通常の公開プレイリスト、アルバム、またはトラックを試してください。",
+      "lavalink_timeout": "音楽ノードの応答に時間がかかりすぎました。しばらくしてからもう一度試してください。",
+      "lavalink_unavailable": "ミュージック ノードは現在利用できません。しばらくしてからもう一度試してください。",
+      "source_unavailable": "この音楽ソースは現在このサーバーでは利用できないか無効になっています。",
+      "no_results": "プレイ可能な結果が見つかりませんでした。別のリンクまたは検索フレーズを試してください。",
+      "search_failed": "このトラックのロード中にエラーが発生しました。別のリンクまたはソースを試してください。",
+      "no_voice": "Murphy と同じボイスチャンネルに参加してから、もう一度お試しください。",
+      "different_voice": "これを使用するには、ボットと同じ音声チャネルにいる必要があります。",
+      "missing_bot_permissions": "voice/channel 権限がありません。 「接続」、「発言」、「チャンネルの表示」、「メッセージの送信」にチェックを入れます。",
+      "missing_user_permissions": "これを使用するために必要な権限がありません。",
+      "dj_required": "この音楽コントロールを使用するには、DJ アクセスが必要です。",
+      "premium_required": "この音楽機能にはプレミアム アクセスが必要です。",
+      "vote_required": "この音楽機能には、最近の Top.gg 投票またはプレミアム アクセスが必要です。"
+    },
+    "trackStart": {
+      "now_playing": "プレイ中",
+      "requested_by": "{user} によってリクエストされました",
+      "duration": "間隔",
+      "author": "著者",
+      "not_connected_to_voice_channel": "これらのボタンを使用するには、<#{channel}> に接続していません。",
+      "need_dj_role": "このコマンドを使用するには、DJ ロールが必要です。",
+      "previous_by": "前の投稿: {user}",
+      "no_previous_song": "前の曲はありません。",
+      "paused_by": "{user} によって一時停止されました",
+      "resumed_by": "{user} によって再開されました",
+      "skipped_by": "{user} によってスキップされました",
+      "no_more_songs_in_queue": "キューにはもう曲がありません。",
+      "looping_by": "{user} によるループ",
+      "looping_queue_by": "{user} によるループキュー",
+      "looping_off_by": "{user} によるループオフ"
+    },
+    "setupStart": {
+      "now_playing": "プレイ中",
+      "nothing_playing": "現在何も再生されていません。",
+      "added_to_queue": "**{title}** を再生用にキューに入れました。",
+      "added_playlist_to_queue": "[{length}] 曲をプレイリストからキューに追加しました。",
+      "duration": "間隔：",
+      "author": "著者：",
+      "requester": "リクエスト者:",
+      "up_next": "次へ",
+      "more": "もっと"
+    },
+    "fields": {
+      "duration": "間隔"
+    },
+    "requested_by": "リクエスト者",
+    "trackRecovery": {
+      "sourceUnavailable": "このステーションまたはトラックは応答を停止しました。再接続して再試行するか、別のソースを選択してください。",
+      "matchesUnavailable": "利用可能な一致を試した後、このトラックを再生できませんでした。別のバージョンまたはソースを試してください。",
+      "loadFailures": "3曲連続で読み込めなかったので、キューを飛ばし続けずに停止しました。音楽ソースが今ブロックされているかもしれません。少し待ってから試すか、別のソースを選んでね。"
+    }
+  },
+  "event": {
+    "global_ban": {
+      "title": "グローバルアクセスがブロックされました",
+      "blocked": "この{target}は Murphy を利用できません。\n\n**理由:** {reason}",
+      "user": "ユーザー",
+      "server": "サーバ",
+      "expires": "有効期限が切れます"
+    },
+    "interaction": {
+      "no_permission": "{permissions} 権限がありません。",
+      "no_user_permission": "このコマンドを使用するための十分な権限がありません。",
+      "no_voice_channel": "この `{command}` コマンドを使用するには、音声チャネルに接続する必要があります。",
+      "different_voice_channel": "この `{command}` コマンドを使用するために {channel} に接続されていません。",
+      "no_music_playing": "現在何も再生されていません。",
+      "cooldown": "`{command}` コマンドを再使用する前に、{time} 秒待ってください。",
+      "vote_title": "投票が必要です",
+      "vote_button": "Top.gg に投票する",
+      "vote_message": "このコマンドは、Top.gg 投票で Murphy をサポートするユーザーのために予約されています。投票してからもう一度お試しください。"
+    },
+    "message": {
+      "no_user_permission": "このコマンドを使用するための十分な権限がありません。",
+      "no_music_playing": "現在何も再生されていません。"
+    },
+    "setupButton": {
+      "no_voice_channel_button": "このボタンを使用するには音声チャネルに接続していません。",
+      "different_voice_channel_button": "<#{channel}> に参加して、プレーヤー コントロールを使用します。",
+      "now_playing": "プレイ中",
+      "live": "ライブ",
+      "no_dj_permission": "このボタンを使用するには、DJ の役割が必要です。",
+      "volume_set": "ボリュームが {vol}% に設定されました",
+      "volume_footer": "ボリューム: {vol}%",
+      "paused": "一時停止中",
+      "resumed": "再開しました",
+      "pause_resume": "{name} 音楽。",
+      "pause_resume_footer": "{name}、作成者: {displayName}",
+      "no_music_to_skip": "スキップする音楽はありません。",
+      "skipped": "音楽をスキップしました。",
+      "stopped": "音楽を止めた。",
+      "stopped_footer": "{displayName} によって停止されました",
+      "nothing_playing": "現在何も再生されていません。",
+      "loop_set": "ループを {loop} に設定します。",
+      "loop_footer": "{displayName} によってループが {loop} に設定されました",
+      "shuffled": "キューをシャッフルしました。",
+      "no_previous_track": "前のトラックはありません。",
+      "playing_previous": "前のトラックを再生しています。",
+      "previous_footer": "{displayName} による前のトラックの再生",
+      "rewinded": "音楽を巻き戻しました。",
+      "rewind_footer": "{displayName} によって巻き戻されました",
+      "forward_limit": "曲の長さを超えて音楽を転送することはできません。",
+      "forwarded": "音楽を転送しました。",
+      "forward_footer": "{displayName} によって転送されました",
+      "no_music_playing": "このサーバーでは音楽が再生されていません。",
+      "buttons": {
+        "loop": "ループ",
+        "previous": "前の",
+        "pause": "一時停止",
+        "resume": "再開する",
+        "skip": "スキップ",
+        "shuffle": "シャッフル",
+        "forward": "+10秒",
+        "rewind": "-10秒",
+        "volume_down": "Vol -",
+        "volume_up": "ボリューム+",
+        "stop": "停止",
+        "add": "曲を追加",
+        "queue": "キュー",
+        "activity": "一緒に聴く"
+      },
+      "queue_title": "次の曲 · {count}",
+      "queue_empty": "キューに曲はありません。",
+      "activity_unavailable": "ここではアクティビティを開けません。ボイスチャンネルに参加してもう一度お試しください。"
+    }
+  },
+  "runtime": {
+    "setup": {
+      "preset_applied": "**{preset}** セットアップ プリセットがアクティブです。ダッシュボードですべての設定を微調整できます。",
+      "validation_title": "ヘルスチェックのセットアップ",
+      "player_channel": "ソングリクエストプレーヤーチャンネルが設定されました",
+      "safe_fix_applied": "安全なサーバー モデレーションのデフォルトがテスト モードで適用されました。ロールバック バックアップ: **v{version}**。",
+      "rollback_missing": "使用できるセットアップ安全バックアップがありません。",
+      "rollback_complete": "セットアップのロールバックはバックアップ **v{version}** を復元しました。",
+      "rollback_failed": "セットアップのロールバックを完了できませんでした。",
+      "perm": {
+        "view_channel": "チャンネルを見る",
+        "send_messages": "メッセージを送信",
+        "embed_links": "埋め込みリンク",
+        "connect": "接続",
+        "speak": "発言",
+        "manage_channels": "チャンネルの管理",
+        "manage_roles": "ロールの管理"
+      }
+    },
+    "color": {
+      "title": "カラーインスペクタ",
+      "invalid": "有効な 16 進数値または 3 つの RGB 数値を入力します。"
+    },
+    "snowflake": {
+      "title": "Discord ID インスペクター",
+      "invalid": "17～20桁の有効なDiscord IDを入力してください。"
+    },
+    "password": {
+      "title": "安全なパスワード",
+      "notice": "この応答は非公開です。パスワードを信頼できるパスワード マネージャーに保存します。"
+    },
+    "text_tools": {
+      "title": "テキストツール",
+      "invalid": "指定されたテキストは、この形式ではデコードできません。"
+    },
+    "common": {
+      "manage_server_required": "サーバーの管理権限が必要です。",
+      "manage_messages_required": "メッセージの管理権限が必要です。",
+      "moderate_members_required": "モデレートメンバーの許可が必要です。",
+      "enabled": "有効",
+      "disabled": "無効",
+      "active": "アクティブ",
+      "inactive": "非アクティブな",
+      "open_dashboard": "ダッシュボードを開く",
+      "none": "なし"
+    },
+    "automation": {
+      "title": "オートメーション",
+      "limit": "{plan} プランには、{limit} のアクティブなオートメーションが含まれています。この制限を増やすにはアップグレードしてください。",
+      "conditions_premium": "複数条件のオートメーションにはGuild Plusが必要です。基本的なオートメーションは条件なしで作成できます。",
+      "conditions_invalid": "条件は、最大 5 つの安全フィールド /operator/value エントリを含む JSON 配列である必要があります。",
+      "created": "オートメーション `{id}` が作成されました ({used}/{limit})。",
+      "row": "`{id}` — **{name}** — {state} — {count} が実行される",
+      "empty": "自動化が構成されていません。",
+      "toggled": "オートメーション `{id}` は {state} になりました。",
+      "not_found": "自動化が見つかりません。",
+      "completed": "自動化 `{id}` が完了しました ({count} アクション)。",
+      "failed": "自動化に失敗しました。"
+    },
+    "backup": {
+      "title": "バックアップ",
+      "created": "バックアップ **v{version}** が作成されました。チェックサム: `{checksum}…`",
+      "confirm": "復元がキャンセルされました。確認フィールドに `RESTORE` と正確に入力します。",
+      "restored": "バックアップ **v{version}** が復元されました。復元前の安全スナップショットが作成されました。",
+      "restore_failed": "バックアップが見つからないか、復元に失敗しました。",
+      "schedule_premium": "スケジュールされたバックアップには、Guild Basic またはそれ以上のギルド プランが必要です。手動バックアップは引き続き利用可能です。",
+      "interval_min": "Guild Basic には毎週のバックアップが含まれています。 Guild Plus は毎日のバックアップのロックを解除します。現在のプランの最小間隔: **{days} 日**。",
+      "scheduled": "自動バックアップ間隔: **{days} 日**。次に実行します: <t:{timestamp}:R>。",
+      "row": "**v{version}** {name} — {source} — <t:{timestamp}:R>",
+      "empty": "利用可能なバックアップはありません。",
+      "diff": "バックアップ **v{version}** は変更されます: {keys}",
+      "diff_empty": "バックアップ **v{version}** は現在のギルド構成と一致します。"
+    },
+    "events": {
+      "title": "イベント",
+      "invalid_date": "有効な将来の日付、できればタイムゾーンを含む ISO 8601 を入力します。",
+      "created": "<t:{timestamp}:F> に対してイベント **#{id}** が作成されました。",
+      "invalid_offsets": "1 つ以上の正の分オフセットを指定します。",
+      "reminders": "イベント #{id} のリマインダー: 開始 {minutes} 分前。",
+      "not_found": "イベントが見つかりません。",
+      "attendees": "**出席者 ({count})**",
+      "waitlist": "**待機リスト ({count})**"
+    },
+    "forms": {
+      "title": "フォーム",
+      "limit": "{plan} プランには、{limit} アクティブ フォームが含まれています。この制限を増やすにはアップグレードしてください。",
+      "created": "フォーム `{id}` が作成されました ({used}/{limit})。 `/community form-panel` を使用して公開します。",
+      "row": "**#{id}** `{form}` — {user} — {status}",
+      "empty": "回答が見つかりませんでした。",
+      "exported": "`{id}` の {count} 応答をエクスポートしました。"
+    },
+    "temp_voice": {
+      "title": "一時的な音声",
+      "manage_required": "セットアップにはサーバーの管理権限が必要です。",
+      "enabled": "一時的な部屋が有効になりました。 {channel} に参加してルームを作成します。"
+    },
+    "welcome": {
+      "title": "ウェルカムメッセージ",
+      "enabled": "{channel} でウェルカム メッセージが有効になりました。",
+      "not_configured": "ウェルカム メッセージはまだ設定されていません。",
+      "channel_unavailable": "設定されたウェルカム チャネルは使用できません。",
+      "test_sent": "テストは {channel} に送信されました。"
+    },
+    "bookmarks": {
+      "title": "ブックマーク",
+      "invalid_url": "有効な HTTPS URL を入力します。",
+      "https_only": "HTTPS URL のみをブックマークできます。",
+      "saved": "ブックマーク `{id}` が保存されました。",
+      "removed": "ブックマーク `{id}` が削除されました。",
+      "not_found": "ブックマークが見つかりません。",
+      "empty": "ブックマークはありません。"
+    },
+    "reminders": {
+      "title": "リマインダー",
+      "invalid_timezone": "不明な IANA タイムゾーン。例: `Europe/Warsaw`。",
+      "timezone_saved": "タイムゾーンは **{zone}** として保存されました。",
+      "invalid_duration": "期間は 10 秒から 365 日の間である必要があります。",
+      "scheduled": "リマインダー `{id}` が <t:{timestamp}:F> に予定されています。ボットが再起動されても存続します。",
+      "cancelled": "リマインダー `{id}` がキャンセルされました。",
+      "not_found": "保留中のリマインダーが見つかりません。",
+      "empty": "保留中のリマインダーはありません。"
+    },
+    "tags": {
+      "title": "サーバータグ",
+      "empty": "タグは作成されていません。",
+      "created": "タグ `{name}` が作成されました。",
+      "exists": "そのタグはすでに存在します。",
+      "not_found": "タグが見つかりません。",
+      "edit_forbidden": "タグの所有者またはモデレーターのみが編集できます。",
+      "updated": "タグ `{name}` が更新されました。"
+    },
+    "music_session": {
+      "title": "音楽セッション",
+      "start_first": "セッション招待を作成する前に再生を開始してください。",
+      "invite": "セッションコード: **`{code}`**\n有効期限は 30 分です。含まれるトラック: {count}。信頼できる人とのみ共有してください。",
+      "join_voice": "まず音声チャンネルに参加してください。",
+      "invalid": "セッションコードが無効か期限切れです。",
+      "decode_failed": "この Lavalink ノードではセッション トラックをデコードできませんでした。",
+      "joined": "セッション `{code}` に参加しました。ロードされたトラック: **{count}**。"
+    },
+    "stats": {
+      "export_upsell": "{plan} プランには {days} 日が表示されます。 Guild Plus は、CSV エクスポートと 365 日レポートのロックを解除します。",
+      "exported": "{count} 日間の分析データをエクスポートしました。",
+      "compare_upsell": "月次比較にはギルドプラスが必要です。基本的な統計はすべてのプランで引き続き利用できます。",
+      "new": "新しい",
+      "compare_title": "サーバー統計 - 月次比較",
+      "messages": "**メッセージ:** {count} ({delta})",
+      "commands": "**コマンド:** {count} ({delta})",
+      "voice_hours": "**音声時間:** {count} ({delta})",
+      "member_growth": "**メンバーの増加:** {count}",
+      "current_members": "**現在のメンバー:** {count}",
+      "joined": "**参加しました:** {count}",
+      "left": "**左:** {count}",
+      "net_growth": "**純成長率:** {count}",
+      "voice_time": "**音声時間:** {count} 時間",
+      "period": "**期間:** {days} 日",
+      "recorded_days": "**記録日:** {count}",
+      "music_dashboard": "**音楽ダッシュボード:** https://themurphybot.com/dashboard/{guildId}/stats",
+      "window": "**分析ウィンドウ:** {days} 日",
+      "music_hint": "トラック、ソース、リスニングのレポートはサーバー ダッシュボードで利用できます。",
+      "messages_plain": "**メッセージ:** {count}",
+      "commands_plain": "**コマンド:** {count}",
+      "moderation": "**モデレーションアクション:** {count}",
+      "events": "**作成されたイベント / サインアップ:** {created} / {signups}",
+      "window_recorded": "**分析ウィンドウ:** {days} 日 (記録日数: {count})",
+      "title": "サーバー統計 — {area}"
+    },
+    "audit": {
+      "title": "不審行為監査",
+      "permission": "監査ログの表示権限が必要です。",
+      "empty": "サンプリングされた監査ログには集中した高リスクのアクティビティは見つかりませんでした。"
+    },
+    "cleanup": {
+      "title": "安全なクリーンアップ監査",
+      "bots": "ボット アカウントが見つかりました: **{count}**。このコマンドは監査専用です。ボットを削除する前に統合を確認してください。",
+      "inactive": "**{count}** の低信号非アクティブ候補が見つかりました (90 日以上前に参加、オフライン、ブーストなし)。 Discord は信頼できる最終アクティブ タイムスタンプを公開しないため、メンバーは削除されませんでした。",
+      "roles": "**{count}** の空の取り外し可能なロールが見つかりました: {roles}。監査のみ。ロールは削除されませんでした。"
+    },
+    "lockdown": {
+      "title": "緊急ロックダウン",
+      "already_active": "ロックダウンはすでに有効になっています。",
+      "not_active": "ロックダウンはアクティブではありません。",
+      "result": "ロックダウン {state}。 **{changed}** チャンネルを更新しました。失敗しました: **{failed}**。"
+    },
+    "permissions": {
+      "title": "権限の診断",
+      "missing": "このコンテキストには欠落しています: {permissions}\nフルサーバースイートの再認証: {invite}",
+      "ok": "推奨されるすべてのフル サーバー スイート権限は、このチャネルで利用できます。"
+    },
+    "raid": {
+      "title": "襲撃防御",
+      "antiraid": "**アンチレイド:** {state}",
+      "lockdown": "**緊急ロックダウン:** {state}",
+      "verification": "**検証:** {state}",
+      "members": "**メンバー:** {count}",
+      "member_unavailable": "メンバーが見つからないか、Murphy ではモデレートできません。",
+      "quarantined": "{user} は **{hours}h** の間隔離されました。ケース **#{caseId}** が作成されました。"
+    },
+    "role": {
+      "title": "一括ロール",
+      "permission": "役割の管理権限が必要です。",
+      "confirm": "操作はキャンセルされました。続行するには、正確に `CONFIRM` と入力します。",
+      "uneditable": "そのロールは、統合または Murphy ロールの上で管理されます。",
+      "added": "{role} を追加しました。メンバーが変更されました: **{changed}**;失敗: **{failed}**。",
+      "removed": "{role} を削除しました。メンバーが変更されました: **{changed}**;失敗: **{failed}**。",
+      "hierarchy": "最上位のロールより下のロールのみを変更できます。全員の役割は変更できません。",
+      "busy": "このサーバーでは、ロールの一括操作がすでに実行されています。完了するまで待ちます。",
+      "limit": "この操作は {count} メンバーと一致します。制限は {limit} です。役割は変更されませんでした。より小さなグループを選択してください。",
+      "progress": "ロールを更新中: {total} メンバーの {completed} が処理されました。",
+      "jobs": {
+        "empty": "この変更を必要とするメンバーはいません。",
+        "confirm": "変更の確認",
+        "cancel": "キャンセル",
+        "previewAdd": "{role} を {count} メンバーに追加しますか?",
+        "previewRemove": "{count} メンバーから {role} を削除しますか?",
+        "expired": "確認の有効期限が切れました。変更はキューに入れられませんでした。",
+        "cancelled": "操作がキャンセルされました。",
+        "refresh": "ステータスの更新",
+        "progress": "完了: **{completed}** · 待機中: **{pending}**\n失敗: **{failed}** · キャンセル: **{cancelled}**"
+      }
+    },
+    "case": {
+      "title": "モデレーションの場合",
+      "appeal_submitted": "**#{id}** 件に対する控訴が提出されました。",
+      "appeal_conflict": "訴訟が見つからないか、すでに控訴が保留中です。",
+      "exported": "{count} 件のケースをエクスポートしました。",
+      "note_created": "プライベートモデレーションメモがケース **#{id}** として作成されました。",
+      "notes_empty": "モデレートメモが見つかりませんでした。",
+      "updated": "ケース**#{id}**が更新されました。",
+      "not_found": "ケースが見つかりません。",
+      "evidence_added": "証拠が事件 **#{id}** に追加されました。",
+      "evidence_failed": "事件が見つからないか、証拠がすでに存在するか、または 10 項目の制限に達しました。",
+      "appeal_reviewed": "**#{id}** {decision} 件に対する控訴。",
+      "pending_not_found": "保留中の異議申し立てが見つかりません。"
+    },
+    "saved_queue": {
+      "title": "保存されたキュー",
+      "limit": "保存されたキューの制限に達しました ({limit})。キューを削除するか、プレミアム プランを比較します。",
+      "no_tracks": "現在のキューには、保存できるデコード可能なトラックがありません。",
+      "saved": "**{count}** トラックを `{name}` として保存しました。",
+      "file_size": "キュー ファイルは 2 MB 以下である必要があります。",
+      "invalid_file": "無効な Murphy キュー ファイルです。",
+      "no_encoded_tracks": "ファイルには、有効なエンコードされた Lavalink トラックが含まれていません。",
+      "imported": "**{count}** トラックを `{name}` としてインポートしました。",
+      "not_found": "保存されたキューが見つかりません。",
+      "exported": "`{name}` をエクスポートしました。",
+      "join_voice": "まず音声チャンネルに参加してください。",
+      "decode_failed": "保存されたトラック ペイロードは Lavalink でデコードできなくなります。",
+      "loaded": "**`{name}` から **{count}** トラックをロードしました。**"
+    },
+    "profile": {
+      "privacy": "あなたの Murphy プロフィールは **{state}** になりました。",
+      "private": "プライベート",
+      "public": "公共",
+      "export_ready": "Murphy データのエクスポートの準備ができました。",
+      "delete_confirm": "削除がキャンセルされました。 `DELETE MY DATA` と正確に入力します。",
+      "deleted": "個人データが削除されました ({count} レコード)。支払い、モデレート、および乱用防止の記録は、必要に応じて保持されます。",
+      "is_private": "この Murphy プロフィールは非公開です。"
+    },
+    "server_taste": {
+      "guild_only": "サーバー音楽プロファイルは、Discord サーバーでのみ使用できます。",
+      "not_enough_data": "データが不十分です",
+      "title": "サーバー音楽プロファイル",
+      "tracks": "**分析されたトラック:** `{count}`",
+      "mood": "**最も一般的な気分:** {mood}",
+      "artist": "**最も人気のあるアーティスト:** {artist}",
+      "hint": "ダッシュボードを開いて、チャート、ラップ、レコメンデーション、およびサーバー音楽統計を表示します。"
+    },
+    "listening_goal": {
+      "title": "毎週のリスニング目標",
+      "saved": "毎週のリスニング目標は **{minutes} 分**に設定されています。",
+      "status": "**{minutes} / {goal} 分** ({percent}%)\n`{bar}`\n過去 7 日間に記録されたトラック: {tracks}。"
+    },
+    "recommend": {
+      "title": "同様の推奨事項",
+      "query_required": "曲を提供するか、最初に再生を開始します。",
+      "empty": "現在健全な情報源からは同様の痕跡は見つかりませんでした。"
+    },
+    "history": {
+      "exported": "最近の {count} トラックをエクスポートしました。",
+      "export_requires_premium": "履歴のエクスポートには、Personal Premium プランまたはサーバー プレミアム プランが必要です。 7 日間の履歴は引き続き利用可能です。"
+    },
+    "mood": {
+      "unknown": "未知のムードのプリセット。"
+    },
+    "calculator": {
+      "title": "電卓",
+      "invalid": "無効な式: {error}",
+      "result": "**結果:** `{result}`"
+    },
+    "timestamp": {
+      "title": "Discordのタイムスタンプ",
+      "invalid": "無効な日付です。 ISO 8601 (`2026-12-24T18:00:00+01:00` など) を使用します。"
+    },
+    "scrobble": {
+      "title": "スクロブルステータス",
+      "listenbrainz": "**ListenBrainz:** {state}",
+      "lastfm": "**Last.fm:** {state}",
+      "connected_as": "{name} として接続されています",
+      "user": "ユーザー",
+      "not_connected": "接続されていません",
+      "available": "Murphy プロファイルの統合を通じて利用可能",
+      "not_configured": "設定されていません",
+      "manage": "https://themurphybot.com/profile で統合を管理します"
+    },
+    "source_health": {
+      "title": "ライブソースの健康状態",
+      "online": "オンライン",
+      "offline": "オフライン",
+      "row": "**{node}** — {state} — ping `{ping} ms` — 再生 `{playing}/{players}`\n出典: {sources}\n最近の失敗: `{failures}`",
+      "empty": "Lavalink ノードが登録されていません。"
+    },
+    "wrapped": {
+      "guild_only": "サーバーラップはサーバーでのみ使用できます。",
+      "share_card": "シェアカード",
+      "tier": "**ティア:** {tier}",
+      "tracks": "**トラック:** `{count}`",
+      "listen_time": "**再生時間:** `{duration}`",
+      "artists": "**アーティスト:** `{count}`",
+      "top_mood": "**最高の気分:** {mood}",
+      "top_artist": "**トップアーティスト:** {artist}",
+      "top_track": "**トップトラック:** {author} - {title}",
+      "badges": "**バッジ:** {badges}"
+    },
+    "report": {
+      "staff_title": "Discord 通報",
+      "sent_title": "レポートを送信しました",
+      "category": "**カテゴリ:** {category}",
+      "priority": "**優先度:** {priority}",
+      "user": "**ユーザー:** {user}",
+      "server": "**サーバー:** {server}",
+      "attachment": "**添付ファイル:** {url}",
+      "received": "ありがとう。 Murphy チームはあなたの報告を受け取りました。",
+      "id": "**レポート ID:** `{id}`",
+      "owner_required": "これを実行できるのはボット所有者のみです。",
+      "invalid_action": "無効なレポート アクションです。",
+      "not_found": "レポートが見つかりません。",
+      "updated": "レポート `{id}` が更新されました: **{status}**。",
+      "status_reviewing": "審査中",
+      "status_fixed": "修正済み",
+      "status_rejected": "拒否されました"
+    },
+    "helpdesk": {
+      "report_problem": "問題を報告する",
+      "title": "Murphy のサポート",
+      "helper_title": "Murphy サーバー ツール",
+      "links": "以下のリンクを使用してダッシュボードを開いたり、問題を報告したり、Murphy サポートに連絡したりできます。",
+      "server_details": "サーバー固有の問題の場合は、サーバー ID と簡単な説明を含めてください。",
+      "manage": "Murphy ダッシュボードから音楽、モジュール、権限、コミュニティ ツールを管理します。",
+      "private_credentials": "管理者は、プライベート資格情報を共有せずにサーバーを構成できます。"
+    }
+  },
+  "workflows": {
+    "blueprint": {
+      "description": "安全なサーバー ブループリントを参照、プレビュー、インストール、共有、またはフォークします。",
+      "title": "コミュニティ ブループリント",
+      "options": {
+        "browse": "組み込みサーバーのブループリントを参照する",
+        "preview": "インストール前にすべての設定をプレビューする",
+        "install": "正確な確認後にブループリントをインストールします",
+        "share": "現在の構成の共有コードを作成します",
+        "fork": "共有ブループリントを新しい名前でコピーします"
+      },
+      "fields": {
+        "reference": "組み込みブループリント ID または共有コード",
+        "confirm": "「APPLY」と入力してこのブループリントをインストールします",
+        "name": "共有またはフォークされたブループリントの名前",
+        "code": "共有ブループリント コード"
+      },
+      "presets": {
+        "music_lounge": {
+          "name": "ミュージック ラウンジ",
+          "description": "共有音楽コントロール、アナウンス、翻訳対応チャット。"
+        },
+        "gaming_community": {
+          "name": "ゲーム コミュニティ",
+          "description": "ゲーム グループ向けのスパム対策、エコノミー、および一時的な音声のデフォルト。"
+        },
+        "creator_server": {
+          "name": "クリエーターサーバー",
+          "description": "クリエイター向けのアナウンス、安全性、リリースアラートのデフォルト。"
+        },
+        "support_server": {
+          "name": "サポートサーバー",
+          "description": "サポート コミュニティのチケット、スパム対策、および翻訳のデフォルト。"
+        },
+        "study_community": {
+          "name": "スタディコミュニティ",
+          "description": "経済性を妨げることなく、チャットの安全性と翻訳に重点を置きます。"
+        },
+        "radio_247": {
+          "name": "ラジオ 24 時間年中無休",
+          "description": "プレミアム AutoDJ と常時オンの音楽室のリピート保護。"
+        },
+        "event_server": {
+          "name": "イベント サーバー",
+          "description": "アナウンス、バランスの取れた安全性とイベントのエンゲージメントのデフォルト。"
+        }
+      },
+      "not_found": "そのブループリントまたは共有コードが見つかりませんでした。",
+      "premium_required": "このブループリントには、プレミアム テンプレートを含むプランが必要です。",
+      "safe_preview": "プレビューのみ: チャネル、ロール、サーバー設定は変更されていません。",
+      "shared_description": "共有 Murphy ブループリント `{code}`。",
+      "shared": "コード `{code}` で **{name}** を共有しました。",
+      "forked": "新しいコード `{code}` で **{name}** をフォークしました。",
+      "confirm_required": "確認フィールドに `APPLY` を正確に入力します。",
+      "installed": "**{name}** をインストールし、{count} の安全な Murphy 設定を適用しました。",
+      "rollback_note": "最初に安全バックアップが作成されました。バックアップ復元を使用してロールバックします。"
+    },
+    "migration": {
+      "description": "Murphy サーバーの安全な移行を検査、プレビュー、適用、またはロールバックします。",
+      "title": "サーバー構成の移行",
+      "options": {
+        "inspect": "ターゲットサーバー上で異なる構成グループを検査します",
+        "preview": "ターゲットを変更せずに正確な構成キーをプレビューします",
+        "apply": "ターゲットをバックアップし、移行を適用します",
+        "rollback": "移行前に作成されたバックアップを復元します"
+      },
+      "fields": {
+        "target": "Discord 自分が管理するサーバーの ID",
+        "confirm_apply": "「MIGRATE」と入力して移行を適用します",
+        "version": "復元するバックアップ バージョン",
+        "confirm_rollback": "「ROLLBACK」と入力してこのバックアップを復元します"
+      },
+      "groups": {
+        "automod": "Automod",
+        "tickets": "チケット",
+        "music": "音楽",
+        "language": "言語",
+        "community": "コミュニティ"
+      },
+      "premium_required": "サーバーの移行には Guild Plus 以降のプランが必要です。",
+      "same_server": "別のターゲット サーバーを選択してください。",
+      "target_denied": "ターゲット サーバーに対するサーバーの管理権限が必要です。",
+      "inspect_result": "ターゲット `{target}` は {count} 構成キーで異なります。",
+      "preview_result": "移行により {count} 構成キーが変更されます。",
+      "preview_safe": "何も変わりませんでした。適用すると、書き込み前にターゲットのバックアップが作成されます。",
+      "no_changes": "ソース構成とターゲット構成はすでに一致しています。",
+      "confirm_apply": "確認フィールドに `MIGRATE` を正確に入力します。",
+      "applied": "{count} の設定を `{target}` に移行しました。チェックサム: `{checksum}`。",
+      "rollback_available": "移行前のバックアップは、ロールバックを通じて引き続き使用できます。",
+      "confirm_rollback": "確認フィールドに `ROLLBACK` を正確に入力します。",
+      "rolled_back": "バックアップ バージョン {version} を復元しました。",
+      "rollback_failed": "ロールバックが失敗しました: {reason}"
+    },
+    "playlist": {
+      "title": "プレイリスト ワークスペース",
+      "options": {
+        "collaborate": "プレイリスト コラボレーション アクセスの付与、変更、または削除",
+        "share": "プレイリストのプライベート共有コードを作成する",
+        "fork": "共有プレイリストをライブラリにコピーします",
+        "import": "JSON または M3U プレイリスト ファイルをインポートします",
+        "export": "プレイリストを JSON または M3U としてエクスポートします"
+      },
+      "fields": {
+        "playlist": "プレイリスト名",
+        "user": "コラボレーション アクセスを受け取るユーザー",
+        "access": "閲覧者、編集者、または削除アクセス権",
+        "code": "プライベート プレイリストの共有コード",
+        "name": "インポートまたはフォークされたプレイリストの名前",
+        "file": "Discord がホストする JSON または M3U ファイル (最大 1 MB)",
+        "format": "エクスポート形式"
+      },
+      "access": {
+        "viewer": "ビューア",
+        "editor": "編集者",
+        "remove": "アクセス権の削除"
+      },
+      "collaboration_saved": "{user} から **{access}** へのアクセスを更新しました。",
+      "playlist_owner_collaboration": "プレイリストの所有者はすでに完全なアクセス権を持っています。",
+      "playlist_collaborator_limit": "このプレイリストにはすでに 25 人のコラボレーターがいます。",
+      "editor_required": "このプレイリストを変更するには、所有者または編集者のアクセス権が必要です。",
+      "not_found": "そのプレイリストが見つからないか、アクセスできません。",
+      "shared": "プレイリストはプライベート コード `{code}` で共有されています。",
+      "share_not_found": "その共有コードは無効であるか、公開されていません。",
+      "forked": "**{name}** と {count} トラックをフォークしました。",
+      "name_exists": "その名前のプレイリストはすでに存在します。",
+      "import_rejected": "ファイルが無効であるか、大きすぎるか、Discord によってホストされていません。",
+      "imported": "{count} トラックを **{name}** にインポートしました。",
+      "exported": "{count} トラックを **{name}** からエクスポートしました。"
+    },
+    "session": {
+      "options": {
+        "recap": "ポータブル ミュージック セッションの要約を表示します",
+        "history": "あなたがホストまたは参加した最近のセッションを表示します"
+      },
+      "empty": "最近ポータブル ミュージック セッションを行っていません。",
+      "history_row": "`{code}` · **{kind}** · {status} · {tracks} トラック · <t:{timestamp}:R>",
+      "kinds": {
+        "session": "セッション",
+        "party": "パーティー"
+      },
+      "statuses": {
+        "scheduled": "予定",
+        "active": "アクティブ",
+        "completed": "完了しました",
+        "cancelled": "キャンセルされました"
+      },
+      "recap_status": "ステータス: **{status}**",
+      "recap_tracks": "トラック: **{count}**",
+      "recap_participants": "参加者: **{count}**",
+      "recap_votes": "投票: **{count}**"
+    },
+    "wrapped": {
+      "title": "{user} の Murphy がラップされました",
+      "options": {
+        "monthly": "個人的な毎月のリスニングの要約を表示します",
+        "yearly": "個人的な年間リスニングの要約を表示します",
+        "share": "共有できる要約を作成します"
+      },
+      "fields": {
+        "period": "月次または年次の要約期間"
+      },
+      "periods": {
+        "monthly": "毎月",
+        "yearly": "毎年"
+      },
+      "history_limited": "プランには、要求された {requested} 日のうち {days} が表示されています。",
+      "open_profile": "音楽プロファイルを開く"
+    }
+  },
+  "context_menu": {
+    "save_message": "メッセージを保存",
+    "remind_hour": "1 時間後にリマインド",
+    "report_message": "レポートメッセージ",
+    "create_tag": "メッセージからタグを作成",
+    "case_evidence": "事件証拠として追加",
+    "view_profile": "Murphyfile を表示",
+    "moderation_history": "サーバーモデレーション履歴",
+    "responses": {
+      "server_only": "この操作はサーバー内で利用できます。",
+      "profile_title": "{user} さんの Murphy プロフィール",
+      "profile_tracks": "**リクエストされたトラック:** {count}",
+      "profile_level": "**Lレベル:** {level} · **XP:** {xp}",
+      "profile_created": "**Discordアカウント:** {timestamp}",
+      "moderation_title": "サーバーのモデレーション履歴",
+      "moderation_user_title": "サーバーモデレーション履歴 · {user}",
+      "moderation_empty": "このユーザーのサーバー モデレーション ケースは見つかりませんでした。",
+      "saved_default_title": "Discord メッセージを保存しました",
+      "saved_from": "#{channel} から",
+      "unknown_channel": "チャンネル",
+      "saved_title": "メッセージが保存されました",
+      "saved_body": "このメッセージは Murphy ブックマークで利用できるようになりました。",
+      "reminder_title": "リマインダーが作成されました",
+      "reminder_body": "このメッセージについては 1 時間以内に通知します。",
+      "reminder_delivery": "リマインダー: {url}",
+      "open_original": "オリジナルを開く",
+      "report_title": "レポートを受信しました",
+      "report_reference": "参照: `{id}`",
+      "report_body": "Murphy チームは、報告されたメッセージを確認できるようになりました。",
+      "tag_title": "タグの作成",
+      "tag_created": "タグが作成されました",
+      "tag_usage": "`/tag show name:{name}`を使用して表示します。",
+      "evidence_title": "事件証拠",
+      "evidence_attached": "ケース `#{id}` に付属。",
+      "evidence_missing": "メッセージ作成者に対してアクティブなサーバー モデレーション ケースが見つからないか、その証拠リストがいっぱいです。",
+      "open_evidence": "公開証拠",
+      "report_record_title": "Discord メッセージ レポート",
+      "report_no_text": "テキストコンテンツのないメッセージ"
+    }
+  },
+  "reports": {
+    "server": {
+      "title": "サーバー レポート — 過去 {days} 日間",
+      "commands": "使用するコマンド: **{count}**",
+      "members": "メンバー: **+{joins} / -{leaves}**",
+      "voice": "音声アクティビティ: **{hours} 時間**",
+      "moderation": "モデレーションアクション: **{count}**"
+    }
+  },
+  "alerts": {
+    "premium": {
+      "title": "Murphy 運用アラート",
+      "raid": "レイドの可能性が検出されました: **{count} が直前に参加しました**。",
+      "moderation": "異常なモデレータ アクティビティ: {moderator} が 10 分間に **{count} 件のケース**を作成しました。",
+      "configuration": "構成の健全性チェックで、**{count} に重要なボット権限が欠落している**ことが見つかりました。 `/diagnostics` を実行します。"
+    }
+  },
+  "ticket": {
+    "panel_title": "チケットを作成する",
+    "button_label": "オープンチケット",
+    "opened_title": "チケットがオープンしました",
+    "close_button": "チケットを閉じる",
+    "created": "チケットは{channel}で作成されました",
+    "closed": "チケットは{user}までにクローズされました",
+    "description": "サポートチケットシステムを管理する"
+  },
+  "announcement": {
+    "footer_info": "Murphy / `/announcements` を使用してこれらのアナウンスを無効にできます"
+  },
+  "verification": {
+    "button_label": "確認する",
+    "click_verify": "下のボタンをクリックして確認してください。",
+    "prompt": "画像に表示されたコードを入力してください。",
+    "modal_label": "検証コード",
+    "modal_title": "認証コードを入力してください",
+    "failed": "認証に失敗しました。もう一度お試しください。",
+    "success": "認証が完了しました。",
+    "already_verified": "ここでは既に認証済みです。",
+    "mode_label": "認証方式",
+    "answer_label": "答え",
+    "admin_diagnose": "認証設定を確認する",
+    "admin_reset": "メンバーの未完了の CAPTCHA をリセットする",
+    "admin_link": "サーバー認証ページのリンクを取得する"
+  },
+  "system": {
+    "maintenance": {
+      "title": "メンテナンス中",
+      "message": "Murphy は一時的に利用できません。しばらくしてからお試しください。"
+    }
+  },
+  "command_metadata": {
+    "config_automation": {
+      "001": "固有のルール ID",
+      "002": "表示名",
+      "003": "いつ実行するか",
+      "004": "メッセージの送信先",
+      "005": "{user} および {server} をサポート",
+      "006": "ルール ID",
+      "007": "新しい状態",
+      "008": "ルール ID"
+    },
+    "config_backup": {
+      "001": "バックアップ名",
+      "002": "バックアップバージョン",
+      "003": "「RESTORE」と入力して確認します",
+      "004": "間隔 (日)",
+      "005": "比較するバックアップ バージョン"
+    },
+    "config_event": {
+      "001": "イベントタイトル",
+      "002": "イベントの説明",
+      "003": "ISO 日付または JavaScript で認識される日付",
+      "004": "0 は無制限を意味します",
+      "005": "イベント ID",
+      "006": "カンマ区切りのオフセット、例: 1440,60,10",
+      "007": "イベント ID"
+    },
+    "config_forms": {
+      "001": "独自のフォーム ID",
+      "002": "フォーム名",
+      "003": "最初の質問",
+      "004": "結果チャンネル",
+      "005": "オプションのフォーム ID",
+      "006": "フォーム ID"
+    },
+    "config_tempvoice": {
+      "001": "音声チャネル ユーザーがルームを作成するために参加しています",
+      "002": "作成されたルームのカテゴリ",
+      "003": "部屋テンプレート、{user} をサポート",
+      "004": "0 は無制限を意味します",
+      "005": "新しいチャンネル名",
+      "006": "部屋の新しい所有者"
+    },
+    "config_welcome": {
+      "001": "ようこそチャンネル",
+      "002": "{user}、{username}、{server}、{count} をサポート"
+    },
+    "dev_changelogsend": {
+      "001": "リリースのお知らせを受信するチャネル",
+      "002": "公開されたセマンティック バージョン (例: 3.6.1)"
+    },
+    "dev_resolve": {
+      "001": "URL を追跡またはクエリ"
+    },
+    "economy_profile": {
+      "001": "エコノミーとリスニングのプロファイルを表示します",
+      "002": "他のユーザーがあなたのプロフィールを閲覧できるかどうかを設定します",
+      "003": "他のユーザーからプロフィールを非表示にします",
+      "004": "Murphy ユーザー データを JSON としてエクスポートします",
+      "005": "Delete あなたの個人 Murphy データ",
+      "006": "「DELETE MY DATA」と入力して確認します"
+    },
+    "info_report": {
+      "001": "レポート カテゴリ",
+      "002": "短いレポートのタイトル",
+      "003": "何が起こったのか、そして代わりに何が起こるべきなのか",
+      "004": "オプションの画像、ビデオ、または貼り付け URL"
+    },
+    "moderation_audit": {
+      "001": "最近の高リスク監査ログ アクションを検査する"
+    },
+    "moderation_case": {
+      "001": "ケース ID",
+      "002": "新しい理由",
+      "003": "HTTPS URL または証拠参照",
+      "004": "対象ユーザー",
+      "005": "サーバーモデレーションメモ",
+      "006": "対象ユーザー",
+      "007": "あなたの訴えを説明してください",
+      "008": "決断",
+      "009": "モデレーターの応答"
+    },
+    "moderation_cleanup": {
+      "001": "ボットアカウントを監査する",
+      "002": "Discord ステータスと参加年齢から非アクティブなアカウントを推定します",
+      "003": "空の取り外し可能な役割を監査する"
+    },
+    "moderation_permissions": {
+      "001": "サーバーと現在のチャネルの権限を確認してください"
+    },
+    "moderation_raid": {
+      "001": "アンチレイドステータスを表示",
+      "002": "メンバーを最大 28 日間隔離する",
+      "003": "メンバーを隔離する",
+      "004": "期間 (時間単位)",
+      "005": "理由"
+    },
+    "moderation_role": {
+      "001": "追加または削除する役割",
+      "002": "対象メンバータイプ",
+      "003": "CONFIRM と入力して一括操作を実行します"
+    },
+    "music_audio": {
+      "001": "本物の LavaDSPX 適応正規化を有効にする",
+      "002": "正規化を有効または無効にする",
+      "003": "キューに入れられたトラック間のフェード トランジションを設定する",
+      "004": "0 は無効になります。最大10秒"
+    },
+    "music_history": {
+      "001": "リスニング履歴を JSON としてエクスポート"
+    },
+    "music_listeninggoal": {
+      "001": "毎週の目標を設定する",
+      "002": "毎週のリスニング時間",
+      "003": "過去 7 日間の進行状況を表示します"
+    },
+    "music_mood": {
+      "001": "ムードプリセット"
+    },
+    "music_queuegroup": {
+      "001": "現在のキューを保存します",
+      "002": "保存されたキュー名",
+      "003": "保存されたキューをロードします",
+      "004": "保存されたキュー名",
+      "005": "保存されたキューを JSON としてエクスポートします",
+      "006": "保存されたキュー名",
+      "007": "Murphy キュー JSON ファイルをインポートします",
+      "008": "保存されたキュー名",
+      "009": "Murphy キュー JSON ファイル"
+    },
+    "music_recommend": {
+      "001": "似たトラックを探す",
+      "002": "オプションの曲またはアーティスト"
+    },
+    "music_scrobble": {
+      "001": "ListenBrainz および Last.fm の可用性を表示します"
+    },
+    "music_session": {
+      "001": "30 分間のセッション招待コードを作成する",
+      "002": "招待されたセッションをこのサーバーにコピーします",
+      "003": "8 文字のセッション コード"
+    },
+    "utility_bookmark": {
+      "001": "HTTPS または Discord メッセージ URL",
+      "002": "ブックマークのタイトル",
+      "003": "オプションのメモ",
+      "004": "ブックマーク ID"
+    },
+    "utility_calculator": {
+      "001": "数字、括弧、+ - * / % ^ を使用した式"
+    },
+    "utility_reminders": {
+      "001": "例: 30m、2h、7d",
+      "002": "リマインダーテキスト",
+      "003": "/reminders リストからのリマインダー ID",
+      "004": "例: Europe/Warsaw または America/New_York"
+    },
+    "utility_tag": {
+      "001": "タグ名",
+      "002": "タグ応答",
+      "003": "新しい応答"
+    },
+    "utility_timestamp": {
+      "001": "ISO 日付、Unix タイムスタンプ、または現在時刻が空"
+    },
+    "utility_utility": {
+      "001": "安全な数式を計算する",
+      "002": "数字、括弧、+ - * / % ^ を使用した式",
+      "003": "すべての表示スタイルで Discord タイムスタンプを作成する",
+      "004": "ISO 日付、Unix タイムスタンプ、または現時点では空です"
+    }
+  },
+  "pro_tools": {
+    "mine": "自分が追加した曲とキュー内の位置を表示します。",
+    "cleanup": "ボイスチャンネルから退出した人が追加した曲を削除します。",
+    "reverse": "キュー内の曲順を逆にします。",
+    "dedupe": "キューから重複する曲を削除します。",
+    "find": "現在のキューで曲名やアーティストを検索します。"
+  },
+  "expansion": {
+    "transactions": "最近の通貨取引を確認します。",
+    "fish_guide": "釣り装備と釣りコマンドを確認します。",
+    "remove_user": "指定したメンバーの曲をキューから削除します。",
+    "mod_check": "メンバーに対して実行できる管理操作を確認します。",
+    "dice": "2d6+3 などの形式で最大20個のサイコロを振ります。",
+    "quest_hint": "各目標の報酬は1回のみ受け取れます。/fish quests action:claim で受け取れます。",
+    "unsafe_role": "このロールは認証用に使用できません。",
+    "transaction_currency": "コイン / 宝石 / XP",
+    "transaction_limit": "最近の通貨取引を確認します。 (1-100)",
+    "queue_saved": "自分の保存済みキューを表示",
+    "queue_delete": "自分の保存済みキューを削除",
+    "remove_range": "待機中の曲を範囲指定で削除"
+  },
+  "community_tools": {
+    "convert": "計量単位を変換する",
+    "teams": "カンマ区切りの名前をランダムにチーム分けする",
+    "clock": "IANA タイムゾーンの現在時刻を表示する"
+  },
+  "tasks": {
+    "title": "タスク",
+    "description": "個人用とサーバー共有のタスクを管理します。",
+    "add": "タスクを追加",
+    "list": "タスクを表示",
+    "done": "タスクを完了にする",
+    "reopen": "タスクを未完了に戻す",
+    "remove": "タスクを削除",
+    "text": "タスクの内容",
+    "scope": "リストの公開範囲",
+    "personal": "個人用",
+    "server": "サーバー共有",
+    "empty": "タスクはまだありません。",
+    "limit": "このリストには{limit}件まで登録できます。追加するにはタスクを削除してください。",
+    "not_found": "タスクが見つからないか、すでに指定の状態です。",
+    "updated": "タスクリストを更新しました。",
+    "id": "ID",
+    "edit": "タスクを編集",
+    "clear_completed": "完了したタスクを削除"
+  },
+  "games": {
+    "description": "Memoryで遊ぶか、友達に対戦を挑もう。",
+    "memory": "2枚ずつカードをめくり、8組のペアを見つけよう。",
+    "duel": "グー・チョキ・パーを選ぼう。両者の選択は同時に公開されます。",
+    "invalid": "このサーバーにいる、自分以外のボットではないメンバーを選んでください。",
+    "tictactoe": "他のメンバーと三目並べで対戦しよう。",
+    "connect4": "相手より先に4個のコマを一列に並べよう。",
+    "tictactoe_title": "三目並べ",
+    "connect4_title": "4 つ連続"
+  },
+  "vault": {
+    "title": "貯金目標",
+    "create": "目標を作成",
+    "rename": "目標の名前を変更",
+    "target": "目標金額を変更",
+    "delete": "空の目標を削除",
+    "export": "目標をエクスポート",
+    "name": "目標の名前",
+    "empty": "貯金目標はまだありません。",
+    "updated": "貯金を更新しました。",
+    "failed": "ID、金額、残高を確認してください。削除する前に全額を引き出してください。",
+    "limit": "目標の上限：{limit}件。",
+    "deposit": "財布のコインを目標に入金",
+    "withdraw": "目標のコインを財布に戻す"
+  },
+  "progress": {
+    "farm": "農場",
+    "workshop": "工房",
+    "updated": "保存しました。",
+    "empty": "まだ何もありません。",
+    "confirm": "確認",
+    "name": "名前",
+    "actions": {
+      "status": "状態",
+      "plots": "畑",
+      "seeds": "種",
+      "market": "市場",
+      "inventory": "倉庫",
+      "collection": "コレクション",
+      "records": "実績",
+      "history": "履歴",
+      "guide": "ガイド",
+      "buy-seeds": "種を購入",
+      "plant": "種をまく",
+      "water": "水をやる",
+      "fertilize": "肥料を使う",
+      "harvest": "収穫",
+      "harvest-all": "すべて収穫",
+      "sell": "売却",
+      "sell-all": "すべて売却",
+      "expand": "拡張",
+      "upgrade": "アップグレード",
+      "compost": "堆肥化",
+      "buy-fertilizer": "肥料を購入",
+      "rename": "名前を変更",
+      "select": "選択",
+      "reset-plot": "畑を空にする",
+      "recipes": "レシピ一覧",
+      "recipe": "レシピ",
+      "materials": "素材",
+      "blueprints": "設計図",
+      "stations": "作業台",
+      "orders": "注文",
+      "buy-material": "素材を購入",
+      "craft": "部品を作る",
+      "start": "生産を開始",
+      "collect": "完成品を受け取る",
+      "cancel": "注文をキャンセル",
+      "salvage": "製品を分解",
+      "buy-blueprint": "設計図を購入"
+    },
+    "errors": {
+      "funds": "コインが足りません。",
+      "resources": "素材または設計図が不足しています。",
+      "ready": "受け取れるものはまだありません。",
+      "capacity": "容量またはアップグレードの上限です。",
+      "invalid": "アイテム、数量、選択した場所を確認してください。",
+      "conflict": "別の操作で状態が変わりました。もう一度お試しください。"
+    },
+    "disabled": "機能は無効です",
+    "enable": "サーバー管理者はダッシュボード → サーバーモジュールでこの機能を有効にできます。"
+  },
+  "reactions": {
+    "title": "リアクション",
+    "groups": {
+      "emotions": "感情",
+      "gestures": "しぐさ",
+      "characters": "キャラクター"
+    },
+    "actions": {
+      "sleep": "睡眠",
+      "confused": "困惑",
+      "smile": "笑顔",
+      "wink": "ウインク",
+      "smug": "得意顔",
+      "think": "考え中",
+      "teehee": "くすくす笑い",
+      "shocked": "驚き",
+      "bleh": "舌を出す",
+      "bored": "退屈",
+      "nya": "にゃあ",
+      "yawn": "あくび",
+      "facepalm": "顔を覆う",
+      "happy": "喜び",
+      "angry": "怒り",
+      "nod": "うなずく",
+      "nope": "いいえ",
+      "cry": "泣く",
+      "pout": "すねる",
+      "laugh": "笑う",
+      "lurk": "こっそり見る",
+      "stare": "見つめる",
+      "shrug": "肩をすくめる",
+      "tableflip": "ちゃぶ台返し",
+      "peck": "軽いキス",
+      "sip": "ひと口飲む",
+      "yeet": "ふざけて投げる",
+      "feed": "食べさせる",
+      "wag": "しっぽを振る",
+      "bite": "かむ",
+      "nom": "もぐもぐ",
+      "kick": "キック",
+      "carry": "抱えて運ぶ",
+      "kabedon": "アニメのポーズ",
+      "baka": "おふざけ",
+      "bonk": "軽くこつん",
+      "spin": "回る",
+      "shake": "揺さぶる",
+      "run": "走る",
+      "punch": "パンチ",
+      "handshake": "握手",
+      "lappillow": "膝枕",
+      "blowkiss": "投げキッス",
+      "handhold": "手をつなぐ",
+      "salute": "敬礼",
+      "thumbsup": "親指を立てる",
+      "neko": "猫耳",
+      "waifu": "ワイフ",
+      "husbando": "ハズバンド",
+      "kitsune": "狐耳"
+    }
+  },
+  "puzzles": {
+    "lights": "すべての明かりを消そう",
+    "fifteen": "タイルを順番に並べよう",
+    "mines": "安全なマスを見つけよう",
+    "nim": "最後の石を取ろう",
+    "higher-lower": "次の数字が上か下か当てよう",
+    "mastermind": "色の暗号を解こう",
+    "anagram": "文字を並べて言葉を作ろう",
+    "math": "計算問題を解こう",
+    "fractions": "大きい分数を選ぼう",
+    "count": "記号を数えよう",
+    "odd-one-out": "違う記号を見つけよう",
+    "sudoku": "4×4の数独を解こう",
+    "reversi": "より多くの石を取ろう",
+    "battleship": "隠れた船を見つけよう",
+    "twentyone": "21を超えずに近づこう",
+    "binary": "数を二進数に直そう",
+    "balance": "重さを目標に合わせよう"
+  },
+  "quests": {
+    "title": "クエスト",
+    "daily": "デイリークエスト",
+    "weekly": "ウィークリークエスト",
+    "claim": "報酬を受け取る",
+    "claim_all": "報酬をすべて受け取る",
+    "reroll": "クエストを変更",
+    "slot": "クエスト番号",
+    "work": "仕事をする",
+    "fish": "魚を釣る",
+    "bonus": "全達成ボーナス",
+    "completed": "達成したクエスト",
+    "rewards": "獲得コイン",
+    "streak": "連続達成日数",
+    "best": "最長記録",
+    "reset": "UTC 00:00に更新",
+    "rules": "プレイ前にクエスト一覧を開いてください。その後の行動だけが対象です。デイリーとウィークリーの進捗は別々です。",
+    "reroll_rules": "未達成のデイリークエストをUTCの1日につき1回変更できます。新しいクエストは進捗ゼロから始まります。達成済み・受取済みは変更できません。",
+    "bonus_rules": "3つの報酬を受け取るとボーナスが得られます。UTCで連日デイリーを全達成すると連続記録になり、最初の7日間はボーナスが増えます。",
+    "history": "履歴",
+    "stats": "実績",
+    "guide": "ガイド",
+    "empty": "まだ何もありません。",
+    "harvest": "収穫",
+    "craft": "部品を作る",
+    "errors": {
+      "invalid": "アイテム、数量、選択した場所を確認してください。",
+      "nothing": "受け取れる報酬はまだありません。",
+      "rerolled": "未達成のデイリークエストをUTCの1日につき1回変更できます。新しいクエストは進捗ゼロから始まります。達成済み・受取済みは変更できません。",
+      "conflict": "別の操作で状態が変わりました。もう一度お試しください。"
+    }
+  },
+  "halloween": {
+    "title": "ハロウィン",
+    "explore": "探索する",
+    "trade": "キャンディを交換",
+    "season": "イベント期間",
+    "redeem": "報酬受取期限",
+    "amount": "交換セット数",
+    "candies": "キャンディ",
+    "visits": "訪問回数",
+    "today": "今日",
+    "next": "次の訪問",
+    "collection_bonus": "全種類コンプリート報酬",
+    "rules": "15分ごとに探索でき、UTCで1日8回までです。毎回キャンディ1～3個とコレクション1個を獲得します。同じものが出ることもあります。",
+    "rewards": "キャンディ20個で300コイン。訪問目標：5回で150、15回で350、30回で750コイン。全8種類で1500コイン。",
+    "guide_rules": "目標報酬は /events halloween claim で受け取れます。期限までに交換と受取を済ませてください。進捗は全サーバー共通で、再起動しても保存されます。",
+    "info": "状態",
+    "collection": "コレクション",
+    "claim": "報酬を受け取る",
+    "stats": "実績",
+    "guide": "ガイド",
+    "errors": {
+      "closed": "イベントまたは報酬受取期間の対象外です。",
+      "limit": "本日の訪問上限8回に達しました。",
+      "cooldown": "クールダウン",
+      "candies": "素材または設計図が不足しています。",
+      "nothing": "受け取れる報酬はまだありません。",
+      "invalid": "アイテム、数量、選択した場所を確認してください。",
+      "conflict": "別の操作で状態が変わりました。もう一度お試しください。"
+    }
+  },
+  "christmas": {
+    "title": "クリスマスイベント",
+    "advent": "アドベントカレンダー",
+    "advent_rules": "UTCの12月1～24日に当日の扉を開けられます。逃した日は後から受け取れません。全24日達成で永続のレジェンダリー王冠を獲得します。",
+    "rules": "15分ごと、UTCで1日8回まで探索できます。毎回50コインとシンボルを獲得。10・40・100回の訪問で目標報酬を受け取れます。100回と全8種類でレジェンダリー収集品を解放します。",
+    "info": "状態",
+    "explore": "探索する",
+    "claim": "報酬を受け取る",
+    "stats": "実績",
+    "collection": "コレクション",
+    "guide": "ガイド",
+    "errors": {
+      "closed": "イベントまたは報酬受取期間の対象外です。",
+      "already": "受け取れる報酬はまだありません。",
+      "cooldown": "クールダウン",
+      "limit": "本日の訪問上限8回に達しました。",
+      "nothing": "受け取れる報酬はまだありません。",
+      "capacity": "容量またはアップグレードの上限です。",
+      "conflict": "別の操作で状態が変わりました。もう一度お試しください。",
+      "invalid": "アイテム、数量、選択した場所を確認してください。"
+    }
+  },
+  "easter": {
+    "title": "イースターイベント",
+    "basket": "デイリーバスケット",
+    "daily_rules": "UTCで1日1回、バスケットから125コインとシンボルを受け取れます。異なる7日間で受け取ると永続のレジェンダリー「暁の卵」を獲得します。",
+    "rules": "15分ごと、UTCで1日8回まで探索できます。毎回40コインとシンボルを獲得。10・40・80回の訪問で目標報酬を受け取れます。80回と全8種類でレジェンダリー収集品を解放します。",
+    "info": "状態",
+    "hunt": "探索する",
+    "claim": "報酬を受け取る",
+    "stats": "実績",
+    "collection": "コレクション",
+    "guide": "ガイド",
+    "errors": {
+      "closed": "イベントまたは報酬受取期間の対象外です。",
+      "already": "受け取れる報酬はまだありません。",
+      "cooldown": "クールダウン",
+      "limit": "本日の訪問上限8回に達しました。",
+      "nothing": "受け取れる報酬はまだありません。",
+      "capacity": "容量またはアップグレードの上限です。",
+      "conflict": "別の操作で状態が変わりました。もう一度お試しください。",
+      "invalid": "アイテム、数量、選択した場所を確認してください。"
+    }
+  },
+  "command_choices": {
+    "member_join": "メンバーが参加しました",
+    "add": "追加",
+    "remove": "削除",
+    "clear": "クリア",
+    "balanced": "バランス型",
+    "strict": "厳格",
+    "daily": "毎日",
+    "weekly": "毎週",
+    "once": "1 回",
+    "starter": "スターター",
+    "growth": "成長",
+    "creator": "クリエイター",
+    "monthly": "毎月",
+    "tracks": "トラック",
+    "artists": "アーティスト",
+    "words": "の言葉",
+    "sources": "ソース",
+    "supporter_midnight": "サポーター深夜",
+    "supporter_aurora": "サポーター オーロラ",
+    "supporter_neon": "サポーターネオン",
+    "music_discovery": "音楽の発見",
+    "moderation_workflows": "サーバーモデレーションワークフロー",
+    "community_games": "コミュニティ ゲーム",
+    "mobile_dashboard": "モバイル ダッシュボード",
+    "delete": "Delete",
+    "lock": "ロック",
+    "low": "低",
+    "normal": "通常",
+    "high": "高",
+    "urgent": "緊急",
+    "music": "音楽",
+    "community": "コミュニティ",
+    "moderation": "サーバーのモデレーション",
+    "full": "フル",
+    "discord_abc123": "Discord・ABC123",
+    "discord_5_20": "Discord · 5 × 20",
+    "discord_abc123_5_20": "Discord・ABC123 / 5×20",
+    "muzes_xyz_abc123": "Murphy.xyz · ABC123",
+    "user": "ユーザー",
+    "server": "サーバー",
+    "view": "ビュー",
+    "claim": "報酬を受け取る",
+    "planned": "予定",
+    "accepted": "承認されました",
+    "rejected": "拒否されました",
+    "completed": "完了しました",
+    "dashboard": "ダッシュボード",
+    "commands": "コマンド",
+    "other": "その他",
+    "bot": "ボット",
+    "website": "ウェブサイト",
+    "payment": "お支払い",
+    "abuse": "虐待",
+    "humans": "人間",
+    "bots": "ボット",
+    "all": "すべて",
+    "song": "曲",
+    "queue": "キュー",
+    "tremolo": "トレモロ",
+    "vibrato": "ビブラート",
+    "distortion": "ディストーション",
+    "mono": "モノラル",
+    "low_pass": "ローパス",
+    "global_pop_night": "グローバル ポップ ナイト",
+    "gaming_focus": "ゲーム フォーカス",
+    "party_queue": "パーティーキュー",
+    "chill_reset": "チルリセット",
+    "url_encode": "URL エンコード",
+    "url_decode": "URL デコード",
+    "base64_encode": "Base64 エンコード",
+    "base64_decode": "Base64 デコード",
+    "week_ago": "1週間前",
+    "month_ago": "1か月前",
+    "year_ago": "1年前",
+    "list": "一覧"
+  },
+  "social": {
+    "description": "口説く、遊ぶ、決闘する、結婚する：25個のソーシャルコマンド。",
+    "unknown": "そのコマンドは知りません。`/social love flirt` か `/help` を試してね。",
+    "need_text": "テキストをちょうだい。",
+    "need_user": "まず誰かを選んでね。",
+    "server_only": "サーバーでのみ使えます。",
+    "timeout": "⌛ 時間内に誰も答えませんでした。",
+    "not_target": "{user}だけが答えられます。",
+    "return_button": "お返しする",
+    "self": "誰もいないので、Murphyが代わりに：{a}に{action}。🤖",
+    "bot": "{a}がMurphyに試した。Murphyは光栄です。✨",
+    "generic": "{a} → {b}：{action}",
+    "count": "💞 あなたから{count}× · お返し{back}×",
+    "milestone": "🏅 **節目：{count}！** 本気になってきた。",
+    "premium": {
+      "1": "ゴールド版：Premiumサーバーはキラキラ版。",
+      "2": "Premiumコンボ：Murphyが二人に紙吹雪を。🎉",
+      "3": "VIPリアクション：サーバー全体が気づいた。",
+      "4": "Premiumの輝きを適用。似合ってる。"
+    },
+    "premium_top": "このアクションのお気に入り相手：{user}（{count}×）",
+    "solo": {
+      "clap": "{a}がゆっくり拍手を始めた… 👏",
+      "dance": "{a}がダンスフロアを独占！💃",
+      "blush": "{a}が真っ赤になった。😳",
+      "wave": "{a}がみんなに手を振っている。👋"
+    },
+    "say": {
+      "kiss": {
+        "1": "{a}が{b}にキス。💋",
+        "2": "{a}が{b}からさっとキスを奪った！",
+        "3": "{a}が{b}に忘れられないキスを。😘"
+      },
+      "hug": {
+        "1": "{a}が{b}をぎゅっとハグ。🤗",
+        "2": "{a}が{b}を大きくて温かいハグで包む。",
+        "3": "{a}が駆け寄って{b}をハグ！"
+      },
+      "cuddle": {
+        "1": "{a}が{b}に寄り添う。🥰",
+        "2": "{a}と{b}が毛布ブリトーになった。",
+        "3": "{a}が{b}にすり寄る。"
+      },
+      "pat": {
+        "1": "{a}が{b}の頭をなでなで。🫳",
+        "2": "{a}が{b}の頭をやさしくなでる。",
+        "3": "よくやった、{b}！{a}がなでてくれる。"
+      },
+      "slap": {
+        "1": "{a}が{b}をビンタ！👋💥",
+        "2": "{a}が{b}に明日まで残るビンタを。",
+        "3": "*バチン！* {a}が{b}をビンタした。"
+      },
+      "kill": {
+        "1": "{a}が{b}を倒した。💀",
+        "2": "{b}は{a}に倒された。",
+        "3": "{a}が{b}に勝利。リスポーンまで5… 4… 3…",
+        "4": "{a}が{b}を闇の世界へ送った。☠️"
+      },
+      "poke": {
+        "1": "{a}が{b}をつつく。👉",
+        "2": "*つんつん* {a}が{b}にかまってほしい。"
+      },
+      "tickle": {
+        "1": "{a}が{b}を息ができなくなるまでくすぐる！🤣",
+        "2": "{a}が{b}のくすぐりポイントを発見。"
+      },
+      "highfive": {
+        "1": "{a}と{b}がハイタッチ！✋",
+        "2": "いえーい！{a}と{b}が手を合わせる。"
+      },
+      "wave": {
+        "1": "{a}が{b}に手を振る。👋",
+        "2": "{a}が{b}にあいさつ！"
+      },
+      "clap": {
+        "1": "{a}が{b}に拍手。👏",
+        "2": "{a}が{b}にスタンディングオベーション！"
+      },
+      "dance": {
+        "1": "{a}が{b}をダンスフロアへ引っぱる！💃🕺",
+        "2": "{a}と{b}が誰も見ていないかのように踊る。"
+      },
+      "blush": {
+        "1": "{b}のせいで{a}が赤面。😳",
+        "2": "{b}が来ると{a}は赤くなる。"
+      },
+      "spank": {
+        "1": "{a}が{b}のお尻を冗談でペンペン！🍑",
+        "2": "*ペチン！* {a}が{b}のお尻をたたいた。",
+        "3": "{a}がこっそり近づいて{b}のお尻をペチン。😏"
+      },
+      "boop": {
+        "1": "{a}が{b}の鼻をブープ。👉👃",
+        "2": "*ブープ！* {b}は{a}にブープされた。"
+      },
+      "nuzzle": {
+        "1": "{a}が{b}に鼻をすりすり。🥺",
+        "2": "{a}が{b}にほっぺをすりすり。"
+      },
+      "pinch": {
+        "1": "{a}が{b}のほっぺをつねる！🤏",
+        "2": "いたっ！{a}が{b}をつねった。"
+      },
+      "snowball": {
+        "1": "{a}が{b}に雪玉を投げた。直撃！❄️",
+        "2": "{a}が{b}に雪玉を投げた…完全に外れた。☃️",
+        "3": "{a}が{b}を雪に埋めた！"
+      },
+      "pillow": {
+        "1": "{a}が{b}を枕でたたく！🛏️",
+        "2": "枕投げ！{a}対{b}。羽根が舞う。",
+        "3": "{a}が{b}に枕を振る…{b}がよけた！"
+      },
+      "tackle": {
+        "1": "{a}が{b}を地面にタックル！🏈",
+        "2": "{a}がどこからともなく{b}に飛びつく。"
+      },
+      "squish": {
+        "1": "{a}が{b}のほっぺをむにゅっ。🥹",
+        "2": "{a}が{b}をストレスボールみたいにむにむに。"
+      }
+    },
+    "group": {
+      "love": "口説き、デート、結婚",
+      "play": "GIF付きのおちゃめなアクション",
+      "games": "決闘、ゲーム、ジェネレーター"
+    },
+    "cmd": {
+      "flirt": "誰かに口説き文句を言う",
+      "compliment": "誰かをほめる",
+      "date": "誰かとのデートを計画する",
+      "propose": "誰かにプロポーズ（はい・いいえで答えます）",
+      "marriage": "誰が誰と結婚しているか見る",
+      "divorce": "結婚を終わらせる",
+      "rizz": "誰かのモテ度を測る",
+      "spank": "誰かのお尻を冗談でペンペン",
+      "boop": "誰かの鼻をブープ",
+      "nuzzle": "誰かにすりすり",
+      "pinch": "誰かのほっぺをつねる",
+      "snowball": "誰かに雪玉を投げる",
+      "pillow": "誰かを枕でたたく",
+      "tackle": "誰かにタックル",
+      "squish": "誰かのほっぺをむにゅっ",
+      "duel": "誰かに決闘を申し込む",
+      "rps": "じゃんけん",
+      "roast": "誰か（または自分）をいじる",
+      "rate": "なんでも0〜10で評価",
+      "fortune": "今日のフォーチュンクッキーを開ける",
+      "iq": "誰かのIQをチェック",
+      "vibe": "誰かの雰囲気をチェック",
+      "simp": "誰かのシンプ度をチェック",
+      "mock": "こンなフうニてキすトをクりカえス",
+      "emojify": "テキストを絵文字の文字に変換"
+    },
+    "opt": {
+      "user": "誰",
+      "text": "テキスト",
+      "thing": "Murphyに何を評価させる？"
+    },
+    "pool": {
+      "flirt": {
+        "1": "君はWi-Fi？つながりを感じるんだ。",
+        "2": "地図持ってる？君の瞳で迷子になっちゃう。",
+        "3": "君は歌？一日中頭から離れない。",
+        "4": "君が野菜ならかわいいキュウリだね。",
+        "5": "君の名前はGoogle？探していたもの全部持ってる。",
+        "6": "君はローン？だって興味（利息）がわいちゃう。",
+        "7": "一目ぼれを信じる？それともボイスにもう一回入り直そうか？",
+        "8": "君をお気に入りのプレイリストに入れて、絶対スキップしない。"
+      },
+      "compliment": {
+        "1": "君がいるだけでこのサーバーはもっと良くなる。",
+        "2": "君の音楽センスは本当にエリート。",
+        "3": "君のせいでみんな夜中までボイスにいる。",
+        "4": "主人公オーラがある。",
+        "5": "君と話すのは隠れた名曲を見つけるみたい。",
+        "6": "君は思っているよりおもしろい。本当に。",
+        "7": "優しさがXPならレベルMAX。",
+        "8": "君は完璧なプレイリストの人間版。"
+      },
+      "roast": {
+        "1": "キューにスキップボタンがあるのは君のせい。",
+        "2": "君のWi-Fiの方が個性がある。",
+        "3": "鍋つかみをはめて打ってるみたいなタイピング。",
+        "4": "ボットにすら既読スルーされる。",
+        "5": "君のプレイリストには注意書きが必要。",
+        "6": "君はロード画面みたい：誰も見て喜ばない。",
+        "7": "バッテリー1%のスマホのエネルギー。",
+        "8": "怠けることがスポーツでも練習をサボりそう。"
+      },
+      "fortune": {
+        "1": "良い知らせが向かっています。DMをチェック。",
+        "2": "今日、なくしたものが見つかる。",
+        "3": "このサーバーの誰かが君のことを考えている。",
+        "4": "今日の小さな冒険が大きな勝利を呼ぶ。",
+        "5": "次の曲はまさに必要な一曲になる。",
+        "6": "次のお誘いにはイエスと言おう。",
+        "7": "焦らないで：望むものは思ったより近い。",
+        "8": "今日は何か新しいことを始めるのにいい日。"
+      },
+      "place": {
+        "1": "夕暮れの屋上",
+        "2": "居心地のいいカフェ",
+        "3": "映画館の一番後ろの席",
+        "4": "公園でピクニック",
+        "5": "深夜のゲームセンター",
+        "6": "海辺の散歩"
+      },
+      "activity": {
+        "1": "デュエットカラオケ",
+        "2": "星空観察",
+        "3": "料理対決",
+        "4": "ボウリング（負けた方がおごり）",
+        "5": "Discordで映画の夜",
+        "6": "脱出ゲーム"
+      },
+      "food": {
+        "1": "ピザ",
+        "2": "寿司",
+        "3": "タコス",
+        "4": "アイスクリーム",
+        "5": "ラーメン",
+        "6": "真夜中のパンケーキ"
+      },
+      "move": {
+        "1": "{a}が{b}を椅子で殴る",
+        "2": "{a}が{b}にキーボードを投げる",
+        "3": "{a}が{b}に完璧なコンボを決める",
+        "4": "{a}が{b}にフライパンを振る",
+        "5": "{a}が{b}の上にピアノを落とす",
+        "6": "{a}が{b}にクリティカルミームを使う",
+        "7": "{a}が{b}をロビーへ蹴り戻す",
+        "8": "{a}が{b}にゴムのアヒルを投げる"
+      }
+    },
+    "flirt_intro": "{a}が{b}のDMにすべりこむ：",
+    "flirt_self": "{a}が鏡の前で練習中：",
+    "flirt_score": "スムーズさ：{score}/100",
+    "compliment_intro": "{a}から{b}へ伝えたいこと：",
+    "compliment_self": "{a}、あなたへのメッセージ：",
+    "compliment_score": "誠実さ：{score}/100",
+    "roast_intro": "{a}が{b}をいじる：",
+    "roast_self": "{a}が自分から望んだ：",
+    "roast_score": "炎上レベル：{score}/100 🔥",
+    "encore": "アンコール：「{line}」",
+    "fortune_open": "{a}がフォーチュンクッキーを割る…",
+    "fortune_lucky": "ラッキーナンバー：{number}",
+    "fortune_daily": "毎日新しいクッキー",
+    "fortune_premium": "Premiumの運：今日の幸運の確率は{percent}%。",
+    "date_intro": "Murphyが{a}と{b}のデートを計画：",
+    "date_place": "場所",
+    "date_activity": "内容",
+    "date_food": "食事",
+    "date_chance": "2回目のデートの確率",
+    "date_high": "伝説になる予感。💖",
+    "date_mid": "かわいいかも。おやつを持っていこう。",
+    "date_low": "まずは友達からかも。😅",
+    "date_premium": "Premium：Murphyが{hour}:00に一番いい席を予約しました。",
+    "meter_rizz": "{user}のモテ度スキャナー：",
+    "meter_iq": "{user}の脳スキャン：",
+    "meter_vibe": "{user}の雰囲気チェック：",
+    "meter_simp": "{user}のシンプ探知機：",
+    "meter_rizz_low": "モテ度ゼロ。少しもない。🫠",
+    "meter_rizz_mid": "まあまあのモテ度。調子のいい日なら効く。",
+    "meter_rizz_high": "言葉いらずのモテ度。危険。😎",
+    "meter_iq_low": "電気はついているけど誰もいない。",
+    "meter_iq_mid": "しっかり。指なしで10まで数えられる。",
+    "meter_iq_high": "銀河級の頭脳。🧠✨",
+    "meter_vibe_low": "今日は雰囲気がイマイチ。水を飲んで。",
+    "meter_vibe_mid": "落ち着いた雰囲気。合格。",
+    "meter_vibe_high": "完璧な雰囲気。✨",
+    "meter_simp_low": "シンプじゃない。氷のように冷たい。🧊",
+    "meter_simp_mid": "パートタイムのシンプ。",
+    "meter_simp_high": "公認シンプ。助けを求めて。🥺",
+    "meter_daily": "結果は毎日変わります。",
+    "meter_premium": "Premiumランキング：今日このサーバーで{rank}位。",
+    "rate_intro": "Murphyが{thing}を評価：",
+    "rate_high": "完全無欠。",
+    "rate_mid": "悪くないけど、すごくもない。",
+    "rate_low": "パス。",
+    "rate_premium": "Premiumボーナスポイント：{score}/10。",
+    "mock_by": "と{user}が言ったらしい",
+    "propose_invalid": "プロポーズする相手を他に選んでね（自分やボットは不可）。",
+    "already_married_you": "ここではもう結婚しています。先に `/social love divorce`。👀",
+    "already_married_them": "{user}はもう結婚しています。",
+    "propose_yes": "はい！",
+    "propose_no": "いいえ",
+    "propose_text": "💍 {a}が{b}の前でひざまずく…",
+    "propose_wait": "{b}、答えるまで2分あります。",
+    "propose_race": "遅かった、どちらかが今別の人と結婚しました。",
+    "propose_accepted": "🎉 **{a}と{b}は結婚しました！** おめでとう！",
+    "propose_premium": "Premiumの結婚式：紙吹雪キャノン、弦楽四重奏、3段ケーキ。",
+    "propose_declined": "💔 {b}は{a}にノーと言った。いたた。",
+    "single_you": "このサーバーでは結婚していません。`/social love propose` で誰かにプロポーズしよう！",
+    "single_them": "{user}はこのサーバーで結婚していません。",
+    "married_to": "💍 {a}は{b}と結婚しています。",
+    "married_since": "{date}から結婚（{days}日）",
+    "married_premium": "Premium：二人のやりとり{count}回 · 次の記念日 {next}",
+    "divorce_yes": "離婚する",
+    "divorce_no": "一緒にいる",
+    "divorce_confirm": "本当に{b}と離婚する？",
+    "divorce_kept": "ふう。まだ{b}と一緒です。💞",
+    "divorce_done": "💔 {a}と{b}は離婚しました。",
+    "duel_invalid": "決闘の相手を他に選んでね。",
+    "duel_accept": "戦う！",
+    "duel_decline": "逃げる",
+    "duel_challenge": "⚔️ {a}が{b}に決闘を申し込んだ！",
+    "duel_wait": "受けるまで60秒。",
+    "duel_declined": "🏳️ {b}は決闘から逃げた。",
+    "duel_start": "戦士たちがにらみ合う…",
+    "duel_winner": "{user}が決闘に勝利！",
+    "duel_rounds": "{rounds}手 · 残りHP {hp} · {loser}はダウン",
+    "duel_premium": "Premium：{user}はサーバーの殿堂入りゴールドトロフィーを獲得。",
+    "duel_miss": "{a}が{b}を攻撃、でも外れた！",
+    "duel_crit": "クリティカル！",
+    "rps_rock": "グー",
+    "rps_paper": "パー",
+    "rps_scissors": "チョキ",
+    "rps_bot": "{a} vs Murphy。手を選んでね！",
+    "rps_vs": "{a} vs {b}。二人とも手を選んで！",
+    "rps_pick": "二人が選ぶまで選択は秘密です。",
+    "rps_not_yours": "これはあなたのゲームじゃないよ。",
+    "rps_locked": "決定：{move}",
+    "rps_1": "最初は…",
+    "rps_2": "グー…",
+    "rps_3": "じゃんけんぽん！",
+    "rps_draw": "あいこ！",
+    "rps_win": "{user}の勝ち！",
+    "rps_premium": "Premium：リベンジはいつでも無料。"
+  },
+  "afk": {
+    "description": "不在を知らせよう：理由、時間、メンションした人。",
+    "title": "AFK",
+    "server_only": "AFKはサーバーでのみ使えます。",
+    "cmd": {
+      "set": "理由つきでAFKにする",
+      "off": "AFK状態を解除",
+      "status": "誰かがAFKか確認",
+      "list": "AFKのメンバー一覧（モデレーター）"
+    },
+    "opt": {
+      "reason": "不在の理由",
+      "time": "期間（例：30m、2h、1d）",
+      "nick": "ニックネームに[AFK]をつける",
+      "user": "確認する人",
+      "keep": "解除するまでAFKのまま（書き込んでも終わらない）"
+    },
+    "off_done": "おかえり！{count}回メンションされたよ。",
+    "not_afk": "AFKではありませんでした。",
+    "status_none": "{user}はAFKではありません。",
+    "is_away": "{user}はAFK中（{time}から）",
+    "no_reason": "理由なし。",
+    "back_at": "{time}に戻る",
+    "status_pings": "これまでに{count}回メンション",
+    "list_permission": "一覧を見るには「メッセージの管理」権限が必要です。",
+    "list_empty": "今AFKの人はいません。",
+    "bad_time": "その時間がわかりません。30m、2h、1dのように指定してね（最大7日）。",
+    "set_done": "{user}はAFKになりました。",
+    "nick_done": "ニックネームに[AFK]をつけました。",
+    "nick_failed": "ニックネームを変更できません（権限不足かロールが高すぎます）。",
+    "reason_cut": "理由は{limit}文字に短縮されました。",
+    "set_hint": "何かメッセージを送るか `/afk off` で戻れます。",
+    "premium_set": "Premium：長い理由と、メンションした全員のリンク付き一覧。",
+    "free_set": "Premiumサーバーでは誰がメンションしたかも見られます。",
+    "back": "👋 おかえり{user}！{time}離れていました。",
+    "back_pings": "**{count}**回メンションされました。",
+    "back_quiet": "誰もメンションしませんでした。",
+    "ping_log": "メンションした人：",
+    "ping_log_premium": "Premiumサーバーならメンションした人をリンク付きで見られます。",
+    "premium_note": "戻ったら誰がメンションしたか見られます。",
+    "keep_on": "`/afk off` を使うまでAFKは続きます。",
+    "keep_hint": "書き込んでも終わりません。戻ったら `/afk off` を使ってね。",
+    "until_off": "解除されるまで不在"
+  }
+}
