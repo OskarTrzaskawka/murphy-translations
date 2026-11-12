@@ -238,5 +238,6 @@ files:
     # Changed English texts keep their old translations, marked as needing review.
     update_option: update_as_unapproved
     # Only translations you (or your proofreaders) approved are sent back to GitHub.
-    skip_untranslated_strings: false
+    # Untranslated texts are left out of the file (the bot falls back to English), never filled with English.
+    skip_untranslated_strings: true
     export_only_approved: true
