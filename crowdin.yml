@@ -1,71 +1,73 @@
 # Crowdin configuration for github.com/OskarTrzaskawka/murphy-translations
 # EnglishUS.json is the source. Crowdin writes every translation back under the file names the bot uses.
-# Locale codes come from https://api.crowdin.com/api/v2/languages
+# Keys are Crowdin language codes (the "id" field) from https://api.crowdin.com/api/v2/languages
 files:
   - source: /EnglishUS.json
     translation: /%locale%.json
     languages_mapping:
       locale:
-        ach-UG: Acholi
-        aa-ER: Afar
-        af-ZA: Afrikaans
-        ak-GH: Akan
-        sq-AL: Albanian
-        am-ET: Amharic
-        ar-SA: Arabic
+        ach: Acholi
+        aa: Afar
+        af: Afrikaans
+        ak: Akan
+        sq: Albanian
+        am: Amharic
+        ar: Arabic
         ar-BH: ArabicBahrain
         ar-EG: ArabicEgypt
+        ar-SA: ArabicSaudiArabia
         ar-YE: ArabicYemen
-        an-ES: Aragonese
+        an: Aragonese
         hy-AM: Armenian
-        frp-IT: Arpitan
-        as-IN: Assamese
-        ast-ES: Asturian
-        tay-TW: Atayal
-        av-DA: Avaric
-        ae-IR: Avestan
-        ay-BO: Aymara
-        az-AZ: Azerbaijani
-        ban-ID: Balinese
-        bal-BA: Balochi
-        bm-ML: Bambara
-        ba-RU: Bashkir
-        eu-ES: Basque
-        be-BY: Belarusian
-        bn-BD: Bengali
+        frp: Arpitan
+        as: Assamese
+        ast: Asturian
+        tay: Atayal
+        av: Avaric
+        ae: Avestan
+        ay: Aymara
+        az: Azerbaijani
+        ban: Balinese
+        bal: Balochi
+        bm: Bambara
+        ba: Bashkir
+        eu: Basque
+        be: Belarusian
+        bn: Bengali
         bn-IN: BengaliIndia
-        ber-DZ: Berber
-        bh-IN: Bihari
-        bfo-BF: Birifor
-        bi-VU: Bislama
-        bs-BA: Bosnian
+        ber: Berber
+        bh: Bihari
+        bfo: Birifor
+        bi: Bislama
+        bs: Bosnian
         br-FR: Breton
-        bg-BG: Bulgarian
-        my-MM: Burmese
-        ca-ES: Catalan
-        ceb-PH: Cebuano
-        ch-GU: Chamorro
-        ce-CE: Chechen
-        chr-US: Cherokee
-        ny-MW: Chichewa
+        bg: Bulgarian
+        my: Burmese
+        ca: Catalan
+        ceb: Cebuano
+        ch: Chamorro
+        ce: Chechen
+        chr: Cherokee
+        ny: Chichewa
         zh-CN: ChineseCN
         zh-HK: ChineseHK
         zh-SG: ChineseSimplifiedSingapore
         zh-MO: ChineseTraditionalMacau
         zh-TW: ChineseTW
-        cv-CU: Chuvash
-        kw-GB: Cornish
-        co-FR: Corsican
-        cr-NT: Cree
-        hr-HR: Croatian
-        cs-CZ: Czech
-        da-DK: Danish
+        cv: Chuvash
+        kw: Cornish
+        co: Corsican
+        cr: Cree
+        hr: Croatian
+        cs: Czech
+        da: Danish
         fa-AF: Dari
-        dv-MV: Dhivehi
-        nl-NL: Dutch
+        dv: Dhivehi
+        nl: Dutch
         nl-BE: DutchBelgium
         nl-SR: DutchSuriname
-        dz-BT: Dzongkha
+        dz: Dzongkha
+        en: English
         en-AR: EnglishArabia
         en-AU: EnglishAustralia
         en-BZ: EnglishBelize
@@ -89,18 +91,19 @@ files:
         en-SG: EnglishSingapore
         en-ZA: EnglishSouthAfrica
         en-SE: EnglishSweden
+        en-US: EnglishUnitedStates
         en-UD: EnglishUpsideDown
         en-ZW: EnglishZimbabwe
-        eo-UY: Esperanto
-        et-EE: Estonian
-        ee-GH: Ewe
-        fo-FO: Faroese
-        fj-FJ: Fijian
-        fil-PH: Filipino
-        fi-FI: Finnish
+        eo: Esperanto
+        et: Estonian
+        ee: Ewe
+        fo: Faroese
+        fj: Fijian
+        fil: Filipino
+        fi: Finnish
         vls-BE: Flemish
         fra-DE: Franconian
-        fr-FR: French
+        fr: French
         fr-BE: FrenchBelgium
         fr-CA: FrenchCA
         fr-LU: FrenchLuxembourg
@@ -108,150 +111,150 @@ files:
         fr-CH: FrenchSwitzerland
         fy-NL: Frisian
         fur-IT: Friulian
-        ff-ZA: Fula
-        gaa-GH: Ga
-        gl-ES: Galician
-        ka-GE: Georgian
-        de-DE: German
+        ff: Fula
+        gaa: Ga
+        gl: Galician
+        ka: Georgian
+        de: German
         de-AT: GermanAustria
         de-BE: GermanBelgium
         de-LI: GermanLiechtenstein
         de-LU: GermanLuxembourg
         de-CH: GermanSwitzerland
-        got-DE: Gothic
-        el-GR: Greek
+        got: Gothic
+        el: Greek
         el-CY: GreekCyprus
-        kl-GL: Greenlandic
-        gn-PY: Guarani
+        kl: Greenlandic
+        gn: Guarani
         gu-IN: Gujarati
-        ht-HT: HaitianCreole
-        ha-HG: Hausa
-        haw-US: Hawaiian
-        he-IL: Hebrew
-        hz-NA: Herero
-        hil-PH: Hiligaynon
-        hi-IN: Hindi
-        ho-PG: HiriMotu
-        hmn-CN: Hmong
-        hu-HU: Hungarian
-        is-IS: Icelandic
-        io-EN: Ido
-        ig-NG: Igbo
-        ilo-PH: Ilokano
-        id-ID: Indonesian
-        iu-NU: Inuktitut
+        ht: HaitianCreole
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hz: Herero
+        hil: Hiligaynon
+        hi: Hindi
+        ho: HiriMotu
+        hmn: Hmong
+        hu: Hungarian
+        is: Icelandic
+        ido: Ido
+        ig: Igbo
+        ilo: Ilokano
+        id: Indonesian
+        iu: Inuktitut
         ga-IE: Irish
-        it-IT: Italian
+        it: Italian
         it-CH: ItalianSwitzerland
-        ja-JP: Japanese
-        jv-ID: Javanese
-        kab-KAB: Kabyle
-        kn-IN: Kannada
-        pam-PH: Kapampangan
-        ks-IN: Kashmiri
+        ja: Japanese
+        jv: Javanese
+        kab: Kabyle
+        kn: Kannada
+        pam: Kapampangan
+        ks: Kashmiri
         ks-PK: KashmiriPakistan
-        csb-PL: Kashubian
-        kk-KZ: Kazakh
-        km-KH: Khmer
-        quc-GT: Kiche
-        rw-RW: Kinyarwanda
+        csb: Kashubian
+        kk: Kazakh
+        km: Khmer
+        quc: Kiche
+        rw: Kinyarwanda
         tlh-AA: Klingon
-        kv-KO: Komi
-        kg-CG: Kongo
-        kok-IN: Konkani
-        ko-KR: Korean
-        ku-TR: Kurdish
-        kmr-TR: KurdishKurmanji
-        ckb-IR: KurdishSorani
-        kj-AO: Kwanyama
-        ky-KG: Kyrgyz
-        lo-LA: Lao
+        kv: Komi
+        kg: Kongo
+        kok: Konkani
+        ko: Korean
+        ku: Kurdish
+        kmr: KurdishKurmanji
+        ckb: KurdishSorani
+        kj: Kwanyama
+        ky: Kyrgyz
+        lo: Lao
         la-LA: Latin
-        lv-LV: Latvian
-        lij-IT: Ligurian
-        li-LI: Limburgish
-        ln-CD: Lingala
-        lt-LT: Lithuanian
-        jbo-EN: Lojban
-        lol-US: LOLCAT
+        lv: Latvian
+        lij: Ligurian
+        li: Limburgish
+        ln: Lingala
+        lt: Lithuanian
+        jbo: Lojban
+        lol: LOLCAT
         dsb-DE: LowerSorbian
-        nds-DE: LowGerman
-        lg-UG: Luganda
-        luy-KE: Luhya
-        lb-LU: Luxembourgish
-        mk-MK: Macedonian
-        mai-IN: Maithili
-        mg-MG: Malagasy
-        ms-MY: Malay
+        nds: LowGerman
+        lg: Luganda
+        luy: Luhya
+        lb: Luxembourgish
+        mk: Macedonian
+        mai: Maithili
+        mg: Malagasy
+        ms: Malay
         ml-IN: Malayalam
         ms-BN: MalayBrunei
-        mt-MT: Maltese
-        gv-IM: Manx
-        mi-NZ: Maori
-        arn-CL: Mapudungun
-        mr-IN: Marathi
-        mh-MH: Marshallese
-        moh-CA: Mohawk
-        mn-MN: Mongolian
-        me-ME: Montenegrin
+        mt: Maltese
+        gv: Manx
+        mi: Maori
+        arn: Mapudungun
+        mr: Marathi
+        mh: Marshallese
+        moh: Mohawk
+        mn: Mongolian
+        me: Montenegrin
         sr-Cyrl-ME: MontenegrinCyrillic
-        mos-MOS: Mossi
-        na-NR: Nauru
-        ng-NA: Ndonga
+        mos: Mossi
+        na: Nauru
+        ng: Ndonga
         ne-NP: Nepali
         ne-IN: NepaliIndia
-        pcm-NG: NigerianPidgin
-        se-NO: NorthernSami
-        ns-ZA: NorthernSotho
-        no-NO: Norwegian
-        nb-NO: NorwegianBokmal
+        pcm: NigerianPidgin
+        se: NorthernSami
+        nso: NorthernSotho
+        no: Norwegian
+        nb: NorwegianBokmal
         nn-NO: NorwegianNynorsk
-        oc-FR: Occitan
-        or-IN: Odia
-        oj-CA: Ojibwe
-        om-ET: Oromo
-        os-SE: Ossetian
-        pi-IN: Pali
-        pap-PAP: Papiamento
-        ps-AF: Pashto
-        fa-IR: Persian
-        pl-PL: Polish
+        oc: Occitan
+        or: Odia
+        oj: Ojibwe
+        om: Oromo
+        os: Ossetian
+        pi: Pali
+        pap: Papiamento
+        ps: Pashto
+        fa: Persian
+        pl: Polish
         pt-BR: PortugueseBR
         pt-PT: PortuguesePT
         pa-IN: Punjabi
         pa-PK: PunjabiShahmukhi
-        qu-PE: Quechua
+        qu: Quechua
         qya-AA: Quenya
-        ro-RO: Romanian
+        ro: Romanian
         rm-CH: Romansh
-        rn-BI: Rundi
-        ru-RU: Russian
+        rn: Rundi
+        ru: Russian
         ru-BY: RussianBelarus
         ru-MD: RussianMoldova
         ru-UA: RussianUkraine
         ry-UA: Rusyn
-        sah-SAH: Sakha
-        sg-CF: Sango
-        sa-IN: Sanskrit
-        sat-IN: Santali
-        sc-IT: Sardinian
-        sco-GB: Scots
-        gd-GB: ScottishGaelic
-        sr-SP: Serbian
+        sah: Sakha
+        sg: Sango
+        sa: Sanskrit
+        sat: Santali
+        sc: Sardinian
+        sco: Scots
+        gd: ScottishGaelic
+        sr: Serbian
         sr-CS: SerbianLatin
-        sh-HR: SerboCroatian
-        crs-SC: SeychellesCreole
-        sn-ZW: Shona
-        ii-CN: SichuanYi
-        sd-PK: Sindhi
+        sh: SerboCroatian
+        crs: SeychellesCreole
+        sn: Shona
+        ii: SichuanYi
+        sd: Sindhi
         si-LK: Sinhala
-        sk-SK: Slovak
-        sl-SI: Slovenian
-        so-SO: Somali
-        son-ZA: Songhay
-        nr-ZA: SouthernNdebele
-        sma-NO: SouthernSami
-        st-ZA: SouthernSotho
+        sk: Slovak
+        sl: Slovenian
+        so: Somali
+        son: Songhay
+        nr: SouthernNdebele
+        sma: SouthernSami
+        st: SouthernSotho
         es-AR: SpanishArgentina
         es-BO: SpanishBolivia
         es-CL: SpanishChile
@@ -274,48 +277,49 @@ files:
         es-US: SpanishUnitedStates
         es-UY: SpanishUruguay
         es-VE: SpanishVenezuela
-        su-ID: Sundanese
-        sw-KE: Swahili
+        su: Sundanese
+        sw: Swahili
+        sw-KE: SwahiliKenya
         sw-TZ: SwahiliTanzania
-        ss-ZA: Swati
+        ss: Swati
         sv-SE: Swedish
         sv-FI: SwedishFinland
-        syc-SY: Syriac
-        tl-PH: Tagalog
-        ty-PF: Tahitian
-        tg-TJ: Tajik
-        tzl-TZL: Talossan
-        ta-IN: Tamil
+        syc: Syriac
+        tl: Tagalog
+        ty: Tahitian
+        tg: Tajik
+        tzl: Talossan
+        ta: Tamil
         tt-RU: Tatar
-        te-IN: Telugu
-        kdh-KDH: Tem
-        th-TH: Thai
+        te: Telugu
+        kdh: Tem
+        th: Thai
         bo-BT: Tibetan
-        ti-ER: Tigrinya
-        ts-ZA: Tsonga
-        tn-ZA: Tswana
-        tr-TR: Turkish
+        ti: Tigrinya
+        ts: Tsonga
+        tn: Tswana
+        tr: Turkish
         tr-CY: TurkishCyprus
-        tk-TM: Turkmen
-        tw-TW: Twi
-        uk-UA: Ukrainian
+        tk: Turkmen
+        tw: Twi
+        uk: Ukrainian
         hsb-DE: UpperSorbian
         ur-PK: Urdu
         ur-IN: UrduIndia
-        ug-CN: Uyghur
-        uz-UZ: Uzbek
+        ug: Uyghur
+        uz: Uzbek
         val-ES: Valencian
-        ve-ZA: Venda
-        vec-IT: Venetian
-        vi-VN: Vietnamese
-        wa-BE: Walloon
-        cy-GB: Welsh
-        wo-SN: Wolof
-        xh-ZA: Xhosa
-        yi-DE: Yiddish
-        yo-NG: Yoruba
-        zea-ZEA: Zeelandic
-        zu-ZA: Zulu
+        ve: Venda
+        vec: Venetian
+        vi: Vietnamese
+        wa: Walloon
+        cy: Welsh
+        wo: Wolof
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zea: Zeelandic
+        zu: Zulu
     # Changed English texts keep their old translations, marked as needing review.
     update_option: update_as_unapproved
     # Only translations you (or your proofreaders) approved are sent back to GitHub.
