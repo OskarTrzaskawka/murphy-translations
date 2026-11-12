@@ -590,6 +590,7 @@
         "command": "Příkaz, o kterém chcete získat informace"
       },
       "placeholder_category": "Vyberte kategorii",
+      "command_not_found": "V příkazové příručce jsem nemohl najít `{command}`. Zkuste `/help` procházet dostupné příkazy.",
       "no_commands": "V této kategorii nejsou žádné příkazy.",
       "category": {
         "4fun": "Zábava",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` otevře tuto příručku. Chcete-li zobrazit podrobnosti o příkazu, uveďte Murphy názvem příkazu nebo použijte níže uvedené příkazy s lomítkem.",
       "choose_category": "Níže vyberte kategorii.",
       "more_subcommands": "a {count} další dílčí příkazy.",
-      "command_not_found": "V příkazové příručce jsem nemohl najít `{command}`. Zkuste `/help` procházet dostupné příkazy.",
       "category_hint": "Příkazů: {count}. Vyber jeden níže pro podrobnosti.",
       "category_count": "příkazy: {roots} · možnosti: {count}",
       "about": {
