@@ -590,6 +590,7 @@
         "command": "Naredba o kojoj želite dobiti informacije"
       },
       "placeholder_category": "Odaberite kategoriju",
+      "command_not_found": "Nisam mogao pronaći `{command}` u vodiču za naredbe. Pokušajte `/help` za pregledavanje dostupnih naredbi.",
       "no_commands": "Nema naredbi u ovoj kategoriji.",
       "category": {
         "4fun": "Zabava",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` otvara ovaj vodič. Spomenite Murphy uz naziv naredbe da biste vidjeli njezine detalje ili upotrijebite naredbe kose crte prikazane u nastavku.",
       "choose_category": "Odaberite kategoriju ispod.",
       "more_subcommands": "i još {count} podnaredbi.",
-      "command_not_found": "Nisam mogao pronaći `{command}` u vodiču za naredbe. Pokušajte `/help` za pregledavanje dostupnih naredbi.",
       "category_hint": "{count} naredbi. Odaberi jednu ispod za detalje.",
       "category_count": "{roots} naredbi · {count} opcija",
       "about": {
