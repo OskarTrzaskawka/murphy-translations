@@ -24,7 +24,7 @@ Each file is named after its language in English:
 | `SpanishES.json` / `SpanishLATAM.json` | Spanish (Spain / Latin America) |
 | `PortugueseBR.json` / `PortuguesePT.json` | Portuguese (Brazil / Portugal) |
 | `ChineseCN.json` / `ChineseTW.json` | Chinese (Simplified / Traditional) |
-| … | 56 languages in total |
+| … | 230 languages in total, see [LANGUAGES.md](LANGUAGES.md) |
 
 ## Quick start
 
@@ -116,6 +116,8 @@ If GitHub shows red marks in the file, something broke. Check the quotes and com
 ## Adding a new language
 
 Want Murphy in a language that isn't here yet?
+
+First check [LANGUAGES.md](LANGUAGES.md): there are already files for 230 languages. A file that contains only `{}` is waiting for its first translator, so just start translating it.
 
 1. Copy `EnglishUS.json` to a new file named after the language in English, for example `Welsh.json`.
 2. Translate as much as you like. Partial files are fine.

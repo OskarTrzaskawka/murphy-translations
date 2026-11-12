@@ -1,65 +1,240 @@
 # Crowdin configuration for github.com/OskarTrzaskawka/murphy-translations
 # EnglishUS.json is the source. Crowdin writes every translation back under the file names the bot uses.
+# Locale codes come from https://api.crowdin.com/api/v2/languages
 files:
   - source: /EnglishUS.json
     translation: /%locale%.json
     languages_mapping:
       locale:
+        ach-UG: Acholi
+        aa-ER: Afar
         af-ZA: Afrikaans
+        ak-GH: Akan
         sq-AL: Albanian
+        am-ET: Amharic
         ar-SA: Arabic
+        an-ES: Aragonese
+        hy-AM: Armenian
+        frp-IT: Arpitan
+        as-IN: Assamese
+        ast-ES: Asturian
+        tay-TW: Atayal
+        av-DA: Avaric
+        ay-BO: Aymara
+        az-AZ: Azerbaijani
+        ban-ID: Balinese
+        bal-BA: Balochi
+        bm-ML: Bambara
+        ba-RU: Bashkir
         eu-ES: Basque
+        be-BY: Belarusian
         bn-BD: Bengali
+        ber-DZ: Berber
+        bh-IN: Bihari
+        bfo-BF: Birifor
+        bi-VU: Bislama
+        bs-BA: Bosnian
+        br-FR: Breton
         bg-BG: Bulgarian
         my-MM: Burmese
         ca-ES: Catalan
+        ceb-PH: Cebuano
+        ch-GU: Chamorro
+        ce-CE: Chechen
+        chr-US: Cherokee
+        ny-MW: Chichewa
         zh-CN: ChineseCN
+        zh-HK: ChineseHK
         zh-TW: ChineseTW
+        cv-CU: Chuvash
+        kw-GB: Cornish
+        co-FR: Corsican
+        cr-NT: Cree
         hr-HR: Croatian
         cs-CZ: Czech
         da-DK: Danish
+        fa-AF: Dari
+        dv-MV: Dhivehi
         nl-NL: Dutch
+        dz-BT: Dzongkha
         en-GB: EnglishGB
         eo-UY: Esperanto
         et-EE: Estonian
+        ee-GH: Ewe
+        fo-FO: Faroese
+        fj-FJ: Fijian
         fil-PH: Filipino
         fi-FI: Finnish
+        vls-BE: Flemish
+        fra-DE: Franconian
         fr-FR: French
+        fr-CA: FrenchCA
+        fy-NL: Frisian
+        fur-IT: Friulian
+        ff-ZA: Fula
+        gaa-GH: Ga
         gl-ES: Galician
+        ka-GE: Georgian
         de-DE: German
         el-GR: Greek
+        kl-GL: Greenlandic
+        gn-PY: Guarani
+        gu-IN: Gujarati
+        ht-HT: HaitianCreole
+        ha-HG: Hausa
+        haw-US: Hawaiian
         he-IL: Hebrew
+        hz-NA: Herero
+        hil-PH: Hiligaynon
         hi-IN: Hindi
+        ho-PG: HiriMotu
+        hmn-CN: Hmong
         hu-HU: Hungarian
         is-IS: Icelandic
+        io-EN: Ido
+        ig-NG: Igbo
+        ilo-PH: Ilokano
         id-ID: Indonesian
+        iu-NU: Inuktitut
         ga-IE: Irish
         it-IT: Italian
         ja-JP: Japanese
+        jv-ID: Javanese
+        kab-KAB: Kabyle
+        kn-IN: Kannada
+        pam-PH: Kapampangan
+        ks-IN: Kashmiri
+        csb-PL: Kashubian
+        kk-KZ: Kazakh
+        km-KH: Khmer
+        quc-GT: Kiche
+        rw-RW: Kinyarwanda
+        kv-KO: Komi
+        kg-CG: Kongo
+        kok-IN: Konkani
         ko-KR: Korean
+        ku-TR: Kurdish
+        kmr-TR: KurdishKurmanji
+        ckb-IR: KurdishSorani
+        kj-AO: Kwanyama
         ky-KG: Kyrgyz
+        lo-LA: Lao
+        la-LA: Latin
         lv-LV: Latvian
+        lij-IT: Ligurian
+        li-LI: Limburgish
+        ln-CD: Lingala
         lt-LT: Lithuanian
+        jbo-EN: Lojban
+        dsb-DE: LowerSorbian
+        nds-DE: LowGerman
+        lg-UG: Luganda
+        luy-KE: Luhya
+        lb-LU: Luxembourgish
+        mk-MK: Macedonian
+        mai-IN: Maithili
+        mg-MG: Malagasy
         ms-MY: Malay
+        ml-IN: Malayalam
+        mt-MT: Maltese
+        gv-IM: Manx
+        mi-NZ: Maori
+        arn-CL: Mapudungun
+        mr-IN: Marathi
+        mh-MH: Marshallese
+        moh-CA: Mohawk
+        mn-MN: Mongolian
+        me-ME: Montenegrin
+        sr-Cyrl-ME: MontenegrinCyrillic
+        mos-MOS: Mossi
+        na-NR: Nauru
+        ng-NA: Ndonga
+        ne-NP: Nepali
+        pcm-NG: NigerianPidgin
+        se-NO: NorthernSami
+        ns-ZA: NorthernSotho
         no-NO: Norwegian
+        nn-NO: NorwegianNynorsk
+        oc-FR: Occitan
+        or-IN: Odia
+        oj-CA: Ojibwe
+        om-ET: Oromo
+        os-SE: Ossetian
+        pap-PAP: Papiamento
+        ps-AF: Pashto
         fa-IR: Persian
         pl-PL: Polish
         pt-BR: PortugueseBR
         pt-PT: PortuguesePT
+        pa-IN: Punjabi
+        pa-PK: PunjabiShahmukhi
+        qu-PE: Quechua
         ro-RO: Romanian
+        rm-CH: Romansh
+        rn-BI: Rundi
         ru-RU: Russian
+        ry-UA: Rusyn
+        sah-SAH: Sakha
+        sg-CF: Sango
+        sa-IN: Sanskrit
+        sat-IN: Santali
+        sc-IT: Sardinian
+        sco-GB: Scots
+        gd-GB: ScottishGaelic
         sr-SP: Serbian
+        sr-CS: SerbianLatin
+        sh-HR: SerboCroatian
+        crs-SC: SeychellesCreole
+        sn-ZW: Shona
+        ii-CN: SichuanYi
+        sd-PK: Sindhi
+        si-LK: Sinhala
         sk-SK: Slovak
         sl-SI: Slovenian
+        so-SO: Somali
+        son-ZA: Songhay
+        nr-ZA: SouthernNdebele
+        sma-NO: SouthernSami
+        st-ZA: SouthernSotho
         es-ES: SpanishES
         es-419: SpanishLATAM
+        su-ID: Sundanese
         sw-KE: Swahili
+        ss-ZA: Swati
         sv-SE: Swedish
+        syc-SY: Syriac
+        tl-PH: Tagalog
+        ty-PF: Tahitian
+        tg-TJ: Tajik
+        ta-IN: Tamil
+        tt-RU: Tatar
+        te-IN: Telugu
+        kdh-KDH: Tem
         th-TH: Thai
+        bo-BT: Tibetan
+        ti-ER: Tigrinya
+        ts-ZA: Tsonga
+        tn-ZA: Tswana
         tr-TR: Turkish
+        tk-TM: Turkmen
+        tw-TW: Twi
         uk-UA: Ukrainian
+        hsb-DE: UpperSorbian
         ur-PK: Urdu
+        ug-CN: Uyghur
+        uz-UZ: Uzbek
+        val-ES: Valencian
+        ve-ZA: Venda
+        vec-IT: Venetian
         vi-VN: Vietnamese
+        wa-BE: Walloon
+        cy-GB: Welsh
+        wo-SN: Wolof
+        xh-ZA: Xhosa
+        yi-DE: Yiddish
+        yo-NG: Yoruba
+        zea-ZEA: Zeelandic
+        zu-ZA: Zulu
     # Changed English texts keep their old translations, marked as needing review.
     update_option: update_as_unapproved
     # Only translations you (or your proofreaders) approved are sent back to GitHub.
