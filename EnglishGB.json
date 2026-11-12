@@ -590,6 +590,7 @@
         "command": "The command you want to get info on"
       },
       "placeholder_category": "Select a category",
+      "command_not_found": "I could not find `{command}` in the command guide. Try `/help` to browse available commands.",
       "no_commands": "No commands in this category.",
       "category": {
         "4fun": "Fun",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` opens this guide. Mention Murphy with a command name to see its details, or use the slash commands shown below.",
       "choose_category": "Choose a category below.",
       "more_subcommands": "and {count} more subcommand(s).",
-      "command_not_found": "I could not find `{command}` in the command guide. Try `/help` to browse available commands.",
       "category_hint": "{count} commands. Pick one below for details.",
       "category_count": "{roots} commands · {count} options",
       "about": {
