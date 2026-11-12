@@ -590,6 +590,7 @@
         "command": "Lệnh bạn muốn nhận thông tin"
       },
       "placeholder_category": "Chọn một danh mục",
+      "command_not_found": "Tôi không thể tìm thấy `{command}` trong hướng dẫn lệnh. Hãy thử `/help` để duyệt các lệnh có sẵn.",
       "no_commands": "Không có lệnh nào trong danh mục này.",
       "category": {
         "4fun": "Vui vẻ",
@@ -620,7 +621,6 @@
       "home_description": "`@Murphy commands` mở hướng dẫn này. Đề cập đến Murphy kèm theo tên lệnh để xem chi tiết hoặc sử dụng các lệnh gạch chéo hiển thị bên dưới.",
       "choose_category": "Chọn một danh mục dưới đây.",
       "more_subcommands": "và {count} lệnh phụ khác.",
-      "command_not_found": "Tôi không thể tìm thấy `{command}` trong hướng dẫn lệnh. Hãy thử `/help` để duyệt các lệnh có sẵn.",
       "category_hint": "{count} lệnh. Chọn một lệnh bên dưới để xem chi tiết.",
       "category_count": "{roots} lệnh · {count} tùy chọn",
       "about": {
